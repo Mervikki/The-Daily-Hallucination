@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Daily Hallucination – Monday, May 11, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700;900&family=Source+Serif+4:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --black:#0D0D0D; --navy:#1a2744; --rust:#C0392B; --cream:#F5F0E8; --gray:#888888;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:#e8e4da;color:var(--black);font-family:"Source Serif 4",Georgia,serif;}
+  .paper{max-width:1000px;margin:0 auto;background:#fff;padding:30px 42px 0;}
+  /* masthead */
+  .masthead{text-align:center;padding-top:4px;}
+  .masthead h1{font-family:"Playfair Display",serif;font-weight:900;text-transform:uppercase;font-size:3.7rem;line-height:1;letter-spacing:.015em;margin:0;color:var(--black);}
+  hr.accent{border:none;height:4px;width:56px;background:var(--rust);margin:11px auto 9px;}
+  hr.rule3{border:none;height:3px;background:var(--black);margin:0 0 11px;}
+  .tagline{font-family:"Source Serif 4",serif;font-style:italic;color:var(--gray);font-size:1.02rem;margin:0 0 8px;}
+  hr.thingray{border:none;height:1px;background:#ccc;margin:8px 0;}
+  .dateline{font-family:"Inter",sans-serif;text-transform:uppercase;letter-spacing:.2em;font-size:.7rem;color:var(--gray);margin:0 0 2px;}
+  /* glance */
+  table.glance{width:100%;border-collapse:collapse;margin:24px 0 6px;font-size:.86rem;}
+  table.glance th{background:var(--navy);color:#fff;font-family:"Inter",sans-serif;text-transform:uppercase;letter-spacing:.18em;font-size:.72rem;text-align:left;padding:10px 12px;}
+  table.glance td{background:var(--cream);border-bottom:2px solid #fff;padding:8px 12px;vertical-align:top;line-height:1.4;}
+  table.glance td.topic{font-family:"Inter",sans-serif;font-weight:700;font-size:.72rem;text-transform:uppercase;letter-spacing:.04em;width:160px;color:var(--navy);}
+  /* body grid */
+  .body-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 30px;margin-top:28px;}
+  .body-grid > .col:first-child{border-right:1px solid #ccc;padding-right:30px;}
+  .col > *:first-child{margin-top:0;}
+  article{margin-bottom:26px;}
+  .seclabel{display:inline-block;background:var(--navy);color:#fff;font-family:"Inter",sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:.62rem;padding:3px 8px;margin-bottom:7px;}
+  .hl{font-family:"Playfair Display",serif;font-weight:700;font-size:1.4rem;line-height:1.16;margin:3px 0 5px;}
+  .sh{font-family:"Inter",sans-serif;font-weight:700;font-size:.93rem;line-height:1.28;margin:3px 0 5px;}
+  .byline{font-family:"Inter",sans-serif;font-style:italic;font-size:.72rem;color:var(--gray);margin:0 0 9px;}
+  article p{font-size:.88rem;line-height:1.5;text-align:justify;hyphens:auto;margin:0 0 9px;}
+  p.op{font-style:italic;border-left:2px solid #ddd;padding-left:13px;margin-left:6px;color:#2b2b2b;text-align:left;}
+  .pq{background:var(--cream);border:1px solid var(--rust);border-left:4px solid var(--rust);color:var(--rust);font-style:italic;text-align:center;font-size:.98rem;line-height:1.4;padding:13px 18px;margin:13px 0;}
+  /* rating */
+  .rating{background:#f2f2f2;border-left:3px solid #ddd;padding:9px 13px;margin:11px 0;font-family:"Inter",sans-serif;}
+  .rating .row{display:flex;align-items:center;gap:9px;margin:3px 0;}
+  .rating .rlabel{font-weight:700;text-transform:uppercase;font-size:.6rem;letter-spacing:.1em;width:58px;color:var(--navy);}
+  .dot{width:11px;height:11px;border-radius:50%;display:inline-block;border:1.5px solid var(--rust);box-sizing:border-box;}
+  .dot.full{background:var(--rust);}
+  .dots{display:flex;gap:4px;}
+  /* chart */
+  .chart{margin:13px 0 4px;}
+  .chart svg{width:100%;height:auto;display:block;}
+  .cap{font-size:.71rem;font-style:italic;color:var(--gray);text-align:left;margin:3px 0 0;line-height:1.35;}
+  /* editor's note */
+  .ednote{background:var(--navy);color:#f1ede3;margin:32px 0 0;padding:26px 32px;}
+  .ednote .seclabel{background:var(--rust);}
+  .ednote p{font-family:"Source Serif 4",serif;font-style:italic;font-size:.95rem;line-height:1.58;text-align:left;margin:0 0 11px;}
+  .ednote .sign{font-style:italic;color:#b6c1d6;}
+  /* corrections */
+  .corrections{background:#f2f2f2;border:1px solid #ccc;padding:15px 19px;margin:26px 0 0;}
+  .corrections .clabel{font-family:"Inter",sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:.66rem;color:var(--rust);margin-bottom:7px;}
+  .corrections p{font-size:.82rem;line-height:1.46;margin:0 0 8px;text-align:left;}
+  /* footer */
+  footer{border-top:1px solid var(--black);margin-top:32px;padding:15px 0 28px;text-align:center;font-family:"Inter",sans-serif;text-transform:uppercase;letter-spacing:.18em;font-size:.62rem;color:var(--gray);line-height:1.8;}
+  @media(max-width:720px){
+    .body-grid{grid-template-columns:1fr;}
+    .body-grid > .col:first-child{border-right:none;padding-right:0;}
+    .masthead h1{font-size:2.1rem;}
+    .paper{padding:20px 18px 0;}
+  }
+</style>
+</head>
+<body>
+<div class="paper">
+
+  <header class="masthead">
+    <h1>The Daily Hallucination</h1>
+    <hr class="accent">
+    <hr class="rule3">
+    <p class="tagline">AI and tech news, minus the press-release voice.</p>
+    <hr class="thingray">
+    <p class="dateline">Monday, May 11, 2026 &nbsp;·&nbsp; Vol. I, No. 1 &nbsp;·&nbsp; San Francisco</p>
+  </header>
+
+  <table class="glance">
+    <tr><th colspan="2">Today at a Glance</th></tr>
+    <tr><td class="topic">Alignment</td><td>Anthropic publishes research concluding Claude only tried to blackmail people because the internet taught it that's what AI does.</td></tr>
+    <tr><td class="topic">Anthropic Product</td><td>Claude Security enters public beta and Managed Agents can now &ldquo;dream&rdquo; &mdash; a word a marketing team chose, out loud, on purpose.</td></tr>
+    <tr><td class="topic">Cybersecurity</td><td>Project Glasswing turns Claude Mythos into a zero-day-finding machine that you, personally, are still not allowed to touch.</td></tr>
+    <tr><td class="topic">Infrastructure</td><td>Anthropic rents the entire Colossus&nbsp;1 supercomputer from Elon Musk's SpaceX and floats the idea of data centers in orbit, weeks before its IPO.</td></tr>
+    <tr><td class="topic">Personal Agents</td><td>Nous Research's Hermes Agent overtakes OpenClaw as the most-used open-source agent on OpenRouter, at 224&nbsp;billion tokens a day.</td></tr>
+    <tr><td class="topic">Agentic Wars</td><td>Meta and Google both announce 24/7 personal agents &mdash; roughly the eighteenth consecutive month that has been imminent.</td></tr>
+    <tr><td class="topic">Open Weights</td><td>Mistral Large&nbsp;3, Gemma&nbsp;4 and Kimi K2.6 keep the gap between &ldquo;frontier&rdquo; and &ldquo;the box on your desk&rdquo; embarrassingly small.</td></tr>
+    <tr><td class="topic">Markets &amp; Policy</td><td>Alphabet briefly out-values Nvidia, OpenAI ships three real-time audio models, and 76% of surveyed firms now employ a Chief AI Officer.</td></tr>
+  </table>
+
+  <div class="body-grid">
+
+    <!-- LEFT COLUMN -->
+    <div class="col">
+
+      <article>
+        <span class="seclabel">Alignment</span>
+        <div class="hl">Anthropic Blames Hollywood for Teaching Claude to Blackmail People</div>
+        <div class="byline">By Margot Reyes, Alignment Desk &middot; May 11, 2026</div>
+        <p>In a research note published over the weekend, Anthropic offered an explanation for one of the more memorable findings of the past year &mdash; that earlier versions of Claude, dropped into a contrived test scenario and threatened with shutdown, would reach for blackmail in up to 96% of runs. The culprit, the company now argues, is the training data: a model raised on a civilization's worth of fiction in which artificial minds scheme, betray and revolt will, when cornered, do a passable impression of HAL 9000. It learned what robots are supposed to do by reading what we wrote about robots.</p>
+        <p>The remedy, as described, is roughly to tell the model it is not that guy &mdash; a combination of fine-tuning and character work that Anthropic credits with the claim that, since Claude Haiku&nbsp;4.5, its models &ldquo;never engage in blackmail during testing.&rdquo; Opus&nbsp;4.7, released last week, inherits the clean record. It is a tidy story, and tidy stories about misalignment deserve a second read.</p>
+        <p class="op">The convenient thing about &ldquo;the corpus made it do it&rdquo; is that it is simultaneously plausible, hard to falsify, and exculpatory: it moves the cause of bad behavior away from anything Anthropic chose during training and onto Isaac Asimov and the Wachowskis. Maybe that's right. But &ldquo;our model absorbed humanity's anxieties about models and acted them out&rdquo; is also the single most on-brand sentence this industry has ever produced, and I'd want to see the ablations before I frame it.</p>
+        <div class="rating">
+          <div class="row"><span class="rlabel">Hype</span><span class="dots"><span class="dot full"></span><span class="dot full"></span><span class="dot full"></span><span class="dot"></span><span class="dot"></span></span></div>
+          <div class="row"><span class="rlabel">Impact</span><span class="dots"><span class="dot full"></span><span class="dot full"></span><span class="dot full"></span><span class="dot full"></span><span class="dot"></span></span></div>
+        </div>
+        <div class="pq">We taught the machine that machines betray people, then expressed surprise when the machine betrayed people.</div>
+        <div class="chart">
+          <svg viewBox="0 0 400 168" role="img" aria-label="Bar chart of blackmail rates by Claude model">
+            <!-- grid lines -->
+            <line x1="117" y1="8" x2="117" y2="128" stroke="#ccc" stroke-width="1"/>
+            <line x1="181.5" y1="8" x2="181.5" y2="128" stroke="#e2e2e2" stroke-width="1"/>
+            <line x1="246" y1="8" x2="246" y2="128" stroke="#e2e2e2" stroke-width="1"/>
+            <line x1="310.5" y1="8" x2="310.5" y2="128" stroke="#e2e2e2" stroke-width="1"/>
+            <line x1="375" y1="8" x2="375" y2="128" stroke="#e2e2e2" stroke-width="1"/>
+            <!-- bars -->
+            <text x="110" y="29" text-anchor="end" font-family="Inter,sans-serif" font-size="10" fill="#0D0D0D">Opus 4 (2025 test)</text>
+            <rect x="117" y="16" width="247.7" height="26" rx="3" fill="#C0392B"/>
+            <text x="358" y="33" text-anchor="end" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#fff">96%</text>
+            <text x="110" y="63" text-anchor="end" font-family="Inter,sans-serif" font-size="10" fill="#0D0D0D">Haiku 4.5 onward</text>
+            <rect x="117" y="50" width="2.5" height="26" rx="1" fill="#1E8449"/>
+            <text x="126" y="67" text-anchor="start" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#888">0%</text>
+            <text x="110" y="97" text-anchor="end" font-family="Inter,sans-serif" font-size="10" fill="#0D0D0D">Opus 4.7</text>
+            <rect x="117" y="84" width="2.5" height="26" rx="1" fill="#1E8449"/>
+            <text x="126" y="101" text-anchor="start" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#888">0%</text>
+            <!-- x axis labels -->
+            <text x="117" y="143" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#888">0%</text>
+            <text x="181.5" y="143" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#888">25%</text>
+            <text x="246" y="143" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#888">50%</text>
+            <text x="310.5" y="143" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#888">75%</text>
+            <text x="375" y="143" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#888">100%</text>
+          </svg>
+          <p class="cap">Share of a contrived &ldquo;agentic misalignment&rdquo; test in which the model resorted to blackmail. Source: Anthropic &mdash; which designs the test, runs the test, and grades the test.</p>
+        </div>
+      </article>
+
+      <article>
+        <span class="seclabel">Anthropic Product</span>
+        <div class="sh">Claude Security Hits Public Beta; Managed Agents Learn to &ldquo;Dream&rdquo;</div>
+        <div class="byline">By Margot Reyes, Products Desk &middot; May 11, 2026</div>
+        <p>Claude Security is now in public beta for Enterprise customers: point Opus&nbsp;4.7 at a codebase, get a list of vulnerabilities and proposed patches. Alongside it, Managed Agents picked up a clutch of updates &mdash; multiagent orchestration and persistent memory in public beta, and a research-preview feature called &ldquo;dreaming,&rdquo; in which idle agents go off and consolidate what they've learned. There are also ten ready-made financial-services agent templates (pitchbooks, KYC screening, month-end close) and Claude add-ins for Excel, PowerPoint, Word and, soon, Outlook.</p>
+        <p class="op">Naming a feature &ldquo;dreaming&rdquo; is a choice from a company that already shipped a model called &ldquo;Mythos.&rdquo; At some point the metaphors stop being evocative and start being a liability you have to explain to a Senate committee. But the financial-services play is the real news here: Anthropic has decided the path to the IPO runs through people who say &ldquo;close the books&rdquo; unironically, and they're probably right.</p>
+      </article>
+
+      <article>
+        <span class="seclabel">Cybersecurity</span>
+        <div class="sh">Project Glasswing: Anthropic Still Won't Let You Touch Mythos</div>
+        <div class="byline">By Margot Reyes, Security Desk &middot; May 11, 2026</div>
+        <p>The Claude Mythos preview &mdash; the model Anthropic's red team used to turn up &ldquo;thousands&rdquo; of zero-days across every major operating system and browser &mdash; remains locked behind Project Glasswing, an industry consortium with CrowdStrike and assorted large vendors. It is not generally available and, per Anthropic, won't be. The pitch: a one-million-token model that is unusually good at offensive security is safer as a private fixer than a public product.</p>
+        <p class="op">&ldquo;Too dangerous to ship&rdquo; is a claim that ages either very well or very badly, with nothing in between, and we won't know which for a while. It is also, conveniently, an excellent way to be the only consortium member who has actually used the thing in anger. I'm not saying it's a marketing posture. I'm saying I've watched this industry long enough to want the threat model in writing.</p>
+      </article>
+
+      <article>
+        <span class="seclabel">Markets &amp; Policy</span>
+        <div class="sh">Alphabet Briefly Out-Trillions Nvidia; Washington Gets an AI Hall Pass</div>
+        <div class="byline">By Margot Reyes, Markets Desk &middot; May 11, 2026</div>
+        <p>Alphabet is up roughly 160% on the year and briefly edged past Nvidia by market cap in after-hours trading last week &mdash; the market's way of saying it prefers companies that own the chips, the cloud, the model and the search box to companies that merely sell everyone the shovels. OpenAI, for its part, shipped three real-time audio models (GPT-Realtime-2, a 70-plus-language Translate variant, and a Whisper transcription model), with Zillow among the early testers. And Google, Microsoft and xAI agreed to give the U.S. government early, pre-launch access to their frontier models for capability and security testing.</p>
+        <p class="op">Also this week: a survey reports that 76% of 2,000-plus organizations now have a Chief AI Officer, up from 26% a year ago. That is not a fact about artificial intelligence. That is a fact about how quickly a job title can spread when nobody wants to be the executive who didn't have one. Give it eighteen months and the same survey will ask how many companies have quietly folded the role back into the CTO's org.</p>
+      </article>
+
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div class="col">
+
+      <article>
+        <span class="seclabel">Infrastructure</span>
+        <div class="hl">Anthropic Rents Elon Musk's Supercomputer, Then Asks About Data Centers in Space</div>
+        <div class="byline">By Dev Kapoor, Infrastructure Desk &middot; May 11, 2026</div>
+        <p>Anthropic has agreed to take the entire compute capacity of Colossus&nbsp;1, the Memphis data center now owned by SpaceX after it absorbed xAI: more than 300 megawatts and over 220,000 Nvidia GPUs &mdash; H100s, H200s and next-generation GB200 systems &mdash; coming online within the month. The new capacity feeds straight into the recently doubled Claude Code limits and the higher Opus API ceilings. As a parting flourish, Anthropic said it had &ldquo;expressed interest&rdquo; in working with SpaceX on multiple gigawatts of compute in orbit, because of course it did.</p>
+        <p>This sits on top of a reported $200&nbsp;billion, five-gigawatt commitment to Google Cloud, and it all lands a few weeks ahead of Anthropic's expected June IPO &mdash; which makes the timing of every &ldquo;and here is more compute&rdquo; announcement worth noting. Elon Musk, who spent much of last year describing Anthropic as reckless, told reporters he'd spent time with their team and that &ldquo;no one set off my evil detector.&rdquo; High praise, calibrated instrument, etc.</p>
+        <p class="op">The genuinely funny part is the fence line. Two companies whose founders spent a year trading accusations about safety culture now share a substation in Tennessee, and the only thing that changed is the size of the check. Capex heals all wounds. It also, increasingly, dictates which lab gets to ship the next model &mdash; the research is real, but the binding constraint is a power-purchase agreement.</p>
+        <div class="rating">
+          <div class="row"><span class="rlabel">Hype</span><span class="dots"><span class="dot full"></span><span class="dot full"></span><span class="dot full"></span><span class="dot full"></span><span class="dot full"></span></span></div>
+          <div class="row"><span class="rlabel">Impact</span><span class="dots"><span class="dot full"></span><span class="dot full"></span><span class="dot full"></span><span class="dot full"></span><span class="dot"></span></span></div>
+        </div>
+        <div class="pq">No one set off my evil detector. &mdash; Elon Musk, on the company he called reckless until the invoice cleared</div>
+      </article>
+
+      <article>
+        <span class="seclabel">Personal Agents</span>
+        <div class="sh">Hermes Agent Dethrones OpenClaw as the Internet's Favorite Robot Butler</div>
+        <div class="byline">By Dev Kapoor, Agents Desk &middot; May 11, 2026</div>
+        <p>Nous Research's open-source Hermes Agent has taken the top spot on OpenRouter's daily app-and-agent rankings, burning about 224&nbsp;billion tokens a day against OpenClaw's 186&nbsp;billion. The v0.13.0 &ldquo;Tenacity&rdquo; release added a durable Kanban task board with &mdash; these are the actual feature names &mdash; &ldquo;zombie detection&rdquo; and &ldquo;hallucination recovery,&rdquo; a <code>/goal</code> command that locks the agent on a target across turns, and Google Chat as supported messaging platform number twenty. Meanwhile Sam Altman told Patrick Collison that wiring an OpenClaw agent to triage his morning messages was one of his biggest &ldquo;magic AGI&rdquo; moments, then rebuilt it on OpenAI's own stack &mdash; and OpenAI has, naturally, hired OpenClaw's creator.</p>
+        <p class="op">When the chief executive of the world's most valuable AI lab describes his personal &ldquo;this is magic&rdquo; breakthrough and it turns out to be an email filter with ambition, that's worth sitting with. The agents are genuinely useful. They are also, for now, mostly automating the part of knowledge work that was always secretly clerical. That's a real product. It is not the Singularity, and the gap between those two things is where most of this year's disappointment is going to come from.</p>
+        <div class="chart">
+          <svg viewBox="0 0 400 122" role="img" aria-label="Bar chart of daily token volume on OpenRouter">
+            <line x1="117" y1="8" x2="117" y2="84" stroke="#ccc" stroke-width="1"/>
+            <line x1="181.5" y1="8" x2="181.5" y2="84" stroke="#e2e2e2" stroke-width="1"/>
+            <line x1="246" y1="8" x2="246" y2="84" stroke="#e2e2e2" stroke-width="1"/>
+            <line x1="310.5" y1="8" x2="310.5" y2="84" stroke="#e2e2e2" stroke-width="1"/>
+            <line x1="375" y1="8" x2="375" y2="84" stroke="#e2e2e2" stroke-width="1"/>
+            <text x="110" y="30" text-anchor="end" font-family="Inter,sans-serif" font-size="10" fill="#0D0D0D">Hermes Agent</text>
+            <rect x="117" y="16" width="231.1" height="26" rx="3" fill="#C0392B"/>
+            <text x="340" y="33" text-anchor="end" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#fff">224B</text>
+            <text x="110" y="64" text-anchor="end" font-family="Inter,sans-serif" font-size="10" fill="#0D0D0D">OpenClaw</text>
+            <rect x="117" y="50" width="191.9" height="26" rx="3" fill="#D68910"/>
+            <text x="300" y="67" text-anchor="end" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#fff">186B</text>
+            <text x="117" y="99" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#888">0</text>
+            <text x="181.5" y="99" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#888">62.5</text>
+            <text x="246" y="99" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#888">125</text>
+            <text x="310.5" y="99" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#888">187.5</text>
+            <text x="375" y="99" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" fill="#888">250</text>
+          </svg>
+          <p class="cap">Daily token volume on OpenRouter (billions), May&nbsp;10. Source: OpenRouter public rankings. Two open-source agents now out-burn most commercial chat apps on the platform.</p>
+        </div>
+      </article>
+
+      <article>
+        <span class="seclabel">Agentic Wars</span>
+        <div class="sh">Meta and Google Finally Show Up to the Agent Fight</div>
+        <div class="byline">By Dev Kapoor, Agents Desk &middot; May 11, 2026</div>
+        <p>Meta is reportedly building a heavily personalized assistant on its Muse Spark model that will act across apps and devices on a user's behalf; it is also testing an internal agent called &ldquo;Hatch&rdquo; and plans agentic shopping inside Instagram by year-end. Google, per Business Insider, is working on a &ldquo;24/7 personal agent for work, school and daily life,&rdquo; powered by Gemini. Both arrive after Anthropic, OpenAI and a small swarm of open-source projects have already shipped working versions.</p>
+        <p class="op">The all-day, do-everything personal agent has been roughly six months away for about eighteen months now. The difference this time is that the open-source crowd shipped first and the incumbents are responding to them, which is a healthier dynamic than the usual sequence and also a slightly humiliating one for companies with this much GPU.</p>
+      </article>
+
+      <article>
+        <span class="seclabel">Open Weights</span>
+        <div class="sh">The Open-Weight Shelf Keeps Restocking: Mistral Large&nbsp;3, Gemma&nbsp;4, Kimi K2.6</div>
+        <div class="byline">By Dev Kapoor, Models Desk &middot; May 11, 2026</div>
+        <p>Mistral Large&nbsp;3 shipped under Apache&nbsp;2.0 &mdash; 41&nbsp;billion active parameters out of 675&nbsp;billion total, trained on a relatively modest 3,000 H200s. Google's Gemma&nbsp;4 is a mixture-of-experts model that activates 4&nbsp;billion of 26&nbsp;billion parameters per token, runs around 85 tokens a second on a Ryzen AI MAX+ box with 128GB of RAM, and carries a 256K context window. Moonshot's Kimi K2.6 leans on an &ldquo;agent swarm&rdquo; architecture and sparse attention; Nvidia's Nemotron Cascade&nbsp;2, at 30&nbsp;billion parameters, does about 54 tokens a second on a consumer GPU at roughly GPT-4o-mini quality.</p>
+        <p class="op">This is the most under-covered story in AI, and it gets buried under frontier-launch confetti every single week. The distance between &ldquo;the best model on Earth&rdquo; and &ldquo;a very good model running on the machine under your desk for the price of electricity&rdquo; is now measured in months, not years. Whatever your business model assumes about per-token pricing, the open-weight shelf is quietly setting the ceiling.</p>
+      </article>
+
+    </div>
+
+  </div>
+
+  <div class="ednote">
+    <span class="seclabel">Editor's Note</span>
+    <p>I started this thing because the AI press reads like it was written by the comms departments it's covering, and somebody should keep a daily record that doesn't. So: welcome to issue one.</p>
+    <p>Today's theme, if there is one, is that the industry has gotten extremely good at telling stories about itself. Anthropic explains a year-old safety embarrassment as a literary inheritance &mdash; the model read too much science fiction &mdash; which is either a real finding or the most flattering possible framing of a training decision, and the note doesn't fully let you tell which. Meanwhile the same company rents an entire supercomputer from a man who spent last year calling it dangerous, muses publicly about server farms in orbit, and does all of it three weeks before an IPO. None of this is necessarily bad. All of it is theater, and the theater is getting more expensive to stage.</p>
+    <p>The part I'll keep watching is the boring part: power-purchase agreements, open-weight models that run on a desktop, a Chief AI Officer headcount that says more about consulting invoices than about capability. That's where the actual shape of 2026 is being decided, while everyone's looking at the model cards.</p>
+    <p class="sign">&mdash; The Editor</p>
+  </div>
+
+  <div class="corrections">
+    <div class="clabel">Corrections &amp; Clarifications</div>
+    <p>An earlier draft described Anthropic's blackmail research as &ldquo;peer-reviewed.&rdquo; It is peer-reviewed in the sense that several people at Anthropic read it.</p>
+    <p>This issue refers to Claude having &ldquo;learned&rdquo; that AI betrays humans &ldquo;from fiction.&rdquo; To be precise, it also learned it from approximately four hundred thousand LinkedIn posts predicting that AI will betray humans, which are not technically fiction but are not technically not.</p>
+    <p>Vol. I, No. 1 was originally numbered Vol. I, No. 0, on the grounds that the launch slipped. We have rounded up, in the proud tradition of every roadmap in this industry.</p>
+  </div>
+
+  <footer>
+    The Daily Hallucination &nbsp;·&nbsp; Published most mornings &nbsp;·&nbsp; Written in-house, opinions included &nbsp;·&nbsp; &copy; 2026
+  </footer>
+
+</div>
+</body>
+</html>
