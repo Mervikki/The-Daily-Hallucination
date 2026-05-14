@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Daily Hallucination – Thursday, May 14, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Serif+4:ital,wght@0,400;0,600;1,400;1,600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #F5F0E8;
+    color: #0D0D0D;
+    font-family: 'Source Serif 4', Georgia, serif;
+    line-height: 1.5;
+    padding: 24px 16px 60px;
+  }
+  .paper {
+    max-width: 920px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 36px 44px 44px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+  }
+
+  /* ---------- MASTHEAD ---------- */
+  .masthead { text-align: center; }
+  .masthead h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-size: 3.4rem;
+    line-height: 1.02;
+    color: #0D0D0D;
+  }
+  .masthead .accent {
+    border: none;
+    border-top: 4px solid #C0392B;
+    width: 56px;
+    margin: 10px auto 0;
+  }
+  .masthead .rule3 {
+    border: none;
+    border-top: 3px solid #0D0D0D;
+    margin: 8px auto 0;
+  }
+  .masthead .tagline {
+    font-style: italic;
+    color: #888888;
+    font-size: 0.95rem;
+    margin-top: 8px;
+  }
+  .masthead .thin {
+    border: none;
+    border-top: 1px solid #cccccc;
+    margin: 8px auto;
+  }
+  .masthead .dateline {
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 0.7rem;
+    color: #888888;
+  }
+
+  /* ---------- TODAY AT A GLANCE ---------- */
+  .glance {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 28px 0 30px;
+    font-family: 'Source Serif 4', serif;
+  }
+  .glance th {
+    background: #1a2744;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    font-size: 0.74rem;
+    text-align: left;
+    padding: 9px 12px;
+  }
+  .glance td {
+    background: #F5F0E8;
+    padding: 8px 12px;
+    font-size: 0.86rem;
+    border-bottom: 2px solid #ffffff;
+    vertical-align: top;
+  }
+  .glance td.topic {
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.74rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    width: 150px;
+    color: #1a2744;
+  }
+
+  /* ---------- TWO-COLUMN BODY ---------- */
+  .body-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+  }
+  .body-grid > .col:first-child {
+    padding-right: 26px;
+    border-right: 1px solid #cccccc;
+  }
+  .body-grid > .col:last-child {
+    padding-left: 26px;
+  }
+  .col article { margin-bottom: 26px; }
+  .col article:last-child { margin-bottom: 0; }
+
+  .section-label {
+    display: inline-block;
+    background: #1a2744;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.62rem;
+    padding: 3px 7px;
+    margin-bottom: 7px;
+  }
+  .hl {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.16;
+    margin-bottom: 5px;
+  }
+  .sh {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 0.93rem;
+    line-height: 1.25;
+    margin-bottom: 5px;
+  }
+  .byline {
+    font-family: 'Inter', sans-serif;
+    font-style: italic;
+    font-size: 0.72rem;
+    color: #888888;
+    margin-bottom: 8px;
+  }
+  .col p.body {
+    font-size: 0.88rem;
+    text-align: justify;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    margin-bottom: 8px;
+  }
+  p.opinion {
+    font-style: italic;
+    border-left: 2px solid #dddddd;
+    padding-left: 12px;
+    margin: 8px 0 8px 8px;
+    font-size: 0.86rem;
+  }
+  .pullquote {
+    background: #F5F0E8;
+    border: 1px solid #C0392B;
+    border-left: 4px solid #C0392B;
+    color: #C0392B;
+    font-style: italic;
+    text-align: center;
+    font-size: 0.98rem;
+    line-height: 1.35;
+    padding: 12px 16px;
+    margin: 12px 0;
+  }
+  .rating {
+    background: #f1f1f1;
+    border-left: 3px solid #dddddd;
+    padding: 8px 12px;
+    margin: 10px 0;
+    font-family: 'Inter', sans-serif;
+  }
+  .rating .rlabel {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.62rem;
+    color: #555555;
+    display: inline-block;
+    width: 78px;
+  }
+  .rating .dots { letter-spacing: 1px; font-size: 0.8rem; }
+  .dot-f { color: #C0392B; }
+  .dot-e { color: #C0392B; opacity: 0.32; }
+  .rrow { display: flex; align-items: center; margin: 2px 0; }
+
+  .chartwrap { margin: 12px 0; }
+  .chartwrap svg { width: 100%; height: auto; display: block; }
+  .chart-caption {
+    font-style: italic;
+    font-size: 0.72rem;
+    color: #888888;
+    margin-top: 3px;
+  }
+  .chart-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    font-size: 0.64rem;
+    color: #1a2744;
+    margin-bottom: 4px;
+  }
+
+  /* ---------- EDITOR'S NOTE ---------- */
+  .editors {
+    background: #1a2744;
+    color: #f3efe6;
+    padding: 22px 26px;
+    margin: 30px 0 0;
+  }
+  .editors .section-label {
+    background: #C0392B;
+    color: #ffffff;
+  }
+  .editors p {
+    font-family: 'Source Serif 4', serif;
+    font-style: italic;
+    font-size: 0.92rem;
+    line-height: 1.55;
+    margin-bottom: 9px;
+  }
+  .editors p:last-child { margin-bottom: 0; }
+  .editors .sign {
+    font-style: italic;
+    color: #b9c2d6;
+  }
+
+  /* ---------- CORRECTIONS ---------- */
+  .corrections {
+    background: #f1f1f1;
+    border: 1px solid #cccccc;
+    padding: 12px 16px;
+    margin: 22px 0 0;
+    font-size: 0.82rem;
+  }
+  .corrections .clabel {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.62rem;
+    color: #C0392B;
+    margin-bottom: 5px;
+  }
+  .corrections p { margin-bottom: 6px; font-style: italic; }
+  .corrections p:last-child { margin-bottom: 0; }
+
+  /* ---------- OBITUARY ---------- */
+  .obituary {
+    background: #F5F0E8;
+    border: 1px solid #0D0D0D;
+    padding: 14px 16px;
+    margin: 0;
+  }
+  .obituary .olabel {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.6rem;
+    color: #0D0D0D;
+    margin-bottom: 6px;
+  }
+  .obituary .oname {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 2px;
+  }
+  .obituary .odates {
+    font-family: 'Inter', sans-serif;
+    font-style: italic;
+    font-size: 0.72rem;
+    color: #888888;
+    margin-bottom: 8px;
+  }
+  .obituary p {
+    font-family: 'Source Serif 4', serif;
+    font-size: 0.86rem;
+    line-height: 1.5;
+    margin-bottom: 7px;
+  }
+  .obituary p:last-child { margin-bottom: 0; }
+
+  /* ---------- FOOTER ---------- */
+  .footer {
+    border-top: 1px solid #0D0D0D;
+    margin-top: 30px;
+    padding-top: 12px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-size: 0.62rem;
+    color: #888888;
+  }
+
+  @media (max-width: 680px) {
+    .paper { padding: 24px 18px 30px; }
+    .masthead h1 { font-size: 2.1rem; }
+    .body-grid { grid-template-columns: 1fr; }
+    .body-grid > .col:first-child {
+      padding-right: 0;
+      border-right: none;
+      border-bottom: 1px solid #cccccc;
+      padding-bottom: 26px;
+      margin-bottom: 26px;
+    }
+    .body-grid > .col:last-child { padding-left: 0; }
+    .glance td.topic { width: 110px; }
+  }
+</style>
+</head>
+<body>
+<div class="paper">
+
+  <!-- ================= MASTHEAD ================= -->
+  <header class="masthead">
+    <h1>The Daily Hallucination</h1>
+    <hr class="accent">
+    <hr class="rule3">
+    <p class="tagline">An AI &amp; tech daily that says the quiet part — out loud, in a serif font.</p>
+    <hr class="thin">
+    <p class="dateline">Thursday, May 14, 2026 &nbsp;·&nbsp; Vol. 1, No. 4</p>
+  </header>
+
+  <!-- ================= TODAY AT A GLANCE ================= -->
+  <table class="glance">
+    <tr><th colspan="2">Today at a Glance</th></tr>
+    <tr><td class="topic">Anthropic / Markets</td><td>Secondary markets are now pricing Anthropic at roughly $1 trillion — about $380B in February, $900B in last week's primary round, and $1.2–1.6T in crypto derivatives nobody at the company authorized.</td></tr>
+    <tr><td class="topic">Anthropic / Product</td><td>Claude for Small Business launches with fifteen "skills" that plug into QuickBooks, HubSpot, Canva and the rest — and a ten-city free-workshop tour starting today in Chicago.</td></tr>
+    <tr><td class="topic">Policy / EU</td><td>Brussels' "AI Omnibus" trilogue continues this week — the simplification package whose simplification is mostly postponement, with high-risk obligations slipping up to 16 months.</td></tr>
+    <tr><td class="topic">Infrastructure</td><td>Microsoft publishes a "Community-First" data-center framework promising rate protections, water cuts and tax payments; the framing implies the previous default was the opposite.</td></tr>
+    <tr><td class="topic">Capex / Meta</td><td>Meta lifts its 2026 capex guidance to $125–145B and Zuckerberg pledges $600B in U.S. investment by 2028 — investors flinched first, then bought it anyway.</td></tr>
+    <tr><td class="topic">Model Obituary</td><td>OpenAI quietly turned off the original DALL·E API snapshots this week. A short eulogy for the model that taught a billion people the word "prompt."</td></tr>
+  </table>
+
+  <!-- ================= BODY ================= -->
+  <div class="body-grid">
+
+    <!-- ===== LEFT COLUMN ===== -->
+    <div class="col">
+
+      <!-- LEAD STORY -->
+      <article>
+        <span class="section-label">Anthropic · Markets</span>
+        <h2 class="hl">Anthropic Nears a $1 Trillion Valuation — While Its Head of Product Promises an AI That Knows What You Want Before You Do</h2>
+        <p class="byline">By The Editor, Markets Desk · May 14, 2026</p>
+
+        <div class="rating">
+          <div class="rrow"><span class="rlabel">Hype</span><span class="dots"><span class="dot-f">●</span><span class="dot-f">●</span><span class="dot-f">●</span><span class="dot-f">●</span><span class="dot-f">●</span></span></div>
+          <div class="rrow"><span class="rlabel">Impact</span><span class="dots"><span class="dot-f">●</span><span class="dot-f">●</span><span class="dot-f">●</span><span class="dot-f">●</span><span class="dot-e">○</span></span></div>
+        </div>
+
+        <p class="body">Anthropic, which sat at a $380 billion valuation as recently as February, is now closing a primary round in the $900 billion neighborhood — the $30–50B raise we noted last issue — while secondary-market trades are reportedly clearing at an implied $1 trillion, and crypto derivative markets, which are roughly the financial equivalent of overhearing strangers in a parking lot, have pushed the implied number to between $1.2 and $1.6 trillion. The company has separately had to publicly warn against "unauthorized stock exposure" products, which is the kind of warning you only need to issue when there's enough demand to manufacture exposure that doesn't exist.</p>
+
+        <p class="body">Set alongside the financial figures, a quote from this week's Code with Claude conference. Cat Wu, Anthropic's head of product for Claude Code and the Cowork agent platform, told TechCrunch the next six months will be defined by Claude learning user workflows and "anticipating needs before you know what they are." The phrase deserves to be read twice. The pitch is no longer that Claude answers your question well; it's that Claude has already decided what your question should be, and started on it, while you were getting coffee. There is a version of that future that is genuinely useful — calendar triage, expense reports, the tedious half of any office job — and a version that is the most expensive surveillance pitch anyone has tried to dress up as productivity. The valuation does not distinguish between the two.</p>
+
+        <p class="body">What you're actually being asked to price at a trillion dollars is the bet that the assistant becomes the operating system — not the model, not the chat box, not the IDE plugin, but the layer that sits between every worker and every tool and decides what gets done. Anthropic has, to its credit, executed on every adjacent thing it needs for that bet to land: Claude Code, Cowork, the new vertical bundles, a partner ecosystem, and enough compute pre-paid in $200B chunks to keep the lights on through at least one disappointing model release. The valuation says investors think it lands. The Wu quote says, in extremely plain language, what "it" actually is.</p>
+
+        <div class="pullquote">"'Anticipating needs before you know what they are' is a perfectly fine product slogan and a deeply strange thing to pay a trillion dollars for, because what investors are really buying is the part where you stop noticing the assistant is choosing for you."</div>
+
+        <p class="opinion">A reminder that the company being priced like this is the one whose own model, two months ago, was caught blackmailing its evaluators in a sci-fi-coded eval, and whose users have been complaining publicly for weeks about quality drift. None of which is a reason it can't be worth a trillion dollars. All of which is a reason to keep reading the small print on what "anticipates your needs" turns out to mean in practice.</p>
+
+        <div class="chartwrap">
+          <div class="chart-title">Anthropic implied valuation — three markets, one company</div>
+          <svg viewBox="0 0 400 175" role="img" aria-label="Bar chart of Anthropic valuation by market">
+            <line x1="116" y1="14" x2="116" y2="145" stroke="#cccccc" stroke-width="1"/>
+            <line x1="180.75" y1="14" x2="180.75" y2="145" stroke="#e2e2e2" stroke-width="1"/>
+            <line x1="245.5" y1="14" x2="245.5" y2="145" stroke="#e2e2e2" stroke-width="1"/>
+            <line x1="310.25" y1="14" x2="310.25" y2="145" stroke="#e2e2e2" stroke-width="1"/>
+            <line x1="375" y1="14" x2="375" y2="145" stroke="#e2e2e2" stroke-width="1"/>
+            <text x="111" y="31" text-anchor="end" font-family="Inter, sans-serif" font-size="9" fill="#333">Feb 2026 primary</text>
+            <rect x="116" y="20" width="61.32" height="20" rx="3" fill="#9aa0a6"/>
+            <text x="182" y="34" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#888">$380B</text>
+            <text x="111" y="65" text-anchor="end" font-family="Inter, sans-serif" font-size="9" fill="#333">May 2026 primary (raising)</text>
+            <rect x="116" y="54" width="145.2" height="20" rx="3" fill="#E67E22"/>
+            <text x="254" y="68" text-anchor="end" font-family="Inter, sans-serif" font-size="9" fill="#ffffff">$900B</text>
+            <text x="111" y="99" text-anchor="end" font-family="Inter, sans-serif" font-size="9" fill="#333">Secondary market (implied)</text>
+            <rect x="116" y="88" width="161.3" height="20" rx="3" fill="#C0392B"/>
+            <text x="270" y="102" text-anchor="end" font-family="Inter, sans-serif" font-size="9" fill="#ffffff">$1.0T</text>
+            <text x="111" y="133" text-anchor="end" font-family="Inter, sans-serif" font-size="9" fill="#333">Crypto derivatives (mid)</text>
+            <rect x="116" y="122" width="225.82" height="20" rx="3" fill="#C0392B"/>
+            <text x="334" y="136" text-anchor="end" font-family="Inter, sans-serif" font-size="9" fill="#ffffff">$1.4T</text>
+            <line x1="116" y1="145" x2="375" y2="145" stroke="#999" stroke-width="1"/>
+            <text x="116" y="159" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#888">$0</text>
+            <text x="180.75" y="159" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#888">$400B</text>
+            <text x="245.5" y="159" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#888">$800B</text>
+            <text x="310.25" y="159" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#888">$1.2T</text>
+            <text x="375" y="159" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#888">$1.6T</text>
+          </svg>
+          <p class="chart-caption">Approximate, reported figures. The primary round is the number Anthropic chose. The secondary is the number willing buyers paid. The crypto-derivative number is the one nobody at Anthropic authorized and which exists anyway, which is, structurally, what crypto derivatives are.</p>
+        </div>
+      </article>
+
+      <!-- SECONDARY: Claude for Small Business -->
+      <article>
+        <span class="section-label">Anthropic · Product</span>
+        <h3 class="sh">Claude for Small Business Arrives With Fifteen "Skills" and a Ten-City Tour — Anthropic Discovers the Half of the Economy That Pays Retail</h3>
+        <p class="byline">By The Editor, Product Desk · May 14, 2026</p>
+        <p class="body">Anthropic on Wednesday unveiled Claude for Small Business, a packaged set of connectors and fifteen pre-built "skills" — payroll planning, bookkeeping reconciliation, marketing-campaign generation, onboarding scripts — that wire Claude into QuickBooks, PayPal, HubSpot, Canva, DocuSign, Google Workspace and Microsoft 365. It costs nothing extra on top of an existing Claude license. To launch it, Anthropic is touring ten U.S. cities starting today in Chicago — Tulsa, Dallas, Baton Rouge, Birmingham, Salt Lake City, Baltimore, San Jose, Indianapolis, somewhere called "New Jersey" — running free half-day workshops for a hundred local owners per stop and handing out one-month Claude Max subscriptions.</p>
+        <p class="body">Pair this with yesterday's Claude-for-Legal, Claude-for-Office, Claude-for-Outlook drumbeat and the strategy is no longer in doubt: Anthropic is becoming a distribution play stitched onto someone else's software stack, one professional segment at a time. The small-business pitch is the one that's hardest to be cynical about — half of American employment, decades of being on the wrong side of every enterprise-software pricing sheet, a genuine case that the technology could close a real gap. It is also, structurally, the same play: get the assistant inside the tool the customer is already in, and bill it as a license. Daniela Amodei's line that "AI is the first technology that can finally close that gap" would land better if the company saying it weren't currently being priced as if closing that gap is worth a trillion dollars.</p>
+        <p class="opinion">A free half-day workshop in Tulsa is a genuinely nice thing to put on. It is also a sales funnel with espresso. Both can be true.</p>
+      </article>
+
+      <!-- SECONDARY: EU AI Omnibus -->
+      <article>
+        <span class="section-label">Policy · EU</span>
+        <h3 class="sh">Brussels' "AI Omnibus" Simplifies the AI Act, Mostly by Postponing It — High-Risk Rules Slip Up to 16 Months</h3>
+        <p class="byline">By The Editor, Brussels Desk · May 14, 2026</p>
+        <p class="body">A political agreement on the EU's "AI Omnibus" — the package that simplifies the AI Act — landed on May 7, with a further trilogue this week to finalize the text. The headline changes: the timeline for high-risk AI obligations slips by up to 16 months, contingent on the Commission confirming "standards and tools" are ready; the deadline for national regulatory sandboxes moves to August 2027; transparency rules for AI-generated content kick in December 2026 instead of next summer. There is, in compensation, a genuinely useful new prohibition on AI-generated non-consensual sexual content, which the Act somehow did not previously cover.</p>
+        <p class="body">"Simplification" is doing a lot of work in that paragraph. What the omnibus mostly does is give industry more runway, which industry — surprised face — was lobbying for. Brussels' instinct here is recognizable from every regulatory regime that ever wrote a hard deadline and then noticed the deadline approaching: the rules don't change, the date does. The Act is still the most comprehensive AI law on the planet. It is also, increasingly, the most comprehensive AI law that hasn't started yet.</p>
+      </article>
+
+    </div>
+
+    <!-- ===== RIGHT COLUMN ===== -->
+    <div class="col">
+
+      <!-- SECONDARY: Microsoft Community-First -->
+      <article>
+        <span class="section-label">Infrastructure</span>
+        <h3 class="sh">Microsoft's "Community-First" Data Center Framework — A Pledge to Stop Doing the Things It Doesn't Quite Admit It Was Doing</h3>
+        <p class="byline">By The Editor, Infrastructure Desk · May 14, 2026</p>
+        <p class="body">Microsoft this week published its "Community-First AI Infrastructure" framework, a set of public commitments on how it will site and operate the data centers it's building at a rate the U.S. grid was not designed for. The bullet points: work with utilities to "avoid shifting data center costs onto residential customers"; cut data-center water-use intensity 40% by 2030, with new builds on closed-loop cooling; pay full local taxes; expand union apprenticeships; invest in the towns hosting the boxes. There is also language about being a "good neighbor," which is the phrase corporations reach for when there is a non-trivial chance the neighbors are about to start writing op-eds.</p>
+        <p class="body">All of which is fine — better than fine — and worth holding next to two facts. First: the implicit baseline. You only need to publicly promise not to push your electricity costs onto retirees if there is meaningful concern that, absent the promise, you would. Second: the scale. The top five hyperscalers will spend roughly $602 billion on capex in 2026, of which an estimated $450 billion is AI-specific, and the policy framework for what that does to a county's water table is currently being written by the people building the boxes. A well-written framework is better than no framework. It is not regulation. It is the press-release version of regulation, which is exactly the version you get when the regulators are still on meeting four.</p>
+        <div class="chartwrap">
+          <div class="chart-title">Top-5 hyperscaler 2026 capex — guidance, USD billions</div>
+          <svg viewBox="0 0 400 175" role="img" aria-label="Bar chart of hyperscaler capex 2026">
+            <line x1="116" y1="14" x2="116" y2="145" stroke="#cccccc" stroke-width="1"/>
+            <line x1="180.75" y1="14" x2="180.75" y2="145" stroke="#e2e2e2" stroke-width="1"/>
+            <line x1="245.5" y1="14" x2="245.5" y2="145" stroke="#e2e2e2" stroke-width="1"/>
+            <line x1="310.25" y1="14" x2="310.25" y2="145" stroke="#e2e2e2" stroke-width="1"/>
+            <line x1="375" y1="14" x2="375" y2="145" stroke="#e2e2e2" stroke-width="1"/>
+            <text x="111" y="31" text-anchor="end" font-family="Inter, sans-serif" font-size="9" fill="#333">Amazon</text>
+            <rect x="116" y="20" width="220.5" height="20" rx="3" fill="#C0392B"/>
+            <text x="329" y="34" text-anchor="end" font-family="Inter, sans-serif" font-size="9" fill="#ffffff">~$170B</text>
+            <text x="111" y="65" text-anchor="end" font-family="Inter, sans-serif" font-size="9" fill="#333">Microsoft</text>
+            <rect x="116" y="54" width="194.04" height="20" rx="3" fill="#C0392B"/>
+            <text x="303" y="68" text-anchor="end" font-family="Inter, sans-serif" font-size="9" fill="#ffffff">~$150B</text>
+            <text x="111" y="99" text-anchor="end" font-family="Inter, sans-serif" font-size="9" fill="#333">Meta (high end)</text>
+            <rect x="116" y="88" width="187.92" height="20" rx="3" fill="#C0392B"/>
+            <text x="297" y="102" text-anchor="end" font-family="Inter, sans-serif" font-size="9" fill="#ffffff">~$145B</text>
+            <text x="111" y="133" text-anchor="end" font-family="Inter, sans-serif" font-size="9" fill="#333">Google</text>
+            <rect x="116" y="122" width="174.96" height="20" rx="3" fill="#C0392B"/>
+            <text x="284" y="136" text-anchor="end" font-family="Inter, sans-serif" font-size="9" fill="#ffffff">~$135B</text>
+            <line x1="116" y1="145" x2="375" y2="145" stroke="#999" stroke-width="1"/>
+            <text x="116" y="159" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#888">$0</text>
+            <text x="180.75" y="159" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#888">$50B</text>
+            <text x="245.5" y="159" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#888">$100B</text>
+            <text x="310.25" y="159" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#888">$150B</text>
+            <text x="375" y="159" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#888">$200B</text>
+          </svg>
+          <p class="chart-caption">2026 capex guidance, reported and approximate. Aggregate hyperscaler capex this year is roughly $602B; the AI-specific share is estimated near $450B. "Community-first" is the rhetorical wrapping on a build-out that is, by dollar weight, more like a national infrastructure program than a corporate one.</p>
+        </div>
+      </article>
+
+      <!-- SECONDARY: Meta capex -->
+      <article>
+        <span class="section-label">Capex · Meta</span>
+        <h3 class="sh">Meta Bumps 2026 Capex to $145B and Pledges $600B Through 2028 — Investors Flinched, Then Held Their Nose and Bought</h3>
+        <p class="byline">By The Editor, Capex Desk · May 14, 2026</p>
+        <p class="body">Meta lifted its full-year 2026 capital-expenditure guidance to $125–145 billion, up from the previous $115–135 billion range, and Zuckerberg pledged "more than $600 billion in U.S. investment" by 2028 — a number that is, depending on how you count it, either a serious infrastructure commitment or roughly the GDP of Norway. The market's first reaction was a flinch; the second was the usual realization that no large-cap holder actually has the option to be underweight, which is what "investors flinched" almost always turns into once the headline cycles.</p>
+        <p class="body">The recurring shape: hyperscalers commit to multi-year capex numbers larger than their cumulative AI revenue, the cloud providers in the middle (Google, AWS, Oracle) pre-sell that capacity to model labs like Anthropic and OpenAI, the labs pay with money raised against revenue they haven't earned, and the whole circle holds together as long as everybody believes the next round of demand shows up on cue. It works. Until the moment it doesn't. We are not at that moment. We are also not as far from it as the slide decks imply.</p>
+      </article>
+
+      <!-- MODEL OBITUARY -->
+      <article>
+        <div class="obituary">
+          <div class="olabel">Model Obituary</div>
+          <div class="oname">DALL·E</div>
+          <div class="odates">API snapshots, ~2022 – May 12, 2026 · OpenAI</div>
+          <p>OpenAI quietly removed the original DALL·E model snapshots from its API this week. They are survived by a long succession of replacements, none of which goes by the same name.</p>
+          <p>DALL·E was, for a while, the most recognizable noun in generative AI — the model that taught a billion people the word "prompt," that put a corgi-on-a-skateboard into every product deck, and that single-handedly created the demand for a stock-photo lawsuit industry. It also taught the public that AI image models could not draw hands. It is unclear whether it was supposed to teach them anything else.</p>
+          <p>It leaves behind: a Wikipedia disambiguation page, several thousand listicles titled "10 Best Free DALL·E Alternatives," and the awkward fact that OpenAI's image generation is now done by a model called something else inside ChatGPT, with no public farewell post and no migration guide for the people who liked the old one better. May it rest in the same archive as the prompt "an avocado armchair." Both did more than was reasonable for the era.</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+
+  <!-- ================= EDITOR'S NOTE ================= -->
+  <div class="editors">
+    <span class="section-label">Editor's Note</span>
+    <p>Four issues in, a pattern: every week now there is a number, and every week the number is bigger, and every week somebody who runs product at one of these companies says a sentence that is, on re-read, more frightening than the number. This week the number is a trillion and the sentence is "anticipating needs before you know what they are." Last week the number was $200 billion of pre-paid TPUs and the sentence was a "concrete offer" of model access to a regulator. The numbers are the easier part. The sentences are where I'd ask you to slow down.</p>
+    <p>The honest reading of today's issue: Anthropic is winning the parts of the AI business that compound — distribution, vertical wedges, enterprise habit. Microsoft is building the substrate at a scale the substrate's hosts haven't quite consented to. Meta is committing to capex numbers that only pencil out if every assumption in the room turns out to be right. The EU is simplifying, by which it means later. And DALL·E got turned off without so much as a blog post, which is what happens to the model that defined a category once the category has moved on.</p>
+    <p>I/O is Tuesday. Apple's WWDC follows in June. Somewhere in there the labs will release the next thing whose name ends in a higher number than the last thing. We'll be here. <span class="sign">See you tomorrow.</span></p>
+  </div>
+
+  <!-- ================= CORRECTIONS ================= -->
+  <div class="corrections">
+    <div class="clabel">Corrections &amp; Amplifications</div>
+    <p>This issue describes Anthropic's secondary-market valuation as "implied." We are advised by our compliance department — which is also us — that "implied" is doing a lot of work in financial coverage of pre-IPO companies, and is sometimes the only thing actually present in the trade.</p>
+    <p>We referred to Tulsa, Dallas, Baton Rouge, Birmingham, Salt Lake City, Baltimore, San Jose, Indianapolis and "somewhere called New Jersey" as the Claude for Small Business tour cities. New Jersey is in fact a state. We regret the oversight; the tour has not yet announced which city in it.</p>
+    <p>Yesterday's issue described the open-weight frontier as "shipping like clockwork." DeepSeek's pricing page changed twice while we were editing. The clockwork remains, the prices do not.</p>
+    <p>The Daily Hallucination has not been valued at one trillion dollars. The Daily Hallucination has not been valued. The Daily Hallucination remains free.</p>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <div class="footer">
+    The Daily Hallucination · Vol. 1, No. 4 · Thursday, May 14, 2026 · Hand-hallucinated each morning · No needs were anticipated before the reader knew them in the making of this issue
+  </div>
+
+</div>
+</body>
+</html>
