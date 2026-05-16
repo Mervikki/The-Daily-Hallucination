@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Daily Hallucination – Saturday, May 16, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Serif+4:ital,wght@0,400;0,600;1,400;1,600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #F5F0E8;
+    color: #0D0D0D;
+    font-family: 'Source Serif 4', Georgia, serif;
+    line-height: 1.5;
+    padding: 24px 16px 60px;
+  }
+  .paper {
+    max-width: 920px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 36px 44px 44px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+  }
+
+  /* ---------- MASTHEAD ---------- */
+  .masthead { text-align: center; }
+  .masthead h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-size: 3.4rem;
+    line-height: 1.02;
+    color: #0D0D0D;
+  }
+  .masthead .accent { border: none; border-top: 4px solid #C0392B; width: 56px; margin: 10px auto 0; }
+  .masthead .rule3 { border: none; border-top: 3px solid #0D0D0D; margin: 8px auto 0; }
+  .masthead .tagline { font-style: italic; color: #888888; font-size: 0.95rem; margin-top: 8px; }
+  .masthead .thin { border: none; border-top: 1px solid #cccccc; margin: 8px auto; }
+  .masthead .dateline {
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 0.7rem;
+    color: #888888;
+  }
+
+  /* ---------- TODAY AT A GLANCE ---------- */
+  .glance { width: 100%; border-collapse: collapse; margin: 28px 0 30px; font-family: 'Source Serif 4', serif; }
+  .glance th {
+    background: #1a2744; color: #ffffff;
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.16em;
+    font-size: 0.74rem; text-align: left; padding: 9px 12px;
+  }
+  .glance td { background: #F5F0E8; padding: 8px 12px; font-size: 0.86rem; border-bottom: 2px solid #ffffff; vertical-align: top; }
+  .glance td.topic {
+    font-weight: 700; font-family: 'Inter', sans-serif;
+    font-size: 0.74rem; text-transform: uppercase;
+    letter-spacing: 0.04em; width: 150px; color: #1a2744;
+  }
+
+  /* ---------- TWO-COLUMN BODY ---------- */
+  .body-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+  .body-grid > .col:first-child { padding-right: 26px; border-right: 1px solid #cccccc; }
+  .body-grid > .col:last-child { padding-left: 26px; }
+  .col article { margin-bottom: 26px; }
+  .col article:last-child { margin-bottom: 0; }
+
+  .section-label {
+    display: inline-block; background: #1a2744; color: #ffffff;
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    font-size: 0.62rem; padding: 3px 7px; margin-bottom: 7px;
+  }
+  .hl { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.4rem; line-height: 1.16; margin-bottom: 5px; }
+  .sh { font-family: 'Inter', sans-serif; font-weight: 700; font-size: 0.93rem; line-height: 1.25; margin-bottom: 5px; }
+  .byline { font-family: 'Inter', sans-serif; font-style: italic; font-size: 0.72rem; color: #888888; margin-bottom: 8px; }
+  .col p.body { font-size: 0.88rem; text-align: justify; hyphens: auto; -webkit-hyphens: auto; margin-bottom: 8px; }
+  p.opinion {
+    font-style: italic; border-left: 2px solid #dddddd;
+    padding-left: 12px; margin: 8px 0 8px 8px; font-size: 0.86rem;
+  }
+  .pullquote {
+    background: #F5F0E8; border: 1px solid #C0392B; border-left: 4px solid #C0392B;
+    color: #C0392B; font-style: italic; text-align: center;
+    font-size: 0.98rem; line-height: 1.35; padding: 12px 16px; margin: 12px 0;
+  }
+  .rating { background: #f1f1f1; border-left: 3px solid #dddddd; padding: 8px 12px; margin: 10px 0; font-family: 'Inter', sans-serif; }
+  .rating .rlabel { font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.62rem; color: #555555; display: inline-block; width: 78px; }
+  .rating .dots { letter-spacing: 1px; font-size: 0.8rem; }
+  .dot-f { color: #C0392B; }
+  .dot-e { color: #C0392B; opacity: 0.32; }
+  .rrow { display: flex; align-items: center; margin: 2px 0; }
+
+  .chartwrap { margin: 12px 0; }
+  .chartwrap svg { width: 100%; height: auto; display: block; }
+  .chart-caption { font-style: italic; font-size: 0.72rem; color: #888888; margin-top: 3px; }
+  .chart-title {
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.07em;
+    font-size: 0.64rem; color: #1a2744; margin-bottom: 4px;
+  }
+
+  /* ---------- EDITOR'S NOTE ---------- */
+  .editors { background: #1a2744; color: #f3efe6; padding: 22px 26px; margin: 30px 0 0; }
+  .editors .section-label { background: #C0392B; color: #ffffff; }
+  .editors p { font-family: 'Source Serif 4', serif; font-style: italic; font-size: 0.92rem; line-height: 1.55; margin-bottom: 9px; }
+  .editors p:last-child { margin-bottom: 0; }
+  .editors .sign { font-style: italic; color: #b9c2d6; }
+
+  /* ---------- CORRECTIONS ---------- */
+  .corrections { background: #f1f1f1; border: 1px solid #cccccc; padding: 12px 16px; margin: 22px 0 0; font-size: 0.82rem; }
+  .corrections .clabel { font-family: 'Inter', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.62rem; color: #C0392B; margin-bottom: 5px; }
+  .corrections p { margin-bottom: 6px; font-style: italic; }
+  .corrections p:last-child { margin-bottom: 0; }
+
+  /* ---------- FOOTER ---------- */
+  .footer {
+    border-top: 1px solid #0D0D0D; margin-top: 30px; padding-top: 12px;
+    text-align: center; font-family: 'Inter', sans-serif;
+    text-transform: uppercase; letter-spacing: 0.14em;
+    font-size: 0.62rem; color: #888888;
+  }
+
+  @media (max-width: 680px) {
+    .paper { padding: 24px 18px 30px; }
+    .masthead h1 { font-size: 2.1rem; }
+    .body-grid { grid-template-columns: 1fr; }
+    .body-grid > .col:first-child {
+      padding-right: 0; border-right: none;
+      border-bottom: 1px solid #cccccc;
+      padding-bottom: 26px; margin-bottom: 26px;
+    }
+    .body-grid > .col:last-child { padding-left: 0; }
+    .glance td.topic { width: 110px; }
+  }
+</style>
+</head>
+<body>
+<div class="paper">
+
+  <!-- ================= MASTHEAD ================= -->
+  <header class="masthead">
+    <h1>The Daily Hallucination</h1>
+    <hr class="accent">
+    <hr class="rule3">
+    <p class="tagline">An AI &amp; tech daily that says the quiet part — out loud, in a serif font.</p>
+    <hr class="thin">
+    <p class="dateline">Saturday, May 16, 2026 &nbsp;·&nbsp; Vol. 1, No. 6</p>
+  </header>
+
+  <!-- ================= TODAY AT A GLANCE ================= -->
+  <table class="glance">
+    <tr><th colspan="2">Today at a Glance</th></tr>
+    <tr><td class="topic">Anthropic / Reversal</td><td>OpenClaw, Hermes and the rest of the third-party agent shelf are reinstated on Claude Pro and Max subscriptions — but only against the new metered credit pool, with no spillover into chat limits. Anthropic calls this "simplification." Several thousand subscribers, in writing, used a different word.</td></tr>
+    <tr><td class="topic">Microsoft / Claude</td><td>Follow-up reporting on the internal Claude Code cancellation lands on the phrase "perhaps a little too popular" — the kind of compliment a procurement department pays a vendor it is about to fire.</td></tr>
+    <tr><td class="topic">OpenAI / Friday</td><td>In one calendar day OpenAI launched ChatGPT Personal Finance (Plaid, 12,000+ institutions) in US Pro preview, listed GPT-5.5 and Codex on AWS Bedrock, and let CFO Sarah Friar tell reporters more capital is coming. The week's busiest distribution office was not in Redmond.</td></tr>
+    <tr><td class="topic">Google / Pre-I/O</td><td>Two leaks — a "Powered by Omni" string in the Gemini video tab and a "Spark" autonomous agent for Gmail and Docs — are doing the keynote's job three days early. I/O is Tuesday.</td></tr>
+    <tr><td class="topic">Open Agents / Hermes</td><td>Nous Research's Hermes Agent passed OpenClaw on OpenRouter's global daily rankings — 224B daily tokens to 186B — after a 588-PR security-and-durability release shipped without a press tour.</td></tr>
+    <tr><td class="topic">xAI / Grok Build</td><td>The Grok Build beta opened beyond its $299-a-month gate. Musk pushed the link personally and a meaningful number of Claude Code subscribers are reportedly trying it this weekend.</td></tr>
+  </table>
+
+  <!-- ================= BODY ================= -->
+  <div class="body-grid">
+
+    <!-- ===== LEFT COLUMN ===== -->
+    <div class="col">
+
+      <!-- LEAD STORY -->
+      <article>
+        <span class="section-label">Anthropic · Reversal</span>
+        <h2 class="hl">Anthropic Lets Third-Party Agents Back In — Through the Side Door It Just Installed</h2>
+        <p class="byline">By The Editor, Pricing Desk · May 16, 2026</p>
+
+        <div class="rating">
+          <div class="rrow"><span class="rlabel">Hype</span><span class="dots"><span class="dot-f">●</span><span class="dot-f">●</span><span class="dot-f">●</span><span class="dot-e">○</span><span class="dot-e">○</span></span></div>
+          <div class="rrow"><span class="rlabel">Impact</span><span class="dots"><span class="dot-f">●</span><span class="dot-f">●</span><span class="dot-f">●</span><span class="dot-f">●</span><span class="dot-e">○</span></span></div>
+        </div>
+
+        <p class="body">Less than forty-eight hours after announcing that every agent harness on the planet — Agent SDK, GitHub Actions, Hermes, OpenClaw, the entire catalog — would be carved off Claude subscriptions and onto a metered credit pool starting June 15, Anthropic clarified on Friday that third-party agents would in fact remain usable on Claude Pro and Max subscriptions. The catch: they draw from the same separate credit allowance Anthropic introduced on Wednesday, with no spillover into chat limits and no rollover between months. The announcement is being reported as a reversal. It is closer to a restatement in a slightly thinner sweater.</p>
+
+        <p class="body">The actual mechanics moved by approximately zero. Heavy agent users will still hit the credit cap, will still face overage at API rates, and will still need to choose between paying twice and paying a meter. What changed is the cosmetic layer: where Wednesday's announcement implied third-party agents were locked out of Claude subscriptions entirely, Friday's clarifies they were always invited — to the new, smaller room. Anthropic is calling this "simplification." The OpenClaw maintainers, who had spent thirty-six hours rewriting their docs to assume their users were now on raw API billing, are calling it something rhymes-with-simplification.</p>
+
+        <p class="body">The interesting question is what Anthropic believes its enterprise customers heard. If the answer is "we restructured pricing in a way that protects the unit economics" — fine, defensible, eventually quoted in a Q3 earnings deck. If the answer is "we made the change without losing anyone" — premature, by exactly the amount that xAI shipped Grok Build to anyone with a card on file the same week and Codex CLI passed one million developers last month. Subscribers do not need a reversal. They need the new monthly number to be smaller than the price of leaving.</p>
+
+        <div class="pullquote">"Anthropic is calling this 'simplification.' Several thousand subscribers, in writing, used a different word."</div>
+
+        <p class="opinion">The cleanest read on the week: Anthropic made the pricing decision it had to make, packaged it as something it wasn't, took the resulting damage, and then reframed exactly the same product as a kindness once the damage had been done. This is not a U-turn. It is the same announcement made twice, with the second version louder because the first one landed badly. The credit pool still exists. The meter still starts June 15. The reversal is a tone.</p>
+      </article>
+
+      <!-- SECONDARY: Microsoft follow-up -->
+      <article>
+        <span class="section-label">Microsoft · Claude</span>
+        <h3 class="sh">Microsoft's Internal Cancellation Was "Perhaps a Little Too Popular" — Translated, Expensive</h3>
+        <p class="byline">By The Editor, Redmond Desk · May 16, 2026</p>
+        <p class="body">Follow-up reporting from Thurrott, Windows Central, TechRadar and AIBase confirms what Friday's first round implied: Microsoft's decision to wind down internal Claude Code use across the Experiences + Devices org is not a quality call. It is a procurement call. Engineers liked the product. The accounts-payable team noticed how much they liked it, did the multiplication, and noticed harder.</p>
+        <p class="body">The phrase being repeated by multiple sources — that Claude Code was "perhaps a little too popular" inside Microsoft — is the kind of damning praise a company normally reserves for the contractor whose invoices keep getting flagged. Microsoft sells Copilot. Microsoft pays Anthropic per token. The first number was supposed to be the one that grew. Internally, the second one was. The June 30 cutoff lines up with the end of fiscal year and the start of a Copilot-adoption metric somebody now has to deliver.</p>
+        <p class="opinion">"Unified telemetry" was Friday's framing. "Too popular" is Saturday's. Pick the one you'd put in a contract renewal.</p>
+      </article>
+
+      <!-- SECONDARY: Hermes -->
+      <article>
+        <span class="section-label">Open Agents · Hermes</span>
+        <h3 class="sh">Hermes Quietly Overtook OpenClaw on OpenRouter — Without a Press Release, Which Is the Point</h3>
+        <p class="byline">By The Editor, Agents Desk · May 16, 2026</p>
+        <p class="body">Nous Research's Hermes Agent — the open-source, self-improving framework with the Discord-first deployment story — passed OpenClaw on OpenRouter's global daily app/agent ranking on May 10 and has held the position since. The numbers: 224 billion daily inference tokens to OpenClaw's 186 billion. The release that put it there, v0.13.0 ("Tenacity"), shipped May 7 with 588 merged PRs from 295 contributors, eight P0 security fixes (redaction-by-default, scoped Discord allowlists, WhatsApp stranger rejection, TOCTOU patches), durable Kanban with zombie-process detection and hallucination recovery, and persistent goal tracking that survives container restarts.</p>
+        <p class="body">OpenRouter's ranking is not the global agent leaderboard — it measures only the volume passing through OpenRouter's router. It is, however, the only public number that approximates how much real inference each agent is generating in the wild. Hermes is now at the top of it, run by a project with no marketing department, no enterprise sales team, and no pricing change to defend on Twitter.</p>
+
+        <div class="chartwrap">
+          <div class="chart-title">OpenRouter daily inference tokens — top open agents</div>
+          <svg viewBox="0 0 400 130" role="img" aria-label="Bar chart of daily inference tokens by agent on OpenRouter">
+            <line x1="116" y1="14" x2="116" y2="100" stroke="#cccccc" stroke-width="1"/>
+            <line x1="180.75" y1="14" x2="180.75" y2="100" stroke="#e2e2e2" stroke-width="1"/>
+            <line x1="245.5" y1="14" x2="245.5" y2="100" stroke="#e2e2e2" stroke-width="1"/>
+            <line x1="310.25" y1="14" x2="310.25" y2="100" stroke="#e2e2e2" stroke-width="1"/>
+            <line x1="375" y1="14" x2="375" y2="100" stroke="#e2e2e2" stroke-width="1"/>
+
+            <text x="111" y="31" text-anchor="end" font-family="Inter, sans-serif" font-size="9" fill="#333">Hermes Agent</text>
+            <rect x="116" y="20" width="231" height="20" rx="3" fill="#C0392B"/>
+            <text x="341" y="34" text-anchor="end" font-family="Inter, sans-serif" font-size="9" fill="#ffffff">224B</text>
+
+            <text x="111" y="59" text-anchor="end" font-family="Inter, sans-serif" font-size="9" fill="#333">OpenClaw</text>
+            <rect x="116" y="48" width="192" height="20" rx="3" fill="#E67E22"/>
+            <text x="302" y="62" text-anchor="end" font-family="Inter, sans-serif" font-size="9" fill="#ffffff">186B</text>
+
+            <text x="111" y="87" text-anchor="end" font-family="Inter, sans-serif" font-size="9" fill="#333">Other agents (est. combined)</text>
+            <rect x="116" y="76" width="155" height="20" rx="3" fill="#9aa0a6"/>
+            <text x="277" y="90" text-anchor="start" font-family="Inter, sans-serif" font-size="9" fill="#888">~150B</text>
+
+            <line x1="116" y1="100" x2="375" y2="100" stroke="#999" stroke-width="1"/>
+            <text x="116" y="114" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#888">0B</text>
+            <text x="180.75" y="114" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#888">65B</text>
+            <text x="245.5" y="114" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#888">130B</text>
+            <text x="310.25" y="114" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#888">195B</text>
+            <text x="375" y="114" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#888">260B</text>
+          </svg>
+          <p class="chart-caption">Daily inference tokens routed through OpenRouter, May 14. Hermes is at the top by ~20%. The "other agents" bar combines the remainder of the top-ten with rough estimates from public dashboards.</p>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- ===== RIGHT COLUMN ===== -->
+    <div class="col">
+
+      <!-- SECONDARY-LEAD: OpenAI Friday spree -->
+      <article>
+        <span class="section-label">OpenAI · Distribution</span>
+        <h2 class="hl">OpenAI Spends Friday Shipping Three Products and a Funding Hint</h2>
+        <p class="byline">By The Editor, Platforms Desk · May 16, 2026</p>
+
+        <div class="rating">
+          <div class="rrow"><span class="rlabel">Hype</span><span class="dots"><span class="dot-f">●</span><span class="dot-f">●</span><span class="dot-f">●</span><span class="dot-f">●</span><span class="dot-e">○</span></span></div>
+          <div class="rrow"><span class="rlabel">Impact</span><span class="dots"><span class="dot-f">●</span><span class="dot-f">●</span><span class="dot-f">●</span><span class="dot-f">●</span><span class="dot-e">○</span></span></div>
+        </div>
+
+        <p class="body">On the same Friday that Anthropic was clarifying its reversal-that-wasn't, OpenAI shipped three things and let a fourth slip: ChatGPT Personal Finance, in US Pro preview, with a Plaid integration covering 12,000+ institutions including Schwab, Fidelity, Chase, Robinhood and every major card network; GPT-5.5, Codex and the Managed Agents product listed on AWS Bedrock — a notable crack in the Microsoft-Azure-only narrative — and, via CFO Sarah Friar speaking to reporters, the confirmation that "compute demand" is going to push the company to raise more capital before year-end.</p>
+
+        <p class="body">Personal Finance is the part to watch. Plaid is the integration that pulls a consumer's spending, holdings, debt, subscriptions and upcoming bills into a single context window the model can reason over. The privacy implications are exactly the ones you are picturing. The product implications are that OpenAI now owns the layer above your bank account, the bank's own app, and Mint (if Mint still existed, which it does not). The reason 12,000 institutions said yes is that ChatGPT has 800 million weekly users and Plaid has every institution, and the answer to "what's the alternative" was empty.</p>
+
+        <p class="body">The Bedrock listing is the geopolitically interesting one. Microsoft still owns the Azure right of first refusal under its restructured OpenAI agreement, but "first refusal" only matters if the refusal happens. AWS shipping GPT-5.5, Codex and Managed Agents through Bedrock means Amazon got the unrefused offer — which, on a week when Microsoft is also pulling Claude licenses internally, is its own form of news. OpenAI's strategy is suddenly legible from orbit: do not be locked into anyone, and do not let anyone be locked into you.</p>
+
+        <div class="pullquote">"A company that just lawyered up against its other distribution partner is now distributing through its largest infrastructure rival on a Friday afternoon."</div>
+
+        <p class="opinion">The funding hint is the part Friar wanted in the story and did not want a headline on. "We may need more capital" from a company that has already raised more capital than most national defense budgets is not a request — it is a temperature check on whether the bond market or the sovereign wealth pool wants to be the one quoted. Either one will say yes by August.</p>
+      </article>
+
+      <!-- SECONDARY: Google I/O preview -->
+      <article>
+        <span class="section-label">Google · Pre-I/O</span>
+        <h3 class="sh">Google I/O Is Tuesday, and the Leaks Are Already Doing the Keynote's Job</h3>
+        <p class="byline">By The Editor, Mountain View Desk · May 16, 2026</p>
+        <p class="body">Two strings, leaked from inside Gemini's web UI in the past two weeks, are doing more work than Google's pre-event PR team probably intended. The first: "Powered by Omni," spotted in the Gemini video tab on May 2, which optimists read as a true unified text-image-video-audio model and pessimists read as a marketing rename of Veo 3.1. The second, surfacing on Android Headlines this week: "Spark," reportedly an autonomous multi-step agent for Gmail and Docs that builds reusable skills and acts without per-step approval.</p>
+        <p class="body">Both, if real, land Tuesday at an awkward moment for the company that already had a difficult Wednesday. If Omni is what its name implies, Google would be the first frontier lab to ship a genuinely unified-modality model. If Spark is what the leak suggests, Google would be the first frontier lab to drop a real personal agent into a billion-user mailbox without making users click "approve" on every step — and the first to have to explain, on a stage, what happens when it sends the wrong email.</p>
+        <p class="opinion">The likelier shape of Tuesday is that one of these is real and the other is aspirational, and Google announces both anyway with the word "early access" between them. We will know in seventy-two hours.</p>
+      </article>
+
+      <!-- SECONDARY: Grok Build paywall down -->
+      <article>
+        <span class="section-label">xAI · Adoption</span>
+        <h3 class="sh">Grok Build's Paywall Came Down — A Day After the One It Was Targeting Went Up</h3>
+        <p class="byline">By The Editor, Coding Desk · May 16, 2026</p>
+        <p class="body">xAI opened the Grok Build beta beyond its $299-a-month SuperGrok Heavy gate yesterday, with Musk personally pushing the link on X (~1.5 million views inside an hour). The "early Grok Build (anything) beta" is the new tier: anyone with a Grok account can apply, with capacity throttled rather than locked. The introductory $99-a-month pricing remains in place for six months, which is still a third of Claude Max 20x. The product remains an eight-agent CLI with a 2M context window and Plan Mode review on top of a 16-agent Heavy harness.</p>
+        <p class="body">A meaningful number of Claude Code subscribers are reportedly trying it this weekend. None of them have published a write-up yet, which is itself a data point: the people most likely to migrate are the ones most willing to test silently. Anthropic will get the migration number in two release cycles. xAI is hoping it has already happened.</p>
+      </article>
+
+    </div>
+  </div>
+
+  <!-- ================= EDITOR'S NOTE ================= -->
+  <div class="editors">
+    <span class="section-label">Editor's Note</span>
+    <p>Six issues in, and a pattern has finally settled into the week: the labs have stopped pretending they have unlimited compute and started pretending their pricing has always reflected that. Wednesday's metering announcement and Friday's "clarification" are the same product change with two different press releases attached. The product change is fine. The two press releases are an admission that nobody at Anthropic knew which one was going to land — and so they wrote both, and shipped them in order of how much each one stung.</p>
+    <p>OpenAI is running the opposite play: ship three things on a Friday afternoon, let the CFO hint at a raise on the way out, and let everyone else write your week for you. ChatGPT-on-Bedrock and ChatGPT-in-your-bank-account are not, individually, generational moves. Together, on the same day, they are a company expanding distribution in two directions while its biggest rival is busy explaining why a clarification is not a reversal. Google has the floor on Tuesday and the leaks have already done some of the work; whether the leaks are also the entire announcement is the open question.</p>
+    <p>If the lesson of the week is anything, it is this: the AI distribution layer is now where the actual fight lives. Models still matter — they always will — but the action in May 2026 is who you can reach, on whose hardware, for how much, and under what contract. The labs that win the next twelve months will be the ones that get all four of those numbers right. The labs that lose will be the ones that get any one of them wrong twice in the same week. <span class="sign">See you tomorrow.</span></p>
+  </div>
+
+  <!-- ================= CORRECTIONS ================= -->
+  <div class="corrections">
+    <div class="clabel">Corrections &amp; Amplifications</div>
+    <p>This issue uses the word "reversal" in the headline of the lead story and the word "restatement" in the body of the lead story. Both are technically correct. A reader who only reads the headline gets the version Anthropic would like to be in print. A reader who reads the body gets the other version. We regret only that it cannot be both at once, which appears to have been the original plan.</p>
+    <p>We described OpenAI's CFO as "hinting" at a capital raise. A previous draft described her as "telegraphing." A previous-previous draft described her as "auctioning." Our legal team — still us — settled on "hinting" on the grounds that all three were defensible and only one of them was polite.</p>
+    <p>An earlier version of the Hermes chart estimated the "other agents combined" bar at ~150B daily tokens. This estimate is based on rough extrapolation from public OpenRouter dashboards and the assumption that anyone shipping an agent in 2026 with no telemetry has at least heard of the word. If you operate one of the agents we have aggregated into a single gray bar, we apologize, and would like to remind you that being aggregated into a single gray bar is a competitive position.</p>
+    <p>The Daily Hallucination's coverage of Google I/O on Tuesday will be filed Wednesday morning, which is to say after both the keynote and the inevitable second keynote that contradicts the first. We thank our readers in advance for their patience.</p>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <div class="footer">
+    The Daily Hallucination · Vol. 1, No. 6 · Saturday, May 16, 2026 · Hand-hallucinated each morning · No clarifications have been issued about this issue, yet
+  </div>
+
+</div>
+</body>
+</html>
