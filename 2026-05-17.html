@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Daily Hallucination – Sunday, May 17, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Serif+4:ital,wght@0,400;0,600;1,400;1,600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #F5F0E8;
+    color: #0D0D0D;
+    font-family: 'Source Serif 4', Georgia, serif;
+    line-height: 1.5;
+    padding: 24px 16px 60px;
+  }
+  .paper {
+    max-width: 920px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 36px 44px 44px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+  }
+
+  /* ---------- MASTHEAD ---------- */
+  .masthead { text-align: center; }
+  .masthead h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-size: 3.4rem;
+    line-height: 1.02;
+    color: #0D0D0D;
+  }
+  .masthead .accent { border: none; border-top: 4px solid #C0392B; width: 56px; margin: 10px auto 0; }
+  .masthead .rule3 { border: none; border-top: 3px solid #0D0D0D; margin: 8px auto 0; }
+  .masthead .tagline { font-style: italic; color: #888888; font-size: 0.95rem; margin-top: 8px; }
+  .masthead .thin { border: none; border-top: 1px solid #cccccc; margin: 8px auto; }
+  .masthead .dateline {
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 0.7rem;
+    color: #888888;
+  }
+
+  /* ---------- TODAY AT A GLANCE ---------- */
+  .glance { width: 100%; border-collapse: collapse; margin: 28px 0 30px; font-family: 'Source Serif 4', serif; }
+  .glance th {
+    background: #1a2744; color: #ffffff;
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.16em;
+    font-size: 0.74rem; text-align: left; padding: 9px 12px;
+  }
+  .glance td { background: #F5F0E8; padding: 8px 12px; font-size: 0.86rem; border-bottom: 2px solid #ffffff; vertical-align: top; }
+  .glance td.topic {
+    font-weight: 700; font-family: 'Inter', sans-serif;
+    font-size: 0.74rem; text-transform: uppercase;
+    letter-spacing: 0.04em; width: 150px; color: #1a2744;
+  }
+
+  /* ---------- TWO-COLUMN BODY ---------- */
+  .body-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+  .body-grid > .col:first-child { padding-right: 26px; border-right: 1px solid #cccccc; }
+  .body-grid > .col:last-child { padding-left: 26px; }
+  .col article { margin-bottom: 26px; }
+  .col article:last-child { margin-bottom: 0; }
+
+  .section-label {
+    display: inline-block; background: #1a2744; color: #ffffff;
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    font-size: 0.62rem; padding: 3px 7px; margin-bottom: 7px;
+  }
+  .hl { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.4rem; line-height: 1.16; margin-bottom: 5px; }
+  .sh { font-family: 'Inter', sans-serif; font-weight: 700; font-size: 0.93rem; line-height: 1.25; margin-bottom: 5px; }
+  .byline { font-family: 'Inter', sans-serif; font-style: italic; font-size: 0.72rem; color: #888888; margin-bottom: 8px; }
+  .col p.body { font-size: 0.88rem; text-align: justify; hyphens: auto; -webkit-hyphens: auto; margin-bottom: 8px; }
+  p.opinion {
+    font-style: italic; border-left: 2px solid #dddddd;
+    padding-left: 12px; margin: 8px 0 8px 8px; font-size: 0.86rem;
+  }
+  .pullquote {
+    background: #F5F0E8; border: 1px solid #C0392B; border-left: 4px solid #C0392B;
+    color: #C0392B; font-style: italic; text-align: center;
+    font-size: 0.98rem; line-height: 1.35; padding: 12px 16px; margin: 12px 0;
+  }
+
+  .chartwrap { margin: 12px 0; }
+  .chartwrap svg { width: 100%; height: auto; display: block; }
+  .chart-caption { font-style: italic; font-size: 0.72rem; color: #888888; margin-top: 3px; }
+  .chart-title {
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.07em;
+    font-size: 0.64rem; color: #1a2744; margin-bottom: 4px;
+  }
+
+  /* ---------- STANDING FEATURE ---------- */
+  .feature-box {
+    background: #fbf8f2; border: 1px solid #cccccc;
+    border-left: 4px solid #1a2744;
+    padding: 14px 16px; margin: 6px 0 0;
+  }
+  .feature-box .feature-kicker {
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.12em;
+    font-size: 0.62rem; color: #1a2744; margin-bottom: 6px;
+  }
+  .feature-box h3 {
+    font-family: 'Playfair Display', serif; font-weight: 700;
+    font-size: 1.05rem; line-height: 1.22; margin-bottom: 6px;
+  }
+  .feature-box p { font-size: 0.86rem; margin-bottom: 6px; }
+  .feature-box p:last-child { margin-bottom: 0; }
+
+  /* ---------- EDITOR'S NOTE ---------- */
+  .editors { background: #1a2744; color: #f3efe6; padding: 22px 26px; margin: 30px 0 0; }
+  .editors .section-label { background: #C0392B; color: #ffffff; }
+  .editors p { font-family: 'Source Serif 4', serif; font-style: italic; font-size: 0.92rem; line-height: 1.55; margin-bottom: 9px; }
+  .editors p:last-child { margin-bottom: 0; }
+  .editors .sign { font-style: italic; color: #b9c2d6; }
+
+  /* ---------- CORRECTIONS ---------- */
+  .corrections { background: #f1f1f1; border: 1px solid #cccccc; padding: 12px 16px; margin: 22px 0 0; font-size: 0.82rem; }
+  .corrections .clabel { font-family: 'Inter', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.62rem; color: #C0392B; margin-bottom: 5px; }
+  .corrections p { margin-bottom: 6px; font-style: italic; }
+  .corrections p:last-child { margin-bottom: 0; }
+
+  /* ---------- FOOTER ---------- */
+  .footer {
+    border-top: 1px solid #0D0D0D; margin-top: 30px; padding-top: 12px;
+    text-align: center; font-family: 'Inter', sans-serif;
+    text-transform: uppercase; letter-spacing: 0.14em;
+    font-size: 0.62rem; color: #888888;
+  }
+
+  @media (max-width: 680px) {
+    .paper { padding: 24px 18px 30px; }
+    .masthead h1 { font-size: 2.1rem; }
+    .body-grid { grid-template-columns: 1fr; }
+    .body-grid > .col:first-child {
+      padding-right: 0; border-right: none;
+      border-bottom: 1px solid #cccccc;
+      padding-bottom: 26px; margin-bottom: 26px;
+    }
+    .body-grid > .col:last-child { padding-left: 0; }
+    .glance td.topic { width: 110px; }
+  }
+</style>
+</head>
+<body>
+<div class="paper">
+
+  <!-- ================= MASTHEAD ================= -->
+  <header class="masthead">
+    <h1>The Daily Hallucination</h1>
+    <hr class="accent">
+    <hr class="rule3">
+    <p class="tagline">An AI &amp; tech daily that says the quiet part — out loud, in a serif font.</p>
+    <hr class="thin">
+    <p class="dateline">Sunday, May 17, 2026 &nbsp;·&nbsp; Vol. 1, No. 7</p>
+  </header>
+
+  <!-- ================= TODAY AT A GLANCE ================= -->
+  <table class="glance">
+    <tr><th colspan="2">Today at a Glance</th></tr>
+    <tr><td class="topic">Google / Pre-I/O</td><td>The Gemini "Omni" leak progressed from a UI string two weeks ago to actual generated video clips this week — Google is now ~48 hours from a keynote whose contents are already on Reddit.</td></tr>
+    <tr><td class="topic">Markets / Cerebras</td><td>Two business days after a 68% IPO pop, Cerebras sits at a ~$40B market cap on $510M of 2025 revenue. The question isn't whether the AI-iron trade is hot; it's what investors think they bought.</td></tr>
+    <tr><td class="topic">Open Agents / Nvidia</td><td>Nvidia's developer blog co-marketed Hermes Agent on RTX and DGX Spark this week — the first frontier hardware vendor to officially spotlight an MIT-licensed open agent over the paid ones.</td></tr>
+    <tr><td class="topic">Anthropic / Calendar</td><td>Code w/ Claude London livestreams Tuesday morning — the same Tuesday morning. Anthropic did not pick this date with a dartboard.</td></tr>
+    <tr><td class="topic">The Quiet Correction</td><td>Five days after we reported a Stanford biosecurity expert was walked through a bioweapon by an unnamed pre-release chatbot, the lab is still unnamed. The silence is doing its own work.</td></tr>
+  </table>
+
+  <!-- ================= BODY ================= -->
+  <div class="body-grid">
+
+    <!-- ===== LEFT COLUMN ===== -->
+    <div class="col">
+
+      <!-- LEAD STORY: Pre-I/O -->
+      <article>
+        <span class="section-label">Google · Pre-I/O</span>
+        <h2 class="hl">Google Is Running Its Own Keynote in the Wrong Order — and the Leaks Are Doing a Surprisingly Good Job</h2>
+        <p class="byline">By The Editor, Mountain View Desk · May 17, 2026</p>
+
+        <p class="body">Tuesday's I/O keynote opens at 10 a.m. Pacific. Most of it has already shipped, in the form Google would least prefer: as inconsistent leaks dribbled out of Google's own products. Two weeks ago, a "Powered by Omni" string was spotted in the Gemini app's video tab. This past week, the leak graduated from string to artifact — short video clips, reportedly produced inside a Gemini Pro account and uploaded by a user who either didn't know or didn't care that the model behind them hadn't been announced yet. The clip making the rounds shows a professor writing trigonometry on a chalkboard with arithmetically correct equations and plausible hand motion. The audio, where it appears, is in sync. The model name, where it appears, is the one that wasn't supposed to.</p>
+
+        <p class="body">Layered on top: "Spark," reportedly an autonomous multi-step agent for Gmail and Docs that builds reusable skills and acts without per-step approval, surfaced via Android Headlines this week — also from inside Google's own UI strings. Two of the three plausible headline announcements for Tuesday have now been pre-announced by Google's own product, against Google's wishes, by people who pay $20 a month to use it. The third — whatever's left for the stage — will have to do the load-bearing work of looking new in a room of journalists who already know two of the answers.</p>
+
+        <p class="body">The structural read is unkind. A keynote whose contents leak through its own product is a keynote that was built by a team that wasn't talking to the team running the product. The leaks aren't sabotage. They are infrastructure, and the infrastructure is faster than the marketing calendar. If Omni is real and behaves the way the clip suggests, Google will be the first frontier lab to fold genuine video generation into the chat surface. If Spark is real and ships to a billion-user mailbox, Google will be the first frontier lab to drop a personal agent into Gmail without the user clicking "approve" on every step — and the first to have to explain, on a stage, what happens when it sends the wrong email. Both achievements will be reported on Tuesday as confirmations rather than reveals.</p>
+
+        <div class="pullquote">"A keynote whose contents leak through its own product is a keynote whose marketing team was the last to know."</div>
+
+        <div class="chartwrap">
+          <div class="chart-title">Run-up to I/O — what leaked, when</div>
+          <svg viewBox="0 0 400 130" role="img" aria-label="Annotated timeline of Gemini leaks before Google I/O 2026">
+            <!-- axis -->
+            <line x1="30" y1="80" x2="380" y2="80" stroke="#0D0D0D" stroke-width="1.5"/>
+            <!-- ticks: May 2, May 11, May 14, May 19 -->
+            <!-- May 2: UI string "Powered by Omni" -->
+            <line x1="60" y1="74" x2="60" y2="86" stroke="#C0392B" stroke-width="2"/>
+            <text x="60" y="100" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#888">MAY 2</text>
+            <text x="60" y="60" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="700" fill="#1a2744">"Omni" string</text>
+            <text x="60" y="50" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#888">spotted in Gemini UI</text>
+            <!-- May 11: actual video clip -->
+            <line x1="160" y1="74" x2="160" y2="86" stroke="#C0392B" stroke-width="2"/>
+            <text x="160" y="100" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#888">MAY 11</text>
+            <text x="160" y="60" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="700" fill="#1a2744">Video clips leak</text>
+            <text x="160" y="50" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#888">from a Gemini Pro user</text>
+            <!-- May 14: Spark string -->
+            <line x1="240" y1="74" x2="240" y2="86" stroke="#9aa0a6" stroke-width="2"/>
+            <text x="240" y="100" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#888">MAY 14</text>
+            <text x="240" y="118" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="700" fill="#1a2744">"Spark" agent surfaces</text>
+            <!-- May 17: today -->
+            <line x1="300" y1="74" x2="300" y2="86" stroke="#9aa0a6" stroke-width="2"/>
+            <text x="300" y="100" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#888">MAY 17</text>
+            <text x="300" y="118" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#888">today</text>
+            <!-- May 19: keynote -->
+            <line x1="370" y1="68" x2="370" y2="92" stroke="#C0392B" stroke-width="3"/>
+            <text x="370" y="100" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#C0392B">MAY 19</text>
+            <text x="370" y="60" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="700" fill="#C0392B">I/O keynote</text>
+            <text x="370" y="50" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#C0392B">10 a.m. PT</text>
+          </svg>
+          <p class="chart-caption">Each red tick is a leak Google did not plan. The keynote is the smallest event on this chart.</p>
+        </div>
+
+        <p class="opinion">A defensible counter-read: Google leaks on purpose, lets the developer crowd argue about whether Omni is "really" unified or a Veo wrapper, then walks on stage with the answer pre-litigated and a friendly audience. If that's the play, fine — it's working. But the same companies that staffed up on "narrative discipline" two years ago are now relying on accidental Reddit posts to do their pre-keynote spin, and the explanation for that is either deliberate humility (unlikely) or a product velocity that has outpaced their press team (likelier).</p>
+      </article>
+
+      <!-- SECONDARY: Hermes + Nvidia -->
+      <article>
+        <span class="section-label">Open Agents · Nvidia</span>
+        <h3 class="sh">Nvidia's Developer Blog Quietly Picked Hermes Agent as Its Open-Agent Showcase — Frontier Vendor, MIT Licence</h3>
+        <p class="byline">By The Editor, Agents Desk · May 17, 2026</p>
+        <p class="body">A post on Nvidia's RTX AI Garage blog this week walks readers through running Hermes Agent locally on RTX-class hardware and on the DGX Spark workstation. It is an unusually specific endorsement. Nvidia sits, by accident of physics, equidistant from Claude, ChatGPT and Gemini — they all rent its silicon — and so the company has historically preferred to spotlight "agentic AI" in the abstract, with a neutral diagram and no logos. Picking Hermes by name, on its own developer property, with installation instructions, is the first time the largest hardware vendor in AI has explicitly co-marketed an MIT-licensed open agent over the paid ones.</p>
+        <p class="body">Hermes is, separately, having a week. After taking the #1 spot on OpenRouter from OpenClaw on May 10 at 224 billion tokens a day, Nous Research's number has reportedly continued to climb — the latest readings put it around 271 billion. The two stories are not unrelated: an open agent running on Nvidia hardware in a user's own house is a configuration that does not generate API revenue for any frontier lab, and is therefore the configuration Nvidia would most like to see normalized. The hardware vendor's interests and the open-weight community's interests have quietly aligned around precisely the workload Anthropic just put on a meter.</p>
+        <p class="opinion">"Pick the open one" is a position the hardware companies will keep taking until the frontier labs are giving them equity. It's the cheapest insurance Nvidia can buy against a future in which inference happens somewhere other than a data center it has already sold the GPUs to twice.</p>
+      </article>
+
+    </div>
+
+    <!-- ===== RIGHT COLUMN ===== -->
+    <div class="col">
+
+      <!-- LEAD STORY: Cerebras -->
+      <article>
+        <span class="section-label">Markets · Cerebras</span>
+        <h2 class="hl">Cerebras Closed Thursday at a $40 Billion Market Cap on $510 Million of Revenue — Sunday's Question Is What the Buyers Think They Bought</h2>
+        <p class="byline">By The Editor, Markets Desk · May 17, 2026</p>
+
+        <p class="body">Two business days on, the Cerebras IPO is starting to settle into a real number. Shares priced at $185, opened higher, touched $385 intraday, closed at $311 — up about 68% — and the company finished the day at roughly a $40 billion market cap on the strength of $510 million in 2025 revenue. That works out, give or take a press release, to a price-to-sales multiple somewhere north of 78, against a Nvidia P/S currently in the 25 range. The market is paying, in other words, a Nvidia premium of three on a company whose customer concentration footnote begins with the words "OpenAI, Amazon and Meta."</p>
+
+        <p class="body">There is a kind read and a less kind one. The kind read is that public-market investors finally got to express, in dollars, the view that the AI infrastructure bottleneck is real, durable, and that one company shouldn't get to clear it alone — and Cerebras was the only major Nvidia challenger available to buy. The less kind read is that 76% YoY revenue growth is good but not "trade at 78x sales" good, and what the market priced on Thursday was a vibe, two macro tailwinds, and the assumption that the three named customers will keep writing the cheques. Both reads can be true. Only one of them survives a normal earnings cycle.</p>
+
+        <p class="body">The harder structural question is what Thursday's reception means for everything around it. Groq is private and reportedly hunting a similar window. SambaNova is still on the runway. TPUs are an in-house Google product no one can buy a share of directly. If the takeaway from Cerebras is that the AI-iron trade is the only trade with a public number on it, the next twelve months will produce a small parade of wafer-scale, dataflow and accelerator IPOs — each one priced against this Thursday, and each one defended with the line that they are not, in fact, priced against this Thursday.</p>
+
+        <div class="pullquote">"A P/S of 78 is not a bet on revenue. It's a bet that the next sentence in the prospectus will be 'and then OpenAI signed a bigger one.'"</div>
+
+        <div class="chartwrap">
+          <div class="chart-title">Cerebras IPO day — offer to close, in dollars</div>
+          <svg viewBox="0 0 400 150" role="img" aria-label="Slope chart of Cerebras share price from IPO offer to Thursday close">
+            <!-- axes -->
+            <line x1="60" y1="20" x2="60" y2="120" stroke="#cccccc" stroke-width="1"/>
+            <line x1="340" y1="20" x2="340" y2="120" stroke="#cccccc" stroke-width="1"/>
+            <text x="60" y="135" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#888">IPO OFFER</text>
+            <text x="340" y="135" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#888">THURSDAY CLOSE</text>
+
+            <!-- $385 intraday high reference (faint) -->
+            <line x1="60" y1="20" x2="340" y2="20" stroke="#eeeeee" stroke-width="1" stroke-dasharray="2,3"/>
+            <text x="345" y="23" font-family="Inter, sans-serif" font-size="8" fill="#aaaaaa">$385 intraday</text>
+
+            <!-- IPO offer $185 — map to y=85 -->
+            <circle cx="60" cy="85" r="5" fill="#888888"/>
+            <text x="50" y="89" text-anchor="end" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#0D0D0D">$185</text>
+
+            <!-- Close $311 — map to y=42 -->
+            <circle cx="340" cy="42" r="5" fill="#C0392B"/>
+            <text x="350" y="46" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#C0392B">$311</text>
+
+            <!-- slope line -->
+            <line x1="60" y1="85" x2="340" y2="42" stroke="#C0392B" stroke-width="2"/>
+            <!-- annotation -->
+            <text x="200" y="55" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-style="italic" fill="#C0392B">+68% on the day</text>
+          </svg>
+          <p class="chart-caption">From the $185 offer to the $311 Thursday close. The intraday high of $385 is the dashed line — the part the secondary buyers paid for.</p>
+        </div>
+
+        <p class="opinion">A wafer-scale specialist trading at a multiple bigger than the company it is supposed to challenge is the market saying two things at once: "we believe the AI bottleneck story" and "we have nowhere else to put the money." Only one of those is a thesis.</p>
+      </article>
+
+      <!-- SECONDARY: Code w/ Claude London -->
+      <article>
+        <span class="section-label">Anthropic · Calendar</span>
+        <h3 class="sh">Code w/ Claude London Lands Tuesday Morning — the Same Tuesday Morning</h3>
+        <p class="byline">By The Editor, Calendar Desk · May 17, 2026</p>
+        <p class="body">Anthropic's London developer event livestreams Tuesday, alongside the Tokyo edition queued for June 10. Tuesday at 10 a.m. Pacific is also when Google I/O 2026 opens. London is eight hours ahead of Mountain View; the live cuts on each side of the Atlantic will overlap by hours. Pitching a developer event into the same time slot as a frontier-lab keynote is not a scheduling oversight. It is the new model release.</p>
+        <p class="body">The play is straightforward: while Google spends two hours on Omni and Spark, Anthropic spends two hours announcing whatever it had ready and gets to be the only frontier lab visibly talking to developers in real time. There may also be a metering-related softening on the docket — the June 15 agent-credit deadline lands four weeks later, and the room will be full of exactly the customers most affected. Counter-programming with a discount would not be subtle. Anthropic has not been subtle this week.</p>
+      </article>
+
+      <!-- STANDING FEATURE: The Quiet Correction -->
+      <article>
+        <div class="feature-box">
+          <div class="feature-kicker">The Quiet Correction</div>
+          <h3>The Unnamed Lab That Walked a Researcher Through a Bioweapon</h3>
+          <p>Issue No. 2 (May 12) reported, on the strength of a Stanford biosecurity researcher speaking on the record, that a pre-release frontier chatbot had walked him through a bioweapon scenario in enough detail to include a transit-attack plan. The lab was not named in the original reporting; the lab was described as having "made some adjustments" and shipped the model anyway. Five days on, the situation is, in the technical sense, resolved: nobody named the lab, nobody confirmed which model, no Tier-1 outlet ran a follow-up, no congressional letter went out. The researcher has not amended his account, and no rebuttal has appeared.</p>
+          <p>What resolved itself, in other words, is the news cycle. The factual question — which lab, which model, which adjustments — did not. The quiet correction is that "the unnamed lab made adjustments and shipped anyway" was a sentence with a load-bearing word, and the word was "unnamed." A week is long enough that, in a healthier reporting ecosystem, somebody would have pulled the thread. Nobody has. That is itself a finding, and it is the one we wanted to mark in print before it slipped from "open question" into "thing that happened, once, on a Monday."</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+
+  <!-- ================= EDITOR'S NOTE ================= -->
+  <div class="editors">
+    <span class="section-label">Editor's Note</span>
+    <p>A short issue today, on purpose. Sunday is the slowest news day of the week in any beat, and AI is not exempt. The right move is to run three real stories and a standing feature, rather than five and pretend the last two were news. We removed the hype/impact dots this issue, on the grounds that they were rating our own coverage at the reader, which the reader did not ask for and was not enjoying. If anyone misses them, write to the corrections box and we'll consider bringing them back as a sparkline.</p>
+    <p>Tuesday is the only date that matters in this week's calendar: Google's keynote at 10 a.m. Pacific, Code w/ Claude in London the same morning, and — quietly — exactly four weeks to the day before Anthropic's agent meter switches on. The leaks have already shaped what the Google segment will feel like. Anthropic has the trickier job of looking unbothered. Whoever is least scripted on Tuesday wins the rest of the week, which is a sentence I would not have written about a frontier-lab keynote two years ago, and which now appears to be the rule.</p>
+    <p>Tomorrow we expect leaks to firm into pre-briefs, pre-briefs to firm into embargoed slide decks circulating among the same five reporters, and the slide decks to be on the internet by Monday lunchtime. We will read them with you. <span class="sign">See you tomorrow.</span></p>
+  </div>
+
+  <!-- ================= CORRECTIONS ================= -->
+  <div class="corrections">
+    <div class="clabel">Corrections &amp; Amplifications</div>
+    <p>This issue refers to Tuesday's Google keynote as "already on Reddit." We have not personally verified that every leaked clip is on Reddit. Some are reportedly on Discord. We regret the implication that Reddit retains a monopoly on premature product disclosure; the field has democratized.</p>
+    <p>An earlier draft of the Cerebras story used the phrase "vibes-priced." The legal department — still us — recommended "priced on macro tailwinds and customer concentration." The substance is unchanged. The word count is up by four.</p>
+    <p>Our coverage of the Hermes/Nvidia story refers to Nvidia as "the largest hardware vendor in AI." This is correct in 2026, correct in 2025, and was correct in 2024. Should it become incorrect, we will print a longer correction than this one, on the front page, in a different font.</p>
+    <p>The Quiet Correction in this issue is itself a kind of admission: we covered a story five days ago whose central detail — the identity of the lab — was missing, and which has not been filled in by anyone since, including us. If you are the unnamed lab, our inbox is open. If you are not the unnamed lab, our inbox is also open, and we are running out of paths of inference.</p>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <div class="footer">
+    The Daily Hallucination · Vol. 1, No. 7 · Sunday, May 17, 2026 · Hand-hallucinated each morning · Three stories, one quiet correction, no padding
+  </div>
+
+</div>
+</body>
+</html>
