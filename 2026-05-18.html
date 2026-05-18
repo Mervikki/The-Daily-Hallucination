@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Daily Hallucination – Monday, May 18, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Serif+4:ital,wght@0,400;0,600;1,400;1,600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #F5F0E8;
+    color: #0D0D0D;
+    font-family: 'Source Serif 4', Georgia, serif;
+    line-height: 1.5;
+    padding: 24px 16px 60px;
+  }
+  .paper {
+    max-width: 920px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 36px 44px 44px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+  }
+
+  /* ---------- MASTHEAD ---------- */
+  .masthead { text-align: center; }
+  .masthead h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-size: 3.4rem;
+    line-height: 1.02;
+    color: #0D0D0D;
+  }
+  .masthead .accent { border: none; border-top: 4px solid #C0392B; width: 56px; margin: 10px auto 0; }
+  .masthead .rule3 { border: none; border-top: 3px solid #0D0D0D; margin: 8px auto 0; }
+  .masthead .tagline { font-style: italic; color: #888888; font-size: 0.95rem; margin-top: 8px; }
+  .masthead .thin { border: none; border-top: 1px solid #cccccc; margin: 8px auto; }
+  .masthead .dateline {
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 0.7rem;
+    color: #888888;
+  }
+
+  /* ---------- TODAY AT A GLANCE ---------- */
+  .glance { width: 100%; border-collapse: collapse; margin: 28px 0 30px; font-family: 'Source Serif 4', serif; }
+  .glance th {
+    background: #1a2744; color: #ffffff;
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.16em;
+    font-size: 0.74rem; text-align: left; padding: 9px 12px;
+  }
+  .glance td { background: #F5F0E8; padding: 8px 12px; font-size: 0.86rem; border-bottom: 2px solid #ffffff; vertical-align: top; }
+  .glance td.topic {
+    font-weight: 700; font-family: 'Inter', sans-serif;
+    font-size: 0.74rem; text-transform: uppercase;
+    letter-spacing: 0.04em; width: 150px; color: #1a2744;
+  }
+
+  /* ---------- TWO-COLUMN BODY ---------- */
+  .body-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+  .body-grid > .col:first-child { padding-right: 26px; border-right: 1px solid #cccccc; }
+  .body-grid > .col:last-child { padding-left: 26px; }
+  .col article { margin-bottom: 26px; }
+  .col article:last-child { margin-bottom: 0; }
+
+  .section-label {
+    display: inline-block; background: #1a2744; color: #ffffff;
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    font-size: 0.62rem; padding: 3px 7px; margin-bottom: 7px;
+  }
+  .hl { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.4rem; line-height: 1.16; margin-bottom: 5px; }
+  .sh { font-family: 'Inter', sans-serif; font-weight: 700; font-size: 0.93rem; line-height: 1.25; margin-bottom: 5px; }
+  .byline { font-family: 'Inter', sans-serif; font-style: italic; font-size: 0.72rem; color: #888888; margin-bottom: 8px; }
+  .col p.body { font-size: 0.88rem; text-align: justify; hyphens: auto; -webkit-hyphens: auto; margin-bottom: 8px; }
+  p.opinion {
+    font-style: italic; border-left: 2px solid #dddddd;
+    padding-left: 12px; margin: 8px 0 8px 8px; font-size: 0.86rem;
+  }
+  .pullquote {
+    background: #F5F0E8; border: 1px solid #C0392B; border-left: 4px solid #C0392B;
+    color: #C0392B; font-style: italic; text-align: center;
+    font-size: 0.98rem; line-height: 1.35; padding: 12px 16px; margin: 12px 0;
+  }
+
+  .chartwrap { margin: 12px 0; }
+  .chartwrap svg { width: 100%; height: auto; display: block; }
+  .chart-caption { font-style: italic; font-size: 0.72rem; color: #888888; margin-top: 3px; }
+  .chart-title {
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.07em;
+    font-size: 0.64rem; color: #1a2744; margin-bottom: 4px;
+  }
+
+  /* ---------- EDITOR'S NOTE ---------- */
+  .editors { background: #1a2744; color: #f3efe6; padding: 22px 26px; margin: 30px 0 0; }
+  .editors .section-label { background: #C0392B; color: #ffffff; }
+  .editors p { font-family: 'Source Serif 4', serif; font-style: italic; font-size: 0.92rem; line-height: 1.55; margin-bottom: 9px; }
+  .editors p:last-child { margin-bottom: 0; }
+  .editors .sign { font-style: italic; color: #b9c2d6; }
+
+  /* ---------- CORRECTIONS ---------- */
+  .corrections { background: #f1f1f1; border: 1px solid #cccccc; padding: 12px 16px; margin: 22px 0 0; font-size: 0.82rem; }
+  .corrections .clabel { font-family: 'Inter', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.62rem; color: #C0392B; margin-bottom: 5px; }
+  .corrections p { margin-bottom: 6px; font-style: italic; }
+  .corrections p:last-child { margin-bottom: 0; }
+
+  /* ---------- FOOTER ---------- */
+  .footer {
+    border-top: 1px solid #0D0D0D; margin-top: 30px; padding-top: 12px;
+    text-align: center; font-family: 'Inter', sans-serif;
+    text-transform: uppercase; letter-spacing: 0.14em;
+    font-size: 0.62rem; color: #888888;
+  }
+
+  @media (max-width: 680px) {
+    .paper { padding: 24px 18px 30px; }
+    .masthead h1 { font-size: 2.1rem; }
+    .body-grid { grid-template-columns: 1fr; }
+    .body-grid > .col:first-child {
+      padding-right: 0; border-right: none;
+      border-bottom: 1px solid #cccccc;
+      padding-bottom: 26px; margin-bottom: 26px;
+    }
+    .body-grid > .col:last-child { padding-left: 0; }
+    .glance td.topic { width: 110px; }
+  }
+</style>
+</head>
+<body>
+<div class="paper">
+
+  <!-- ================= MASTHEAD ================= -->
+  <header class="masthead">
+    <h1>The Daily Hallucination</h1>
+    <hr class="accent">
+    <hr class="rule3">
+    <p class="tagline">An AI &amp; tech daily that says the quiet part — out loud, in a serif font.</p>
+    <hr class="thin">
+    <p class="dateline">Monday, May 18, 2026 &nbsp;·&nbsp; Vol. 1, No. 8</p>
+  </header>
+
+  <!-- ================= TODAY AT A GLANCE ================= -->
+  <table class="glance">
+    <tr><th colspan="2">Today at a Glance</th></tr>
+    <tr><td class="topic">Anthropic / Enterprise</td><td>The May Ramp AI Index puts Anthropic at 34.4% of US business AI spend versus OpenAI at 32.3% — the first month Claude has been the leader by corporate card. Bloomberg has Anthropic talking to investors about a $30 billion-plus raise at over $900 billion.</td></tr>
+    <tr><td class="topic">Google / I/O Eve</td><td>The keynote is 24 hours out, "Omni" and "Spark" are both in the wild from inside Gemini's own UI, and the live event has been quietly recast as a press review of its own pre-announcement.</td></tr>
+    <tr><td class="topic">Meta / Layoffs</td><td>Wednesday brings roughly 8,000 cuts — about a tenth of the company — with Reality Labs absorbing the worst of it. 2026 AI capex guide: $115–135 billion, against $72 billion in 2025.</td></tr>
+    <tr><td class="topic">OpenAI / Security</td><td>"Daybreak" arrives as OpenAI's answer to Anthropic's Claude Mythos, the security model that helped Mozilla patch more than 270 Firefox bugs. Both products are named after sun events. Neither is subtle.</td></tr>
+  </table>
+
+  <!-- ================= BODY ================= -->
+  <div class="body-grid">
+
+    <!-- ===== LEFT COLUMN ===== -->
+    <div class="col">
+
+      <!-- LEAD STORY: Anthropic / Ramp -->
+      <article>
+        <span class="section-label">Anthropic · Enterprise</span>
+        <h2 class="hl">Anthropic Has, for the First Time, Out-Earned OpenAI Among the Businesses That Buy AI With a Corporate Card</h2>
+        <p class="byline">By The Editor, Enterprise Desk · May 18, 2026</p>
+
+        <p class="body">Ramp's May AI Index, the one that tracks what US businesses actually expense rather than what they tell their boards they're piloting, dropped this weekend with a number that the trade press is going to spend the rest of the week trying to discount. Anthropic took 34.4% of business AI spend across Ramp's customer base in May. OpenAI took 32.3%. A year ago the same index had OpenAI roughly a dozen points ahead and Anthropic in a tied second with "everything else." This is the first month since the index began publishing in which Claude has been the corporate-card leader, and it landed at the front of the week most certain to bury it.</p>
+
+        <p class="body">The detail that matters is the audience. Ramp's panel skews toward the kind of buyer Anthropic spent the last twelve months building a sales motion for: mid-market and Fortune 1000 finance, legal and engineering teams that get a procurement signoff before they get a model. Those are also the customers least likely to switch on a vibes-based update cycle, and most likely to stick once they've gotten a security review through. Set against Dario Amodei's claim earlier this month of 80x year-over-year usage growth in Q1, the index reads as the lagging indicator finally catching up to the leading one. Bloomberg, separately and on cue, reports Anthropic is in early talks with investors about a $30 billion-plus primary raise at a valuation north of $900 billion. The primary market is now within a haircut of the $1 trillion the secondary market was already pricing two weeks ago.</p>
+
+        <p class="body">The unkind read — and there is one — is that 34.4 versus 32.3 is a two-point gap on a single month of a single index, and the panel is famously bottom-heavy on the kinds of companies that file expense reports through Ramp in the first place. The kinder read is that none of OpenAI's structural advantages — consumer mindshare, GPT-5.5, ChatGPT Personal Finance shipping on Friday — moved the May number, and that the trend lines have been pointing this direction for six months in a row. Both reads can be true. Only one of them is going to survive a June index, and the June index will be cut after the Anthropic agent meter switches on. Watch the gap, not the rank.</p>
+
+        <div class="pullquote">"The first month Claude is the leader by corporate card lands at the front of the week most certain to bury it."</div>
+
+        <div class="chartwrap">
+          <div class="chart-title">Ramp AI Index — Anthropic and OpenAI share of US business AI spend</div>
+          <svg viewBox="0 0 400 170" role="img" aria-label="Slope chart showing OpenAI and Anthropic shares of US business AI spend a year ago versus May 2026">
+            <!-- axes -->
+            <line x1="70" y1="20" x2="70" y2="130" stroke="#cccccc" stroke-width="1"/>
+            <line x1="330" y1="20" x2="330" y2="130" stroke="#cccccc" stroke-width="1"/>
+            <text x="70" y="148" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#888">MAY 2025</text>
+            <text x="330" y="148" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" fill="#888">MAY 2026</text>
+
+            <!-- OpenAI ~45% -> 32.3% (y=30 -> y=70) -->
+            <circle cx="70" cy="30" r="5" fill="#888888"/>
+            <text x="60" y="34" text-anchor="end" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#0D0D0D">~45% OpenAI</text>
+            <circle cx="330" cy="70" r="5" fill="#888888"/>
+            <text x="340" y="74" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#0D0D0D">32.3%</text>
+            <line x1="70" y1="30" x2="330" y2="70" stroke="#888888" stroke-width="2"/>
+
+            <!-- Anthropic ~22% -> 34.4% (y=98 -> y=58) -->
+            <circle cx="70" cy="98" r="5" fill="#C0392B"/>
+            <text x="60" y="102" text-anchor="end" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#C0392B">~22% Anthropic</text>
+            <circle cx="330" cy="58" r="5" fill="#C0392B"/>
+            <text x="340" y="62" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#C0392B">34.4%</text>
+            <line x1="70" y1="98" x2="330" y2="58" stroke="#C0392B" stroke-width="2"/>
+
+            <!-- crossover annotation -->
+            <text x="200" y="20" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-style="italic" fill="#1a2744">lines cross in May 2026</text>
+          </svg>
+          <p class="chart-caption">May 2025 numbers approximate; May 2026 per Ramp. The crossover happened sometime this month and nobody on stage will mention it Tuesday.</p>
+        </div>
+
+        <p class="opinion">"First month leader by corporate card" is a sentence that, if you'd written it about Anthropic last May, would have gotten you a polite invitation to revisit the leaderboard in a year. Here we are.</p>
+      </article>
+
+      <!-- SECONDARY: Meta layoffs -->
+      <article>
+        <span class="section-label">Meta · Layoffs</span>
+        <h3 class="sh">Wednesday: Roughly 8,000 Cuts, Reality Labs Becomes a Smaller Building, and the AI Capex Guide Roughly Doubles</h3>
+        <p class="byline">By The Editor, Menlo Park Desk · May 18, 2026</p>
+        <p class="body">Reporting from TheStreet and The Next Web puts Meta's next layoff wave on Wednesday morning, sized at about 8,000 employees, or close to a tenth of the global headcount. The hit lands disproportionately on Reality Labs, the division that has been the principal beneficiary of Zuckerberg's metaverse spending since 2021, and which now appears to be doing the principal donating to the AI line. Meta's 2026 capex guide is $115 to $135 billion, against $72 billion in 2025. The midpoint is, give or take, the entire 2024 capex of all four hyperscalers combined three years ago.</p>
+        <p class="body">The word being avoided in the early reporting is "shutdown," which is fair, because Reality Labs is not being shut down — it is being right-sized into the thing it always quietly was, namely an R&amp;D group whose internal customer base is the AI division and whose external customer base is patient. The harder line for Zuckerberg, who has spent eighteen months reframing Meta as an AI company, will come on the next earnings call: 8,000 cuts is also 8,000 severance packages, and the storyline that "we're letting go of the people who built the headset to free up the people building the model" only works if the model produces something at I/O-eve scale before the end of the year.</p>
+      </article>
+
+    </div>
+
+    <!-- ===== RIGHT COLUMN ===== -->
+    <div class="col">
+
+      <!-- LEAD STORY: I/O Eve -->
+      <article>
+        <span class="section-label">Google · I/O Eve</span>
+        <h2 class="hl">Twenty-Four Hours Out, the Only Surprise Left for Tuesday Is the Part Google Hopes Nobody Has Already Hidden in a String</h2>
+        <p class="byline">By The Editor, Mountain View Desk · May 18, 2026</p>
+
+        <p class="body">The keynote opens in less than a day. The two load-bearing reveals — "Omni," Gemini's unified audio-video model, and "Spark," the autonomous agent for Gmail and Docs — have both been visible from inside Google's own products for between three days and two weeks. Over the weekend the leak inventory grew again: a visual-model codename "Spark Robin" turned up in a config blob, and references to "Gemini 3.2" and "Gemini 3.5" appeared in two separate Android crash logs that nobody was supposed to be reading. The press pre-briefs went out Sunday evening. By Monday lunchtime, embargoed slide decks were circulating with the predictability of a Costco rotisserie chicken.</p>
+
+        <p class="body">What this leaves for the stage is a strange kind of inversion. The reveals are no longer the news; the news is whether the live demo holds up. If Spark sends a real email to a real person on stage and the email is correct, that is the headline. If the demo trips on the audio-sync of an Omni clip, that is the headline. The number of variables Sundar Pichai has any control over at this point is roughly two: the demo, and the audience reaction shot. He has spent a quarter preparing for the first. The second is going to be people who already read the post.</p>
+
+        <div class="pullquote">"What's left for Tuesday is the part Google hopes nobody has already hidden in a string."</div>
+
+        <p class="opinion">There is a defensible play that says Google is doing this on purpose — leak the product, let the developer crowd argue about it for a week, walk out with the answer pre-litigated. Fine. But if that's the strategy, the most ambitious frontier lab in the industry has just spent its keynote budget defending against critiques it could have addressed on its own blog. The medium is doing the work the message used to do.</p>
+      </article>
+
+      <!-- SECONDARY: Daybreak -->
+      <article>
+        <span class="section-label">OpenAI · Security</span>
+        <h3 class="sh">"Daybreak" Lands as OpenAI's Answer to Claude Mythos, and Both Products Are Named After Sun Events Because of Course They Are</h3>
+        <p class="byline">By The Editor, Security Desk · May 18, 2026</p>
+        <p class="body">OpenAI this morning rolled out "Daybreak," a security-focused initiative pitched as a way for enterprises to scan and harden their codebases with an OpenAI-managed model. The framing is unambiguous: it is the answer to Anthropic's Claude Mythos, the system that ran through the Firefox codebase earlier this year and produced 270-plus accepted patches into Mozilla. Mythos was, in the only way that matters in this beat, the most-cited positive AI deployment of 2026 so far. Daybreak is the response. Both products are named after sun events. Nobody on either marketing team blinked.</p>
+        <p class="body">The harder question, which neither launch post addresses, is the one any CISO is going to ask first: do you want the company you are paying for inference also looking at the parts of your codebase you cannot afford to leak? Anthropic's pitch on Mythos was that Mozilla had reviewed every patch by hand, and Mozilla had every reason to. OpenAI's pitch on Daybreak will, by structural necessity, be the same pitch. The product comparison is real. The trust comparison is the part that is not in the launch post.</p>
+      </article>
+
+    </div>
+  </div>
+
+  <!-- ================= EDITOR'S NOTE ================= -->
+  <div class="editors">
+    <span class="section-label">Editor's Note</span>
+    <p>The most important AI story of the week is the one that runs eighth on the front of every tech site by Tuesday afternoon. Anthropic has, for the first time, taken more US business AI spending than OpenAI in a month that anybody is tracking, and the company is in talks at a valuation that begins with a nine. Both facts are the kind of structural development that, in a calmer week, would lead the section. This is not a calmer week. The Google keynote is going to eat thirty-six hours of attention, the Meta layoffs are going to eat twelve, and the Anthropic story is going to do its load-bearing work in private — in procurement cycles, in board decks, in the quiet calculations of people who have to decide which API key gets the renewal.</p>
+    <p>One thing the Ramp number does change, even before anyone in San Francisco gets out of bed: it makes Tuesday's Code w/ Claude London a much louder room than Anthropic could have engineered with a press release. There is now a measurable answer to the question "is Claude winning anything" and the answer is "yes, the part with the budget." Whether the room knows it yet is a separate question. We will know by Wednesday. <span class="sign">See you tomorrow.</span></p>
+  </div>
+
+  <!-- ================= CORRECTIONS ================= -->
+  <div class="corrections">
+    <div class="clabel">Corrections &amp; Amplifications</div>
+    <p>This issue describes "Daybreak" and "Claude Mythos" as both named after sun events. A close reader will note that "Mythos" is not, strictly, a sun event. We stand by the original sentence on the grounds that the marketing department of Anthropic clearly meant for it to feel like one.</p>
+    <p>Yesterday's issue reported the Cerebras Thursday close at "$40 billion market cap." A more careful read of TechCrunch's coverage puts the figure closer to $66 billion on a fully-diluted basis. The smaller number was an enterprise-value approximation; the larger is the market cap. Both are larger than the company's 2025 revenue by an unkind ratio.</p>
+    <p>This issue refers to Reality Labs as becoming "a smaller building." Reality Labs is, in fact, distributed across several buildings, none of which we have personally measured. The editorial we regrets the imprecision and the implicit Menlo Park urbanism.</p>
+    <p>Our pre-I/O coverage suggests that "Sundar Pichai has spent a quarter preparing" for the live demo. We have no way of knowing how long Sundar Pichai has spent preparing for anything. A quarter felt right. We will revisit on Wednesday.</p>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <div class="footer">
+    The Daily Hallucination · Vol. 1, No. 8 · Monday, May 18, 2026 · Hand-hallucinated each morning · Four stories, one corporate-card flip, no padding
+  </div>
+
+</div>
+</body>
+</html>
