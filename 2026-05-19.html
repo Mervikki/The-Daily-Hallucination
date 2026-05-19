@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Daily Hallucination – Tuesday, May 19, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Serif+4:ital,wght@0,400;0,600;1,400;1,600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #F5F0E8;
+    color: #0D0D0D;
+    font-family: 'Source Serif 4', Georgia, serif;
+    line-height: 1.5;
+    padding: 24px 16px 60px;
+  }
+  .paper {
+    max-width: 920px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 36px 44px 44px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+  }
+
+  /* ---------- MASTHEAD ---------- */
+  .masthead { text-align: center; }
+  .masthead h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-size: 3.4rem;
+    line-height: 1.02;
+    color: #0D0D0D;
+  }
+  .masthead .accent { border: none; border-top: 4px solid #C0392B; width: 56px; margin: 10px auto 0; }
+  .masthead .rule3 { border: none; border-top: 3px solid #0D0D0D; margin: 8px auto 0; }
+  .masthead .tagline { font-style: italic; color: #888888; font-size: 0.95rem; margin-top: 8px; }
+  .masthead .thin { border: none; border-top: 1px solid #cccccc; margin: 8px auto; }
+  .masthead .dateline {
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 0.7rem;
+    color: #888888;
+  }
+
+  /* ---------- TODAY AT A GLANCE ---------- */
+  .glance { width: 100%; border-collapse: collapse; margin: 28px 0 30px; font-family: 'Source Serif 4', serif; }
+  .glance th {
+    background: #1a2744; color: #ffffff;
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.16em;
+    font-size: 0.74rem; text-align: left; padding: 9px 12px;
+  }
+  .glance td { background: #F5F0E8; padding: 8px 12px; font-size: 0.86rem; border-bottom: 2px solid #ffffff; vertical-align: top; }
+  .glance td.topic {
+    font-weight: 700; font-family: 'Inter', sans-serif;
+    font-size: 0.74rem; text-transform: uppercase;
+    letter-spacing: 0.04em; width: 150px; color: #1a2744;
+  }
+
+  /* ---------- TWO-COLUMN BODY ---------- */
+  .body-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+  .body-grid > .col:first-child { padding-right: 26px; border-right: 1px solid #cccccc; }
+  .body-grid > .col:last-child { padding-left: 26px; }
+  .col article { margin-bottom: 26px; }
+  .col article:last-child { margin-bottom: 0; }
+
+  .section-label {
+    display: inline-block; background: #1a2744; color: #ffffff;
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    font-size: 0.62rem; padding: 3px 7px; margin-bottom: 7px;
+  }
+  .hl { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.4rem; line-height: 1.16; margin-bottom: 5px; }
+  .sh { font-family: 'Inter', sans-serif; font-weight: 700; font-size: 0.93rem; line-height: 1.25; margin-bottom: 5px; }
+  .byline { font-family: 'Inter', sans-serif; font-style: italic; font-size: 0.72rem; color: #888888; margin-bottom: 8px; }
+  .col p.body { font-size: 0.88rem; text-align: justify; hyphens: auto; -webkit-hyphens: auto; margin-bottom: 8px; }
+  p.opinion {
+    font-style: italic; border-left: 2px solid #dddddd;
+    padding-left: 12px; margin: 8px 0 8px 8px; font-size: 0.86rem;
+  }
+  .pullquote {
+    background: #F5F0E8; border: 1px solid #C0392B; border-left: 4px solid #C0392B;
+    color: #C0392B; font-style: italic; text-align: center;
+    font-size: 0.98rem; line-height: 1.35; padding: 12px 16px; margin: 12px 0;
+  }
+
+  .chartwrap { margin: 12px 0; }
+  .chartwrap svg { width: 100%; height: auto; display: block; }
+  .chart-caption { font-style: italic; font-size: 0.72rem; color: #888888; margin-top: 3px; }
+  .chart-title {
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.07em;
+    font-size: 0.64rem; color: #1a2744; margin-bottom: 4px;
+  }
+
+  /* ---------- EDITOR'S NOTE ---------- */
+  .editors { background: #1a2744; color: #f3efe6; padding: 22px 26px; margin: 30px 0 0; }
+  .editors .section-label { background: #C0392B; color: #ffffff; }
+  .editors p { font-family: 'Source Serif 4', serif; font-style: italic; font-size: 0.92rem; line-height: 1.55; margin-bottom: 9px; }
+  .editors p:last-child { margin-bottom: 0; }
+  .editors .sign { font-style: italic; color: #b9c2d6; }
+
+  /* ---------- CORRECTIONS ---------- */
+  .corrections { background: #f1f1f1; border: 1px solid #cccccc; padding: 12px 16px; margin: 22px 0 0; font-size: 0.82rem; }
+  .corrections .clabel { font-family: 'Inter', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.62rem; color: #C0392B; margin-bottom: 5px; }
+  .corrections p { margin-bottom: 6px; font-style: italic; }
+  .corrections p:last-child { margin-bottom: 0; }
+
+  /* ---------- FOOTER ---------- */
+  .footer {
+    border-top: 1px solid #0D0D0D; margin-top: 30px; padding-top: 12px;
+    text-align: center; font-family: 'Inter', sans-serif;
+    text-transform: uppercase; letter-spacing: 0.14em;
+    font-size: 0.62rem; color: #888888;
+  }
+
+  @media (max-width: 680px) {
+    .paper { padding: 24px 18px 30px; }
+    .masthead h1 { font-size: 2.1rem; }
+    .body-grid { grid-template-columns: 1fr; }
+    .body-grid > .col:first-child {
+      padding-right: 0; border-right: none;
+      border-bottom: 1px solid #cccccc;
+      padding-bottom: 26px; margin-bottom: 26px;
+    }
+    .body-grid > .col:last-child { padding-left: 0; }
+    .glance td.topic { width: 110px; }
+  }
+</style>
+</head>
+<body>
+<div class="paper">
+
+  <!-- ================= MASTHEAD ================= -->
+  <header class="masthead">
+    <h1>The Daily Hallucination</h1>
+    <hr class="accent">
+    <hr class="rule3">
+    <p class="tagline">An AI &amp; tech daily that says the quiet part — out loud, in a serif font.</p>
+    <hr class="thin">
+    <p class="dateline">Tuesday, May 19, 2026 &nbsp;·&nbsp; Vol. 1, No. 9</p>
+  </header>
+
+  <!-- ================= TODAY AT A GLANCE ================= -->
+  <table class="glance">
+    <tr><th colspan="2">Today at a Glance</th></tr>
+    <tr><td class="topic">Google / I/O Day</td><td>The keynote opens at 10 a.m. PT with the reveals public, the new Gemini's codename still in dispute, and the most quoted line of the pre-briefs being that the capability slide lands Gemini third.</td></tr>
+    <tr><td class="topic">Anthropic / London</td><td>Code w/ Claude London streams this morning with no fresh product, because all the product shipped in San Francisco on May 6 — which, this week, is the entire point.</td></tr>
+    <tr><td class="topic">Meta / Confirmed</td><td>Janelle Gale's memo confirmed roughly 8,000 cuts going out Wednesday — fourteen thousand if you include the canceled reqs — framed as "offsetting the other investments," i.e., $115 to $135 billion of AI capex.</td></tr>
+    <tr><td class="topic">EU / AI Act</td><td>Brussels' "Omnibus" pushes the Annex III high-risk obligations from August 2026 to December 2027 and keeps the new synthetic-CSAM and intimate-imagery prohibitions on the original calendar.</td></tr>
+  </table>
+
+  <!-- ================= BODY ================= -->
+  <div class="body-grid">
+
+    <!-- ===== LEFT COLUMN ===== -->
+    <div class="col">
+
+      <!-- LEAD STORY: I/O Day -->
+      <article>
+        <span class="section-label">Google · I/O Day</span>
+        <h2 class="hl">The Keynote Opens at Ten With the Reveals Already Public, the New Model's Number Still in Dispute, and the Capability Slide Reportedly Putting Gemini Third</h2>
+        <p class="byline">By The Editor, Mountain View Desk · May 19, 2026</p>
+
+        <p class="body">By the time Sundar Pichai walks out at 10 a.m. Pacific the only people in the Shoreline Amphitheatre who have not already read the post are the people giving it. "Spark," the autonomous Gmail and Docs agent, has been visible in Google app beta v17.23 since the fourteenth. "Omni," the unified audio-image-video model, has had UI strings exposed in the consumer Gemini app since the fifteenth. References to either "Gemini 3.5" or "Gemini 4.0" — the press has not converged — turned up in two unrelated Android crash logs on the seventeenth, the same Sunday a fresh codename, "Spark Robin," appeared in a config blob nobody was supposed to be reading. By Monday lunchtime the pre-brief decks were circulating with the predictability of a Costco rotisserie chicken. There are no announcements left. There is only the demo, the pricing, and the one slide everyone will be screenshotting.</p>
+
+        <p class="body">That slide, per TechTimes' Sunday pre-brief and one well-circulated PDF from a non-US outlet, is the capability slide, and the framing it is asked to carry is awkward. The new Gemini, whatever it ends up being numbered, is positioned in the pre-briefs as landing behind both Anthropic's Claude Mythos and OpenAI's GPT-5.5. Google has had two-and-a-half years of being the lab with the largest model and the largest cluster and, when it has been good, the most coherent multimodal stack. Today is the first keynote of the modern era at which it walks out as the third-place frontier vendor on its own slide. Whether the room reads that as "Google is finally being honest" or "Google has finally fallen behind" will probably be decided by which side gets to the headlines first, and there is no good answer to that question that Google can shape from the stage.</p>
+
+        <p class="body">What is genuinely left to watch is small and specific. Whether Spark sends a real email on stage to a real recipient and the recipient's reply is, in fact, the reply. Whether Omni's lip-sync holds for longer than the cherry-picked twelve-second clip in the pre-brief. Whether the Googlebooks announcement — the premium Gemini-native laptop class with Acer, ASUS, Dell, HP and Lenovo — gets the five minutes the Android Show on May 13 implied or quietly gets cut for time. Whether the new model's price per million output tokens is closer to Sonnet's or to Opus's. The reveals are not the news. The reveal is whether the reveal works.</p>
+
+        <div class="pullquote">"Today is the first keynote of the modern era at which Google walks out as the third-place frontier vendor on its own slide."</div>
+
+        <div class="chartwrap">
+          <div class="chart-title">Leak inventory — Google I/O 2026, May 6–19</div>
+          <svg viewBox="0 0 400 140" role="img" aria-label="Annotated timeline of pre-I/O leaks running from May 6 to May 19, 2026.">
+            <line x1="40" y1="78" x2="380" y2="78" stroke="#0D0D0D" stroke-width="1.5"/>
+
+            <!-- May 6 — Code w/ Claude SF (gray, below) -->
+            <line x1="40" y1="78" x2="40" y2="88" stroke="#888888" stroke-width="2"/>
+            <text x="40" y="102" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#888">MAY 6</text>
+            <text x="40" y="113" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#888">Code w/ Claude SF</text>
+
+            <!-- May 13 — Android Show (gray, below) -->
+            <line x1="223" y1="78" x2="223" y2="88" stroke="#888888" stroke-width="2"/>
+            <text x="223" y="102" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#888">MAY 13</text>
+            <text x="223" y="113" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#888">Android Show</text>
+
+            <!-- May 14 — Spark (rust, above) -->
+            <line x1="249" y1="78" x2="249" y2="62" stroke="#C0392B" stroke-width="2.5"/>
+            <circle cx="249" cy="62" r="3" fill="#C0392B"/>
+            <text x="249" y="52" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" font-weight="700" fill="#C0392B">14 · "SPARK"</text>
+            <text x="249" y="42" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" fill="#1a2744">in Google app beta</text>
+
+            <!-- May 15 — Omni (rust, above) -->
+            <line x1="275" y1="78" x2="275" y2="30" stroke="#C0392B" stroke-width="2.5"/>
+            <circle cx="275" cy="30" r="3" fill="#C0392B"/>
+            <text x="275" y="22" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" font-weight="700" fill="#C0392B">15 · "OMNI"</text>
+            <text x="275" y="13" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" fill="#1a2744">UI strings in app</text>
+
+            <!-- May 17 — model number in crash logs (rust, below) -->
+            <line x1="327" y1="78" x2="327" y2="92" stroke="#C0392B" stroke-width="2.5"/>
+            <circle cx="327" cy="92" r="3" fill="#C0392B"/>
+            <text x="327" y="105" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" font-weight="700" fill="#C0392B">17 · "3.5 / 4.0"</text>
+            <text x="327" y="116" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" fill="#1a2744">in Android crash logs</text>
+
+            <!-- May 18 — pre-briefs (gray, above) -->
+            <line x1="353" y1="78" x2="353" y2="60" stroke="#888888" stroke-width="2"/>
+            <text x="353" y="50" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#888">MAY 18</text>
+            <text x="353" y="41" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#888">pre-briefs</text>
+
+            <!-- May 19 — Keynote (rust, marker) -->
+            <circle cx="380" cy="78" r="7" fill="#C0392B"/>
+            <text x="380" y="132" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="700" fill="#C0392B">KEYNOTE</text>
+            <text x="380" y="122" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#1a2744">19 · 10 a.m. PT</text>
+          </svg>
+          <p class="chart-caption">Rust ticks are load-bearing leaks; gray ticks are context. By the time Sundar walks out, the only person in the room who has not read the post is the one giving it.</p>
+        </div>
+
+        <p class="opinion">It is possible Google has been doing this on purpose for two cycles — pre-litigating the reveal so the developer crowd is already past the punditry by Tuesday. If so, fine. It still leaves the keynote with nothing to do except the part that breaks.</p>
+      </article>
+
+      <!-- SECONDARY: Code w/ Claude London -->
+      <article>
+        <span class="section-label">Anthropic · London</span>
+        <h3 class="sh">Code w/ Claude London Streams With No Fresh Product, Because the Whole Point Is That There Was Nothing Left to Save for It</h3>
+        <p class="byline">By The Editor, Anthropic Desk · May 19, 2026</p>
+        <p class="body">Anthropic's London developer event opens this morning, livestreamed, free, and counter-programmed against I/O so cleanly the calendar collision can only be deliberate. The product news already shipped on May 6 in San Francisco — Managed Agents, Dreaming, Outcomes, doubled Claude Code rate limits across every tier, the SpaceX 300-megawatt and 220,000-GPU deal — and nothing in the run-up has hinted at a London surprise. London's function is not to announce anything. London's function is to make sure that for as long as I/O is on, half the developer Twitter feed is "anyone remember Managed Agents."</p>
+        <p class="body">The structural read is that Anthropic has finally figured out the only press lever a non-incumbent lab actually has, which is timing. The unkind read is that an entire keynote whose stated purpose is to recap San Francisco is also a tell that the SF announcements were thinner than the runway suggested. Both can be true. What is harder to argue is that, on a Tuesday when Mountain View has to defend a capability slide, Anthropic gets a half-day of stage time to remind anyone listening that it has the developer-relations stack working in two cities at once and does not need a new model to do it.</p>
+      </article>
+
+    </div>
+
+    <!-- ===== RIGHT COLUMN ===== -->
+    <div class="col">
+
+      <!-- LEAD STORY: Meta layoffs -->
+      <article>
+        <span class="section-label">Meta · Confirmed</span>
+        <h2 class="hl">The CPO Memo Goes Out Twenty-Four Hours Before the Termination Email, Because Bloomberg Got the Number First</h2>
+        <p class="byline">By The Editor, Menlo Park Desk · May 19, 2026</p>
+
+        <p class="body">A leaked memo from Meta's chief people officer, Janelle Gale, made the unofficial number official last night. Roughly 8,000 employees — about 10% of the company's 78,865 — will be cut starting Wednesday morning, with a further 6,000 open requisitions canceled, bringing the effective reduction closer to 14,000. Severance is 16 weeks of base plus two weeks per year of tenure. The internal language frames the cuts as "continued effort to run the company more efficiently and to allow us to offset the other investments we're making." The other investments, per the same company's own February guide, run $115 to $135 billion in 2026 against $72 billion in 2025. That is the relevant translation.</p>
+
+        <p class="body">This is the fourth round of cuts at Meta in 2026 alone and roughly the eighth since the "year of efficiency" began in late 2022, by which point the cumulative count is north of 25,000. The new structural overlay is Superintelligence Labs, the AI pod system reporting to chief AI officer Alexandr Wang, into which a non-trivial fraction of the surviving headcount is being reorganized. The reading the company is encouraging is that this is a reshape, not a reduction. The reading the spreadsheet is encouraging is that capex per employee has roughly tripled in eighteen months and the line items on either side of the slash are not the same people.</p>
+
+        <p class="body">There is one number missing from the memo that will matter more than any of the published ones, which is the date at which the AI division has to show enough product to make the trade defensible. Zuckerberg has spent eighteen months reframing Meta as an AI company, and 14,000 departures is a large bill to put on a balance sheet whose stated justification is a model that has not yet arrived in public. The Wang appointment buys him through the end of 2026. The next earnings call is the first place the framing breaks if it is going to.</p>
+
+        <div class="pullquote">"Capex per employee has roughly tripled in eighteen months and the line items on either side of the slash are not the same people."</div>
+
+        <div class="chartwrap">
+          <div class="chart-title">2026 capex guides — the four hyperscaler AI lines</div>
+          <svg viewBox="0 0 400 175" role="img" aria-label="Bar chart of 2026 capex guides at the four largest US hyperscalers.">
+            <!-- grid lines -->
+            <line x1="117" y1="20" x2="117" y2="160" stroke="#cccccc" stroke-width="1"/>
+            <line x1="181" y1="20" x2="181" y2="160" stroke="#eeeeee" stroke-width="1"/>
+            <line x1="246" y1="20" x2="246" y2="160" stroke="#eeeeee" stroke-width="1"/>
+            <line x1="310" y1="20" x2="310" y2="160" stroke="#eeeeee" stroke-width="1"/>
+            <line x1="375" y1="20" x2="375" y2="160" stroke="#eeeeee" stroke-width="1"/>
+            <!-- scale labels -->
+            <text x="117" y="172" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" fill="#888">$0B</text>
+            <text x="181" y="172" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" fill="#888">$50B</text>
+            <text x="246" y="172" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" fill="#888">$125B</text>
+            <text x="310" y="172" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" fill="#888">$190B</text>
+            <text x="375" y="172" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" fill="#888">$250B</text>
+
+            <!-- Amazon: 200 -->
+            <text x="112" y="46" text-anchor="end" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#0D0D0D">Amazon</text>
+            <rect x="117" y="32" width="206" height="22" rx="3" fill="#888888"/>
+            <text x="310" y="46" text-anchor="end" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#ffffff">$200B</text>
+
+            <!-- Microsoft: 190 -->
+            <text x="112" y="80" text-anchor="end" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#0D0D0D">Microsoft</text>
+            <rect x="117" y="66" width="196" height="22" rx="3" fill="#888888"/>
+            <text x="300" y="80" text-anchor="end" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#ffffff">$190B</text>
+
+            <!-- Alphabet: 180 -->
+            <text x="112" y="114" text-anchor="end" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#0D0D0D">Alphabet</text>
+            <rect x="117" y="100" width="186" height="22" rx="3" fill="#888888"/>
+            <text x="290" y="114" text-anchor="end" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#ffffff">$180B</text>
+
+            <!-- Meta: 125 -->
+            <text x="112" y="148" text-anchor="end" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#C0392B">Meta</text>
+            <rect x="117" y="134" width="129" height="22" rx="3" fill="#C0392B"/>
+            <text x="252" y="148" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#C0392B">$125B</text>
+          </svg>
+          <p class="chart-caption">Meta's line is the smallest of the four and the only one whose justification this week required laying off a tenth of the company.</p>
+        </div>
+      </article>
+
+      <!-- SECONDARY: EU AI Act Omnibus -->
+      <article>
+        <span class="section-label">EU · AI Act</span>
+        <h3 class="sh">Brussels Pushes the Operational Deadlines Sixteen Months, Keeps the Prohibition List on the Original Calendar, and Calls the Result an "Omnibus"</h3>
+        <p class="byline">By The Editor, Brussels Desk · May 19, 2026</p>
+        <p class="body">The provisional deal struck on May 7 between the Council and Parliament — the first amendments to the AI Act since it was adopted in 2024 — landed in the formal text last week. The Annex III high-risk obligations, the operational core of the regulation for every enterprise compliance team in Europe, move from August 2, 2026 to December 2, 2027. The national regulatory sandbox deadline slides from August 2026 to August 2027. The new prohibitions added in the Omnibus — non-consensual intimate imagery and AI-generated CSAM — are kept on the original December 2026 calendar, the only date in the package that did not slip.</p>
+        <p class="body">The translation is straightforward and not flattering. Brussels accepted the industry's argument that the operational guidance was not ready in time for the high-risk provisions to be enforceable, and chose to keep the new prohibitions on the original date because those are the parts that read well in a press release. The compliance teams who have been spending the last eighteen months retrofitting model documentation for an August deadline now have an additional sixteen months that they will, almost certainly, mostly spend not retrofitting model documentation. The regulators who will eventually have to enforce the rule have lost a year of operating practice. Both effects are, in the Commission's language, simplifications.</p>
+
+        <div class="chartwrap">
+          <div class="chart-title">AI Act Omnibus — original deadline vs new deadline</div>
+          <svg viewBox="0 0 400 140" role="img" aria-label="Dumbbell chart showing three AI Act provisions and their original versus revised compliance deadlines.">
+            <!-- timeline axis -->
+            <line x1="130" y1="115" x2="370" y2="115" stroke="#cccccc" stroke-width="1"/>
+            <text x="130" y="128" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" fill="#888">AUG '26</text>
+            <text x="190" y="128" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" fill="#888">DEC '26</text>
+            <text x="310" y="128" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" fill="#888">AUG '27</text>
+            <text x="370" y="128" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" fill="#888">DEC '27</text>
+            <line x1="130" y1="112" x2="130" y2="118" stroke="#888888"/>
+            <line x1="190" y1="112" x2="190" y2="118" stroke="#888888"/>
+            <line x1="310" y1="112" x2="310" y2="118" stroke="#888888"/>
+            <line x1="370" y1="112" x2="370" y2="118" stroke="#888888"/>
+
+            <!-- Annex III high-risk: 130 -> 370 -->
+            <text x="125" y="28" text-anchor="end" font-family="Inter, sans-serif" font-size="9" font-weight="700" fill="#0D0D0D">Annex III high-risk</text>
+            <line x1="130" y1="28" x2="370" y2="28" stroke="#C0392B" stroke-width="3"/>
+            <circle cx="130" cy="28" r="5" fill="#888888"/>
+            <circle cx="370" cy="28" r="5" fill="#C0392B"/>
+            <text x="370" y="18" text-anchor="end" font-family="Inter, sans-serif" font-size="8" font-weight="700" fill="#C0392B">+16 mo</text>
+
+            <!-- National sandbox: 130 -> 310 -->
+            <text x="125" y="58" text-anchor="end" font-family="Inter, sans-serif" font-size="9" font-weight="700" fill="#0D0D0D">National sandbox</text>
+            <line x1="130" y1="58" x2="310" y2="58" stroke="#C0392B" stroke-width="3"/>
+            <circle cx="130" cy="58" r="5" fill="#888888"/>
+            <circle cx="310" cy="58" r="5" fill="#C0392B"/>
+            <text x="310" y="48" text-anchor="end" font-family="Inter, sans-serif" font-size="8" font-weight="700" fill="#C0392B">+12 mo</text>
+
+            <!-- CSAM / intimate-imagery prohibition: 190 only (unchanged) -->
+            <text x="125" y="88" text-anchor="end" font-family="Inter, sans-serif" font-size="9" font-weight="700" fill="#0D0D0D">Synthetic-CSAM ban</text>
+            <circle cx="190" cy="88" r="5" fill="#1a8a4a"/>
+            <text x="200" y="91" font-family="Inter, sans-serif" font-size="8" font-weight="700" fill="#1a8a4a">unchanged</text>
+          </svg>
+          <p class="chart-caption">Gray dots are the original deadlines; rust dots are the new ones. The one provision that did not slip is also the one that reads well in a press release.</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+
+  <!-- ================= EDITOR'S NOTE ================= -->
+  <div class="editors">
+    <span class="section-label">Editor's Note</span>
+    <p>The thing to notice about today is that this issue goes out in the only window of the week when the day's biggest stories are still nominally surprises. By lunchtime Pacific, Sundar will have confirmed or quietly walked back the Omni reveal that has been visible from inside the consumer Gemini app for five days. By Wednesday morning, eight thousand Meta employees who got their chief people officer's memo last night will be reading the email it warned them about. By the next AI Act compliance webinar, a partner at a London magic-circle firm will have a slide deck about how the August 2026 deadline quietly became the December 2027 deadline without quite ceasing to be a deadline. The throughline is not that anything was hidden. The throughline is that nothing was. The AI industry in May 2026 has the press cycle of a chess engine with a transposition table — every move is in the book, and the only mystery is whether the player on stage knows which page they are on.</p>
+    <p>One small housekeeping note. This is the last issue that will describe the I/O reveals as "leaked" rather than "announced," because by the time we go to press tomorrow the past tense will have caught up. Whichever items Sundar chooses to confirm at the Shoreline, the rest get the new verb tense whether they were ever on the slide or not. <span class="sign">See you tomorrow.</span></p>
+  </div>
+
+  <!-- ================= CORRECTIONS ================= -->
+  <div class="corrections">
+    <div class="clabel">Corrections &amp; Amplifications</div>
+    <p>This issue refers to the new Gemini model as "either 3.5 or 4.0." This is not the editorial we hedging. This is the actual present state of the public information about the model. We will revise tomorrow once a Google product manager picks one.</p>
+    <p>Yesterday's issue described Reality Labs as "becoming a smaller building." We are told today that the cuts hit Reality Labs disproportionately but do not, in fact, vacate a specific structure. The editorial we again regrets the implicit Menlo Park urbanism and notes that "becoming a smaller line item" would have been more accurate and less evocative.</p>
+    <p>This issue describes Anthropic's London event as "counter-programmed against I/O so cleanly the calendar collision can only be deliberate." For the record, Anthropic announced the date in early March, before Google's I/O date was confirmed. The "deliberate" remains, but the proper word for it is "lucky."</p>
+    <p>Our pre-I/O timeline records leaks from May 14, 15, and 17 as separate events. A reader points out that all three could be the same underlying staging branch leaking through different Android client builds. We agree, and have asked the reader to apply for an editorial job.</p>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <div class="footer">
+    The Daily Hallucination · Vol. 1, No. 9 · Tuesday, May 19, 2026 · Hand-hallucinated each morning · Four stories, one keynote going to press in real time
+  </div>
+
+</div>
+</body>
+</html>
