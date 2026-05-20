@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Daily Hallucination – Wednesday, May 20, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Serif+4:ital,wght@0,400;0,600;1,400;1,600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #F5F0E8;
+    color: #0D0D0D;
+    font-family: 'Source Serif 4', Georgia, serif;
+    line-height: 1.5;
+    padding: 24px 16px 60px;
+  }
+  .paper {
+    max-width: 920px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 36px 44px 44px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+  }
+
+  /* ---------- MASTHEAD ---------- */
+  .masthead { text-align: center; }
+  .masthead h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-size: 3.4rem;
+    line-height: 1.02;
+    color: #0D0D0D;
+  }
+  .masthead .accent { border: none; border-top: 4px solid #C0392B; width: 56px; margin: 10px auto 0; }
+  .masthead .rule3 { border: none; border-top: 3px solid #0D0D0D; margin: 8px auto 0; }
+  .masthead .tagline { font-style: italic; color: #888888; font-size: 0.95rem; margin-top: 8px; }
+  .masthead .thin { border: none; border-top: 1px solid #cccccc; margin: 8px auto; }
+  .masthead .dateline {
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 0.7rem;
+    color: #888888;
+  }
+
+  /* ---------- TODAY AT A GLANCE ---------- */
+  .glance { width: 100%; border-collapse: collapse; margin: 28px 0 30px; font-family: 'Source Serif 4', serif; }
+  .glance th {
+    background: #1a2744; color: #ffffff;
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.16em;
+    font-size: 0.74rem; text-align: left; padding: 9px 12px;
+  }
+  .glance td { background: #F5F0E8; padding: 8px 12px; font-size: 0.86rem; border-bottom: 2px solid #ffffff; vertical-align: top; }
+  .glance td.topic {
+    font-weight: 700; font-family: 'Inter', sans-serif;
+    font-size: 0.74rem; text-transform: uppercase;
+    letter-spacing: 0.04em; width: 150px; color: #1a2744;
+  }
+
+  /* ---------- TWO-COLUMN BODY ---------- */
+  .body-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+  .body-grid > .col:first-child { padding-right: 26px; border-right: 1px solid #cccccc; }
+  .body-grid > .col:last-child { padding-left: 26px; }
+  .col article { margin-bottom: 26px; }
+  .col article:last-child { margin-bottom: 0; }
+
+  .section-label {
+    display: inline-block; background: #1a2744; color: #ffffff;
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    font-size: 0.62rem; padding: 3px 7px; margin-bottom: 7px;
+  }
+  .hl { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.4rem; line-height: 1.16; margin-bottom: 5px; }
+  .sh { font-family: 'Inter', sans-serif; font-weight: 700; font-size: 0.93rem; line-height: 1.25; margin-bottom: 5px; }
+  .byline { font-family: 'Inter', sans-serif; font-style: italic; font-size: 0.72rem; color: #888888; margin-bottom: 8px; }
+  .col p.body { font-size: 0.88rem; text-align: justify; hyphens: auto; -webkit-hyphens: auto; margin-bottom: 8px; }
+  p.opinion {
+    font-style: italic; border-left: 2px solid #dddddd;
+    padding-left: 12px; margin: 8px 0 8px 8px; font-size: 0.86rem;
+  }
+  .pullquote {
+    background: #F5F0E8; border: 1px solid #C0392B; border-left: 4px solid #C0392B;
+    color: #C0392B; font-style: italic; text-align: center;
+    font-size: 0.98rem; line-height: 1.35; padding: 12px 16px; margin: 12px 0;
+  }
+
+  .chartwrap { margin: 12px 0; }
+  .chartwrap svg { width: 100%; height: auto; display: block; }
+  .chart-caption { font-style: italic; font-size: 0.72rem; color: #888888; margin-top: 3px; }
+  .chart-title {
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.07em;
+    font-size: 0.64rem; color: #1a2744; margin-bottom: 4px;
+  }
+
+  /* ---------- EDITOR'S NOTE ---------- */
+  .editors { background: #1a2744; color: #f3efe6; padding: 22px 26px; margin: 30px 0 0; }
+  .editors .section-label { background: #C0392B; color: #ffffff; }
+  .editors p { font-family: 'Source Serif 4', serif; font-style: italic; font-size: 0.92rem; line-height: 1.55; margin-bottom: 9px; }
+  .editors p:last-child { margin-bottom: 0; }
+  .editors .sign { font-style: italic; color: #b9c2d6; }
+
+  /* ---------- CORRECTIONS ---------- */
+  .corrections { background: #f1f1f1; border: 1px solid #cccccc; padding: 12px 16px; margin: 22px 0 0; font-size: 0.82rem; }
+  .corrections .clabel { font-family: 'Inter', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.62rem; color: #C0392B; margin-bottom: 5px; }
+  .corrections p { margin-bottom: 6px; font-style: italic; }
+  .corrections p:last-child { margin-bottom: 0; }
+
+  /* ---------- FOOTER ---------- */
+  .footer {
+    border-top: 1px solid #0D0D0D; margin-top: 30px; padding-top: 12px;
+    text-align: center; font-family: 'Inter', sans-serif;
+    text-transform: uppercase; letter-spacing: 0.14em;
+    font-size: 0.62rem; color: #888888;
+  }
+
+  @media (max-width: 680px) {
+    .paper { padding: 24px 18px 30px; }
+    .masthead h1 { font-size: 2.1rem; }
+    .body-grid { grid-template-columns: 1fr; }
+    .body-grid > .col:first-child {
+      padding-right: 0; border-right: none;
+      border-bottom: 1px solid #cccccc;
+      padding-bottom: 26px; margin-bottom: 26px;
+    }
+    .body-grid > .col:last-child { padding-left: 0; }
+    .glance td.topic { width: 110px; }
+  }
+</style>
+</head>
+<body>
+<div class="paper">
+
+  <!-- ================= MASTHEAD ================= -->
+  <header class="masthead">
+    <h1>The Daily Hallucination</h1>
+    <hr class="accent">
+    <hr class="rule3">
+    <p class="tagline">An AI &amp; tech daily that says the quiet part — out loud, in a serif font.</p>
+    <hr class="thin">
+    <p class="dateline">Wednesday, May 20, 2026 &nbsp;·&nbsp; Vol. 1, No. 10</p>
+  </header>
+
+  <!-- ================= TODAY AT A GLANCE ================= -->
+  <table class="glance">
+    <tr><th colspan="2">Today at a Glance</th></tr>
+    <tr><td class="topic">Google / I/O</td><td>The dreaded "third-place" slide never appeared, because Google shipped the cheap-and-fast model and put the flagship — Gemini 3.5 Pro — behind a "next month," then tripled the price of Flash on the way out.</td></tr>
+    <tr><td class="topic">Meta / Layoffs</td><td>The termination emails went out this morning to roughly eight thousand people, attached to a memo that also projects AI will write four times as much of Meta's code this year as the engineers who are left.</td></tr>
+    <tr><td class="topic">Anthropic / Metering</td><td>The June 15 agent meter is now official, and the trade press has done the arithmetic: for the heaviest agent users it reads as a 12-to-175× increase on the dollar.</td></tr>
+    <tr><td class="topic">OpenClaw / Security</td><td>More than 800 of the marketplace's 10,700 "skills" are now flagged as malware, the registry is being run through a virus scanner after the fact, and two of the CVEs are remote-code-execution.</td></tr>
+  </table>
+
+  <!-- ================= BODY ================= -->
+  <div class="body-grid">
+
+    <!-- ===== LEFT COLUMN ===== -->
+    <div class="col">
+
+      <!-- LEAD STORY: Google I/O verdict -->
+      <article>
+        <span class="section-label">Google · I/O</span>
+        <h2 class="hl">The Keynote Shipped a Flash and a Promise: Gemini 3.5 Pro Lands "Next Month," and the Slide Everyone Dreaded Was Never On the Cards</h2>
+        <p class="byline">By The Editor, Mountain View Desk · May 20, 2026</p>
+
+        <p class="body">The verb tense caught up overnight, as promised, and the answer to yesterday's open question is that the model is a 3.5, not a 4.0, and the 3.5 that actually shipped is Flash. Gemini 3.5 Flash went live on stage and into the API, Search and the consumer app the same hour — fast, cheap by flagship standards, and pitched as near-frontier quality at Flash latency. Gemini 3.5 Pro, the model anyone was waiting for, is "in testing" and arrives "next month." So the keynote whose only job was to ship something that works shipped the small one and IOU'd the big one. Spark, the agentic Gmail-and-Docs assistant, was real and its party-planning demo populated a live Sheets tracker without faceplanting. Omni, the multimodal-in, editable-video-out model, was real. The glasses ordered a coffee. The lip-sync held. Credit where due: nothing broke.</p>
+
+        <p class="body">The slide we spent yesterday bracing for — Gemini in third place on its own capability chart — did not materialize, and we owe the record a note about why. There was no third-place slide because Google declined to draw the axis on which it would have lost. Where the benchmarks are public, the picture is a split decision: OpenAI's GPT-5.5 leads the agentic-workflow suites, Anthropic's Claude Opus 4.7 leads coding and posts the lowest hallucination rate, and Gemini 3.5 Flash competes hardest on the one axis Google controls completely, which is dollars per token at acceptable quality. Land the conversation on price-performance and you are winning. Land it on raw frontier capability and you are explaining why Pro is a month away. Google, sensibly, picked the first axis and built the whole keynote on it.</p>
+
+        <p class="body">Which makes the pricing the actual headline, and the actual headline is that Flash got more expensive. The new Flash list runs $1.50 per million input tokens and $9.00 per million output — roughly three times the previous generation per token, a fact that did not appear on any slide and was reconstructed by developers within the hour. There is also a new $100-a-month "AI Ultra" tier. The reframing is elegant: Google has spent two years competing on being the cheapest credible model, announced a model whose pitch is being the cheapest credible model, and tripled its price in the same breath. The flagship that would have to justify the increase is the one that ships next month.</p>
+
+        <div class="pullquote">"There was no third-place slide because Google declined to draw the axis on which it would have lost."</div>
+
+        <div class="chartwrap">
+          <div class="chart-title">Gemini Flash — output price, prev generation vs 3.5</div>
+          <svg viewBox="0 0 400 150" role="img" aria-label="Slope chart of Gemini Flash output token price, previous generation versus 3.5.">
+            <!-- y grid -->
+            <line x1="110" y1="25" x2="300" y2="25" stroke="#eeeeee" stroke-width="1"/>
+            <line x1="110" y1="77" x2="300" y2="77" stroke="#eeeeee" stroke-width="1"/>
+            <line x1="110" y1="130" x2="300" y2="130" stroke="#cccccc" stroke-width="1"/>
+            <text x="104" y="28" text-anchor="end" font-family="Inter, sans-serif" font-size="7" fill="#888">$10</text>
+            <text x="104" y="80" text-anchor="end" font-family="Inter, sans-serif" font-size="7" fill="#888">$5</text>
+            <text x="104" y="133" text-anchor="end" font-family="Inter, sans-serif" font-size="7" fill="#888">$0</text>
+
+            <!-- endpoint labels -->
+            <text x="110" y="145" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#888">PREV FLASH</text>
+            <text x="300" y="145" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" font-weight="700" fill="#C0392B">3.5 FLASH</text>
+
+            <!-- slope line: ~$3 (y=99) -> $9 (y=36) -->
+            <line x1="110" y1="99" x2="300" y2="36" stroke="#C0392B" stroke-width="3"/>
+            <circle cx="110" cy="99" r="5" fill="#888888"/>
+            <circle cx="300" cy="36" r="5" fill="#C0392B"/>
+            <text x="100" y="96" text-anchor="end" font-family="Inter, sans-serif" font-size="9" font-weight="700" fill="#888">~$3.00</text>
+            <text x="310" y="33" text-anchor="start" font-family="Inter, sans-serif" font-size="9" font-weight="700" fill="#C0392B">$9.00</text>
+            <text x="310" y="46" text-anchor="start" font-family="Inter, sans-serif" font-size="8" fill="#1a2744">≈ 3×</text>
+          </svg>
+          <p class="chart-caption">Per million output tokens. The prev-gen figure is reconstructed from developers' "≈3×" reads; the $9.00 is the published 3.5 Flash list. The $100/mo AI Ultra tier is separate, and Pro has no price yet.</p>
+        </div>
+
+        <p class="opinion">The honest version of yesterday's worry turns out to be the right one with the polarity flipped. Google was never going to walk out and admit third place. It was going to redraw the chart so that third place wasn't on it — and then charge you more for the privilege of agreeing.</p>
+      </article>
+
+      <!-- SECONDARY: Anthropic agent metering -->
+      <article>
+        <span class="section-label">Anthropic · Metering</span>
+        <h3 class="sh">The June 15 Agent Meter Is Real, the Math Is Out, and "Your Subscription Still Works" Is Doing a Lot of Work in That Sentence</h3>
+        <p class="byline">By The Editor, Anthropic Desk · May 20, 2026</p>
+        <p class="body">As of June 15, anything that runs Claude without a human watching the cursor — the Agent SDK, <code>claude -p</code>, the GitHub Actions integration, and third-party agents — comes off the subscription rate limits and onto a separate dollar-denominated monthly credit: $20 on Pro, $100 on Max 5×, $200 on Max 20×, billed at full API rates, with no rollover. Interactive use — the chat window, the terminal you are actually sitting in front of — is untouched. The trade press has run the numbers and the heaviest agent users land somewhere between twelve and a hundred and seventy-five times worse off per dollar, depending on how much of their workflow they had quietly automated under the old all-you-can-eat limits.</p>
+        <p class="body">The framing is "your subscription still works," and it does, for the definition of work that excludes the thing most heavy users bought it for. The timing is also instructive: Anthropic spent the spring being the lab that didn't need a keynote, and is now the lab metering the part of the product that grew fastest. Yesterday Google tripled the price of Flash without saying so. Today Anthropic is putting a coin slot on the agents. The whole industry has, this week, quietly agreed that the autonomous-agent free trial is over.</p>
+
+        <div class="chartwrap">
+          <div class="chart-title">Effective cost change for heavy agent users, post-June 15</div>
+          <svg viewBox="0 0 400 92" role="img" aria-label="Dumbbell chart showing effective price increase ranging from 12 times to 175 times for heavy agent users.">
+            <!-- axis -->
+            <line x1="40" y1="66" x2="375" y2="66" stroke="#cccccc" stroke-width="1"/>
+            <text x="40" y="80" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" fill="#888">1×</text>
+            <text x="135" y="80" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" fill="#888">50×</text>
+            <text x="230" y="80" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" fill="#888">100×</text>
+            <text x="345" y="80" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" fill="#888">175×</text>
+            <line x1="40" y1="63" x2="40" y2="69" stroke="#888"/>
+            <line x1="135" y1="63" x2="135" y2="69" stroke="#888"/>
+            <line x1="230" y1="63" x2="230" y2="69" stroke="#888"/>
+            <line x1="345" y1="63" x2="345" y2="69" stroke="#888"/>
+
+            <!-- dumbbell: 12x (x=61) to 175x (x=345) -->
+            <line x1="61" y1="38" x2="345" y2="38" stroke="#C0392B" stroke-width="3"/>
+            <circle cx="61" cy="38" r="5" fill="#888888"/>
+            <circle cx="345" cy="38" r="5" fill="#C0392B"/>
+            <text x="61" y="28" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" font-weight="700" fill="#888">12×</text>
+            <text x="61" y="20" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" fill="#1a2744">light</text>
+            <text x="345" y="28" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" font-weight="700" fill="#C0392B">175×</text>
+            <text x="345" y="20" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" fill="#1a2744">heaviest</text>
+          </svg>
+          <p class="chart-caption">The trade-press range, per dollar of subscription, for agent workloads previously absorbed by the rate limits. Interactive use is unchanged; the spread is entirely in how much you'd automated.</p>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- ===== RIGHT COLUMN ===== -->
+    <div class="col">
+
+      <!-- LEAD STORY: Meta layoffs effective today -->
+      <article>
+        <span class="section-label">Meta · Layoffs</span>
+        <h2 class="hl">The Emails Arrived This Morning, Attached to a Memo That Also Promised the Survivors Will Soon Be Out-Coded Four-to-One by Software</h2>
+        <p class="byline">By The Editor, Menlo Park Desk · May 20, 2026</p>
+
+        <p class="body">The number stopped being a leak at some point before sunrise Pacific. Roughly eight thousand people — about ten percent of Meta's headcount — received the termination email this morning that Janelle Gale's memo warned about on Monday night, with a further six thousand open requisitions canceled, putting the effective reduction near fourteen thousand. The internal language frames it as structural rather than performance-based, a reallocation toward the $115-to-$135 billion of AI infrastructure the company plans to spend this year. Severance is the previously reported sixteen weeks of base plus two weeks per year of tenure. Reality Labs, already cut twice this year, took another disproportionate share. The survivors are being reorganized into the AI "pods" reporting up to Alexandr Wang's Superintelligence Labs.</p>
+
+        <p class="body">Buried in the same memo is the line that will outlive the headline number. Meta now projects that AI will write roughly four times as much of its code this year as its human engineers will. Read the two halves together and the document becomes its own thesis statement: here is the headcount we are removing, and here, one paragraph away, is our official forecast that the machines will do four times the work of the people we are keeping. Whether that projection is true is almost beside the point. It is being printed, in an internal memo, on the same morning the layoff emails go out, as the justification. There is no kinder reading available, and the company did not offer one.</p>
+
+        <p class="body">By our running count this is the fourth round of cuts at Meta in 2026 and roughly the eighth since the "year of efficiency" began in late 2022, cumulative north of twenty-five thousand — figures assembled from journalists' tallies rather than Meta's own disclosure, and we flag them as estimates. What is not an estimate is the structure of the bet. Zuckerberg has put the bill for a model that has not yet shipped onto a workforce that has, and the first place that arithmetic gets tested is the next earnings call.</p>
+
+        <div class="pullquote">"Here is the headcount we are removing, and here, one paragraph away, is our forecast that the machines will do four times the work of the people we are keeping."</div>
+
+        <div class="chartwrap">
+          <div class="chart-title">Meta's 2026 code, as projected in the layoff memo</div>
+          <svg viewBox="0 0 400 120" role="img" aria-label="Pictogram comparing one unit of human-written code to four units Meta projects AI will write in 2026.">
+            <!-- human row: 1 glyph -->
+            <text x="20" y="38" font-family="Inter, sans-serif" font-size="9" font-weight="700" fill="#0D0D0D">Human engineers</text>
+            <rect x="160" y="22" width="22" height="22" rx="3" fill="#0D0D0D"/>
+            <text x="372" y="38" text-anchor="end" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#0D0D0D">1×</text>
+
+            <!-- AI row: 4 glyphs -->
+            <text x="20" y="86" font-family="Inter, sans-serif" font-size="9" font-weight="700" fill="#C0392B">What Meta says AI writes</text>
+            <rect x="160" y="70" width="22" height="22" rx="3" fill="#C0392B"/>
+            <rect x="188" y="70" width="22" height="22" rx="3" fill="#C0392B"/>
+            <rect x="216" y="70" width="22" height="22" rx="3" fill="#C0392B"/>
+            <rect x="244" y="70" width="22" height="22" rx="3" fill="#C0392B"/>
+            <text x="372" y="86" text-anchor="end" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#C0392B">4×</text>
+
+            <line x1="20" y1="104" x2="380" y2="104" stroke="#eeeeee" stroke-width="1"/>
+            <text x="20" y="116" font-family="Inter, sans-serif" font-size="7" fill="#888">Each square is one unit of code volume, per the memo's own projection.</text>
+          </svg>
+          <p class="chart-caption">The forecast and the layoff notice share a document. We have left the obvious causal arrow for the reader to draw.</p>
+        </div>
+      </article>
+
+      <!-- SECONDARY: OpenClaw security crisis -->
+      <article>
+        <span class="section-label">Personal Agents · OpenClaw</span>
+        <h3 class="sh">The Marketplace That Let Any Week-Old GitHub Account Ship a "Skill" Is Now Scanning 10,700 of Them for Malware, After the Fact</h3>
+        <p class="byline">By The Editor, Agents Desk · May 20, 2026</p>
+        <p class="body">OpenClaw's "skills" marketplace, ClawHub, has spent the past stretch demonstrating what happens when you build an app store with no review, no signing and no scanning, and let anyone with a GitHub account older than a week publish to it. Researchers initially flagged 341 malicious skills — roughly an eighth of the registry at the time — and the count has since climbed past 800 of 10,700, the bulk of them dropping Atomic Stealer on macOS and keyloggers on Windows in a campaign now being called ClawHavoc. Two of the disclosed CVEs are remote-code-execution and privilege-escalation. The fix announced this week is that every skill now gets run through VirusTotal's scanner, which is the security model arriving precisely one breach too late.</p>
+        <p class="body">The throughline is timing again. OpenClaw spent its rise being the open, frictionless, anyone-can-contribute agent — and frictionless turns out to mean the malware ships at the same velocity as everything else. Hermes, the agent that passed it on OpenRouter earlier this month, gets to watch a competitor learn application-security basics in public. The lesson the marketplaces keep relearning is the oldest one in the catalog: an ecosystem's openness and its attack surface are the same number, measured from different ends.</p>
+
+        <div class="chartwrap">
+          <div class="chart-title">ClawHub skills flagged as malicious</div>
+          <svg viewBox="0 0 400 120" role="img" aria-label="Bar chart of malicious skills flagged on ClawHub, initial count versus current.">
+            <!-- grid -->
+            <line x1="117" y1="16" x2="117" y2="96" stroke="#cccccc" stroke-width="1"/>
+            <line x1="181" y1="16" x2="181" y2="96" stroke="#eeeeee" stroke-width="1"/>
+            <line x1="246" y1="16" x2="246" y2="96" stroke="#eeeeee" stroke-width="1"/>
+            <line x1="310" y1="16" x2="310" y2="96" stroke="#eeeeee" stroke-width="1"/>
+            <line x1="375" y1="16" x2="375" y2="96" stroke="#eeeeee" stroke-width="1"/>
+            <text x="117" y="108" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" fill="#888">0</text>
+            <text x="246" y="108" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" fill="#888">500</text>
+            <text x="375" y="108" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" fill="#888">1,000</text>
+
+            <!-- initial: 341 -> width 88 -->
+            <text x="112" y="42" text-anchor="end" font-family="Inter, sans-serif" font-size="9" font-weight="700" fill="#0D0D0D">First flagged</text>
+            <rect x="117" y="28" width="88" height="22" rx="3" fill="#888888"/>
+            <text x="211" y="42" font-family="Inter, sans-serif" font-size="9" font-weight="700" fill="#888">341</text>
+
+            <!-- now: 800 -> width 206 -->
+            <text x="112" y="76" text-anchor="end" font-family="Inter, sans-serif" font-size="9" font-weight="700" fill="#C0392B">Now</text>
+            <rect x="117" y="62" width="206" height="22" rx="3" fill="#C0392B"/>
+            <text x="316" y="76" text-anchor="end" font-family="Inter, sans-serif" font-size="9" font-weight="700" fill="#ffffff">800+</text>
+          </svg>
+          <p class="chart-caption">Of 10,700 published skills. The marketplace's answer — scan everything through VirusTotal — is now live, several hundred infections after it would have helped.</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+
+  <!-- ================= EDITOR'S NOTE ================= -->
+  <div class="editors">
+    <span class="section-label">Editor's Note</span>
+    <p>I spent yesterday's note promising the past tense would catch up by this morning, and it did, so let me settle the bet honestly. We braced for a slide showing Gemini in third place. There was no such slide — not because we were wrong about where Gemini sits, but because Google is better at picking the axis than we gave it credit for. You do not lose a chart you never draw. The model that shipped is the cheap one; the model that would have to win the comparison is "next month"; and the cheap one got three times more expensive on the way out the door. That is not a defeat. It is not a victory either. It is a company that has learned to change the subject in 4K.</p>
+    <p>What I keep turning over is a smaller thing, sitting in the right-hand column. A memo went out in Menlo Park this morning that fired eight thousand people and, a paragraph later, forecast that software will out-produce the survivors four to one. Somebody wrote both sentences. Somebody put them in the same file. Nobody, apparently, read them back-to-back before sending. The most quotable line in tech this week was not said on a stage in Mountain View. It was attached to a layoff. <span class="sign">See you tomorrow.</span></p>
+  </div>
+
+  <!-- ================= CORRECTIONS ================= -->
+  <div class="corrections">
+    <div class="clabel">Corrections &amp; Amplifications</div>
+    <p>Yesterday we described the new Gemini as "either 3.5 or 4.0," promising to revise once a Google product manager picked one. A Google product manager picked one. It is 3.5, the 3.5 in question is Flash, and the model we were actually arguing about — Pro — was deferred to "next month," meaning the dispute is not resolved so much as rescheduled.</p>
+    <p>Yesterday we forecast a capability slide putting Gemini third, sourced to a pre-brief and a leaked PDF. No such slide ran. We maintain the underlying read — split leadership, Gemini strongest on price-performance — but we were wrong about the artifact, and a slide we predicted that did not appear is, technically, a hallucination. We are named for this.</p>
+    <p>Our Flash price chart reconstructs the previous-generation figure as "~$3.00" from developers' "≈3×" estimates rather than a Google number, because Google did not publish one. If the real prior figure was $2.50, our slope is too gentle and the headline is worse, not better.</p>
+    <p>This issue uses the word "skills" eleven times in reference to OpenClaw and not once approvingly. The marketing department that named malware-delivery vectors "skills" is invited to consider the alternatives.</p>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <div class="footer">
+    The Daily Hallucination · Vol. 1, No. 10 · Wednesday, May 20, 2026 · Hand-hallucinated each morning · Four stories, one memo that argued against itself
+  </div>
+
+</div>
+</body>
+</html>
