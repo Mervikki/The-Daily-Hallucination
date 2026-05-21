@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Daily Hallucination – Thursday, May 21, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Serif+4:ital,wght@0,400;0,600;1,400;1,600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #F5F0E8;
+    color: #0D0D0D;
+    font-family: 'Source Serif 4', Georgia, serif;
+    line-height: 1.5;
+    padding: 24px 16px 60px;
+  }
+  .paper {
+    max-width: 920px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 36px 44px 44px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+  }
+
+  /* ---------- MASTHEAD ---------- */
+  .masthead { text-align: center; }
+  .masthead h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-size: 3.4rem;
+    line-height: 1.02;
+    color: #0D0D0D;
+  }
+  .masthead .accent { border: none; border-top: 4px solid #C0392B; width: 56px; margin: 10px auto 0; }
+  .masthead .rule3 { border: none; border-top: 3px solid #0D0D0D; margin: 8px auto 0; }
+  .masthead .tagline { font-style: italic; color: #888888; font-size: 0.95rem; margin-top: 8px; }
+  .masthead .thin { border: none; border-top: 1px solid #cccccc; margin: 8px auto; }
+  .masthead .dateline {
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 0.7rem;
+    color: #888888;
+  }
+
+  /* ---------- TODAY AT A GLANCE ---------- */
+  .glance { width: 100%; border-collapse: collapse; margin: 28px 0 30px; font-family: 'Source Serif 4', serif; }
+  .glance th {
+    background: #1a2744; color: #ffffff;
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.16em;
+    font-size: 0.74rem; text-align: left; padding: 9px 12px;
+  }
+  .glance td { background: #F5F0E8; padding: 8px 12px; font-size: 0.86rem; border-bottom: 2px solid #ffffff; vertical-align: top; }
+  .glance td.topic {
+    font-weight: 700; font-family: 'Inter', sans-serif;
+    font-size: 0.74rem; text-transform: uppercase;
+    letter-spacing: 0.04em; width: 150px; color: #1a2744;
+  }
+
+  /* ---------- TWO-COLUMN BODY ---------- */
+  .body-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+  .body-grid > .col:first-child { padding-right: 26px; border-right: 1px solid #cccccc; }
+  .body-grid > .col:last-child { padding-left: 26px; }
+  .col article { margin-bottom: 26px; }
+  .col article:last-child { margin-bottom: 0; }
+
+  .section-label {
+    display: inline-block; background: #1a2744; color: #ffffff;
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    font-size: 0.62rem; padding: 3px 7px; margin-bottom: 7px;
+  }
+  .hl { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.4rem; line-height: 1.16; margin-bottom: 5px; }
+  .sh { font-family: 'Inter', sans-serif; font-weight: 700; font-size: 0.93rem; line-height: 1.25; margin-bottom: 5px; }
+  .byline { font-family: 'Inter', sans-serif; font-style: italic; font-size: 0.72rem; color: #888888; margin-bottom: 8px; }
+  .col p.body { font-size: 0.88rem; text-align: justify; hyphens: auto; -webkit-hyphens: auto; margin-bottom: 8px; }
+  p.opinion {
+    font-style: italic; border-left: 2px solid #dddddd;
+    padding-left: 12px; margin: 8px 0 8px 8px; font-size: 0.86rem;
+  }
+  .pullquote {
+    background: #F5F0E8; border: 1px solid #C0392B; border-left: 4px solid #C0392B;
+    color: #C0392B; font-style: italic; text-align: center;
+    font-size: 0.98rem; line-height: 1.35; padding: 12px 16px; margin: 12px 0;
+  }
+
+  .chartwrap { margin: 12px 0; }
+  .chartwrap svg { width: 100%; height: auto; display: block; }
+  .chart-caption { font-style: italic; font-size: 0.72rem; color: #888888; margin-top: 3px; }
+  .chart-title {
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.07em;
+    font-size: 0.64rem; color: #1a2744; margin-bottom: 4px;
+  }
+
+  /* ---------- EDITOR'S NOTE ---------- */
+  .editors { background: #1a2744; color: #f3efe6; padding: 22px 26px; margin: 30px 0 0; }
+  .editors .section-label { background: #C0392B; color: #ffffff; }
+  .editors p { font-family: 'Source Serif 4', serif; font-style: italic; font-size: 0.92rem; line-height: 1.55; margin-bottom: 9px; }
+  .editors p:last-child { margin-bottom: 0; }
+  .editors .sign { font-style: italic; color: #b9c2d6; }
+
+  /* ---------- CORRECTIONS ---------- */
+  .corrections { background: #f1f1f1; border: 1px solid #cccccc; padding: 12px 16px; margin: 22px 0 0; font-size: 0.82rem; }
+  .corrections .clabel { font-family: 'Inter', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.62rem; color: #C0392B; margin-bottom: 5px; }
+  .corrections p { margin-bottom: 6px; font-style: italic; }
+  .corrections p:last-child { margin-bottom: 0; }
+
+  /* ---------- FOOTER ---------- */
+  .footer {
+    border-top: 1px solid #0D0D0D; margin-top: 30px; padding-top: 12px;
+    text-align: center; font-family: 'Inter', sans-serif;
+    text-transform: uppercase; letter-spacing: 0.14em;
+    font-size: 0.62rem; color: #888888;
+  }
+
+  @media (max-width: 680px) {
+    .paper { padding: 24px 18px 30px; }
+    .masthead h1 { font-size: 2.1rem; }
+    .body-grid { grid-template-columns: 1fr; }
+    .body-grid > .col:first-child {
+      padding-right: 0; border-right: none;
+      border-bottom: 1px solid #cccccc;
+      padding-bottom: 26px; margin-bottom: 26px;
+    }
+    .body-grid > .col:last-child { padding-left: 0; }
+    .glance td.topic { width: 110px; }
+  }
+</style>
+</head>
+<body>
+<div class="paper">
+
+  <!-- ================= MASTHEAD ================= -->
+  <header class="masthead">
+    <h1>The Daily Hallucination</h1>
+    <hr class="accent">
+    <hr class="rule3">
+    <p class="tagline">An AI &amp; tech daily that says the quiet part — out loud, in a serif font.</p>
+    <hr class="thin">
+    <p class="dateline">Thursday, May 21, 2026 &nbsp;·&nbsp; Vol. 1, No. 11</p>
+  </header>
+
+  <!-- ================= TODAY AT A GLANCE ================= -->
+  <table class="glance">
+    <tr><th colspan="2">Today at a Glance</th></tr>
+    <tr><td class="topic">OpenAI / Research</td><td>An internal model disproved an 80-year-old conjecture in discrete geometry, and the mathematician who debunked OpenAI's last math claim is one of the people who signed off on this one.</td></tr>
+    <tr><td class="topic">Markets / IPOs</td><td>Wall Street's fresh anxiety, per CNBC: the labs are raising hundreds of billions to go public on a product that open-weight models are racing to make almost free.</td></tr>
+    <tr><td class="topic">Meta / Layoffs</td><td>Eight thousand gone, a record quarter booked the same week, and a median paycheck that shrank while the marquee AI hires get nine-figure offers.</td></tr>
+    <tr><td class="topic">Anthropic / Claude Code</td><td>The postmortem now circulating confirms what users said for six weeks: the coding assistant really did get worse, and it took three overlapping changes to do it.</td></tr>
+  </table>
+
+  <!-- ================= BODY ================= -->
+  <div class="body-grid">
+
+    <!-- ===== LEFT COLUMN ===== -->
+    <div class="col">
+
+      <!-- LEAD STORY: OpenAI math disproof -->
+      <article>
+        <span class="section-label">OpenAI · Research</span>
+        <h2 class="hl">A Machine Had an Original Idea, and the Skeptic Who Called the Last Bluff Put His Name on This One</h2>
+        <p class="byline">By The Editor, Research Desk · May 21, 2026</p>
+
+        <p class="body">On Tuesday OpenAI said one of its internal reasoning models disproved the planar unit-distance conjecture — a question Paul Erdős posed in 1946 about how many pairs of points on a flat surface can sit exactly one unit apart. For roughly eighty years the working assumption was that the square grid was about as good as any arrangement could get. The model found an entirely new family of constructions that beats it, and supplied a proof. A group of outside mathematicians checked the argument and wrote a companion paper explaining why it matters. Tim Gowers, a Fields medalist, called the result "a milestone in AI mathematics." The number theorist Arul Shankar said it shows current models "go beyond just helpers" and "are capable of having original ingenious ideas." None of that is the language the field hands out to a search engine that got lucky.</p>
+
+        <p class="body">What makes it land is who was holding the stopwatch. In October, OpenAI's then-VP Kevin Weil announced on X that GPT-5 had cracked ten unsolved Erdős problems. Thomas Bloom — who maintains the canonical Erdős-problems site — pointed out that the model had not proven anything new; it had surfaced solutions already sitting in the published literature. Yann LeCun and Demis Hassabis took their shots, the claim deflated, and Weil left OpenAI in April. The difference between retrieving a proof and inventing one is the entire credibility of the genre, and last autumn OpenAI was caught on the wrong side of it. This week the verifiers list includes Noga Alon, Melanie Wood — and Thomas Bloom, the same man who detonated the previous claim. When your harshest auditor signs the second set of books, the second set of books is probably real.</p>
+
+        <p class="body">So we will say the unfashionable thing and credit it plainly: this is a genuine, externally checked, original mathematical result produced by a machine, and it is the first time we have been able to write that sentence without a caveat doing all the load-bearing. It is also one result, in one corner of one field, and the gap between "had an ingenious idea about unit distances" and "can be trusted with your tax return" remains roughly the width of the continent. But the narrow claim is true, and after a year of math-from-AI press releases that wilted on contact with an expert, a narrow true claim is the rarer and more interesting thing.</p>
+
+        <div class="pullquote">"When your harshest auditor signs the second set of books, the second set of books is probably real."</div>
+
+        <div class="chartwrap">
+          <div class="chart-title">The Erdős saga, OpenAI edition</div>
+          <svg viewBox="0 0 400 132" role="img" aria-label="Annotated timeline of OpenAI's Erdos-problem claims, from the October 2025 overclaim to the May 2026 verified disproof.">
+            <!-- axis -->
+            <line x1="40" y1="74" x2="372" y2="74" stroke="#cccccc" stroke-width="1"/>
+
+            <!-- tick 1: Oct 2025 claim (context, gray) -->
+            <line x1="58" y1="69" x2="58" y2="79" stroke="#888888" stroke-width="2"/>
+            <circle cx="58" cy="74" r="3.5" fill="#888888"/>
+            <text x="58" y="60" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" fill="#888">OCT 2025</text>
+            <text x="58" y="95" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.5" fill="#0D0D0D">Weil: "GPT-5</text>
+            <text x="58" y="104" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.5" fill="#0D0D0D">solved 10"</text>
+
+            <!-- tick 2: Bloom debunk (context, gray) -->
+            <line x1="158" y1="69" x2="158" y2="79" stroke="#888888" stroke-width="2"/>
+            <circle cx="158" cy="74" r="3.5" fill="#888888"/>
+            <text x="158" y="60" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" fill="#888">DAYS LATER</text>
+            <text x="158" y="95" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.5" fill="#0D0D0D">Bloom: it was</text>
+            <text x="158" y="104" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.5" fill="#0D0D0D">already published</text>
+
+            <!-- tick 3: Weil exits (context, gray) -->
+            <line x1="258" y1="69" x2="258" y2="79" stroke="#888888" stroke-width="2"/>
+            <circle cx="258" cy="74" r="3.5" fill="#888888"/>
+            <text x="258" y="60" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" fill="#888">APR 2026</text>
+            <text x="258" y="95" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.5" fill="#0D0D0D">Weil leaves</text>
+            <text x="258" y="104" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.5" fill="#0D0D0D">OpenAI</text>
+
+            <!-- tick 4: verified disproof (load-bearing, rust) -->
+            <line x1="352" y1="66" x2="352" y2="82" stroke="#C0392B" stroke-width="2.5"/>
+            <circle cx="352" cy="74" r="4.5" fill="#C0392B"/>
+            <text x="352" y="58" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" font-weight="700" fill="#C0392B">MAY 20 2026</text>
+            <text x="352" y="95" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.5" font-weight="700" fill="#C0392B">Disproof —</text>
+            <text x="352" y="104" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.5" font-weight="700" fill="#C0392B">Bloom verifies</text>
+          </svg>
+          <p class="chart-caption">Same company, same problem-setter, same skeptic — opposite verdict. The rust tick is the one that survived peer scrutiny.</p>
+        </div>
+
+        <p class="opinion">There is a tidy irony in a publication named for confident wrongness covering a model that, this time, was confidently right about something no human had proven. The lesson is not that the machines are infallible. It is that the only check that ever mattered was the one we keep skipping: ask someone who would enjoy proving you wrong, and wait for the answer.</p>
+      </article>
+
+      <!-- SECONDARY: cheap AI / IPO -->
+      <article>
+        <span class="section-label">Markets · IPOs</span>
+        <h3 class="sh">Wall Street's New Worry: What If the Thing Everyone Is Going Public On Is About to Be Nearly Free?</h3>
+        <p class="byline">By The Editor, Markets Desk · May 21, 2026</p>
+        <p class="body">CNBC put a name this week to the anxiety humming under the roadshows: cheap AI could derail the OpenAI and Anthropic IPOs. The labs have raised on a scale that only makes sense if frontier inference stays scarce and dear — OpenAI's reported $122 billion round at an $852 billion valuation, the largest private raise on record; Anthropic stacking another $40 billion from Google and $5 billion from Amazon on top of its compute commitments. Both are pointed at public listings in the second half of the year. The problem is the price of the underlying good, which keeps falling.</p>
+        <p class="body">DeepSeek V4 shipped this spring under an MIT license with a million-token context and an attention rewrite that cuts inference cost to a fraction of the prior generation. It is not the frontier, but it is close enough for most of the work most companies actually buy, at a hosted price that sits roughly two orders of magnitude below the closed flagships. If the floor on capability keeps rising while the price races toward zero, the question the bankers do not want shouted from the back of the room is the simple one: what, exactly, is the moat you are charging $852 billion for?</p>
+
+        <div class="chartwrap">
+          <div class="chart-title">Output price gap — closed frontier vs open-weight</div>
+          <svg viewBox="0 0 400 96" role="img" aria-label="Dumbbell chart comparing representative output token prices for closed frontier models versus open-weight models.">
+            <!-- axis -->
+            <line x1="45" y1="70" x2="375" y2="70" stroke="#cccccc" stroke-width="1"/>
+            <text x="45" y="84" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" fill="#888">$0</text>
+            <text x="169" y="84" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" fill="#888">$30</text>
+            <text x="292" y="84" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" fill="#888">$60</text>
+            <text x="375" y="84" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" fill="#888">$80</text>
+            <line x1="45" y1="67" x2="45" y2="73" stroke="#888"/>
+            <line x1="169" y1="67" x2="169" y2="73" stroke="#888"/>
+            <line x1="292" y1="67" x2="292" y2="73" stroke="#888"/>
+
+            <!-- dumbbell: ~$1 open (x≈49) to ~$75 closed (x≈354) -->
+            <line x1="49" y1="40" x2="354" y2="40" stroke="#C0392B" stroke-width="3"/>
+            <circle cx="49" cy="40" r="5" fill="#2e7d32"/>
+            <circle cx="354" cy="40" r="5" fill="#C0392B"/>
+            <text x="49" y="30" text-anchor="start" font-family="Inter, sans-serif" font-size="8" font-weight="700" fill="#2e7d32">≈ $1</text>
+            <text x="49" y="22" text-anchor="start" font-family="Inter, sans-serif" font-size="7" fill="#1a2744">open-weight (V4 tier)</text>
+            <text x="354" y="30" text-anchor="end" font-family="Inter, sans-serif" font-size="8" font-weight="700" fill="#C0392B">≈ $75</text>
+            <text x="354" y="22" text-anchor="end" font-family="Inter, sans-serif" font-size="7" fill="#1a2744">closed frontier (Opus tier)</text>
+          </svg>
+          <p class="chart-caption">Representative public list/host prices per million output tokens; the point is the order of magnitude, not the decimal. The gap is the moat the IPOs are quietly built on.</p>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- ===== RIGHT COLUMN ===== -->
+    <div class="col">
+
+      <!-- LEAD STORY: Meta -->
+      <article>
+        <span class="section-label">Meta · Layoffs</span>
+        <h2 class="hl">Record Profit, Eight Thousand Gone, and a Median Paycheck That Shrank: Meta Picks Its Side of the Curve</h2>
+        <p class="byline">By The Editor, Menlo Park Desk · May 21, 2026</p>
+
+        <p class="body">The termination emails that went out Wednesday — roughly eight thousand of them, about a tenth of the company, with another six thousand open requisitions canceled for an effective cut near fourteen thousand — landed in the same week Meta reported a record quarter: $56.31 billion in revenue and $26.8 billion in net income. The company is steering something on the order of $145 billion into AI infrastructure this year, and reassigning roughly seven thousand surviving employees into new units with names like Applied AI Engineering and the Agent Transformation Accelerator, reporting up into Alexandr Wang's Superintelligence Labs. The layoffs and the record are not a contradiction Meta is trying to resolve. They are the strategy.</p>
+
+        <p class="body">The number that should travel furthest is the quietest one. Median total compensation at Meta fell from $417,400 in 2024 to $388,200 in 2025 — the typical employee got cheaper — over the same stretch that Zuckerberg has been personally dangling packages reported near $100 million to land individual AI researchers. Wired, after interviewing more than a dozen current and former staff, describes a mood that is grim in one of the most profitable companies on earth. The org chart is being sorted into two castes: a small number of people worth a nine-figure offer, and a large number worth slightly less than they were worth last year.</p>
+
+        <p class="body">And then there is the line that does not survive contact with yesterday's. Zuckerberg told employees this week that AI is "not driving" the layoffs — a day after the internal memo we covered yesterday forecast that software would out-produce the surviving engineers four to one. Both statements cannot be load-bearing at once. Either the machines are about to do most of the work, in which case they are obviously driving the headcount math, or they are not, in which case someone should tell the memo. More cuts are already flagged for August and the fall, so there will be further chances to pick a story and stick with it.</p>
+
+        <div class="pullquote">"The org chart is being sorted into two castes: people worth a nine-figure offer, and people worth slightly less than they were last year."</div>
+
+        <div class="chartwrap">
+          <div class="chart-title">Meta median total compensation, 2024 → 2025</div>
+          <svg viewBox="0 0 400 150" role="img" aria-label="Slope chart of Meta median total compensation falling from 417,400 dollars in 2024 to 388,200 dollars in 2025.">
+            <!-- y grid -->
+            <line x1="110" y1="25" x2="300" y2="25" stroke="#eeeeee" stroke-width="1"/>
+            <line x1="110" y1="77" x2="300" y2="77" stroke="#eeeeee" stroke-width="1"/>
+            <line x1="110" y1="130" x2="300" y2="130" stroke="#cccccc" stroke-width="1"/>
+            <text x="104" y="28" text-anchor="end" font-family="Inter, sans-serif" font-size="7" fill="#888">$430k</text>
+            <text x="104" y="80" text-anchor="end" font-family="Inter, sans-serif" font-size="7" fill="#888">$390k</text>
+            <text x="104" y="133" text-anchor="end" font-family="Inter, sans-serif" font-size="7" fill="#888">$350k</text>
+
+            <!-- endpoint labels -->
+            <text x="110" y="145" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#888">2024</text>
+            <text x="300" y="145" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" font-weight="700" fill="#C0392B">2025</text>
+
+            <!-- slope: 417.4k (y=42) -> 388.2k (y=80) -->
+            <line x1="110" y1="42" x2="300" y2="80" stroke="#C0392B" stroke-width="3"/>
+            <circle cx="110" cy="42" r="5" fill="#888888"/>
+            <circle cx="300" cy="80" r="5" fill="#C0392B"/>
+            <text x="100" y="39" text-anchor="end" font-family="Inter, sans-serif" font-size="9" font-weight="700" fill="#888">$417.4k</text>
+            <text x="310" y="83" text-anchor="start" font-family="Inter, sans-serif" font-size="9" font-weight="700" fill="#C0392B">$388.2k</text>
+          </svg>
+          <p class="chart-caption">The typical Meta paycheck shrank ~7% year over year — while the headline AI hires were courted with reported nine-figure packages. The median is not invited to that conversation.</p>
+        </div>
+      </article>
+
+      <!-- SECONDARY: Claude Code postmortem -->
+      <article>
+        <span class="section-label">Anthropic · Claude Code</span>
+        <h3 class="sh">Users Said Claude Code Got Dumber for Six Weeks. The Postmortem Going Around Says They Were Right.</h3>
+        <p class="byline">By The Editor, Engineering Desk · May 21, 2026</p>
+        <p class="body">Anthropic's engineering postmortem — dated April 23 and making the rounds again this week as the trade press digests it — traces six weeks of "Claude Code feels worse" complaints to three changes that overlapped in time and each hit a different slice of traffic. When Opus 4.6 shipped in February with reasoning effort defaulted to "high," users griped about long think times; on March 4 Anthropic quietly cut the default to "medium," a move the postmortem now calls, in its own words, "the wrong tradeoff." A March 26 efficiency change meant to prune stale reasoning from idle sessions carried a bug that made it prune on <em>every</em> turn instead. And an April system-prompt edit capped commentary at 25 words between tool calls and answers at 100, knocking about 3% off quality before it was pulled four days later.</p>
+        <p class="body">All three were fixed by April 20 in v2.1.116, and Anthropic reset usage limits as an apology. The honest takeaway is the one labs hate to print: the users were right and the dashboards were wrong for the better part of two months. A model can degrade in ways that show up in lived experience long before they show up in an eval — which is a useful thing to remember the next time a company tells you nothing has changed because the benchmark numbers held. The crowd saying "it feels worse" was, this time, a more sensitive instrument than the metrics.</p>
+      </article>
+
+    </div>
+  </div>
+
+  <!-- ================= EDITOR'S NOTE ================= -->
+  <div class="editors">
+    <span class="section-label">Editor's Note</span>
+    <p>The genuinely new thing today is small and easy to miss under the louder stories: a machine had an original mathematical idea, and the person best positioned to call it a fraud read it carefully and signed off. Sit with how rare that sentence has been. For a solid year the AI-does-math story was a parade of announcements that collapsed the moment a real mathematician opened the PDF. This one cleared the only bar that counts, which is a skeptic's signature, and it deserves to be taken at face value before we move on to being clever about it.</p>
+    <p>And then look at what the rest of the day did with the news that machines can now invent. Meta fired eight thousand people and booked a record quarter in the same breath, and told the survivors the AI is not the reason — one day after a memo that said the AI was the reason. Wall Street spent the afternoon worrying the whole frontier might get too cheap to justify the valuations it just raised. And Anthropic's own engineers confirmed that for six weeks the product had quietly gotten worse while the dashboards insisted it hadn't. The capability went up. Almost everything humans had built around it spent the day flinching.</p>
+    <p>The machine's contribution to Thursday was one true thing nobody had known before. Ours was eight thousand layoff notices, a tremor in a valuation, and a bug report. I don't have a tidy lesson that reconciles those columns, and I've grown suspicious of anyone who offers one too quickly. <span class="sign">See you tomorrow.</span></p>
+  </div>
+
+  <!-- ================= CORRECTIONS ================= -->
+  <div class="corrections">
+    <div class="clabel">Corrections &amp; Amplifications</div>
+    <p>We led the Anthropic desk with a postmortem dated April 23. In our defense, a daily named <em>The Daily Hallucination</em> running a month-late story about a model that quietly got worse and then admitted it is, structurally, the most on-brand thing we have ever printed.</p>
+    <p>Our account of the unit-distance disproof is written in roughly the vocabulary of someone whose last brush with geometry was a high-school exam. Working mathematicians are invited to wince; the companion paper, which we did not write and could not have, is for them.</p>
+    <p>The price-gap chart uses representative public list and hosting figures rather than a single sourced quote, because "closed frontier" and "open-weight" are moving targets priced ten different ways. If your invoice disagrees with our dumbbell, your invoice wins.</p>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <div class="footer">
+    The Daily Hallucination · Vol. 1, No. 11 · Thursday, May 21, 2026 · Hand-hallucinated each morning · One true new thing, and everything we did about it
+  </div>
+
+</div>
+</body>
+</html>

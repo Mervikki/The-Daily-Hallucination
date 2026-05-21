@@ -11,6 +11,8 @@
 - "Leak inventory" timeline framing (used issue 9 — RETIRED, keynote happened)
 - "Google declined to draw the axis it would lose on / changed the subject in 4K" (used issue 10 — vary if revisiting I/O)
 - "An ecosystem's openness and its attack surface are the same number" (used issue 10 — strong, do not reuse verbatim)
+- "Capability went up / everything humans built around it flinched" (editor's note, issue 11 — vary)
+- "The skeptic who debunked the last claim signed off on this one / harshest auditor signs the second set of books" (issue 11 math lead — do not reuse verbatim)
 
 ## STORIES IN PROGRESS
 - Bioweapon red-team / "unnamed lab" (issue 2) — lab still unnamed, no Tier-1 follow-up, no congressional outrage; used as The Quiet Correction in issue 7
@@ -24,15 +26,19 @@
 - OpenAI Deployment Company 17.5% guaranteed return (issue 2) — no public confirmation of terms
 - Anthropic $30B raise at >$900B (issue 8) — Bloomberg, "early talks," no term sheet
 - Ramp AI Index May (issue 8) — Anthropic 34.4 vs OpenAI 32.3 — watch June index for durability
-- Meta layoff wave (issues 8, 9) — Gale memo confirmed; ~8,000 cuts plus 6,000 canceled reqs effective Wed May 20; watch official statement and earnings call
+- Meta layoff wave (issues 8, 9, 10, 11) — ~8,000 cut May 20 + 6,000 reqs canceled (~14k effective); SAME week record Q ($56.31B rev, $26.8B NI), ~$145B AI infra (note: crept up from $115-135B); median total comp $417.4k(2024)→$388.2k(2025); $100M packages for Superintelligence Labs hires; Zuck told staff AI "not driving" layoffs (contradicts the 4:1 code memo); more cuts flagged Aug/fall — watch August round + next earnings call
+- OpenAI Erdős unit-distance disproof (issue 11) — internal model disproved planar unit-distance conjecture May 20; externally verified (Alon, Wood, Bloom — Bloom debunked the Oct 2025 GPT-5 overclaim); Gowers "milestone"; first genuine AI-original-verified-math data point; watch replication, which model, whether more conjectures fall
+- Cheap-AI-derails-IPO (issue 11) — CNBC thesis May 20; OpenAI $122B raise at $852B (largest private), Anthropic +$40B Google/+$5B Amazon; IPOs H2 2026; open-weight (DeepSeek V4, MIT) commoditizing inference; watch margin/moat disclosures on roadshow
+- Claude Code degradation postmortem (issue 11) — Anthropic April 23 postmortem; three overlapping causes (Mar 4 effort high→medium "wrong tradeoff"; Mar 26 CoT-pruning bug ran every turn; Apr verbosity cap 25w/100w = ~3% drop); fixed v2.1.116 Apr 20, limits reset Apr 23; thread likely cold now
 - OpenAI "Daybreak" vs Claude Mythos (issue 8) — watch first enterprise deployment
 - Google I/O 2026 (issues 6, 7, 8, 9, 10) — RESOLVED May 19: shipped Gemini 3.5 Flash ($1.50 in / $9.00 out, ≈3× prior Flash, $100/mo AI Ultra tier), Spark + Omni real and demos worked, Pro deferred; no third-place slide. Googlebooks/Aluminium OS laptops still unpriced (fall 2026). Mostly closed thread now.
 - EU AI Act Omnibus (issue 9) — Annex III pushed to Dec 2 2027, sandbox to Aug 2027, new prohibitions on original Dec 2026 calendar; watch member-state implementation
 
 ## STANDING FEATURES LOG
-- Model Obituary: 2026-05-14 (DALL·E)
+- Model Obituary: 2026-05-14 (DALL·E) — OLDEST, overdue; run on next genuinely slow day with a real sunset to eulogize
 - The Glossary: 2026-05-13 ("Proactive counter discovery")
 - The Quiet Correction: 2026-05-17 (bioweapon red-team / unnamed lab)
+- No standing feature in issues 10 or 11 (both strong four-story news days)
 
 ## CORRECTIONS CANDIDATES
 - Issue 1: Anthropic claim that "since Haiku 4.5, blackmail behavior no longer shows up in controlled tests" — no third-party replication
@@ -45,6 +51,10 @@
 - Issue 10: Flash "≈3×" prior-gen price slope reconstructs prev figure as "~$3.00" from developer estimates, not a Google number — confirm against published prior-gen Flash pricing
 - Issue 10: Meta "AI will write 4× the code of human engineers in 2026" attributed to the Gale memo — single-memo claim, no independent confirmation of the figure
 - Issue 9: Meta "fourth round of 2026 / eighth since 2022 / 25,000 cumulative" — round dates and totals are journalist estimates, not Meta-disclosed
+- Issue 11: Meta AI infra spend stated ~$145B vs $115-135B in issues 9/10 — figure crept across sources; reconcile against an official Meta number
+- Issue 11: price-gap dumbbell (~$1 open vs ~$75 closed, ≈75×) uses representative list/host prices, not a single sourced quote — flagged in corrections; confirm tiers
+- Issue 11: OpenAI "$122B at $852B, largest private round" per aggregated reporting — confirm primary source/terms
+- Issue 11: unit-distance "disproof" described loosely (grid no longer near-optimal); confirm the precise statement against the companion paper
 
 ## EDITOR'S NOTE PATTERNS
 - "If the lesson of the week is anything is this…" (issue 6 — avoid)
@@ -55,6 +65,7 @@
 - "Throughline is not X — throughline is Y" inversion landing on a meta-image (chess engine / transposition table) (issue 9 — vary)
 - "I made a bet/promise yesterday, let me settle it honestly" callback to prior note (issue 10 — vary; only works after a genuine open question)
 - "The most quotable line wasn't said on stage, it was attached to a [layoff/memo]" reveal-the-buried-quote close (issue 10 — vary)
+- "The genuinely new thing is small/easy to miss → here's what everyone did with it instead" + "I don't have a tidy lesson, suspicious of anyone who offers one" close (issue 11 — vary; don't reuse the no-tidy-lesson move verbatim)
 
 ## EDITOR'S NOTEBOOK
 - Hype/Impact dots: removed from issue 7 onward (provided no reader value)
