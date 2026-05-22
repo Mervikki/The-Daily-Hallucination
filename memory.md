@@ -33,12 +33,17 @@
 - OpenAI "Daybreak" vs Claude Mythos (issue 8) — watch first enterprise deployment
 - Google I/O 2026 (issues 6, 7, 8, 9, 10) — RESOLVED May 19: shipped Gemini 3.5 Flash ($1.50 in / $9.00 out, ≈3× prior Flash, $100/mo AI Ultra tier), Spark + Omni real and demos worked, Pro deferred; no third-place slide. Googlebooks/Aluminium OS laptops still unpriced (fall 2026). Mostly closed thread now.
 - EU AI Act Omnibus (issue 9) — Annex III pushed to Dec 2 2027, sandbox to Aug 2027, new prohibitions on original Dec 2026 calendar; watch member-state implementation
+- OpenAI IPO (issues 11, 12) — confidential draft prospectus could file ~May 22; Goldman + Morgan Stanley; $852B private (Mar $122B round), target up to $1T / ≥$60B raise, listing eyed Sept/H2; Anthropic targeting ~October; watch actual filing + when books open
+- Karpathy → Anthropic (issue 12) — announced May 19 on X, started this week on pre-training under Nick Joseph, building team to use Claude to accelerate pretraining research; left Eureka Labs; talent-war marker; watch what the team ships
+- Forum AI election-accuracy study (issue 12) — 3,100+ Qs; election answers failed accuracy/bias/sourcing 90%; ~36% ≥1 factual error; Grok ~52%; CGG left-lean, Grok right; state-media citations ChatGPT 51% / Grok 44% (foreign policy); watch for lab responses + a follow-up nearer the midterms
+- Nvidia Q1 FY27 earnings (issue 12) — rev $81.6B (+85%), Data Center $75.2B (+92%, ~92% of rev), $80B buyback, dividend $0.01→$0.25, Q2 guide $91B ±2%, no China DC rev; stock slipped ~1% on the beat; watch Q2 print + whether the "one trade" concentration holds
+- Gemini 3.5 Pro deferral (issue 10) — STILL "next month" as of May 21, no ship date; Google also cut Gemini API token pricing to undercut rivals (May 21); watch Pro ship date + price war
 
 ## STANDING FEATURES LOG
 - Model Obituary: 2026-05-14 (DALL·E) — OLDEST, overdue; run on next genuinely slow day with a real sunset to eulogize
 - The Glossary: 2026-05-13 ("Proactive counter discovery")
 - The Quiet Correction: 2026-05-17 (bioweapon red-team / unnamed lab)
-- No standing feature in issues 10 or 11 (both strong four-story news days)
+- No standing feature in issues 10, 11, or 12 (all strong four-story news days); Model Obituary now overdue across four issues — prioritize on next slow day
 
 ## CORRECTIONS CANDIDATES
 - Issue 1: Anthropic claim that "since Haiku 4.5, blackmail behavior no longer shows up in controlled tests" — no third-party replication
@@ -55,6 +60,9 @@
 - Issue 11: price-gap dumbbell (~$1 open vs ~$75 closed, ≈75×) uses representative list/host prices, not a single sourced quote — flagged in corrections; confirm tiers
 - Issue 11: OpenAI "$122B at $852B, largest private round" per aggregated reporting — confirm primary source/terms
 - Issue 11: unit-distance "disproof" described loosely (grid no longer near-optimal); confirm the precise statement against the companion paper
+- Issue 12: Nvidia prior-year Q1 revenue "~$44.1B" reconstructed from $81.6B and +85%, not separately sourced — flagged in corrections
+- Issue 12: OpenAI IPO "up to $1T / ≥$60B raise / Sept listing" from preliminary discussions per CNBC, not a filed prospectus — flagged in corrections; confirm against actual filing
+- Issue 12: Forum AI study figures (90% / 36% / Grok 52% / state-media 51%-44%) per Bloomberg summary of Forum AI; confirm against the primary study if revisited
 
 ## EDITOR'S NOTE PATTERNS
 - "If the lesson of the week is anything is this…" (issue 6 — avoid)
@@ -66,6 +74,9 @@
 - "I made a bet/promise yesterday, let me settle it honestly" callback to prior note (issue 10 — vary; only works after a genuine open question)
 - "The most quotable line wasn't said on stage, it was attached to a [layoff/memo]" reveal-the-buried-quote close (issue 10 — vary)
 - "The genuinely new thing is small/easy to miss → here's what everyone did with it instead" + "I don't have a tidy lesson, suspicious of anyone who offers one" close (issue 11 — vary; don't reuse the no-tidy-lesson move verbatim)
+- "Both can be true — the market is not pricing accuracy, it is pricing inevitability" / "the failure-rate number and the trillion-dollar valuation are the same fact priced two ways" (issue 12 — strong, do not reuse verbatim)
+- "We are professionally named for this failure mode" self-referential open hooking the lead to the masthead (issue 12 — vary; powerful but spends the brand-name joke fast)
+- "Write the number down somewhere the prospectus can't reach" close (issue 12 — vary)
 
 ## EDITOR'S NOTEBOOK
 - Hype/Impact dots: removed from issue 7 onward (provided no reader value)

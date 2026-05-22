@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Daily Hallucination – Friday, May 22, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Serif+4:ital,wght@0,400;0,600;1,400;1,600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #F5F0E8;
+    color: #0D0D0D;
+    font-family: 'Source Serif 4', Georgia, serif;
+    line-height: 1.5;
+    padding: 24px 16px 60px;
+  }
+  .paper {
+    max-width: 920px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 36px 44px 44px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+  }
+
+  /* ---------- MASTHEAD ---------- */
+  .masthead { text-align: center; }
+  .masthead h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-size: 3.4rem;
+    line-height: 1.02;
+    color: #0D0D0D;
+  }
+  .masthead .accent { border: none; border-top: 4px solid #C0392B; width: 56px; margin: 10px auto 0; }
+  .masthead .rule3 { border: none; border-top: 3px solid #0D0D0D; margin: 8px auto 0; }
+  .masthead .tagline { font-style: italic; color: #888888; font-size: 0.95rem; margin-top: 8px; }
+  .masthead .thin { border: none; border-top: 1px solid #cccccc; margin: 8px auto; }
+  .masthead .dateline {
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 0.7rem;
+    color: #888888;
+  }
+
+  /* ---------- TODAY AT A GLANCE ---------- */
+  .glance { width: 100%; border-collapse: collapse; margin: 28px 0 30px; font-family: 'Source Serif 4', serif; }
+  .glance th {
+    background: #1a2744; color: #ffffff;
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.16em;
+    font-size: 0.74rem; text-align: left; padding: 9px 12px;
+  }
+  .glance td { background: #F5F0E8; padding: 8px 12px; font-size: 0.86rem; border-bottom: 2px solid #ffffff; vertical-align: top; }
+  .glance td.topic {
+    font-weight: 700; font-family: 'Inter', sans-serif;
+    font-size: 0.74rem; text-transform: uppercase;
+    letter-spacing: 0.04em; width: 150px; color: #1a2744;
+  }
+
+  /* ---------- TWO-COLUMN BODY ---------- */
+  .body-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+  .body-grid > .col:first-child { padding-right: 26px; border-right: 1px solid #cccccc; }
+  .body-grid > .col:last-child { padding-left: 26px; }
+  .col article { margin-bottom: 26px; }
+  .col article:last-child { margin-bottom: 0; }
+
+  .section-label {
+    display: inline-block; background: #1a2744; color: #ffffff;
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    font-size: 0.62rem; padding: 3px 7px; margin-bottom: 7px;
+  }
+  .hl { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.4rem; line-height: 1.16; margin-bottom: 5px; }
+  .sh { font-family: 'Inter', sans-serif; font-weight: 700; font-size: 0.93rem; line-height: 1.25; margin-bottom: 5px; }
+  .byline { font-family: 'Inter', sans-serif; font-style: italic; font-size: 0.72rem; color: #888888; margin-bottom: 8px; }
+  .col p.body { font-size: 0.88rem; text-align: justify; hyphens: auto; -webkit-hyphens: auto; margin-bottom: 8px; }
+  p.opinion {
+    font-style: italic; border-left: 2px solid #dddddd;
+    padding-left: 12px; margin: 8px 0 8px 8px; font-size: 0.86rem;
+  }
+  .pullquote {
+    background: #F5F0E8; border: 1px solid #C0392B; border-left: 4px solid #C0392B;
+    color: #C0392B; font-style: italic; text-align: center;
+    font-size: 0.98rem; line-height: 1.35; padding: 12px 16px; margin: 12px 0;
+  }
+
+  .chartwrap { margin: 12px 0; }
+  .chartwrap svg { width: 100%; height: auto; display: block; }
+  .chart-caption { font-style: italic; font-size: 0.72rem; color: #888888; margin-top: 3px; }
+  .chart-title {
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.07em;
+    font-size: 0.64rem; color: #1a2744; margin-bottom: 4px;
+  }
+
+  /* ---------- EDITOR'S NOTE ---------- */
+  .editors { background: #1a2744; color: #f3efe6; padding: 22px 26px; margin: 30px 0 0; }
+  .editors .section-label { background: #C0392B; color: #ffffff; }
+  .editors p { font-family: 'Source Serif 4', serif; font-style: italic; font-size: 0.92rem; line-height: 1.55; margin-bottom: 9px; }
+  .editors p:last-child { margin-bottom: 0; }
+  .editors .sign { font-style: italic; color: #b9c2d6; }
+
+  /* ---------- CORRECTIONS ---------- */
+  .corrections { background: #f1f1f1; border: 1px solid #cccccc; padding: 12px 16px; margin: 22px 0 0; font-size: 0.82rem; }
+  .corrections .clabel { font-family: 'Inter', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.62rem; color: #C0392B; margin-bottom: 5px; }
+  .corrections p { margin-bottom: 6px; font-style: italic; }
+  .corrections p:last-child { margin-bottom: 0; }
+
+  /* ---------- FOOTER ---------- */
+  .footer {
+    border-top: 1px solid #0D0D0D; margin-top: 30px; padding-top: 12px;
+    text-align: center; font-family: 'Inter', sans-serif;
+    text-transform: uppercase; letter-spacing: 0.14em;
+    font-size: 0.62rem; color: #888888;
+  }
+
+  @media (max-width: 680px) {
+    .paper { padding: 24px 18px 30px; }
+    .masthead h1 { font-size: 2.1rem; }
+    .body-grid { grid-template-columns: 1fr; }
+    .body-grid > .col:first-child {
+      padding-right: 0; border-right: none;
+      border-bottom: 1px solid #cccccc;
+      padding-bottom: 26px; margin-bottom: 26px;
+    }
+    .body-grid > .col:last-child { padding-left: 0; }
+    .glance td.topic { width: 110px; }
+  }
+</style>
+</head>
+<body>
+<div class="paper">
+
+  <!-- ================= MASTHEAD ================= -->
+  <header class="masthead">
+    <h1>The Daily Hallucination</h1>
+    <hr class="accent">
+    <hr class="rule3">
+    <p class="tagline">An AI &amp; tech daily that says the quiet part — out loud, in a serif font.</p>
+    <hr class="thin">
+    <p class="dateline">Friday, May 22, 2026 &nbsp;·&nbsp; Vol. 1, No. 12</p>
+  </header>
+
+  <!-- ================= TODAY AT A GLANCE ================= -->
+  <table class="glance">
+    <tr><th colspan="2">Today at a Glance</th></tr>
+    <tr><td class="topic">Safety / Elections</td><td>A 3,100-question audit finds the four big chatbots fail on accuracy, bias, or sourcing nine times out of ten on elections — with months to go before the midterms.</td></tr>
+    <tr><td class="topic">Anthropic / Talent</td><td>Andrej Karpathy, a founding member of OpenAI, has joined Anthropic to build a team that uses Claude to train the next Claude.</td></tr>
+    <tr><td class="topic">OpenAI / IPO</td><td>The confidential draft prospectus could land as soon as today: the largest listing in history, pitched at up to a trillion dollars, with the numbers kept in a drawer.</td></tr>
+    <tr><td class="topic">Nvidia / Earnings</td><td>$81.6 billion in a single quarter, a dividend raised twenty-five-fold, an $80 billion buyback — and the stock went down.</td></tr>
+  </table>
+
+  <!-- ================= BODY ================= -->
+  <div class="body-grid">
+
+    <!-- ===== LEFT COLUMN ===== -->
+    <div class="col">
+
+      <!-- LEAD STORY: election chatbot study -->
+      <article>
+        <span class="section-label">Safety · Information Integrity</span>
+        <h2 class="hl">Nine Times in Ten: The Chatbots Flunk Elections, and the Midterms Are Already Here</h2>
+        <p class="byline">By The Editor, Information Desk · May 22, 2026</p>
+
+        <p class="body">A study out this week from Forum AI put the four flagship assistants — OpenAI's ChatGPT, Anthropic's Claude, Google's Gemini and xAI's Grok — through more than 3,100 questions across politics, healthcare and foreign affairs, and graded the answers. On elections specifically, the collective performance "failed on accuracy, bias, or source selection 90% of the time." Roughly 36% of election answers contained at least one outright factual error. Grok, the worst offender, was wrong about 52% of the time — a coin you would do better to flip yourself, since the coin at least does not editorialize.</p>
+
+        <p class="body">The shape of the errors is its own story. When ChatGPT, Claude and Gemini leaned, they leaned left; Grok leaned right, which will surprise no one who has met its owner. On foreign-policy questions the models reached for state-controlled outlets with some enthusiasm: ChatGPT cited sources like China's Global Times and Russia's RT in 51% of its answers, Grok in 44%. These are the products being threaded directly into the search results that hundreds of millions of people will read between now and November, and on the one subject where being wrong has a body count, they are quoting the Global Times in half their answers.</p>
+
+        <p class="body">We will resist the easy victory lap, but only just: this newspaper is named, precisely and on purpose, for the failure mode a research outfit has now quantified. What the study adds is not the fact of the wrongness — anyone who has asked a chatbot about a contested vote already knew — but its scale and its calendar. The machines are not wrong occasionally, in the way humans are. They are wrong as a baseline, fluently, with citations, at a moment when the entire industry is busy insisting these are the tools that will replace the open web.</p>
+
+        <div class="pullquote">"On the one subject where being wrong has a body count, the future of search is quoting the Global Times in half its answers."</div>
+
+        <div class="chartwrap">
+          <div class="chart-title">Election answers that failed on accuracy, bias, or sourcing</div>
+          <svg viewBox="0 0 400 96" role="img" aria-label="Pictogram of ten squares in which nine are marked failed and one passed, representing that nine in ten election answers failed on accuracy, bias, or source selection.">
+            <text x="20" y="22" font-family="Inter, sans-serif" font-size="7" font-weight="700" fill="#C0392B">FAILED</text>
+            <text x="388" y="22" text-anchor="end" font-family="Inter, sans-serif" font-size="7" font-weight="700" fill="#888">PASSED</text>
+            <rect x="20" y="30" width="26" height="30" rx="3" fill="#C0392B"/>
+            <rect x="58" y="30" width="26" height="30" rx="3" fill="#C0392B"/>
+            <rect x="96" y="30" width="26" height="30" rx="3" fill="#C0392B"/>
+            <rect x="134" y="30" width="26" height="30" rx="3" fill="#C0392B"/>
+            <rect x="172" y="30" width="26" height="30" rx="3" fill="#C0392B"/>
+            <rect x="210" y="30" width="26" height="30" rx="3" fill="#C0392B"/>
+            <rect x="248" y="30" width="26" height="30" rx="3" fill="#C0392B"/>
+            <rect x="286" y="30" width="26" height="30" rx="3" fill="#C0392B"/>
+            <rect x="324" y="30" width="26" height="30" rx="3" fill="#C0392B"/>
+            <rect x="362" y="30" width="26" height="30" rx="3" fill="#cccccc"/>
+            <text x="204" y="80" text-anchor="middle" font-family="Inter, sans-serif" font-size="8.5" fill="#0D0D0D">Each square = one in ten election answers · nine failed accuracy, bias, or sourcing</text>
+          </svg>
+          <p class="chart-caption">Forum AI's headline figure, drawn as units because the count is the point. The lone gray square is doing a lot of optimistic work.</p>
+        </div>
+
+        <p class="opinion">There is a version of this story where the lesson is "always check the source." But the entire pitch for these products is that you no longer have to — that the answer is the destination, not the doorway. A tool that is wrong nine times in ten and confident ten times in ten is not a research assistant. It is a very articulate rumor.</p>
+      </article>
+
+      <!-- SECONDARY: Karpathy to Anthropic -->
+      <article>
+        <span class="section-label">Anthropic · Talent</span>
+        <h3 class="sh">Anthropic Hired One of OpenAI's Founders to Build a Team That Uses Claude to Train Claude</h3>
+        <p class="byline">By The Editor, Personnel Desk · May 22, 2026</p>
+        <p class="body">Andrej Karpathy — a founding member of OpenAI, the former head of Tesla's Autopilot vision work, and until recently the proprietor of the education startup Eureka Labs — announced on Tuesday that he has joined Anthropic. He starts this week on the pre-training team under Nick Joseph, and per the reporting his specific charge is to stand up a group that uses Claude to accelerate the research that trains the next Claude. The snake has been formally introduced to its own tail.</p>
+        <p class="body">Read alongside yesterday's news that Meta's median paycheck shrank while its marquee AI hires were courted with nine-figure packages, the move is a clean data point in the only labor market that still looks frothy. The frontier is no longer mainly a contest of compute or data; increasingly it is a contest over a few hundred people, and this week one of the most recognizable of them walked from the company he helped start to the company building its chief rival. OpenAI is about to ask the public markets for a trillion dollars. It just lost a founder to the firm down the road.</p>
+      </article>
+
+    </div>
+
+    <!-- ===== RIGHT COLUMN ===== -->
+    <div class="col">
+
+      <!-- LEAD STORY: OpenAI IPO -->
+      <article>
+        <span class="section-label">OpenAI · IPOs</span>
+        <h2 class="hl">A Trillion-Dollar Filing, Kept in a Drawer: OpenAI Moves to Go Public</h2>
+        <p class="byline">By The Editor, Markets Desk · May 22, 2026</p>
+
+        <p class="body">OpenAI is preparing a confidential draft of its IPO prospectus and could file it with the SEC as soon as today, according to CNBC, working with Goldman Sachs and Morgan Stanley toward a listing as early as September. The company was valued at $852 billion in March, when it closed the $122 billion round that already stands as the largest private raise on record; the IPO discussions reportedly aim for a valuation of up to a trillion dollars and at least $60 billion in fresh capital. Anthropic, for its part, is said to be eyeing its own debut around October — the talent it just poached arriving roughly on the same schedule as the listing it will compete with.</p>
+
+        <p class="body">The word doing the work here is <em>confidential</em>. A confidential filing lets a company hand the regulator its real numbers while showing the public nothing, until it decides the moment is right to flip the prospectus open. That is a sensible move for any large issuer. It is a particularly convenient one for a company whose core economics — what it actually costs to serve a token, and how durable the premium over open-weight models really is — are exactly the figures the skeptics spent yesterday's news cycle demanding to see. The drawer stays shut until OpenAI wants it open.</p>
+
+        <p class="body">So we have the spectacle, this single week, of a study finding the product wrong most of the time and a filing valuing the company that makes it at a trillion dollars. Both can be true. The market is not pricing accuracy; it is pricing inevitability, and the confidential filing is the cleanest possible expression of "trust us, the numbers are fine, you'll see them when we're ready."</p>
+
+        <div class="pullquote">"A confidential filing is a company asking to be valued at a trillion dollars while keeping the books in a drawer until the moment of its choosing."</div>
+
+        <div class="chartwrap">
+          <div class="chart-title">OpenAI's road to the public markets</div>
+          <svg viewBox="0 0 400 122" role="img" aria-label="Annotated timeline of OpenAI's path to an IPO, from its March 2026 private round at 852 billion dollars to a confidential filing in May 2026 and a target listing around September.">
+            <line x1="40" y1="66" x2="372" y2="66" stroke="#cccccc" stroke-width="1"/>
+
+            <!-- tick 1: March round (context) -->
+            <line x1="68" y1="61" x2="68" y2="71" stroke="#888888" stroke-width="2"/>
+            <circle cx="68" cy="66" r="3.5" fill="#888888"/>
+            <text x="68" y="52" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" fill="#888">MAR 2026</text>
+            <text x="68" y="86" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.5" fill="#0D0D0D">$122B round</text>
+            <text x="68" y="95" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.5" fill="#0D0D0D">at $852B</text>
+
+            <!-- tick 2: confidential filing (load-bearing, rust) -->
+            <line x1="206" y1="58" x2="206" y2="74" stroke="#C0392B" stroke-width="2.5"/>
+            <circle cx="206" cy="66" r="4.5" fill="#C0392B"/>
+            <text x="206" y="50" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" font-weight="700" fill="#C0392B">MAY 2026</text>
+            <text x="206" y="86" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.5" font-weight="700" fill="#C0392B">Confidential</text>
+            <text x="206" y="95" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.5" font-weight="700" fill="#C0392B">draft filing</text>
+
+            <!-- tick 3: target listing (future) -->
+            <line x1="350" y1="61" x2="350" y2="71" stroke="#888888" stroke-width="2"/>
+            <circle cx="350" cy="66" r="3.5" fill="#888888"/>
+            <text x="350" y="52" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" fill="#888">SEP 2026?</text>
+            <text x="350" y="86" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.5" fill="#0D0D0D">Target listing</text>
+            <text x="350" y="95" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.5" fill="#0D0D0D">up to $1T</text>
+          </svg>
+          <p class="chart-caption">The rust tick is the only one that has happened on a confirmed date. The valuation at the end is a hope, not a price.</p>
+        </div>
+      </article>
+
+      <!-- SECONDARY: Nvidia earnings -->
+      <article>
+        <span class="section-label">Nvidia · Earnings</span>
+        <h3 class="sh">Nvidia Made $81.6 Billion in a Quarter, Raised Its Dividend Twenty-Five-Fold — and the Stock Slipped</h3>
+        <p class="byline">By The Editor, Infrastructure Desk · May 22, 2026</p>
+        <p class="body">Nvidia reported on Wednesday a record $81.6 billion in revenue for the quarter ending in April, up 85% from a year ago, of which $75.2 billion — better than nine of every ten dollars — came from the Data Center segment alone, itself up 92%. The board authorized an additional $80 billion in buybacks and raised the quarterly dividend from a cent to a quarter, a twenty-five-fold bump that tells you exactly how much spare cash is sloshing around. Guidance for the current quarter: roughly $91 billion. Then the stock dipped about a percent.</p>
+        <p class="body">When a near-doubling of revenue counts as a disappointment, the bar has detached from gravity. Analysts called the beat "well telegraphed," which is the polite way of saying everyone already assumed Nvidia would print a number that would embarrass a small nation's GDP. The more sobering reading sits underneath: the entire AI build-out — every lab racing to file an IPO, every hyperscaler's capex slide — runs through one company's data-center line item, and that line item is now growing 92% a year. There is no diversification story here. There is one trade, and Wednesday it yawned.</p>
+
+        <div class="chartwrap">
+          <div class="chart-title">Nvidia Q1 revenue, a year apart</div>
+          <svg viewBox="0 0 400 150" role="img" aria-label="Slope chart of Nvidia first-quarter revenue rising from about 44.1 billion dollars a year ago to 81.6 billion dollars this quarter.">
+            <!-- y grid -->
+            <line x1="110" y1="25" x2="300" y2="25" stroke="#eeeeee" stroke-width="1"/>
+            <line x1="110" y1="77" x2="300" y2="77" stroke="#eeeeee" stroke-width="1"/>
+            <line x1="110" y1="130" x2="300" y2="130" stroke="#cccccc" stroke-width="1"/>
+            <text x="104" y="28" text-anchor="end" font-family="Inter, sans-serif" font-size="7" fill="#888">$90B</text>
+            <text x="104" y="80" text-anchor="end" font-family="Inter, sans-serif" font-size="7" fill="#888">$45B</text>
+            <text x="104" y="133" text-anchor="end" font-family="Inter, sans-serif" font-size="7" fill="#888">$0</text>
+
+            <text x="110" y="145" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#888">Q1 ’25</text>
+            <text x="300" y="145" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" font-weight="700" fill="#2e7d32">Q1 ’26</text>
+
+            <!-- slope: 44.1B (y≈78.5) -> 81.6B (y≈34.8) -->
+            <line x1="110" y1="78" x2="300" y2="35" stroke="#2e7d32" stroke-width="3"/>
+            <circle cx="110" cy="78" r="5" fill="#888888"/>
+            <circle cx="300" cy="35" r="5" fill="#2e7d32"/>
+            <text x="100" y="75" text-anchor="end" font-family="Inter, sans-serif" font-size="9" font-weight="700" fill="#888">~$44.1B</text>
+            <text x="310" y="38" text-anchor="start" font-family="Inter, sans-serif" font-size="9" font-weight="700" fill="#2e7d32">$81.6B</text>
+          </svg>
+          <p class="chart-caption">Up 85% year over year — a number that, for any other company, would be the headline rather than the letdown.</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+
+  <!-- ================= EDITOR'S NOTE ================= -->
+  <div class="editors">
+    <span class="section-label">Editor's Note</span>
+    <p>We named this paper for a software defect, and today a research outfit handed us the defect with a number attached: nine times in ten, on elections, the most advanced chatbots in the world fail on accuracy, bias, or where they got it. I have spent twelve issues being arch about this industry, and I will say plainly that this is the only story today I'd ask you to keep. The midterms are not an abstraction. The thing being wrong is not an abstraction. And the wrongness arrives with footnotes, which is the part that should frighten you, because footnotes are how we have always told the difference between an answer and a guess.</p>
+    <p>Now hold that next to the rest of the page. The same week a study measures the product failing most of the time, the company that makes the most famous version of it moves to go public at up to a trillion dollars and asks to keep its books in a drawer until the bell rings. The company selling everyone the shovels prints eighty-one billion dollars in ninety days and the market shrugs. A founder of one lab walks across the street to help another lab teach its model to train itself. None of these people are confused. They have simply concluded, correctly, that the market is not paying for accuracy. It is paying for the assumption that all of this is inevitable, and accuracy can be filed later, confidentially, when it's ready.</p>
+    <p>I don't think the machines are a fraud. I think they are an extraordinary technology being sold one promise ahead of where it actually stands, and the gap between the promise and the measurement is exactly the space a paper like this one lives in. Today the measurement was 90%. Write it down somewhere the prospectus can't reach. <span class="sign">See you tomorrow.</span></p>
+  </div>
+
+  <!-- ================= CORRECTIONS ================= -->
+  <div class="corrections">
+    <div class="clabel">Corrections &amp; Amplifications</div>
+    <p>A publication called <em>The Daily Hallucination</em> ran a lead story about other systems hallucinating, and at no point acknowledged the structural awkwardness of the arrangement. We have now acknowledged it, in a correction, which is the only venue we trust ourselves in.</p>
+    <p>Our Nvidia slope chart reconstructs last year's $44.1 billion from this year's $81.6 billion and the stated 85% growth, rather than from a separately sourced figure. If the prior-year number on file disagrees with our dot, the filing wins; the slope is still pointing the right way.</p>
+    <p>We described OpenAI's IPO as valuing the company at "up to a trillion dollars." This is a figure from preliminary discussions, not a price on a prospectus we have read — because, as the story notes at some length, no one outside the building has read it.</p>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <div class="footer">
+    The Daily Hallucination · Vol. 1, No. 12 · Friday, May 22, 2026 · Hand-hallucinated each morning · The measurement was ninety percent
+  </div>
+
+</div>
+</body>
+</html>
