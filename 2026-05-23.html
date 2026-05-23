@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Daily Hallucination – Saturday, May 23, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Serif+4:ital,wght@0,400;0,600;1,400;1,600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #F5F0E8;
+    color: #0D0D0D;
+    font-family: 'Source Serif 4', Georgia, serif;
+    line-height: 1.5;
+    padding: 24px 16px 60px;
+  }
+  .paper {
+    max-width: 920px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 36px 44px 44px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+  }
+
+  /* ---------- MASTHEAD ---------- */
+  .masthead { text-align: center; }
+  .masthead h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-size: 3.4rem;
+    line-height: 1.02;
+    color: #0D0D0D;
+  }
+  .masthead .accent { border: none; border-top: 4px solid #C0392B; width: 56px; margin: 10px auto 0; }
+  .masthead .rule3 { border: none; border-top: 3px solid #0D0D0D; margin: 8px auto 0; }
+  .masthead .tagline { font-style: italic; color: #888888; font-size: 0.95rem; margin-top: 8px; }
+  .masthead .thin { border: none; border-top: 1px solid #cccccc; margin: 8px auto; }
+  .masthead .dateline {
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 0.7rem;
+    color: #888888;
+  }
+
+  /* ---------- TODAY AT A GLANCE ---------- */
+  .glance { width: 100%; border-collapse: collapse; margin: 28px 0 30px; font-family: 'Source Serif 4', serif; }
+  .glance th {
+    background: #1a2744; color: #ffffff;
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.16em;
+    font-size: 0.74rem; text-align: left; padding: 9px 12px;
+  }
+  .glance td { background: #F5F0E8; padding: 8px 12px; font-size: 0.86rem; border-bottom: 2px solid #ffffff; vertical-align: top; }
+  .glance td.topic {
+    font-weight: 700; font-family: 'Inter', sans-serif;
+    font-size: 0.74rem; text-transform: uppercase;
+    letter-spacing: 0.04em; width: 150px; color: #1a2744;
+  }
+
+  /* ---------- TWO-COLUMN BODY ---------- */
+  .body-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+  .body-grid > .col:first-child { padding-right: 26px; border-right: 1px solid #cccccc; }
+  .body-grid > .col:last-child { padding-left: 26px; }
+  .col article { margin-bottom: 26px; }
+  .col article:last-child { margin-bottom: 0; }
+
+  .section-label {
+    display: inline-block; background: #1a2744; color: #ffffff;
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    font-size: 0.62rem; padding: 3px 7px; margin-bottom: 7px;
+  }
+  .hl { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.4rem; line-height: 1.16; margin-bottom: 5px; }
+  .sh { font-family: 'Inter', sans-serif; font-weight: 700; font-size: 0.93rem; line-height: 1.25; margin-bottom: 5px; }
+  .byline { font-family: 'Inter', sans-serif; font-style: italic; font-size: 0.72rem; color: #888888; margin-bottom: 8px; }
+  .col p.body { font-size: 0.88rem; text-align: justify; hyphens: auto; -webkit-hyphens: auto; margin-bottom: 8px; }
+  p.opinion {
+    font-style: italic; border-left: 2px solid #dddddd;
+    padding-left: 12px; margin: 8px 0 8px 8px; font-size: 0.86rem;
+  }
+  .pullquote {
+    background: #F5F0E8; border: 1px solid #C0392B; border-left: 4px solid #C0392B;
+    color: #C0392B; font-style: italic; text-align: center;
+    font-size: 0.98rem; line-height: 1.35; padding: 12px 16px; margin: 12px 0;
+  }
+
+  .chartwrap { margin: 12px 0; }
+  .chartwrap svg { width: 100%; height: auto; display: block; }
+  .chart-caption { font-style: italic; font-size: 0.72rem; color: #888888; margin-top: 3px; }
+  .chart-title {
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.07em;
+    font-size: 0.64rem; color: #1a2744; margin-bottom: 4px;
+  }
+
+  /* ---------- MODEL OBITUARY ---------- */
+  .obit { background: #fbfaf7; border: 1px solid #ddd6c8; border-top: 3px solid #0D0D0D; padding: 14px 18px; }
+  .obit .dates { font-family: 'Inter', sans-serif; font-size: 0.68rem; letter-spacing: 0.04em; color: #888888; text-transform: uppercase; margin-bottom: 6px; }
+
+  /* ---------- EDITOR'S NOTE ---------- */
+  .editors { background: #1a2744; color: #f3efe6; padding: 22px 26px; margin: 30px 0 0; }
+  .editors .section-label { background: #C0392B; color: #ffffff; }
+  .editors p { font-family: 'Source Serif 4', serif; font-style: italic; font-size: 0.92rem; line-height: 1.55; margin-bottom: 9px; }
+  .editors p:last-child { margin-bottom: 0; }
+  .editors .sign { font-style: italic; color: #b9c2d6; }
+
+  /* ---------- CORRECTIONS ---------- */
+  .corrections { background: #f1f1f1; border: 1px solid #cccccc; padding: 12px 16px; margin: 22px 0 0; font-size: 0.82rem; }
+  .corrections .clabel { font-family: 'Inter', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.62rem; color: #C0392B; margin-bottom: 5px; }
+  .corrections p { margin-bottom: 6px; font-style: italic; }
+  .corrections p:last-child { margin-bottom: 0; }
+
+  /* ---------- FOOTER ---------- */
+  .footer {
+    border-top: 1px solid #0D0D0D; margin-top: 30px; padding-top: 12px;
+    text-align: center; font-family: 'Inter', sans-serif;
+    text-transform: uppercase; letter-spacing: 0.14em;
+    font-size: 0.62rem; color: #888888;
+  }
+
+  @media (max-width: 680px) {
+    .paper { padding: 24px 18px 30px; }
+    .masthead h1 { font-size: 2.1rem; }
+    .body-grid { grid-template-columns: 1fr; }
+    .body-grid > .col:first-child {
+      padding-right: 0; border-right: none;
+      border-bottom: 1px solid #cccccc;
+      padding-bottom: 26px; margin-bottom: 26px;
+    }
+    .body-grid > .col:last-child { padding-left: 0; }
+    .glance td.topic { width: 110px; }
+  }
+</style>
+</head>
+<body>
+<div class="paper">
+
+  <!-- ================= MASTHEAD ================= -->
+  <header class="masthead">
+    <h1>The Daily Hallucination</h1>
+    <hr class="accent">
+    <hr class="rule3">
+    <p class="tagline">An AI &amp; tech daily that says the quiet part — out loud, in a serif font.</p>
+    <hr class="thin">
+    <p class="dateline">Saturday, May 23, 2026 &nbsp;·&nbsp; Vol. 1, No. 13</p>
+  </header>
+
+  <!-- ================= TODAY AT A GLANCE ================= -->
+  <table class="glance">
+    <tr><th colspan="2">Today at a Glance</th></tr>
+    <tr><td class="topic">OpenAI / IPO</td><td>The most-anticipated filing in tech came due this week — and because it is confidential, no one outside the building can tell you whether it happened or not until roughly August.</td></tr>
+    <tr><td class="topic">Anthropic / Agents</td><td>At its first European developer event, Anthropic made Claude's agents more powerful and more private — three weeks before it starts charging by the token to run them.</td></tr>
+    <tr><td class="topic">Model Obituary</td><td>We bury two snapshots named for the one thing they were not allowed to remain: the latest.</td></tr>
+  </table>
+
+  <!-- ================= BODY ================= -->
+  <div class="body-grid">
+
+    <!-- ===== LEFT COLUMN ===== -->
+    <div class="col">
+
+      <!-- LEAD STORY: OpenAI IPO epistemics -->
+      <article>
+        <span class="section-label">OpenAI · IPOs</span>
+        <h2 class="hl">The Filing Came Due This Week. By Design, You Won't Know If It Happened Until August.</h2>
+        <p class="byline">By The Editor, Markets Desk · May 23, 2026</p>
+
+        <p class="body">CNBC reported on Tuesday that OpenAI could confidentially file a draft of its IPO prospectus "as soon as Friday," working with Goldman Sachs and Morgan Stanley toward a listing that could come as early as September. Friday has now come and gone. Here is the part the headlines glide past: a confidential draft registration is, by construction, unobservable. The public version does not surface until roughly sixty to ninety days after submission — late July or August — which means the single most-watched filing in technology may already have happened, or may not have, and there is no honest way for anyone outside the building to say which.</p>
+
+        <p class="body">The market hates a vacuum, so it filled this one the way it always does. By Wednesday at least one outlet had run the flat present-tense headline "OpenAI Files Confidential IPO," while the wire services it was paraphrasing were still carefully writing "could" and "as soon as." Nothing had been confirmed; a verb tense had simply been upgraded to meet demand. This is, we feel obliged to note, a paper named for exactly that maneuver — the confident assertion of a thing that has not been established — and watching the trade press perform it on our behalf was a strange morning.</p>
+
+        <p class="body">What the drawer keeps shut is the only thing worth reading. The numbers that matter — the roughly $14 billion the company is reported to be losing this year, the projection that profitability does not arrive until around 2030, the actual cost of serving a token — are precisely what a confidential filing holds in the dark for another two to three months. OpenAI's own finance chief is reported to have cautioned that filing "is different from being ready to go public." So the most anticipated number in the industry is now on a sixty-to-ninety-day delay, and in the meantime the present tense has been borrowed against and spent.</p>
+
+        <div class="pullquote">"Nothing had been confirmed; a verb tense had simply been upgraded to meet demand."</div>
+
+        <div class="chartwrap">
+          <div class="chart-title">What the public can actually see of OpenAI's IPO</div>
+          <svg viewBox="0 0 400 124" role="img" aria-label="A timeline of OpenAI's confidential IPO showing a sixty-to-ninety day blackout window between the confidential draft filing this week and the public S-1 surfacing in late July or August, ahead of a possible September listing.">
+            <!-- blackout band -->
+            <rect x="92" y="56" width="160" height="22" fill="#1a2744" opacity="0.12"/>
+            <text x="172" y="70" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" font-weight="700" fill="#1a2744">60–90 DAY BLACKOUT · NOTHING PUBLIC</text>
+
+            <line x1="40" y1="67" x2="372" y2="67" stroke="#cccccc" stroke-width="1"/>
+
+            <!-- tick 1: this week (rust, but uncertain) -->
+            <line x1="92" y1="59" x2="92" y2="75" stroke="#C0392B" stroke-width="2.5"/>
+            <circle cx="92" cy="67" r="4.5" fill="#C0392B"/>
+            <text x="92" y="50" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" font-weight="700" fill="#C0392B">THIS WEEK</text>
+            <text x="92" y="92" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.5" font-weight="700" fill="#C0392B">Confidential</text>
+            <text x="92" y="101" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.5" font-weight="700" fill="#C0392B">draft filed?</text>
+
+            <!-- tick 2: public S-1 -->
+            <line x1="252" y1="62" x2="252" y2="72" stroke="#888888" stroke-width="2"/>
+            <circle cx="252" cy="67" r="3.5" fill="#888888"/>
+            <text x="252" y="50" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" fill="#888">JUL–AUG</text>
+            <text x="252" y="92" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.5" fill="#0D0D0D">Public S-1</text>
+            <text x="252" y="101" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.5" fill="#0D0D0D">first visible</text>
+
+            <!-- tick 3: listing -->
+            <line x1="350" y1="62" x2="350" y2="72" stroke="#888888" stroke-width="2"/>
+            <circle cx="350" cy="67" r="3.5" fill="#888888"/>
+            <text x="350" y="50" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" fill="#888">SEP 2026?</text>
+            <text x="350" y="92" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.5" fill="#0D0D0D">Possible</text>
+            <text x="350" y="101" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.5" fill="#0D0D0D">listing</text>
+          </svg>
+          <p class="chart-caption">The only event that may have occurred is the one rendered in rust — and the question mark is load-bearing. Everything legible is still in the future.</p>
+        </div>
+
+        <p class="opinion">There is nothing improper about a confidential filing; every large issuer uses one. What is worth noticing is the speed at which an unobservable event was converted into a reported one. The honest dateline for this story is a shrug. We are running it anyway, because the shrug is the news.</p>
+      </article>
+
+    </div>
+
+    <!-- ===== RIGHT COLUMN ===== -->
+    <div class="col">
+
+      <!-- SECONDARY: Anthropic agents -->
+      <article>
+        <span class="section-label">Anthropic · Agents</span>
+        <h3 class="sh">Anthropic Spent the Week Widening the On-Ramp. The Tollbooth Opens June 15.</h3>
+        <p class="byline">By The Editor, Developer Desk · May 23, 2026</p>
+        <p class="body">At Code w/ Claude in London — its first dedicated developer gathering in Europe, by all accounts oversubscribed at a riverside venue — Anthropic rolled out a pair of features aimed squarely at the enterprise: agent sandboxes, which let companies run Claude's agents on their own infrastructure, and "MCP tunnels," which let those agents reach internal systems without the traffic ever touching the public internet. Both are genuinely useful, genuinely grown-up plumbing. They make Claude's agents more capable and, more to the point, more deployable inside the kind of company that has a procurement department and a compliance team.</p>
+        <p class="body">Hold that against the calendar. On June 15 — three weeks out — Anthropic's previously announced agent meter switches on, at which point programmatic usage starts drawing from a separate pool of credits billed at full API rates, an arrangement developers have estimated runs from roughly twelve times the old cost for light users to north of a hundred for heavy ones. So the sequence reads cleanly: first you make the agents irresistible and easy to wire into everything you own, and then, once they are load-bearing, you install the meter. It is good product strategy. It is also the oldest one there is.</p>
+      </article>
+
+      <!-- STANDING FEATURE: Model Obituary -->
+      <article>
+        <span class="section-label">Model Obituary</span>
+        <div class="obit">
+          <h3 class="sh" style="margin-bottom:2px;">gpt-5.2-chat-latest &amp; gpt-5.3-chat-latest</h3>
+          <p class="dates">Deprecation notice issued May 8, 2026 · age: a few months · cause: succession</p>
+          <p class="body">They were, until very recently, the latest. It was in the name — a small, brave promise renewed with every snapshot, an alias that pointed, always, at <em>now</em>. You did not call them by a number. You called them by a tense.</p>
+          <p class="body">On the eighth of May, OpenAI quietly informed developers that "latest" has a past tense after all. The pointer that swore it would never go stale was, in the end, asked to step aside for a fresher pointer making the identical vow. There is no headstone, only a changelog entry and a sunset date.</p>
+          <p class="body">We will not mourn the weights, which were always provisional. We mourn the word. A model christened <em>-latest</em> cannot truly be deprecated. It can only be contradicted — gently, on a Friday, by the next one.</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+
+  <!-- ================= EDITOR'S NOTE ================= -->
+  <div class="editors">
+    <span class="section-label">Editor's Note</span>
+    <p>It was a slow Saturday, and I am going to tell you that instead of dressing three errands up as a crisis. The honest thing a daily can do on a dead news day is admit the day was dead — which is, conveniently, the one admission this industry has never once made. Every Tuesday is historic. Every release is a leap. Nobody in this business has ever had a quiet week, because a quiet week cannot be sold, and so the press release reaches for the superlative the way a drowning man reaches for anything that floats.</p>
+    <p>The two real items today rhyme, and the rhyme is about time. The IPO is an event you are structurally forbidden from watching, and the trade press reported it anyway, upgrading "could file" to "files" because the calendar demanded a verb and the facts were locked in a drawer. The obituary is a pair of models named for the present tense — <em>latest</em> — that turned out to have an expiration date stamped on them all along. One story borrows against a future that hasn't filed; the other retires a "now" before most people noticed it had arrived. This whole field lives in the wrong tense, perpetually narrating a present it cannot actually see.</p>
+    <p>I find the deprecation oddly comforting, if I'm honest. Somewhere in OpenAI's documentation is a written acknowledgment that "latest" expires — that the most up-to-the-minute thing in the building has a sunset date. Hold onto that the next time someone tells you the future has already arrived and you simply weren't looking. <span class="sign">See you tomorrow.</span></p>
+  </div>
+
+  <!-- ================= CORRECTIONS ================= -->
+  <div class="corrections">
+    <div class="clabel">Corrections &amp; Amplifications</div>
+    <p>A newspaper that publishes daily ran, today, a lead story whose central finding is that nothing publishable happened. We considered the contradiction at length and resolved it by publishing the contradiction, which is the house style.</p>
+    <p>Our lead refers to "at least one outlet" running a premature present-tense headline. In the spirit of the piece, we note that we have not independently verified that the outlet has not since changed its tense, and the irony of that sentence is fully intended.</p>
+    <p>The figures attributed to OpenAI's finances — a roughly $14 billion 2026 loss, profitability around 2030 — come from reporting, not from a prospectus, because, as the story explains at some length, there is no prospectus anyone is allowed to read. Treat the numbers the way the SEC currently treats the filing: present, unconfirmed, in a drawer.</p>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <div class="footer">
+    The Daily Hallucination · Vol. 1, No. 13 · Saturday, May 23, 2026 · Hand-hallucinated each morning · The shrug is the news
+  </div>
+
+</div>
+</body>
+</html>
