@@ -33,17 +33,18 @@
 - OpenAI "Daybreak" vs Claude Mythos (issue 8) — watch first enterprise deployment
 - Google I/O 2026 (issues 6, 7, 8, 9, 10) — RESOLVED May 19: shipped Gemini 3.5 Flash ($1.50 in / $9.00 out, ≈3× prior Flash, $100/mo AI Ultra tier), Spark + Omni real and demos worked, Pro deferred; no third-place slide. Googlebooks/Aluminium OS laptops still unpriced (fall 2026). Mostly closed thread now.
 - EU AI Act Omnibus (issue 9) — Annex III pushed to Dec 2 2027, sandbox to Aug 2027, new prohibitions on original Dec 2026 calendar; watch member-state implementation
-- OpenAI IPO (issues 11, 12) — confidential draft prospectus could file ~May 22; Goldman + Morgan Stanley; $852B private (Mar $122B round), target up to $1T / ≥$60B raise, listing eyed Sept/H2; Anthropic targeting ~October; watch actual filing + when books open
+- OpenAI IPO (issues 11, 12, 13) — confidential draft prospectus "could file as soon as Fri May 22" (CNBC May 20); STILL UNCONFIRMED as of May 23 (confidential = no public S-1 for ~60-90 days, i.e. late Jul/Aug); reported ~$14B 2026 loss, profitability ~2030; Friar reportedly cautioned "filing ≠ ready to go public"; aggregator already ran present-tense "OpenAI Files Confidential IPO" headline while wires hedged; Goldman + Morgan Stanley; $852B private, up to $1T target, Sept listing eyed; watch public S-1 surfacing late summer
+- Code w/ Claude London (issue 13) — Anthropic's first European dev event (May 19); shipped agent sandboxes (run agents on own infra) + "MCP tunnels" (agents reach internal systems without public internet); MIT Tech Review/Fortune May 21 ran "coding's future whether you like it or not" anxiety coverage; pairs with June 15 meter
 - Karpathy → Anthropic (issue 12) — announced May 19 on X, started this week on pre-training under Nick Joseph, building team to use Claude to accelerate pretraining research; left Eureka Labs; talent-war marker; watch what the team ships
 - Forum AI election-accuracy study (issue 12) — 3,100+ Qs; election answers failed accuracy/bias/sourcing 90%; ~36% ≥1 factual error; Grok ~52%; CGG left-lean, Grok right; state-media citations ChatGPT 51% / Grok 44% (foreign policy); watch for lab responses + a follow-up nearer the midterms
 - Nvidia Q1 FY27 earnings (issue 12) — rev $81.6B (+85%), Data Center $75.2B (+92%, ~92% of rev), $80B buyback, dividend $0.01→$0.25, Q2 guide $91B ±2%, no China DC rev; stock slipped ~1% on the beat; watch Q2 print + whether the "one trade" concentration holds
 - Gemini 3.5 Pro deferral (issue 10) — STILL "next month" as of May 21, no ship date; Google also cut Gemini API token pricing to undercut rivals (May 21); watch Pro ship date + price war
 
 ## STANDING FEATURES LOG
-- Model Obituary: 2026-05-14 (DALL·E) — OLDEST, overdue; run on next genuinely slow day with a real sunset to eulogize
-- The Glossary: 2026-05-13 ("Proactive counter discovery")
+- Model Obituary: 2026-05-23 (gpt-5.2-chat-latest / gpt-5.3-chat-latest, deprecation notice May 8 — eulogized the "-latest" alias having a past tense)
+- The Glossary: 2026-05-13 ("Proactive counter discovery") — now OLDEST, due for rotation
 - The Quiet Correction: 2026-05-17 (bioweapon red-team / unnamed lab)
-- No standing feature in issues 10, 11, or 12 (all strong four-story news days); Model Obituary now overdue across four issues — prioritize on next slow day
+- Model Obituary backlog cleared in issue 13; The Glossary is now the oldest feature — run on next slow day with a good term
 
 ## CORRECTIONS CANDIDATES
 - Issue 1: Anthropic claim that "since Haiku 4.5, blackmail behavior no longer shows up in controlled tests" — no third-party replication
@@ -63,6 +64,8 @@
 - Issue 12: Nvidia prior-year Q1 revenue "~$44.1B" reconstructed from $81.6B and +85%, not separately sourced — flagged in corrections
 - Issue 12: OpenAI IPO "up to $1T / ≥$60B raise / Sept listing" from preliminary discussions per CNBC, not a filed prospectus — flagged in corrections; confirm against actual filing
 - Issue 12: Forum AI study figures (90% / 36% / Grok 52% / state-media 51%-44%) per Bloomberg summary of Forum AI; confirm against the primary study if revisited
+- Issue 13: OpenAI confidential IPO "could file as soon as May 22" + "~$14B 2026 loss / profit ~2030" — all from reporting (CNBC/Fortune/Axios), no filed prospectus; filing remains structurally unconfirmable until public S-1 (~Jul/Aug); flagged in corrections
+- Issue 13: "at least one outlet ran present-tense 'OpenAI Files Confidential IPO'" — observed aiweekly.co aggregator headline May 20-22 while wires hedged; we did not name it and noted it may have since changed tense
 
 ## EDITOR'S NOTE PATTERNS
 - "If the lesson of the week is anything is this…" (issue 6 — avoid)
@@ -76,6 +79,8 @@
 - "The genuinely new thing is small/easy to miss → here's what everyone did with it instead" + "I don't have a tidy lesson, suspicious of anyone who offers one" close (issue 11 — vary; don't reuse the no-tidy-lesson move verbatim)
 - "Both can be true — the market is not pricing accuracy, it is pricing inevitability" / "the failure-rate number and the trillion-dollar valuation are the same fact priced two ways" (issue 12 — strong, do not reuse verbatim)
 - "We are professionally named for this failure mode" self-referential open hooking the lead to the masthead (issue 12 — vary; powerful but spends the brand-name joke fast)
+- "It was a slow day and I'm going to tell you that instead of dressing errands up as a crisis / this industry never admits a quiet week" slow-day-honesty open (issue 13 — vary; only works on genuinely dead days)
+- "The two stories rhyme, and the rhyme is X" pairing-via-theme then meta-image close (issue 13 — vary)
 - "Write the number down somewhere the prospectus can't reach" close (issue 12 — vary)
 
 ## EDITOR'S NOTEBOOK
