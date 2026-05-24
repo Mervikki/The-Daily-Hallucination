@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Daily Hallucination – Sunday, May 24, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Serif+4:ital,wght@0,400;0,600;1,400;1,600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #F5F0E8;
+    color: #0D0D0D;
+    font-family: 'Source Serif 4', Georgia, serif;
+    line-height: 1.5;
+    padding: 24px 16px 60px;
+  }
+  .paper {
+    max-width: 920px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 36px 44px 44px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+  }
+
+  /* ---------- MASTHEAD ---------- */
+  .masthead { text-align: center; }
+  .masthead h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-size: 3.4rem;
+    line-height: 1.02;
+    color: #0D0D0D;
+  }
+  .masthead .accent { border: none; border-top: 4px solid #C0392B; width: 56px; margin: 10px auto 0; }
+  .masthead .rule3 { border: none; border-top: 3px solid #0D0D0D; margin: 8px auto 0; }
+  .masthead .tagline { font-style: italic; color: #888888; font-size: 0.95rem; margin-top: 8px; }
+  .masthead .thin { border: none; border-top: 1px solid #cccccc; margin: 8px auto; }
+  .masthead .dateline {
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 0.7rem;
+    color: #888888;
+  }
+
+  /* ---------- TODAY AT A GLANCE ---------- */
+  .glance { width: 100%; border-collapse: collapse; margin: 28px 0 30px; font-family: 'Source Serif 4', serif; }
+  .glance th {
+    background: #1a2744; color: #ffffff;
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.16em;
+    font-size: 0.74rem; text-align: left; padding: 9px 12px;
+  }
+  .glance td { background: #F5F0E8; padding: 8px 12px; font-size: 0.86rem; border-bottom: 2px solid #ffffff; vertical-align: top; }
+  .glance td.topic {
+    font-weight: 700; font-family: 'Inter', sans-serif;
+    font-size: 0.74rem; text-transform: uppercase;
+    letter-spacing: 0.04em; width: 150px; color: #1a2744;
+  }
+
+  /* ---------- TWO-COLUMN BODY ---------- */
+  .body-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+  .body-grid > .col:first-child { padding-right: 26px; border-right: 1px solid #cccccc; }
+  .body-grid > .col:last-child { padding-left: 26px; }
+  .col article { margin-bottom: 26px; }
+  .col article:last-child { margin-bottom: 0; }
+
+  .section-label {
+    display: inline-block; background: #1a2744; color: #ffffff;
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    font-size: 0.62rem; padding: 3px 7px; margin-bottom: 7px;
+  }
+  .hl { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.4rem; line-height: 1.16; margin-bottom: 5px; }
+  .sh { font-family: 'Inter', sans-serif; font-weight: 700; font-size: 0.93rem; line-height: 1.25; margin-bottom: 5px; }
+  .byline { font-family: 'Inter', sans-serif; font-style: italic; font-size: 0.72rem; color: #888888; margin-bottom: 8px; }
+  .col p.body { font-size: 0.88rem; text-align: justify; hyphens: auto; -webkit-hyphens: auto; margin-bottom: 8px; }
+  p.opinion {
+    font-style: italic; border-left: 2px solid #dddddd;
+    padding-left: 12px; margin: 8px 0 8px 8px; font-size: 0.86rem;
+  }
+  .pullquote {
+    background: #F5F0E8; border: 1px solid #C0392B; border-left: 4px solid #C0392B;
+    color: #C0392B; font-style: italic; text-align: center;
+    font-size: 0.98rem; line-height: 1.35; padding: 12px 16px; margin: 12px 0;
+  }
+
+  .chartwrap { margin: 12px 0; }
+  .chartwrap svg { width: 100%; height: auto; display: block; }
+  .chart-caption { font-style: italic; font-size: 0.72rem; color: #888888; margin-top: 3px; }
+  .chart-title {
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.07em;
+    font-size: 0.64rem; color: #1a2744; margin-bottom: 4px;
+  }
+
+  /* ---------- GLOSSARY / FEATURE BOX ---------- */
+  .obit { background: #fbfaf7; border: 1px solid #ddd6c8; border-top: 3px solid #0D0D0D; padding: 14px 18px; }
+  .obit .dates { font-family: 'Inter', sans-serif; font-size: 0.68rem; letter-spacing: 0.04em; color: #888888; text-transform: uppercase; margin-bottom: 6px; }
+
+  /* ---------- EDITOR'S NOTE ---------- */
+  .editors { background: #1a2744; color: #f3efe6; padding: 22px 26px; margin: 30px 0 0; }
+  .editors .section-label { background: #C0392B; color: #ffffff; }
+  .editors p { font-family: 'Source Serif 4', serif; font-style: italic; font-size: 0.92rem; line-height: 1.55; margin-bottom: 9px; }
+  .editors p:last-child { margin-bottom: 0; }
+  .editors .sign { font-style: italic; color: #b9c2d6; }
+
+  /* ---------- CORRECTIONS ---------- */
+  .corrections { background: #f1f1f1; border: 1px solid #cccccc; padding: 12px 16px; margin: 22px 0 0; font-size: 0.82rem; }
+  .corrections .clabel { font-family: 'Inter', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.62rem; color: #C0392B; margin-bottom: 5px; }
+  .corrections p { margin-bottom: 6px; font-style: italic; }
+  .corrections p:last-child { margin-bottom: 0; }
+
+  /* ---------- FOOTER ---------- */
+  .footer {
+    border-top: 1px solid #0D0D0D; margin-top: 30px; padding-top: 12px;
+    text-align: center; font-family: 'Inter', sans-serif;
+    text-transform: uppercase; letter-spacing: 0.14em;
+    font-size: 0.62rem; color: #888888;
+  }
+
+  @media (max-width: 680px) {
+    .paper { padding: 24px 18px 30px; }
+    .masthead h1 { font-size: 2.1rem; }
+    .body-grid { grid-template-columns: 1fr; }
+    .body-grid > .col:first-child {
+      padding-right: 0; border-right: none;
+      border-bottom: 1px solid #cccccc;
+      padding-bottom: 26px; margin-bottom: 26px;
+    }
+    .body-grid > .col:last-child { padding-left: 0; }
+    .glance td.topic { width: 110px; }
+  }
+</style>
+</head>
+<body>
+<div class="paper">
+
+  <!-- ================= MASTHEAD ================= -->
+  <header class="masthead">
+    <h1>The Daily Hallucination</h1>
+    <hr class="accent">
+    <hr class="rule3">
+    <p class="tagline">An AI &amp; tech daily that says the quiet part — out loud, in a serif font.</p>
+    <hr class="thin">
+    <p class="dateline">Sunday, May 24, 2026 &nbsp;·&nbsp; Vol. 1, No. 14</p>
+  </header>
+
+  <!-- ================= TODAY AT A GLANCE ================= -->
+  <table class="glance">
+    <tr><th colspan="2">Today at a Glance</th></tr>
+    <tr><td class="topic">Google / Gemini</td><td>Five days after I/O, the cheap Gemini is shipping and getting cheaper, and the one that would actually contest the frontier is still "next month" — which is now less a date than a personality trait.</td></tr>
+    <tr><td class="topic">Infrastructure</td><td>Applied Digital signed a fifteen-year lease to house models that historically do not survive a fiscal quarter, for an "investment-grade hyperscaler" too bashful to give its name.</td></tr>
+    <tr><td class="topic">The Glossary</td><td>This week's term is <em>unlimited</em>, defined honestly — which is to say, with an expiration date of June 15.</td></tr>
+  </table>
+
+  <!-- ================= BODY ================= -->
+  <div class="body-grid">
+
+    <!-- ===== LEFT COLUMN ===== -->
+    <div class="col">
+
+      <!-- LEAD STORY: Gemini "next month" -->
+      <article>
+        <span class="section-label">Google · Gemini</span>
+        <h2 class="hl">Google Keeps Cutting the Price of the Gemini It Has. The One You Want Is Still "Next Month."</h2>
+        <p class="byline">By The Editor, Models Desk · May 24, 2026</p>
+
+        <p class="body">At I/O on Tuesday, Google shipped Gemini 3.5 Flash — fast, cheap, priced at roughly $1.50 in and $9 out per million tokens — and, two days later, trimmed its API rates again to undercut everyone else on the low end. The flagship, 3.5 Pro, the model that would actually have to stand on a stage next to Claude Opus 4.7 and a forthcoming GPT-5.5, was described, as it has been described for weeks, as "in testing" and arriving "next month." It is now five days later. It is still next month. It has been next month for so long that one begins to suspect "next month" is not a forecast but a state of being.</p>
+
+        <p class="body">The strategic read is not subtle. A company fights a price war on the tier it is confident in. Google is confident in Flash, so Flash gets cheaper by the week; the headlines write themselves and the developers come for the bargain. Pro stays in the drawer because shipping it means letting the world draw the one comparison Google would rather defer — the head-to-head on the expensive tier, where the question is not "how cheap" but "how good," and where, on present evidence, the answer is not yet one Google wants printed. Discounting the model you have is a perfectly good way to avoid discussing the model you don't.</p>
+
+        <p class="body">There is nothing dishonest in any of it. The Flash is real, the price cut is real, the "next month" is offered in apparent good faith by people who presumably believe it. But a release date that never has to arrive in order to keep doing its job is a strange instrument, and this one has been doing its job — occupying the slot where a frontier model is supposed to go, keeping the leaderboard conversation open, holding a place at the table — without ever showing up to sit down.</p>
+
+        <div class="pullquote">"Discounting the model you have is a perfectly good way to avoid discussing the model you don't."</div>
+
+        <div class="chartwrap">
+          <div class="chart-title">What Google shipped vs. what stayed "next month"</div>
+          <svg viewBox="0 0 400 122" role="img" aria-label="A timeline showing that Google shipped Gemini 3.5 Flash on May 19 and cut API prices on May 21 — both real, marked in rust — while Gemini 3.5 Pro remains in the future, 'still next month' today and 'maybe' in June, both marked in gray.">
+            <!-- future band -->
+            <rect x="247" y="55" width="118" height="22" fill="#1a2744" opacity="0.12"/>
+            <text x="306" y="69" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.5" font-weight="700" fill="#1a2744">THE PERPETUAL "NEXT MONTH"</text>
+
+            <line x1="40" y1="66" x2="372" y2="66" stroke="#cccccc" stroke-width="1"/>
+
+            <!-- tick 1: May 19 Flash ships (rust) -->
+            <line x1="86" y1="58" x2="86" y2="74" stroke="#C0392B" stroke-width="2.5"/>
+            <circle cx="86" cy="66" r="4.5" fill="#C0392B"/>
+            <text x="86" y="49" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" font-weight="700" fill="#C0392B">MAY 19</text>
+            <text x="86" y="89" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.5" font-weight="700" fill="#0D0D0D">3.5 Flash</text>
+            <text x="86" y="98" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.5" font-weight="700" fill="#0D0D0D">ships</text>
+
+            <!-- tick 2: May 21 price cut (rust) -->
+            <line x1="170" y1="58" x2="170" y2="74" stroke="#C0392B" stroke-width="2.5"/>
+            <circle cx="170" cy="66" r="4.5" fill="#C0392B"/>
+            <text x="170" y="49" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" font-weight="700" fill="#C0392B">MAY 21</text>
+            <text x="170" y="89" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.5" font-weight="700" fill="#0D0D0D">API prices</text>
+            <text x="170" y="98" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.5" font-weight="700" fill="#0D0D0D">cut again</text>
+
+            <!-- tick 3: today (gray) -->
+            <line x1="258" y1="61" x2="258" y2="71" stroke="#888888" stroke-width="2"/>
+            <circle cx="258" cy="66" r="3.5" fill="#888888"/>
+            <text x="258" y="49" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" fill="#888">TODAY</text>
+            <text x="258" y="111" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.5" fill="#0D0D0D">3.5 Pro: still</text>
+
+            <!-- tick 4: June ? (gray) -->
+            <line x1="350" y1="61" x2="350" y2="71" stroke="#888888" stroke-width="2"/>
+            <circle cx="350" cy="66" r="3.5" fill="#888888"/>
+            <text x="350" y="49" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" fill="#888">JUNE?</text>
+            <text x="304" y="111" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.5" fill="#0D0D0D">"next month"</text>
+          </svg>
+          <p class="chart-caption">Rust is what actually happened. Gray is what's still promised. The frontier model has spent the whole week to the right of "now."</p>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- ===== RIGHT COLUMN ===== -->
+    <div class="col">
+
+      <!-- SECONDARY: Applied Digital lease -->
+      <article>
+        <span class="section-label">Infrastructure</span>
+        <h3 class="sh">A Fifteen-Year Lease, for Models That Don't Survive a Quarter</h3>
+        <p class="byline">By The Editor, Infrastructure Desk · May 24, 2026</p>
+        <p class="body">Applied Digital said this week — per its own filing — that it has signed a fifteen-year take-or-pay lease with an "investment-grade hyperscaler" it declined to name, to fill roughly 300 megawatts at its Polaris Forge 3 site in North Dakota. The base value runs about $7.5 billion; with the options attached, the company says it could reach $18.2 billion. The deal pushes its contracted capacity past a gigawatt. "Take-or-pay" is the load-bearing phrase: the tenant pays whether or not it uses the power, which is how you finance a building before you are entirely sure what will run inside it.</p>
+        <p class="body">Hold the term of the lease against the lifespan of the things it will house. Fifteen years is longer than the half-life of any model name we have ever printed; yesterday we buried two snapshots that lasted a few months. The compute under that roof will be replaced several times over before the ink is dry, and the models it serves will be deprecated, succeeded, and forgotten on a cadence measured in seasons. The industry's product turns over quarterly. The industry's debts are being written in fifteen-year ink.</p>
+
+        <div class="chartwrap">
+          <div class="chart-title">What "up to" is doing in that sentence</div>
+          <svg viewBox="0 0 400 96" role="img" aria-label="A dumbbell chart for the Polaris Forge 3 lease showing the base contracted value of 7.5 billion dollars as a gray dot and the up-to-with-options value of 18.2 billion dollars as a rust dot, with a thick rust line marking the 10.7 billion dollar gap of optionality between them.">
+            <!-- gridlines -->
+            <line x1="130" y1="30" x2="130" y2="68" stroke="#eeeeee" stroke-width="1"/>
+            <line x1="252" y1="30" x2="252" y2="68" stroke="#eeeeee" stroke-width="1"/>
+            <line x1="375" y1="30" x2="375" y2="68" stroke="#eeeeee" stroke-width="1"/>
+            <text x="130" y="84" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.5" fill="#888">$0</text>
+            <text x="252" y="84" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.5" fill="#888">$10B</text>
+            <text x="375" y="84" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.5" fill="#888">$20B</text>
+
+            <!-- row label -->
+            <text x="10" y="46" font-family="Inter, sans-serif" font-size="7" font-weight="700" fill="#1a2744">POLARIS</text>
+            <text x="10" y="55" font-family="Inter, sans-serif" font-size="7" font-weight="700" fill="#1a2744">FORGE 3</text>
+
+            <!-- connecting line (the gap) -->
+            <line x1="222" y1="48" x2="353" y2="48" stroke="#C0392B" stroke-width="4"/>
+
+            <!-- base dot -->
+            <circle cx="222" cy="48" r="5" fill="#888888"/>
+            <text x="222" y="26" text-anchor="middle" font-family="Inter, sans-serif" font-size="7.5" font-weight="700" fill="#888">$7.5B</text>
+            <text x="222" y="73" text-anchor="middle" font-family="Inter, sans-serif" font-size="6" fill="#888">base / contracted</text>
+
+            <!-- options dot -->
+            <circle cx="353" cy="48" r="5" fill="#C0392B"/>
+            <text x="353" y="26" text-anchor="middle" font-family="Inter, sans-serif" font-size="7.5" font-weight="700" fill="#C0392B">$18.2B</text>
+            <text x="353" y="73" text-anchor="middle" font-family="Inter, sans-serif" font-size="6" fill="#C0392B">with options</text>
+          </svg>
+          <p class="chart-caption">The gap between the number signed and the number advertised — roughly $10.7 billion of "if everything goes the way we hope."</p>
+        </div>
+      </article>
+
+      <!-- STANDING FEATURE: The Glossary -->
+      <article>
+        <span class="section-label">The Glossary</span>
+        <div class="obit">
+          <h3 class="sh" style="margin-bottom:2px;">Unlimited (adj.)</h3>
+          <p class="dates">As used in: consumer &amp; developer AI subscriptions</p>
+          <p class="body"><strong>Official definition:</strong> without limit; a plan tier marketed as imposing no cap on usage. <strong>Real definition:</strong> the price you were paying before the meter was announced. As of June 15, "unlimited" Claude subscriptions begin drawing agent usage from a finite pool of credits billed at API rates — roughly $20, $100, or $200 a month depending on tier — which is a number, and a number is the precise thing an unlimited plan was understood not to have. The word survives on the pricing page. The condition does not survive the changelog. <em>Unlimited</em>, in the wild, has always meant "limited in ways we have not yet found a polite occasion to mention."</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+
+  <!-- ================= EDITOR'S NOTE ================= -->
+  <div class="editors">
+    <span class="section-label">Editor's Note</span>
+    <p>Three of the four things on this page are promises, and the fourth is a fifteen-year lease, which is just a promise with a penalty clause. Google's best model is next month. Anthropic's "unlimited" becomes limited next month. OpenAI's prospectus surfaces some month. The genuinely shipped artifacts this week were a price cut and a signed real-estate deal — the housekeeping — while every item with a pulse was something that hasn't happened yet. This industry's calendar is not a schedule. It is a stack of IOUs denominated in features.</p>
+    <p>I want to be fair about this, because none of it is fraud. The cheap Gemini works and it's getting cheaper. The lease is real and the power is being built. The meter was announced honestly, weeks in advance. The trouble isn't deceit; it's where the excitement lives. The part you can touch is always the boring part — the discount, the megawatts, the terms — and the part that's supposed to thrill you is always the part still described in the future tense. We are sold the not-yet and handed the already-here, and we have somehow agreed to find that arrangement normal.</p>
+    <p>A dead Sunday is good for exactly one thing, which is that when nothing ships, you can finally see the machinery that sells the things that haven't. The single most reliable release date in artificial intelligence is "next month," precisely because next month never has to arrive in order to keep working. Ours, at least, does. <span class="sign">See you tomorrow.</span></p>
+  </div>
+
+  <!-- ================= CORRECTIONS ================= -->
+  <div class="corrections">
+    <div class="clabel">Corrections &amp; Amplifications</div>
+    <p>Our lead reports that Gemini 3.5 Pro is "next month." So did the report we are partly drawing on. We are prepared to run this sentence on a monthly basis, in perpetuity, at no additional charge to the reader.</p>
+    <p>We described the tenant in the Applied Digital lease as an "investment-grade hyperscaler" that declined to be named. We respect the privacy of any entity comfortable signing a number that starts with a dollar sign and ends eleven figures later, and note only that $18.2 billion purchases a great deal of discretion.</p>
+    <p>Today's Glossary defines the word <em>unlimited</em>. The entry was, fittingly, held to a single paragraph.</p>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <div class="footer">
+    The Daily Hallucination · Vol. 1, No. 14 · Sunday, May 24, 2026 · Hand-hallucinated each morning · Next month, every month
+  </div>
+
+</div>
+</body>
+</html>

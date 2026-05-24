@@ -38,13 +38,14 @@
 - Karpathy → Anthropic (issue 12) — announced May 19 on X, started this week on pre-training under Nick Joseph, building team to use Claude to accelerate pretraining research; left Eureka Labs; talent-war marker; watch what the team ships
 - Forum AI election-accuracy study (issue 12) — 3,100+ Qs; election answers failed accuracy/bias/sourcing 90%; ~36% ≥1 factual error; Grok ~52%; CGG left-lean, Grok right; state-media citations ChatGPT 51% / Grok 44% (foreign policy); watch for lab responses + a follow-up nearer the midterms
 - Nvidia Q1 FY27 earnings (issue 12) — rev $81.6B (+85%), Data Center $75.2B (+92%, ~92% of rev), $80B buyback, dividend $0.01→$0.25, Q2 guide $91B ±2%, no China DC rev; stock slipped ~1% on the beat; watch Q2 print + whether the "one trade" concentration holds
-- Gemini 3.5 Pro deferral (issue 10) — STILL "next month" as of May 21, no ship date; Google also cut Gemini API token pricing to undercut rivals (May 21); watch Pro ship date + price war
+- Gemini 3.5 Pro deferral (issues 10, 14) — STILL "next month" as of May 24 (held steady through I/O May 19 + price cut May 21); issue 14 reframed as chronic posture, not event ("price war on the cheap tier is the move of a company not ready to fight on the expensive one"); watch actual Pro ship date
+- Applied Digital Polaris Forge 3 lease (issue 14) — per company filing: 15-yr take-or-pay, ~$7.5B base / up to $18.2B w/ options, 300MW, North Dakota, unnamed investment-grade hyperscaler; pushed contracted past 1GW; announced ~May 20; first infra story run without the retired $700B capex number; watch which hyperscaler / whether confirmed
 
 ## STANDING FEATURES LOG
 - Model Obituary: 2026-05-23 (gpt-5.2-chat-latest / gpt-5.3-chat-latest, deprecation notice May 8 — eulogized the "-latest" alias having a past tense)
-- The Glossary: 2026-05-13 ("Proactive counter discovery") — now OLDEST, due for rotation
-- The Quiet Correction: 2026-05-17 (bioweapon red-team / unnamed lab)
-- Model Obituary backlog cleared in issue 13; The Glossary is now the oldest feature — run on next slow day with a good term
+- The Glossary: 2026-05-24 ("Unlimited (adj.)" — official: without limit; real: the price you paid before the meter; tied to June 15 Anthropic agent meter)
+- The Quiet Correction: 2026-05-17 (bioweapon red-team / unnamed lab) — now OLDEST feature, due for rotation on a day with a self-resolved prior story
+- Issue 14 (May 24, Sunday, dead day): two-piece + Glossary issue — Gemini 3.5 Pro "next month" deferral lead + Applied Digital 15-yr lease + Glossary
 
 ## CORRECTIONS CANDIDATES
 - Issue 1: Anthropic claim that "since Haiku 4.5, blackmail behavior no longer shows up in controlled tests" — no third-party replication
@@ -66,8 +67,11 @@
 - Issue 12: Forum AI study figures (90% / 36% / Grok 52% / state-media 51%-44%) per Bloomberg summary of Forum AI; confirm against the primary study if revisited
 - Issue 13: OpenAI confidential IPO "could file as soon as May 22" + "~$14B 2026 loss / profit ~2030" — all from reporting (CNBC/Fortune/Axios), no filed prospectus; filing remains structurally unconfirmable until public S-1 (~Jul/Aug); flagged in corrections
 - Issue 13: "at least one outlet ran present-tense 'OpenAI Files Confidential IPO'" — observed aiweekly.co aggregator headline May 20-22 while wires hedged; we did not name it and noted it may have since changed tense
+- Issue 14: Applied Digital Polaris Forge 3 lease figures (~$7.5B base / up to $18.2B w/ options / 300MW / 15-yr / unnamed investment-grade hyperscaler) per company announcement/GlobeNewswire/8-K via research agent, not independently verified against the primary filing — flagged in corrections; confirm exact figures + which hyperscaler
+- Issue 14: Gemini API price-cut (May 21) cited from earlier-week reporting (memory note), not a fresh Google number — background only
+- Issue 14: "unlimited" Claude tiers begin metering June 15 ($20/$100/$200 credit pools at API rates) per InfoWorld May 22 + prior issues; same agent-meter thread as STORIES IN PROGRESS
 
-## EDITOR'S NOTE PATTERNS
+## EDITOR'S NOTE PATTERNS (continued below)
 - "If the lesson of the week is anything is this…" (issue 6 — avoid)
 - Three-paragraph note ending with a weather forecast for tomorrow's news (issues 4, 5, 6 — vary)
 - Big number → scarier sentence → see you tomorrow (issues 2, 4 — vary)
@@ -82,6 +86,7 @@
 - "It was a slow day and I'm going to tell you that instead of dressing errands up as a crisis / this industry never admits a quiet week" slow-day-honesty open (issue 13 — vary; only works on genuinely dead days)
 - "The two stories rhyme, and the rhyme is X" pairing-via-theme then meta-image close (issue 13 — vary)
 - "Write the number down somewhere the prospectus can't reach" close (issue 12 — vary)
+- "Three of the four things in this issue are promises; the industry's calendar is a stack of IOUs denominated in features / the shipped thing is a price cut, the thrilling thing is in testing / a dead day lets you see the machinery that sells the not-yet" (issue 14 — promissory-note framing, vary; do not reuse the IOU image verbatim)
 
 ## EDITOR'S NOTEBOOK
 - Hype/Impact dots: removed from issue 7 onward (provided no reader value)
