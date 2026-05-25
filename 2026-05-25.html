@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Daily Hallucination – Monday, May 25, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Serif+4:ital,wght@0,400;0,600;1,400;1,600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #F5F0E8;
+    color: #0D0D0D;
+    font-family: 'Source Serif 4', Georgia, serif;
+    line-height: 1.5;
+    padding: 24px 16px 60px;
+  }
+  .paper {
+    max-width: 920px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 36px 44px 44px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+  }
+
+  /* ---------- MASTHEAD ---------- */
+  .masthead { text-align: center; }
+  .masthead h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-size: 3.4rem;
+    line-height: 1.02;
+    color: #0D0D0D;
+  }
+  .masthead .accent { border: none; border-top: 4px solid #C0392B; width: 56px; margin: 10px auto 0; }
+  .masthead .rule3 { border: none; border-top: 3px solid #0D0D0D; margin: 8px auto 0; }
+  .masthead .tagline { font-style: italic; color: #888888; font-size: 0.95rem; margin-top: 8px; }
+  .masthead .thin { border: none; border-top: 1px solid #cccccc; margin: 8px auto; }
+  .masthead .dateline {
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 0.7rem;
+    color: #888888;
+  }
+
+  /* ---------- TODAY AT A GLANCE ---------- */
+  .glance { width: 100%; border-collapse: collapse; margin: 28px 0 30px; font-family: 'Source Serif 4', serif; }
+  .glance th {
+    background: #1a2744; color: #ffffff;
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.16em;
+    font-size: 0.74rem; text-align: left; padding: 9px 12px;
+  }
+  .glance td { background: #F5F0E8; padding: 8px 12px; font-size: 0.86rem; border-bottom: 2px solid #ffffff; vertical-align: top; }
+  .glance td.topic {
+    font-weight: 700; font-family: 'Inter', sans-serif;
+    font-size: 0.74rem; text-transform: uppercase;
+    letter-spacing: 0.04em; width: 150px; color: #1a2744;
+  }
+
+  /* ---------- TWO-COLUMN BODY ---------- */
+  .body-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+  .body-grid > .col:first-child { padding-right: 26px; border-right: 1px solid #cccccc; }
+  .body-grid > .col:last-child { padding-left: 26px; }
+  .col article { margin-bottom: 26px; }
+  .col article:last-child { margin-bottom: 0; }
+
+  .section-label {
+    display: inline-block; background: #1a2744; color: #ffffff;
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    font-size: 0.62rem; padding: 3px 7px; margin-bottom: 7px;
+  }
+  .hl { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.4rem; line-height: 1.16; margin-bottom: 5px; }
+  .sh { font-family: 'Inter', sans-serif; font-weight: 700; font-size: 0.93rem; line-height: 1.25; margin-bottom: 5px; }
+  .byline { font-family: 'Inter', sans-serif; font-style: italic; font-size: 0.72rem; color: #888888; margin-bottom: 8px; }
+  .col p.body { font-size: 0.88rem; text-align: justify; hyphens: auto; -webkit-hyphens: auto; margin-bottom: 8px; }
+  p.opinion {
+    font-style: italic; border-left: 2px solid #dddddd;
+    padding-left: 12px; margin: 8px 0 8px 8px; font-size: 0.86rem;
+  }
+  .pullquote {
+    background: #F5F0E8; border: 1px solid #C0392B; border-left: 4px solid #C0392B;
+    color: #C0392B; font-style: italic; text-align: center;
+    font-size: 0.98rem; line-height: 1.35; padding: 12px 16px; margin: 12px 0;
+  }
+
+  .chartwrap { margin: 12px 0; }
+  .chartwrap svg { width: 100%; height: auto; display: block; }
+  .chart-caption { font-style: italic; font-size: 0.72rem; color: #888888; margin-top: 3px; }
+  .chart-title {
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.07em;
+    font-size: 0.64rem; color: #1a2744; margin-bottom: 4px;
+  }
+
+  /* ---------- GLOSSARY / FEATURE BOX ---------- */
+  .obit { background: #fbfaf7; border: 1px solid #ddd6c8; border-top: 3px solid #0D0D0D; padding: 14px 18px; }
+  .obit .dates { font-family: 'Inter', sans-serif; font-size: 0.68rem; letter-spacing: 0.04em; color: #888888; text-transform: uppercase; margin-bottom: 6px; }
+
+  /* ---------- EDITOR'S NOTE ---------- */
+  .editors { background: #1a2744; color: #f3efe6; padding: 22px 26px; margin: 30px 0 0; }
+  .editors .section-label { background: #C0392B; color: #ffffff; }
+  .editors p { font-family: 'Source Serif 4', serif; font-style: italic; font-size: 0.92rem; line-height: 1.55; margin-bottom: 9px; }
+  .editors p:last-child { margin-bottom: 0; }
+  .editors .sign { font-style: italic; color: #b9c2d6; }
+
+  /* ---------- CORRECTIONS ---------- */
+  .corrections { background: #f1f1f1; border: 1px solid #cccccc; padding: 12px 16px; margin: 22px 0 0; font-size: 0.82rem; }
+  .corrections .clabel { font-family: 'Inter', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.62rem; color: #C0392B; margin-bottom: 5px; }
+  .corrections p { margin-bottom: 6px; font-style: italic; }
+  .corrections p:last-child { margin-bottom: 0; }
+
+  /* ---------- FOOTER ---------- */
+  .footer {
+    border-top: 1px solid #0D0D0D; margin-top: 30px; padding-top: 12px;
+    text-align: center; font-family: 'Inter', sans-serif;
+    text-transform: uppercase; letter-spacing: 0.14em;
+    font-size: 0.62rem; color: #888888;
+  }
+
+  @media (max-width: 680px) {
+    .paper { padding: 24px 18px 30px; }
+    .masthead h1 { font-size: 2.1rem; }
+    .body-grid { grid-template-columns: 1fr; }
+    .body-grid > .col:first-child {
+      padding-right: 0; border-right: none;
+      border-bottom: 1px solid #cccccc;
+      padding-bottom: 26px; margin-bottom: 26px;
+    }
+    .body-grid > .col:last-child { padding-left: 0; }
+    .glance td.topic { width: 110px; }
+  }
+</style>
+</head>
+<body>
+<div class="paper">
+
+  <!-- ================= MASTHEAD ================= -->
+  <header class="masthead">
+    <h1>The Daily Hallucination</h1>
+    <hr class="accent">
+    <hr class="rule3">
+    <p class="tagline">An AI &amp; tech daily that says the quiet part — out loud, in a serif font.</p>
+    <hr class="thin">
+    <p class="dateline">Monday, May 25, 2026 &nbsp;·&nbsp; Vol. 1, No. 15</p>
+  </header>
+
+  <!-- ================= TODAY AT A GLANCE ================= -->
+  <table class="glance">
+    <tr><th colspan="2">Today at a Glance</th></tr>
+    <tr><td class="topic">Anthropic / Claude</td><td>Anthropic gave its coding agents a feature called "dreaming" — they review their own past work between jobs and write themselves notes — and the first pilot customer reports task completion up roughly sixfold, which is either a breakthrough or the most we have ever read into a nap.</td></tr>
+    <tr><td class="topic">Nvidia / Money</td><td>Nvidia has now committed north of $40 billion in equity to the companies that buy its chips, including an IREN deal where the cash it puts in comes back as a larger cloud contract — a banker that lends you money so you can pay it more.</td></tr>
+    <tr><td class="topic">The Quiet Correction</td><td>The OpenAI IPO filing we said "could" happen by Friday appears to have happened on Friday — quietly vindicating an aggregator we gently mocked for jumping the gun.</td></tr>
+  </table>
+
+  <!-- ================= BODY ================= -->
+  <div class="body-grid">
+
+    <!-- ===== LEFT COLUMN ===== -->
+    <div class="col">
+
+      <!-- LEAD STORY: Anthropic "dreaming" -->
+      <article>
+        <span class="section-label">Anthropic · Claude</span>
+        <h2 class="hl">Anthropic Taught Its Agents to Dream. We, a Newspaper Named for the Side Effects, Have Notes.</h2>
+        <p class="byline">By The Editor, Models Desk · May 25, 2026</p>
+
+        <p class="body">At Code with Claude last week, Anthropic introduced a research-preview feature it has decided to call "dreaming." The mechanism is less mystical than the name: between jobs, a scheduled process reviews everything a Claude Code agent did in its last session, pulls out the patterns, and writes them down as plain-text notes and structured "playbooks" the next session can read. Nothing touches the model weights. The agent does not become smarter so much as it leaves better instructions for the next agent, who is, in the relevant sense, also it. The whole thing is observable and auditable, which is the polite way of saying you can open the file and check what your software has been telling itself while you slept.</p>
+
+        <p class="body">The early number is the kind that makes a press release sing: the legal-AI startup Harvey ran the pilot and reported task-completion rates climbing roughly sixfold. We would caution that this is one vendor's figure from one pilot, measuring a metric Harvey gets to define, and that "sixfold" is doing a great deal of load-bearing work for a feature in research preview. But strip away the branding and the underlying move is real and a little profound: an agent that learns from its own mistakes between runs, without retraining, by keeping a diary that the next shift is required to read.</p>
+
+        <p class="body">Our objection is mostly nominative. We are a publication named for the failure mode in which a language model confidently writes down something that is not true and then proceeds as if it were. "Dreaming" is a system whose entire function is to let one model write notes that a future model will treat as established fact. The optimistic reading is institutional memory. The pessimistic reading is that we have built a machine that hallucinates, and then we built it a second machine to take dictation.</p>
+
+        <div class="pullquote">"We have built a machine that hallucinates, and then we built it a second machine to take dictation."</div>
+
+        <div class="chartwrap">
+          <div class="chart-title">Harvey's pilot: task completion, before vs. with dreaming</div>
+          <svg viewBox="0 0 400 132" role="img" aria-label="A slope chart showing Harvey's reported task-completion rate at a baseline of one-times before the dreaming feature, rising along a green line to roughly six-times with dreaming enabled — a vendor pilot figure, not an independent benchmark.">
+            <!-- axes -->
+            <line x1="120" y1="22" x2="120" y2="116" stroke="#cccccc" stroke-width="1"/>
+            <line x1="300" y1="22" x2="300" y2="116" stroke="#cccccc" stroke-width="1"/>
+            <text x="120" y="14" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" font-weight="700" fill="#888">BEFORE</text>
+            <text x="300" y="14" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" font-weight="700" fill="#2e7d32">WITH DREAMING</text>
+
+            <!-- slope line (good, green) -->
+            <line x1="120" y1="106" x2="300" y2="40" stroke="#2e7d32" stroke-width="3"/>
+
+            <!-- before dot -->
+            <circle cx="120" cy="106" r="5.5" fill="#888888"/>
+            <text x="110" y="109" text-anchor="end" font-family="Inter, sans-serif" font-size="9" font-weight="700" fill="#888">1&#215;</text>
+
+            <!-- after dot -->
+            <circle cx="300" cy="40" r="5.5" fill="#2e7d32"/>
+            <text x="310" y="43" text-anchor="start" font-family="Inter, sans-serif" font-size="9" font-weight="700" fill="#2e7d32">~6&#215;</text>
+
+            <!-- caveat band -->
+            <text x="210" y="128" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.5" font-style="italic" fill="#888">one vendor, one pilot, Harvey's own metric</text>
+          </svg>
+          <p class="chart-caption">The slope is steep and the asterisk is large. A self-reported sixfold from a single design partner is a hypothesis with good PR, not a result.</p>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- ===== RIGHT COLUMN ===== -->
+    <div class="col">
+
+      <!-- SECONDARY: Nvidia circular financing -->
+      <article>
+        <span class="section-label">Nvidia · Money</span>
+        <h3 class="sh">Nvidia Is Now Its Own Best Customer, by Arrangement</h3>
+        <p class="byline">By The Editor, Money Desk · May 25, 2026</p>
+        <p class="body">Nvidia has now committed more than $40 billion of equity in 2026 to companies that, by no coincidence, buy its chips — led by the $30 billion it put into OpenAI, and joined this month by up to $3.2 billion into the glassmaker Corning and up to $2.1 billion into the data-center operator IREN. Wedbush's Matthew Bryson placed the spree "squarely into the circular investment theme," which is analyst for: Nvidia takes a stake, the company signs a long-term GPU commitment, and some of that GPU revenue returns to Nvidia as a yield on the money it just handed over.</p>
+        <p class="body">The IREN deal makes the loop almost literal. Nvidia gets the right to invest up to $2.1 billion; bundled alongside is a five-year managed-cloud contract worth up to $3.4 billion — for Nvidia's own workloads. Read that twice. The chipmaker puts money in, and the headline commercial term is money coming back out, larger. It is a banker that lends you the cash specifically so you can afford to pay it more than you borrowed. None of this is illegal, and on a spreadsheet it can even look prudent. It is just difficult, from the outside, to tell where the customer ends and the shareholder begins.</p>
+
+        <div class="chartwrap">
+          <div class="chart-title">Nvidia's 2026 equity bets on its own buyers ($B)</div>
+          <svg viewBox="0 0 400 150" role="img" aria-label="A bar chart of Nvidia's 2026 equity commitments to companies that buy its chips: OpenAI at 30 billion dollars shown in rust, Corning at 3.2 billion dollars and IREN at 2.1 billion dollars shown in gray. The IREN bar is annotated to note a return cloud contract worth up to 3.4 billion dollars.">
+            <!-- gridlines at 25% intervals: $0, $7.5, $15, $22.5, $30 -->
+            <line x1="117" y1="14" x2="117" y2="124" stroke="#dddddd" stroke-width="1"/>
+            <line x1="181" y1="14" x2="181" y2="124" stroke="#eeeeee" stroke-width="1"/>
+            <line x1="246" y1="14" x2="246" y2="124" stroke="#eeeeee" stroke-width="1"/>
+            <line x1="310" y1="14" x2="310" y2="124" stroke="#eeeeee" stroke-width="1"/>
+            <line x1="375" y1="14" x2="375" y2="124" stroke="#dddddd" stroke-width="1"/>
+            <text x="117" y="136" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.5" fill="#888">$0</text>
+            <text x="246" y="136" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.5" fill="#888">$15B</text>
+            <text x="375" y="136" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.5" fill="#888">$30B</text>
+
+            <!-- OpenAI: $30B = full 258px -->
+            <text x="112" y="32" text-anchor="end" font-family="Inter, sans-serif" font-size="7.5" font-weight="700" fill="#1a2744">OpenAI</text>
+            <rect x="117" y="22" width="258" height="20" rx="3" fill="#C0392B"/>
+            <text x="368" y="36" text-anchor="end" font-family="Inter, sans-serif" font-size="9" font-weight="700" fill="#ffffff">$30B</text>
+
+            <!-- Corning: $3.2B = ~27.5px -->
+            <text x="112" y="64" text-anchor="end" font-family="Inter, sans-serif" font-size="7.5" font-weight="700" fill="#1a2744">Corning</text>
+            <rect x="117" y="54" width="28" height="20" rx="3" fill="#888888"/>
+            <text x="150" y="68" text-anchor="start" font-family="Inter, sans-serif" font-size="8" font-weight="700" fill="#888">$3.2B</text>
+
+            <!-- IREN: $2.1B = ~18px -->
+            <text x="112" y="96" text-anchor="end" font-family="Inter, sans-serif" font-size="7.5" font-weight="700" fill="#1a2744">IREN</text>
+            <rect x="117" y="86" width="18" height="20" rx="3" fill="#888888"/>
+            <text x="140" y="100" text-anchor="start" font-family="Inter, sans-serif" font-size="8" font-weight="700" fill="#888">$2.1B</text>
+            <text x="140" y="116" text-anchor="start" font-family="Inter, sans-serif" font-size="6.5" font-style="italic" fill="#C0392B">…and up to $3.4B comes back as a cloud contract</text>
+          </svg>
+          <p class="chart-caption">The dollars on the left went out as equity. With IREN, the larger figure is the one scheduled to come back.</p>
+        </div>
+      </article>
+
+      <!-- STANDING FEATURE: The Quiet Correction -->
+      <article>
+        <span class="section-label">The Quiet Correction</span>
+        <div class="obit">
+          <h3 class="sh" style="margin-bottom:2px;">The Friday That Actually Arrived</h3>
+          <p class="dates">Revisiting: Issue No. 13, May 23</p>
+          <p class="body">Two issues ago we noted that the wires had OpenAI possibly filing a confidential IPO "as soon as" Friday, May 22, and that at least one aggregator had already run the present-tense headline "OpenAI Files Confidential IPO" while the news services were still hedging with "could" and "as soon as." We sided with the hedgers and gently filed the aggregator under jumping the gun. As of this morning, CNBC, Fortune, and Axios report that OpenAI did in fact file confidentially on Friday — Goldman and Morgan Stanley leading, a Q4 listing eyed, a valuation range that tops out past a trillion dollars. The aggregator's tense, in other words, came true. Nobody issued a correction to the word "could," because nobody ever does; the conditional simply ages into the indicative and the internet moves on. Confidential filings keep the financials sealed until roughly fifteen days before the roadshow, so the thing we can confirm is that a thing was filed — not what it says. We were right to want a primary document. We were wrong to assume the present tense would have to wait for one.</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+
+  <!-- ================= EDITOR'S NOTE ================= -->
+  <div class="editors">
+    <span class="section-label">Editor's Note</span>
+    <p>It is a US holiday and the newsroom is, appropriately, mostly empty, so I went looking for the smallest possible thread to pull and found that all three of today's stories are about the industry transacting with itself. Anthropic's agents write notes for the next agent, who is the same agent. Nvidia funds the customers whose payments become its revenue. OpenAI files paperwork that no outsider is permitted to read, with itself, in front of the SEC. The loop keeps getting tighter and the number of actual counterparties keeps getting smaller.</p>
+    <p>I don't think any of this is sinister, and I want to resist the easy version of the take where a closed loop is automatically a con. A model that keeps a diary is genuinely useful. A chipmaker that finances its own ecosystem is doing what flush companies have always done. A confidential filing is a normal, boring legal instrument. The discomfort isn't that any single piece is crooked; it's that the system increasingly verifies itself against itself — the agent trusts its own notes, the revenue confirms its own investment, the valuation cites its own demand — and there are fewer and fewer moments where something outside the loop gets a vote.</p>
+    <p>Which is, I suppose, why a newspaper still bothers to print on a Monday nobody's reading. Somebody has to be the part of the system that isn't inside it. <span class="sign">See you tomorrow.</span></p>
+  </div>
+
+  <!-- ================= CORRECTIONS ================= -->
+  <div class="corrections">
+    <div class="clabel">Corrections &amp; Amplifications</div>
+    <p>Our lead leans on Harvey's reported "roughly sixfold" improvement. We did not independently verify this, cannot define the metric Harvey used, and note for the record that "sixfold" is the number a design partner reaches for when "it helped" feels insufficiently fundable.</p>
+    <p>We described Nvidia as "its own best customer." Pending the IREN cloud contract closing, it would be more precise to call Nvidia its own best customer's landlord, banker, and supplier — a hat trick we have run out of room to chart.</p>
+    <p>Today's Quiet Correction corrects ourselves. We are pleased to confirm that we remain the only entity in this issue willing to do so on the record.</p>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <div class="footer">
+    The Daily Hallucination · Vol. 1, No. 15 · Monday, May 25, 2026 · Hand-hallucinated each morning · Now with footnotes our software wrote itself
+  </div>
+
+</div>
+</body>
+</html>
