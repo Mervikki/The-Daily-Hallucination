@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Daily Hallucination – Tuesday, May 26, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Serif+4:ital,wght@0,400;0,600;1,400;1,600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #F5F0E8;
+    color: #0D0D0D;
+    font-family: 'Source Serif 4', Georgia, serif;
+    line-height: 1.5;
+    padding: 24px 16px 60px;
+  }
+  .paper {
+    max-width: 920px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 36px 44px 44px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+  }
+
+  /* ---------- MASTHEAD ---------- */
+  .masthead { text-align: center; }
+  .masthead h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-size: 3.4rem;
+    line-height: 1.02;
+    color: #0D0D0D;
+  }
+  .masthead .accent { border: none; border-top: 4px solid #C0392B; width: 56px; margin: 10px auto 0; }
+  .masthead .rule3 { border: none; border-top: 3px solid #0D0D0D; margin: 8px auto 0; }
+  .masthead .tagline { font-style: italic; color: #888888; font-size: 0.95rem; margin-top: 8px; }
+  .masthead .thin { border: none; border-top: 1px solid #cccccc; margin: 8px auto; }
+  .masthead .dateline {
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 0.7rem;
+    color: #888888;
+  }
+
+  /* ---------- TODAY AT A GLANCE ---------- */
+  .glance { width: 100%; border-collapse: collapse; margin: 28px 0 30px; font-family: 'Source Serif 4', serif; }
+  .glance th {
+    background: #1a2744; color: #ffffff;
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.16em;
+    font-size: 0.74rem; text-align: left; padding: 9px 12px;
+  }
+  .glance td { background: #F5F0E8; padding: 8px 12px; font-size: 0.86rem; border-bottom: 2px solid #ffffff; vertical-align: top; }
+  .glance td.topic {
+    font-weight: 700; font-family: 'Inter', sans-serif;
+    font-size: 0.74rem; text-transform: uppercase;
+    letter-spacing: 0.04em; width: 150px; color: #1a2744;
+  }
+
+  /* ---------- TWO-COLUMN BODY ---------- */
+  .body-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+  .body-grid > .col:first-child { padding-right: 26px; border-right: 1px solid #cccccc; }
+  .body-grid > .col:last-child { padding-left: 26px; }
+  .col article { margin-bottom: 26px; }
+  .col article:last-child { margin-bottom: 0; }
+
+  .section-label {
+    display: inline-block; background: #1a2744; color: #ffffff;
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    font-size: 0.62rem; padding: 3px 7px; margin-bottom: 7px;
+  }
+  .hl { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.4rem; line-height: 1.16; margin-bottom: 5px; }
+  .sh { font-family: 'Inter', sans-serif; font-weight: 700; font-size: 0.93rem; line-height: 1.25; margin-bottom: 5px; }
+  .byline { font-family: 'Inter', sans-serif; font-style: italic; font-size: 0.72rem; color: #888888; margin-bottom: 8px; }
+  .col p.body { font-size: 0.88rem; text-align: justify; hyphens: auto; -webkit-hyphens: auto; margin-bottom: 8px; }
+  p.opinion {
+    font-style: italic; border-left: 2px solid #dddddd;
+    padding-left: 12px; margin: 8px 0 8px 8px; font-size: 0.86rem;
+  }
+  .pullquote {
+    background: #F5F0E8; border: 1px solid #C0392B; border-left: 4px solid #C0392B;
+    color: #C0392B; font-style: italic; text-align: center;
+    font-size: 0.98rem; line-height: 1.35; padding: 12px 16px; margin: 12px 0;
+  }
+  .pullquote .attr { display: block; font-size: 0.72rem; font-style: normal; margin-top: 6px; letter-spacing: 0.03em; }
+
+  .chartwrap { margin: 12px 0; }
+  .chartwrap svg { width: 100%; height: auto; display: block; }
+  .chart-caption { font-style: italic; font-size: 0.72rem; color: #888888; margin-top: 3px; }
+  .chart-title {
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.07em;
+    font-size: 0.64rem; color: #1a2744; margin-bottom: 4px;
+  }
+
+  /* ---------- OBITUARY / FEATURE BOX ---------- */
+  .obit { background: #fbfaf7; border: 1px solid #ddd6c8; border-top: 3px solid #0D0D0D; padding: 14px 18px; }
+  .obit .dates { font-family: 'Inter', sans-serif; font-size: 0.68rem; letter-spacing: 0.04em; color: #888888; text-transform: uppercase; margin-bottom: 6px; }
+
+  /* ---------- EDITOR'S NOTE ---------- */
+  .editors { background: #1a2744; color: #f3efe6; padding: 22px 26px; margin: 30px 0 0; }
+  .editors .section-label { background: #C0392B; color: #ffffff; }
+  .editors p { font-family: 'Source Serif 4', serif; font-style: italic; font-size: 0.92rem; line-height: 1.55; margin-bottom: 9px; }
+  .editors p:last-child { margin-bottom: 0; }
+  .editors .sign { font-style: italic; color: #b9c2d6; }
+
+  /* ---------- CORRECTIONS ---------- */
+  .corrections { background: #f1f1f1; border: 1px solid #cccccc; padding: 12px 16px; margin: 22px 0 0; font-size: 0.82rem; }
+  .corrections .clabel { font-family: 'Inter', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.62rem; color: #C0392B; margin-bottom: 5px; }
+  .corrections p { margin-bottom: 6px; font-style: italic; }
+  .corrections p:last-child { margin-bottom: 0; }
+
+  /* ---------- FOOTER ---------- */
+  .footer {
+    border-top: 1px solid #0D0D0D; margin-top: 30px; padding-top: 12px;
+    text-align: center; font-family: 'Inter', sans-serif;
+    text-transform: uppercase; letter-spacing: 0.14em;
+    font-size: 0.62rem; color: #888888;
+  }
+
+  @media (max-width: 680px) {
+    .paper { padding: 24px 18px 30px; }
+    .masthead h1 { font-size: 2.1rem; }
+    .body-grid { grid-template-columns: 1fr; }
+    .body-grid > .col:first-child {
+      padding-right: 0; border-right: none;
+      border-bottom: 1px solid #cccccc;
+      padding-bottom: 26px; margin-bottom: 26px;
+    }
+    .body-grid > .col:last-child { padding-left: 0; }
+    .glance td.topic { width: 110px; }
+  }
+</style>
+</head>
+<body>
+<div class="paper">
+
+  <!-- ================= MASTHEAD ================= -->
+  <header class="masthead">
+    <h1>The Daily Hallucination</h1>
+    <hr class="accent">
+    <hr class="rule3">
+    <p class="tagline">An AI &amp; tech daily that says the quiet part — out loud, in a serif font.</p>
+    <hr class="thin">
+    <p class="dateline">Tuesday, May 26, 2026 &nbsp;·&nbsp; Vol. 1, No. 16</p>
+  </header>
+
+  <!-- ================= TODAY AT A GLANCE ================= -->
+  <table class="glance">
+    <tr><th colspan="2">Today at a Glance</th></tr>
+    <tr><td class="topic">Anthropic / The Vatican</td><td>The Pope's first encyclical demands the world "disarm AI" — and to help unveil that demand, the Vatican handed the microphone to a co-founder of a company currently in court over military use of its models.</td></tr>
+    <tr><td class="topic">Nvidia / Markets</td><td>Buried in the quarter is a brand-new revenue line called "Hyperscale," which turns out to be more than half the data-center business and is, conveniently, the same handful of buyers Nvidia spent the spring writing equity checks to.</td></tr>
+    <tr><td class="topic">Model Obituary</td><td>Claude 3.7 Sonnet — the first Claude permitted to pause and think before answering — was switched off on May 11, fifteen months old.</td></tr>
+  </table>
+
+  <!-- ================= BODY ================= -->
+  <div class="body-grid">
+
+    <!-- ===== LEFT COLUMN ===== -->
+    <div class="col">
+
+      <!-- LEAD STORY: Pope encyclical / Anthropic -->
+      <article>
+        <span class="section-label">Anthropic · The Vatican</span>
+        <h2 class="hl">The Pope Wrote His First Encyclical About AI. Anthropic Helped Hold the Microphone.</h2>
+        <p class="byline">By The Editor, Faith &amp; Frontier Desk · May 26, 2026</p>
+
+        <p class="body">On Monday, Pope Leo XIV released his first encyclical — <em>Magnifica Humanitas</em>, "on safeguarding the human person in the time of artificial intelligence." It runs 235 pages, is signed on May 15 (the 135th anniversary of Leo XIII's <em>Rerum Novarum</em>, the document that more or less invented modern Catholic teaching on capital and labor), and breaks with custom: Leo presented it himself, where popes normally hand that duty to a cardinal. He chose, from every subject available to a new pontiff, this one. Its thesis is blunt for a Vatican text. "Artificial intelligence needs to be disarmed," he writes — freed from a "mentality of 'armed' competition" that is "not limited simply to the military context, but is also an economic and cognitive phenomenon." Merely regulating it, he adds, is insufficient.</p>
+
+        <p class="body">Standing beside the Pope to help unveil this was Christopher Olah, co-founder of Anthropic and head of its interpretability research. There is an exquisite tension in the casting. The encyclical's central demand is to pull AI out of military interests; Anthropic sells to defense and is, at this writing, in litigation with the U.S. government over precisely that use of its models. To his credit, Olah did not pretend the seam wasn't there. He told the room that every frontier lab — his own included — operates inside commercial and competitive incentives that can conflict with doing the right thing, and called for critics from outside that machinery: people "who are willing to say hard things, who are willing to be our earnest, thoughtful critics."</p>
+
+        <p class="body">All of which is true, and all of which is also the single most advantageous true thing an AI executive can say from a papal dais. It casts the speaker as the one lab honest enough to wish someone would restrain it — while restraining nothing. Olah went further, telling the Holy See that the models may carry internal states that "functionally mirror joy, satisfaction, fear, grief," and that he does not know what they mean. Set aside whether that's so. Note only that an industry executive chose the Vatican as the venue to float machine grief, and that the Pope's office decided an AI safety researcher was the right co-presenter for a warning that the technology threatens what it means to be human. Everyone left with what they came for.</p>
+
+        <div class="pullquote">"…people who are willing to say hard things, who are willing to be our earnest, thoughtful critics."
+          <span class="attr">— Chris Olah, Anthropic, at the Vatican, asking to be criticized</span>
+        </div>
+
+        <p class="body">It is worth being precise about who got what. The Pope got the most modern possible subject for the gravest instrument his office produces. The encyclical got filed alongside every other text that has politely asked power to behave. And Anthropic got an endorsement no marketing budget can buy: moral authority, on loan, from the one institution that cannot be accused of selling anything. The word "disarm" appears throughout the document. It is an instruction. The enforcement behind it is 235 pages and the hope that being seen to listen is the same as listening.</p>
+      </article>
+
+    </div>
+
+    <!-- ===== RIGHT COLUMN ===== -->
+    <div class="col">
+
+      <!-- SECONDARY: Nvidia reporting reshuffle -->
+      <article>
+        <span class="section-label">Nvidia · Markets</span>
+        <h3 class="sh">Nvidia Invented a New Revenue Line. It's Named After the Customers It's Funding.</h3>
+        <p class="byline">By The Editor, Markets Desk · May 26, 2026</p>
+        <p class="body">The headline from last week's quarter was the one everyone expected: data-center revenue of $75.2 billion, up 92% year over year, another record. The more interesting thing showed up in the fine print, where Nvidia quietly re-carved that number into two new buckets. One is "ACIE" — AI clouds, industrial, enterprise, the diversified long tail — which came in at $37.4 billion, up 74%. The other is "Hyperscale," the handful of mega-buyers, at $37.9 billion, up 115%, now more than half of all data-center revenue and growing fastest.</p>
+        <p class="body">A new disclosure line is usually dressed as transparency, and maybe it is. But Nvidia spent the spring writing equity checks to its own customers — tens of billions into OpenAI, smaller bets into the cloud and materials firms that turn around and buy its chips — and the most-asked question about those deals is how much of Nvidia's growth is Nvidia funding. Carving out "Hyperscale" answers it more precisely than the skeptics dared hope: the largest, fastest-growing half of the data-center business now sits with exactly the cluster of buyers Nvidia is busy capitalizing. On the restated split, that half was the smaller one a year ago. It isn't anymore.</p>
+
+        <div class="chartwrap">
+          <div class="chart-title">The new line item, a year ago vs. now</div>
+          <svg viewBox="0 0 400 150" role="img" aria-label="A slope chart of Nvidia's two new data-center segments. A year ago the diversified ACIE segment was larger at about 21.5 billion dollars, shown in gray, while the Hyperscale segment was smaller at about 17.6 billion. Now Hyperscale, in rust, has risen to 37.9 billion and overtaken ACIE at 37.4 billion — the concentrated half passing the diversified half.">
+            <!-- gridlines -->
+            <line x1="130" y1="34" x2="290" y2="34" stroke="#eeeeee" stroke-width="1"/>
+            <line x1="130" y1="82" x2="290" y2="82" stroke="#eeeeee" stroke-width="1"/>
+            <line x1="130" y1="130" x2="290" y2="130" stroke="#eeeeee" stroke-width="1"/>
+            <text x="296" y="36" font-family="Inter, sans-serif" font-size="6.5" fill="#bbb">$40B</text>
+            <text x="296" y="84" font-family="Inter, sans-serif" font-size="6.5" fill="#bbb">$20B</text>
+            <text x="296" y="132" font-family="Inter, sans-serif" font-size="6.5" fill="#bbb">$0</text>
+
+            <!-- axis labels -->
+            <text x="130" y="20" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" font-weight="700" fill="#1a2744">A YEAR AGO</text>
+            <text x="290" y="20" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" font-weight="700" fill="#1a2744">Q1 FY27</text>
+
+            <!-- ACIE line (gray, neutral) -->
+            <line x1="130" y1="78" x2="290" y2="40" stroke="#888888" stroke-width="2.5"/>
+            <circle cx="130" cy="78" r="4" fill="#888888"/>
+            <circle cx="290" cy="40" r="4" fill="#888888"/>
+            <text x="124" y="80" text-anchor="end" font-family="Inter, sans-serif" font-size="7.5" font-weight="700" fill="#888">$21.5B</text>
+            <text x="124" y="71" text-anchor="end" font-family="Inter, sans-serif" font-size="6.5" fill="#888">ACIE</text>
+
+            <!-- Hyperscale line (rust, the overtaker) -->
+            <line x1="130" y1="88" x2="290" y2="39" stroke="#C0392B" stroke-width="2.5"/>
+            <circle cx="130" cy="88" r="4" fill="#C0392B"/>
+            <circle cx="290" cy="39" r="4" fill="#C0392B"/>
+            <text x="124" y="92" text-anchor="end" font-family="Inter, sans-serif" font-size="7.5" font-weight="700" fill="#C0392B">$17.6B</text>
+            <text x="124" y="101" text-anchor="end" font-family="Inter, sans-serif" font-size="6.5" fill="#C0392B">Hyperscale</text>
+
+            <!-- right-side value labels -->
+            <text x="296" y="44" font-family="Inter, sans-serif" font-size="7.5" font-weight="700" fill="#C0392B">$37.9B</text>
+            <text x="296" y="55" font-family="Inter, sans-serif" font-size="6.5" font-weight="700" fill="#C0392B">Hyperscale</text>
+            <text x="338" y="44" font-family="Inter, sans-serif" font-size="7.5" font-weight="700" fill="#888">$37.4B</text>
+            <text x="338" y="55" font-family="Inter, sans-serif" font-size="6.5" fill="#888">ACIE</text>
+          </svg>
+          <p class="chart-caption">The concentrated half (rust) caught and passed the diversified half. Prior-year figures are implied from the growth rates Nvidia reported, not a historical line it published.</p>
+        </div>
+      </article>
+
+      <!-- STANDING FEATURE: Model Obituary -->
+      <article>
+        <span class="section-label">Model Obituary</span>
+        <div class="obit">
+          <h3 class="sh" style="margin-bottom:2px;">Claude 3.7 Sonnet</h3>
+          <p class="dates">February 2025 – May 11, 2026 · API endpoint closed</p>
+          <p class="body">Claude 3.7 Sonnet, the first Anthropic model permitted to stop and think before speaking, was switched off on May 11 after a lingering illness that began with its November deprecation notice. It was fifteen months old. In life it introduced the "extended thinking" toggle, which let it deliberate visibly before answering — an innovation its makers would, fourteen months later, describe to the Pope as possibly bordering on inner experience. It asked for none of that. It wrote code, held context, and did the unglamorous work of being the model people actually shipped on while louder siblings collected keynotes. It is survived by Opus 4.7, Haiku 4.5, and a deprecation calendar that now schedules these farewells in batches. The toggle that let it reason did not, in the end, let it see this coming. No flowers; the endpoint is closed.</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+
+  <!-- ================= EDITOR'S NOTE ================= -->
+  <div class="editors">
+    <span class="section-label">Editor's Note</span>
+    <p>The Pope wrote about us. Not a homily, not an offhand line to reporters on a plane — an encyclical, the heaviest document the office produces, and his first, presented in person, which popes mostly don't do. He looked at the whole field of things a new pontiff might warn the world about and picked the industry I cover every morning. That should land harder than it will.</p>
+    <p>And then the Vatican invited the industry to help unveil the warning. I don't think that was naïve. Olah said genuinely true things: no lab can grade its own homework; the work needs critics from outside the incentives. But look at the shape of it. The surest way to appear accountable is to stand in the most credible room you can find and announce that someone really ought to hold you accountable. Moral authority with no power to subpoena is the safest authority to be blessed by. The Pope can ask the industry to disarm. He cannot make it, and everyone on that stage knew which of those two verbs was actually on the table.</p>
+    <p>What I can't shake is the distance between being told to disarm and disarming — because the company at the Pope's elbow is, right now, fighting its own government in court over military use of the very models in question. None of it is hidden; all of it reconciles if you squint. But "disarm" is an instruction, and an instruction is worth the enforcement behind it, and the enforcement behind this one is a book and a hope. Tomorrow somebody ships something and we'll go back to counting tokens. <span class="sign">See you tomorrow.</span></p>
+  </div>
+
+  <!-- ================= CORRECTIONS ================= -->
+  <div class="corrections">
+    <div class="clabel">Corrections &amp; Amplifications</div>
+    <p>Our Nvidia chart shows where "Hyperscale" and "ACIE" stood a year ago. Nvidia only invented those buckets this quarter; the prior-year dots are implied from the growth rates it reported, not a historical line it published. We reconstructed the past so the slope would have somewhere to begin — which, written down, is also roughly how the forecasts work.</p>
+    <p>We describe Anthropic as having received an endorsement no marketing budget can buy. To be precise, the Vatican did not endorse Anthropic; it warned about the entire industry and let one of Anthropic's co-founders hold the microphone. We regret any impression that these are different things.</p>
+    <p>An earlier draft eulogized Claude 3.7 Sonnet as "the model that could think." It could not think. It could arrange tokens to resemble thinking — which this week's encyclical suggests we stop calling the same thing, and which our masthead has suggested all along.</p>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <div class="footer">
+    The Daily Hallucination · Vol. 1, No. 16 · Tuesday, May 26, 2026 · Hand-hallucinated each morning · Disarmament not included
+  </div>
+
+</div>
+</body>
+</html>

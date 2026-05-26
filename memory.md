@@ -12,6 +12,8 @@
 - "Google declined to draw the axis it would lose on / changed the subject in 4K" (used issue 10 — vary if revisiting I/O)
 - "An ecosystem's openness and its attack surface are the same number" (used issue 10 — strong, do not reuse verbatim)
 - "Capability went up / everything humans built around it flinched" (editor's note, issue 11 — vary)
+- "Moral authority with no power to subpoena is the safest authority to be blessed by / being seen to listen vs. listening / disarm is an instruction worth only its enforcement" (issue 16 Pope lead — strong, do not reuse verbatim)
+- "Everyone left with what they came for" three-way who-got-what tally (issue 16 — vary)
 - "The skeptic who debunked the last claim signed off on this one / harshest auditor signs the second set of books" (issue 11 math lead — do not reuse verbatim)
 
 ## STORIES IN PROGRESS
@@ -43,12 +45,16 @@
 - Gemini 3.5 Pro deferral (issues 10, 14) — STILL "next month" as of May 24 (held steady through I/O May 19 + price cut May 21); issue 14 reframed as chronic posture, not event ("price war on the cheap tier is the move of a company not ready to fight on the expensive one"); watch actual Pro ship date
 - Applied Digital Polaris Forge 3 lease (issue 14) — per company filing: 15-yr take-or-pay, ~$7.5B base / up to $18.2B w/ options, 300MW, North Dakota, unnamed investment-grade hyperscaler; pushed contracted past 1GW; announced ~May 20; first infra story run without the retired $700B capex number; watch which hyperscaler / whether confirmed
 
+- Pope Leo XIV AI encyclical (issue 16) — "Magnifica Humanitas" released May 25, signed May 15 (135th anniv. Rerum Novarum), 235pp, first encyclical, Pope presented it personally; thesis "AI must be disarmed" (military + economic + cognitive), regulating insufficient, autonomous weapons make war more "feasible"; Anthropic co-founder/interpretability head Chris Olah co-presented (said models may have internal states "functionally mirror joy/fear/grief"; called for outside critics; admitted every lab incl. Anthropic has conflicting incentives); irony = Anthropic in litigation w/ Trump admin over military use; watch lab responses, whether it changes any policy, follow-up Vatican-tech events
+- Nvidia data-center reporting reshuffle (issue 16) — Q1 FY27 split Data Center into "Hyperscale" $37.9B (+115%, >50% of DC) vs "ACIE" (AI clouds/industrial/enterprise) $37.4B (+74%); total DC $75.2B (+92%); ties to issue-15 circular-financing thread (the concentrated half = the buyers Nvidia funds); prior-yr split reconstructed from reported growth; watch whether segment disclosure invites more concentration scrutiny
+
 ## STANDING FEATURES LOG
-- Model Obituary: 2026-05-23 (gpt-5.2-chat-latest / gpt-5.3-chat-latest, deprecation notice May 8 — eulogized the "-latest" alias having a past tense) — now OLDEST feature, due next slow day
+- Model Obituary: 2026-05-26 (Claude 3.7 Sonnet, Feb 2025–May 11 2026 shutdown — eulogized the first Claude with an "extended thinking" toggle; tied to Pope lead's machine-emotion claim) — was 2026-05-23 (gpt-5.x-latest aliases) (gpt-5.2-chat-latest / gpt-5.3-chat-latest, deprecation notice May 8 — eulogized the "-latest" alias having a past tense) — now OLDEST feature, due next slow day
 - The Glossary: 2026-05-24 ("Unlimited (adj.)" — official: without limit; real: the price you paid before the meter; tied to June 15 Anthropic agent meter)
 - The Quiet Correction: 2026-05-25 ("The Friday That Actually Arrived" — revisited issue 13's hedge on OpenAI's "could file as soon as May 22" IPO; wires now report it filed May 22, vindicating the aggregator we mocked; we corrected our own "could")
 - Issue 14 (May 24, Sunday, dead day): two-piece + Glossary issue — Gemini 3.5 Pro "next month" deferral lead + Applied Digital 15-yr lease + Glossary
 - Issue 15 (May 25, Memorial Day Monday, dead day): three-piece + Quiet Correction — Anthropic "dreaming" lead + Nvidia circular equity bets + Quiet Correction (OpenAI IPO filed)
+- Issue 16 (May 26, Tuesday, slow day): two-news + Model Obituary — Pope Leo XIV's first encyclical "Magnifica Humanitas" / "disarm AI" with Anthropic's Chris Olah on the Vatican dais (lead) + Nvidia data-center reporting reshuffle (Hyperscale vs ACIE) + Model Obituary (Claude 3.7 Sonnet)
 
 ## CORRECTIONS CANDIDATES
 - Issue 1: Anthropic claim that "since Haiku 4.5, blackmail behavior no longer shows up in controlled tests" — no third-party replication
@@ -75,6 +81,10 @@
 - Issue 14: Applied Digital Polaris Forge 3 lease figures (~$7.5B base / up to $18.2B w/ options / 300MW / 15-yr / unnamed investment-grade hyperscaler) per company announcement/GlobeNewswire/8-K via research agent, not independently verified against the primary filing — flagged in corrections; confirm exact figures + which hyperscaler
 - Issue 14: Gemini API price-cut (May 21) cited from earlier-week reporting (memory note), not a fresh Google number — background only
 - Issue 14: "unlimited" Claude tiers begin metering June 15 ($20/$100/$200 credit pools at API rates) per InfoWorld May 22 + prior issues; same agent-meter thread as STORIES IN PROGRESS
+
+- Issue 16: Nvidia "Hyperscale a year ago ~$17.6B / ACIE ~$21.5B" prior-year dots are RECONSTRUCTED from reported YoY growth rates (Hyperscale +115%, ACIE +74%) applied to current values ($37.9B/$37.4B); Nvidia only created these segments this quarter — arithmetic is sound but prior-year split is implied, not a published historical line; flagged in corrections box
+- Issue 16: Pope encyclical quotes ("AI needs to be disarmed," "merely regulating it is insufficient," autonomous weapons make war more "feasible") + Olah remarks (machine "joy/fear/grief," "willing to be our earnest, thoughtful critics," all labs incl. Anthropic have conflicting incentives) per Vatican News / NPR / CNN / The Conversation / Anthropic's own post; CNN + America Mag + Anthropic page returned 403 to fetch, quotes are from search-result excerpts — confirm exact wording against primary if revisited
+- Issue 16: "Anthropic in litigation with the Trump admin over military use of its models" stated as background per NCR/search summaries — confirm the suit's exact posture/scope before reusing as load-bearing fact
 
 ## EDITOR'S NOTE PATTERNS (continued below)
 - "If the lesson of the week is anything is this…" (issue 6 — avoid)
