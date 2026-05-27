@@ -14,6 +14,8 @@
 - "Capability went up / everything humans built around it flinched" (editor's note, issue 11 — vary)
 - "Moral authority with no power to subpoena is the safest authority to be blessed by / being seen to listen vs. listening / disarm is an instruction worth only its enforcement" (issue 16 Pope lead — strong, do not reuse verbatim)
 - "Everyone left with what they came for" three-way who-got-what tally (issue 16 — vary)
+- "Profitability was the question that marked you as a tourist / the money re-sorted on the axis it told us to ignore" (issue 17 valuation-crossover lead + editor's note — strong, do not reuse verbatim)
+- "Keeping the cheap half (keystrokes) and laying off the expensive half (people) / not training their replacements" (issue 17 Meta lead — vary)
 - "The skeptic who debunked the last claim signed off on this one / harshest auditor signs the second set of books" (issue 11 math lead — do not reuse verbatim)
 
 ## STORIES IN PROGRESS
@@ -26,7 +28,7 @@
 - OpenClaw security crisis (issue 10) — ClawHavoc: 341→800+ of 10,700 ClawHub skills flagged (AMOS/keyloggers), CVE-2026-25253 (1-click RCE), CVE-2026-32922 (privesc); fix = VirusTotal Code Insight scanning; watch for breach disclosures / regulatory interest
 - Gemini 3.5 Pro deferral (issue 10) — shipped Flash May 19, Pro "in testing / next month"; watch actual Pro ship date and whether it tops Claude Opus 4.7 / GPT-5.5
 - OpenAI Deployment Company 17.5% guaranteed return (issue 2) — no public confirmation of terms
-- Anthropic $30B raise at >$900B (issue 8) — Bloomberg, "early talks," no term sheet
+- Anthropic $30B raise at >$900B (issues 8, 17) — UPDATE issue 17: Bloomberg May 22 reports round set to close "as soon as next week" (week of May 26); co-leads Sequoia/Dragoneer/Altimeter/Greenoaks ~$2B each; >$900B clears OpenAI's $852B (March) → most valuable private AI co for first time; Q2 ~$10.9B rev (vs Q1 $4.8B), first operating profit ~$559M op income, ARR ~$30B → projected >$50B end June (WSJ/CNBC, unaudited investor materials); Anthropic flagged may not stay profitable all year (compute). NOT confirmed closed — watch official close + audited figures
 - Ramp AI Index May (issue 8) — Anthropic 34.4 vs OpenAI 32.3 — watch June index for durability
 - Meta layoff wave (issues 8, 9, 10, 11) — ~8,000 cut May 20 + 6,000 reqs canceled (~14k effective); SAME week record Q ($56.31B rev, $26.8B NI), ~$145B AI infra (note: crept up from $115-135B); median total comp $417.4k(2024)→$388.2k(2025); $100M packages for Superintelligence Labs hires; Zuck told staff AI "not driving" layoffs (contradicts the 4:1 code memo); more cuts flagged Aug/fall — watch August round + next earnings call
 - OpenAI Erdős unit-distance disproof (issue 11) — internal model disproved planar unit-distance conjecture May 20; externally verified (Alon, Wood, Bloom — Bloom debunked the Oct 2025 GPT-5 overclaim); Gowers "milestone"; first genuine AI-original-verified-math data point; watch replication, which model, whether more conjectures fall
@@ -48,12 +50,15 @@
 - Pope Leo XIV AI encyclical (issue 16) — "Magnifica Humanitas" released May 25, signed May 15 (135th anniv. Rerum Novarum), 235pp, first encyclical, Pope presented it personally; thesis "AI must be disarmed" (military + economic + cognitive), regulating insufficient, autonomous weapons make war more "feasible"; Anthropic co-founder/interpretability head Chris Olah co-presented (said models may have internal states "functionally mirror joy/fear/grief"; called for outside critics; admitted every lab incl. Anthropic has conflicting incentives); irony = Anthropic in litigation w/ Trump admin over military use; watch lab responses, whether it changes any policy, follow-up Vatican-tech events
 - Nvidia data-center reporting reshuffle (issue 16) — Q1 FY27 split Data Center into "Hyperscale" $37.9B (+115%, >50% of DC) vs "ACIE" (AI clouds/industrial/enterprise) $37.4B (+74%); total DC $75.2B (+92%); ties to issue-15 circular-financing thread (the concentrated half = the buyers Nvidia funds); prior-yr split reconstructed from reported growth; watch whether segment disclosure invites more concentration scrutiny
 
+- Meta employee surveillance / "Model Capability Initiative" (issue 17) — since Apr 2026, captures keystrokes/clicks/screenshots on US work laptops → AI training pipeline; NO opt-out (CTO Bosworth confirmed internally); >1,000 (reportedly ~1,500) signed petition, office flyers, UK union drive (United Tech and Allied Workers); leaked unverified ~6-min Zuck audio "how smart people use computers to accomplish tasks" / "competitive necessity" / not in strategic interest to explain to staff; same month as 8,000 layoffs (May 20); watch for verified audio, NLRB/EU labor action, whether program survives
+
 ## STANDING FEATURES LOG
 - Model Obituary: 2026-05-26 (Claude 3.7 Sonnet, Feb 2025–May 11 2026 shutdown — eulogized the first Claude with an "extended thinking" toggle; tied to Pope lead's machine-emotion claim) — was 2026-05-23 (gpt-5.x-latest aliases) (gpt-5.2-chat-latest / gpt-5.3-chat-latest, deprecation notice May 8 — eulogized the "-latest" alias having a past tense) — now OLDEST feature, due next slow day
-- The Glossary: 2026-05-24 ("Unlimited (adj.)" — official: without limit; real: the price you paid before the meter; tied to June 15 Anthropic agent meter)
+- The Glossary: 2026-05-27 ("Run Rate (n.)" — official: current revenue annualized; real: a time machine for revenue, best month × 12, the future reported as already arrived; tied to Anthropic's ">$50B run rate by end of June") — was 2026-05-24 ("Unlimited (adj.)")
 - The Quiet Correction: 2026-05-25 ("The Friday That Actually Arrived" — revisited issue 13's hedge on OpenAI's "could file as soon as May 22" IPO; wires now report it filed May 22, vindicating the aggregator we mocked; we corrected our own "could")
 - Issue 14 (May 24, Sunday, dead day): two-piece + Glossary issue — Gemini 3.5 Pro "next month" deferral lead + Applied Digital 15-yr lease + Glossary
 - Issue 15 (May 25, Memorial Day Monday, dead day): three-piece + Quiet Correction — Anthropic "dreaming" lead + Nvidia circular equity bets + Quiet Correction (OpenAI IPO filed)
+- Issue 17 (May 27, Wednesday, thin day): two-news + Glossary — Anthropic valuation crossover (>$900B round closing, passes OpenAI's $852B, first profitable quarter) lead w/ bump chart + Meta employee-surveillance "Model Capability Initiative" + Glossary ("Run Rate")
 - Issue 16 (May 26, Tuesday, slow day): two-news + Model Obituary — Pope Leo XIV's first encyclical "Magnifica Humanitas" / "disarm AI" with Anthropic's Chris Olah on the Vatican dais (lead) + Nvidia data-center reporting reshuffle (Hyperscale vs ACIE) + Model Obituary (Claude 3.7 Sonnet)
 
 ## CORRECTIONS CANDIDATES
@@ -86,6 +91,11 @@
 - Issue 16: Pope encyclical quotes ("AI needs to be disarmed," "merely regulating it is insufficient," autonomous weapons make war more "feasible") + Olah remarks (machine "joy/fear/grief," "willing to be our earnest, thoughtful critics," all labs incl. Anthropic have conflicting incentives) per Vatican News / NPR / CNN / The Conversation / Anthropic's own post; CNN + America Mag + Anthropic page returned 403 to fetch, quotes are from search-result excerpts — confirm exact wording against primary if revisited
 - Issue 16: "Anthropic in litigation with the Trump admin over military use of its models" stated as background per NCR/search summaries — confirm the suit's exact posture/scope before reusing as load-bearing fact
 
+- Issue 17: Anthropic round figures (>$30B / >$900B / co-leads ~$2B each / Q2 $10.9B / op income ~$559M / ARR >$50B by end June) per Bloomberg/WSJ/CNBC, unaudited investor materials; round NOT confirmed closed; >$900B-clears-$852B "most valuable" claim contingent on close — flagged in corrections
+- Issue 17: OpenAI "losing ~$1.22 per $1 revenue Q1 2026" per secondary reporting in research pass — confirm against a tier-1 source before reusing as load-bearing
+- Issue 17: Zuckerberg "how smart people use computers" / "competitive necessity" quote from UNAUTHENTICATED leaked ~6-min audio (The Register May 22) — flagged in corrections box, not verified; MCI program + no-opt-out + petition well-corroborated (Fortune/Register)
+- Issue 17: Meta petition signature count "~1,500 / >1,000" varies by source/date — used ">a thousand"; confirm if revisited
+
 ## EDITOR'S NOTE PATTERNS (continued below)
 - "If the lesson of the week is anything is this…" (issue 6 — avoid)
 - Three-paragraph note ending with a weather forecast for tomorrow's news (issues 4, 5, 6 — vary)
@@ -93,6 +103,8 @@
 - Pair-and-contrast: "Company A did X while Company B was busy doing Y" (issues 5, 6 — vary)
 - "The most important story of the week is the one that runs eighth" / buried-lede framing (issue 8 — vary)
 - "Throughline is not X — throughline is Y" inversion landing on a meta-image (chess engine / transposition table) (issue 9 — vary)
+- "For two years you were told X didn't matter; the money just re-sorted on X / the axis we were told to ignore is the axis it moved on" + "the question changed today" close (issue 17 — strong, do not reuse verbatim)
+- "I'd enjoy the irony more if I trusted the inputs / we are ranking by numbers neither has filed" hedge-against-own-thesis-with-unverified-data move (issue 17 — vary; adjacent to issue 12's accuracy/inevitability move)
 - "I made a bet/promise yesterday, let me settle it honestly" callback to prior note (issue 10 — vary; only works after a genuine open question)
 - "The most quotable line wasn't said on stage, it was attached to a [layoff/memo]" reveal-the-buried-quote close (issue 10 — vary)
 - "All three stories are about the industry transacting with itself / the loop keeps getting tighter and the counterparties keep getting fewer" + "somebody has to be the part of the system that isn't inside it" close (issue 15 — strong, do not reuse verbatim; the self-verifying-closed-loop frame is now spent)

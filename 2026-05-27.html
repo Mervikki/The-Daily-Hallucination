@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Daily Hallucination – Wednesday, May 27, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Serif+4:ital,wght@0,400;0,600;1,400;1,600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #F5F0E8;
+    color: #0D0D0D;
+    font-family: 'Source Serif 4', Georgia, serif;
+    line-height: 1.5;
+    padding: 24px 16px 60px;
+  }
+  .paper {
+    max-width: 920px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 36px 44px 44px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+  }
+
+  /* ---------- MASTHEAD ---------- */
+  .masthead { text-align: center; }
+  .masthead h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-size: 3.4rem;
+    line-height: 1.02;
+    color: #0D0D0D;
+  }
+  .masthead .accent { border: none; border-top: 4px solid #C0392B; width: 56px; margin: 10px auto 0; }
+  .masthead .rule3 { border: none; border-top: 3px solid #0D0D0D; margin: 8px auto 0; }
+  .masthead .tagline { font-style: italic; color: #888888; font-size: 0.95rem; margin-top: 8px; }
+  .masthead .thin { border: none; border-top: 1px solid #cccccc; margin: 8px auto; }
+  .masthead .dateline {
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 0.7rem;
+    color: #888888;
+  }
+
+  /* ---------- TODAY AT A GLANCE ---------- */
+  .glance { width: 100%; border-collapse: collapse; margin: 28px 0 30px; font-family: 'Source Serif 4', serif; }
+  .glance th {
+    background: #1a2744; color: #ffffff;
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.16em;
+    font-size: 0.74rem; text-align: left; padding: 9px 12px;
+  }
+  .glance td { background: #F5F0E8; padding: 8px 12px; font-size: 0.86rem; border-bottom: 2px solid #ffffff; vertical-align: top; }
+  .glance td.topic {
+    font-weight: 700; font-family: 'Inter', sans-serif;
+    font-size: 0.74rem; text-transform: uppercase;
+    letter-spacing: 0.04em; width: 150px; color: #1a2744;
+  }
+
+  /* ---------- TWO-COLUMN BODY ---------- */
+  .body-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+  .body-grid > .col:first-child { padding-right: 26px; border-right: 1px solid #cccccc; }
+  .body-grid > .col:last-child { padding-left: 26px; }
+  .col article { margin-bottom: 26px; }
+  .col article:last-child { margin-bottom: 0; }
+
+  .section-label {
+    display: inline-block; background: #1a2744; color: #ffffff;
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    font-size: 0.62rem; padding: 3px 7px; margin-bottom: 7px;
+  }
+  .hl { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.4rem; line-height: 1.16; margin-bottom: 5px; }
+  .sh { font-family: 'Inter', sans-serif; font-weight: 700; font-size: 0.93rem; line-height: 1.25; margin-bottom: 5px; }
+  .byline { font-family: 'Inter', sans-serif; font-style: italic; font-size: 0.72rem; color: #888888; margin-bottom: 8px; }
+  .col p.body { font-size: 0.88rem; text-align: justify; hyphens: auto; -webkit-hyphens: auto; margin-bottom: 8px; }
+  p.opinion {
+    font-style: italic; border-left: 2px solid #dddddd;
+    padding-left: 12px; margin: 8px 0 8px 8px; font-size: 0.86rem;
+  }
+  .pullquote {
+    background: #F5F0E8; border: 1px solid #C0392B; border-left: 4px solid #C0392B;
+    color: #C0392B; font-style: italic; text-align: center;
+    font-size: 0.98rem; line-height: 1.35; padding: 12px 16px; margin: 12px 0;
+  }
+  .pullquote .attr { display: block; font-size: 0.72rem; font-style: normal; margin-top: 6px; letter-spacing: 0.03em; }
+
+  .chartwrap { margin: 12px 0; }
+  .chartwrap svg { width: 100%; height: auto; display: block; }
+  .chart-caption { font-style: italic; font-size: 0.72rem; color: #888888; margin-top: 3px; }
+  .chart-title {
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.07em;
+    font-size: 0.64rem; color: #1a2744; margin-bottom: 4px;
+  }
+
+  /* ---------- GLOSSARY / FEATURE BOX ---------- */
+  .obit { background: #fbfaf7; border: 1px solid #ddd6c8; border-top: 3px solid #0D0D0D; padding: 14px 18px; }
+  .obit .dates { font-family: 'Inter', sans-serif; font-size: 0.68rem; letter-spacing: 0.04em; color: #888888; text-transform: uppercase; margin-bottom: 6px; }
+  .obit .term { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.15rem; }
+  .obit .deftag { font-family: 'Inter', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.6rem; color: #1a2744; }
+
+  /* ---------- EDITOR'S NOTE ---------- */
+  .editors { background: #1a2744; color: #f3efe6; padding: 22px 26px; margin: 30px 0 0; }
+  .editors .section-label { background: #C0392B; color: #ffffff; }
+  .editors p { font-family: 'Source Serif 4', serif; font-style: italic; font-size: 0.92rem; line-height: 1.55; margin-bottom: 9px; }
+  .editors p:last-child { margin-bottom: 0; }
+  .editors .sign { font-style: italic; color: #b9c2d6; }
+
+  /* ---------- CORRECTIONS ---------- */
+  .corrections { background: #f1f1f1; border: 1px solid #cccccc; padding: 12px 16px; margin: 22px 0 0; font-size: 0.82rem; }
+  .corrections .clabel { font-family: 'Inter', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.62rem; color: #C0392B; margin-bottom: 5px; }
+  .corrections p { margin-bottom: 6px; font-style: italic; }
+  .corrections p:last-child { margin-bottom: 0; }
+
+  /* ---------- FOOTER ---------- */
+  .footer {
+    border-top: 1px solid #0D0D0D; margin-top: 30px; padding-top: 12px;
+    text-align: center; font-family: 'Inter', sans-serif;
+    text-transform: uppercase; letter-spacing: 0.14em;
+    font-size: 0.62rem; color: #888888;
+  }
+
+  @media (max-width: 680px) {
+    .paper { padding: 24px 18px 30px; }
+    .masthead h1 { font-size: 2.1rem; }
+    .body-grid { grid-template-columns: 1fr; }
+    .body-grid > .col:first-child {
+      padding-right: 0; border-right: none;
+      border-bottom: 1px solid #cccccc;
+      padding-bottom: 26px; margin-bottom: 26px;
+    }
+    .body-grid > .col:last-child { padding-left: 0; }
+    .glance td.topic { width: 110px; }
+  }
+</style>
+</head>
+<body>
+<div class="paper">
+
+  <!-- ================= MASTHEAD ================= -->
+  <header class="masthead">
+    <h1>The Daily Hallucination</h1>
+    <hr class="accent">
+    <hr class="rule3">
+    <p class="tagline">An AI &amp; tech daily that says the quiet part — out loud, in a serif font.</p>
+    <hr class="thin">
+    <p class="dateline">Wednesday, May 27, 2026 &nbsp;·&nbsp; Vol. 1, No. 17</p>
+  </header>
+
+  <!-- ================= TODAY AT A GLANCE ================= -->
+  <table class="glance">
+    <tr><th colspan="2">Today at a Glance</th></tr>
+    <tr><td class="topic">Anthropic / Markets</td><td>A $30-billion-plus round is set to close this week at north of $900 billion, which would make Anthropic the most valuable private AI company on earth — passing OpenAI for the first time, on the strength of the one thing the genre treats as a plot twist: a profit.</td></tr>
+    <tr><td class="topic">Meta / Labor</td><td>Meta is recording its employees' keystrokes, clicks, and screenshots to teach an AI how smart people use a computer — no opt-out — the same month it began laying 8,000 of them off.</td></tr>
+    <tr><td class="topic">The Glossary</td><td>"Run rate," honestly defined: a time machine for revenue, in which a single good month is multiplied by twelve and the future is reported as though it already arrived.</td></tr>
+  </table>
+
+  <!-- ================= BODY ================= -->
+  <div class="body-grid">
+
+    <!-- ===== LEFT COLUMN ===== -->
+    <div class="col">
+
+      <!-- LEAD STORY: Anthropic valuation crossover -->
+      <article>
+        <span class="section-label">Anthropic · Markets</span>
+        <h2 class="hl">Anthropic Is About to Become the World's Most Valuable AI Company. It Is Also, Inconveniently, Profitable.</h2>
+        <p class="byline">By The Editor, Markets Desk · May 27, 2026</p>
+
+        <p class="body">Bloomberg reported Friday that Anthropic's funding round — more than $30 billion, co-led by Sequoia, Dragoneer, Altimeter, and Greenoaks at roughly $2 billion apiece — is set to close "as soon as next week," which is this week. The valuation attached to it is north of $900 billion. That number does something the spreadsheets of the last two years did not anticipate: it clears OpenAI's $852 billion, the mark set in March, and makes Anthropic the most valuable private AI company in the world. There is no term sheet on public record and no announcement from the company, so treat the coronation as scheduled rather than performed. But the order has, on paper, flipped.</p>
+
+        <p class="body">The part that should make a PR team sweat is not the valuation. It's the income statement underneath it. Anthropic told investors it expects roughly $10.9 billion in second-quarter revenue — more than double the first quarter's $4.8 billion — and its first-ever quarterly operating profit, on the order of $559 million of operating income. Its annualized run rate, around $30 billion now, will pass $50 billion by the end of June, it says. Meanwhile the company it just edged out filed a confidential S-1 last Friday to go public while reportedly losing about $1.22 for every dollar of revenue it takes in. The most valuable AI company in the world is, briefly and against the conventions of the form, the one that makes money.</p>
+
+        <div class="chartwrap">
+          <div class="chart-title">Most valuable private AI company, by rank</div>
+          <svg viewBox="0 0 400 160" role="img" aria-label="A bump chart of rank by private valuation. Earlier this spring OpenAI sat first and Anthropic second. This week the lines cross: Anthropic rises to first at more than 900 billion dollars, shown in rust, while OpenAI falls to second at 852 billion, shown in gray.">
+            <!-- rank gridlines -->
+            <line x1="120" y1="50" x2="300" y2="50" stroke="#eeeeee" stroke-width="1"/>
+            <line x1="120" y1="110" x2="300" y2="110" stroke="#eeeeee" stroke-width="1"/>
+            <!-- rank axis labels -->
+            <text x="22" y="53" font-family="Inter, sans-serif" font-size="8" font-weight="700" fill="#bbb">1ST</text>
+            <text x="22" y="113" font-family="Inter, sans-serif" font-size="8" font-weight="700" fill="#bbb">2ND</text>
+            <!-- column headers -->
+            <text x="150" y="24" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" font-weight="700" fill="#1a2744">EARLIER THIS SPRING</text>
+            <text x="280" y="24" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" font-weight="700" fill="#1a2744">THIS WEEK</text>
+
+            <!-- OpenAI line: 1st -> 2nd (gray) -->
+            <line x1="150" y1="50" x2="280" y2="110" stroke="#888888" stroke-width="2.5"/>
+            <circle cx="150" cy="50" r="4.5" fill="#888888"/>
+            <circle cx="280" cy="110" r="4.5" fill="#888888"/>
+            <!-- Anthropic line: 2nd -> 1st (rust) -->
+            <line x1="150" y1="110" x2="280" y2="50" stroke="#C0392B" stroke-width="2.5"/>
+            <circle cx="150" cy="110" r="4.5" fill="#C0392B"/>
+            <circle cx="280" cy="50" r="4.5" fill="#C0392B"/>
+
+            <!-- left endpoint company labels -->
+            <text x="143" y="48" text-anchor="end" font-family="Inter, sans-serif" font-size="7.5" font-weight="700" fill="#888">OpenAI</text>
+            <text x="143" y="113" text-anchor="end" font-family="Inter, sans-serif" font-size="7.5" font-weight="700" fill="#C0392B">Anthropic</text>
+
+            <!-- right endpoint value labels -->
+            <text x="288" y="48" font-family="Inter, sans-serif" font-size="8" font-weight="700" fill="#C0392B">&gt;$900B</text>
+            <text x="288" y="57" font-family="Inter, sans-serif" font-size="6.5" fill="#C0392B">Anthropic</text>
+            <text x="288" y="113" font-family="Inter, sans-serif" font-size="8" font-weight="700" fill="#888">$852B</text>
+            <text x="288" y="122" font-family="Inter, sans-serif" font-size="6.5" fill="#888">OpenAI</text>
+          </svg>
+          <p class="chart-caption">Rank by private valuation. Anthropic's &gt;$900B is contingent on a round Bloomberg reports is closing this week; both figures are private and unaudited, and OpenAI's $852B is its March mark.</p>
+        </div>
+
+        <p class="body">For two years, profitability was the question you asked when you didn't understand the moment — the tell of someone reading a balance sheet while everyone else read the roadmap. You did not ask whether the frontier earned money. You asked whether it was the frontier. So it is worth noticing that when the money finally re-sorted the leaderboard, it sorted on exactly the axis it had told us to ignore.</p>
+
+        <div class="pullquote">"Is it profitable" used to be the question that marked you as a tourist. This week it became the question that moved the rankings.
+          <span class="attr">— On a re-sort nobody held a press conference to announce</span>
+        </div>
+
+        <p class="opinion">A caveat the size of the headline: Anthropic itself warned investors it may not stay in the black for the full year, because the compute bill has a way of eating quarters. So the crown is being fitted to a head that has already told us it might not fit by autumn.</p>
+      </article>
+
+    </div>
+
+    <!-- ===== RIGHT COLUMN ===== -->
+    <div class="col">
+
+      <!-- SECONDARY: Meta employee monitoring -->
+      <article>
+        <span class="section-label">Meta · Labor</span>
+        <h3 class="sh">Meta Is Recording How Its Best People Use a Computer. The Ones It Isn't Laying Off, Anyway.</h3>
+        <p class="byline">By The Editor, Labor Desk · May 27, 2026</p>
+        <p class="body">Since April, Meta has run something called the Model Capability Initiative on its U.S. employees' work laptops. It captures keystrokes, mouse movement, and periodic screenshots across hundreds of applications, and pipes the result into the company's AI-training stack. There is no opt-out; CTO Andrew Bosworth confirmed as much internally, to a reception of angry-face reactions. The purpose, per a leaked and unverified six-minute recording attributed to Mark Zuckerberg, is to teach a model "how smart people use computers to accomplish tasks" — a "competitive necessity," in which it is, by his own reported admission, not in Meta's strategic interest to fully explain the program to the people generating the data.</p>
+        <p class="body">More than a thousand employees have signed an internal petition; flyers pointing to it have turned up on vending machines and toilet-paper dispensers, and U.K. staff have opened a union drive with United Tech and Allied Workers. The timing is the story. Meta notified some 8,000 people — roughly a tenth of the company — that they were being cut beginning May 20. So in the same month, it is recording the keystrokes of its best workers to bottle the transferable part of them, and dismissing the expensive part that came attached. It is not training their replacements. It is keeping the cheap half and laying off the rest.</p>
+      </article>
+
+      <!-- STANDING FEATURE: The Glossary -->
+      <article>
+        <span class="section-label">The Glossary</span>
+        <div class="obit">
+          <p class="term">Run Rate <span style="font-size:0.8rem; font-weight:400; font-style:italic;">(n.)</span></p>
+          <p class="dates">One industry term, defined honestly</p>
+          <p class="body"><span class="deftag">Official:</span> A company's current revenue, annualized — the most recent period multiplied out to a full year. <span class="deftag">Real:</span> A time machine for revenue. Take your strongest month, multiply by twelve, and report the future as though it already happened. When Anthropic tells investors its run rate "will surpass $50 billion by the end of June," it is not saying it has earned $50 billion; it is saying that if you freeze one good June and clone it across a calendar, that's the number. Every figure in this morning's lead story is a run-rate kind of figure: a true thing about a moment, dressed in the grammar of a year.</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+
+  <!-- ================= EDITOR'S NOTE ================= -->
+  <div class="editors">
+    <span class="section-label">Editor's Note</span>
+    <p>I have spent two years being gently informed that profitability was a category error — the worry of people who wanted earnings when the moment demanded faith, who read the balance sheet when they should have been reading the roadmap. You did not ask whether the frontier made money. You asked whether it was the frontier, and the rest was for accountants and tourists.</p>
+    <p>This morning the most valuable private AI company in the world is, pending a round that has not technically closed, the one that just posted an operating profit. The company going public is the one losing more than a dollar for every dollar it takes in. No one called a press conference about the swap, because the swap embarrasses the thesis. The axis we were told didn't matter is the axis the money quietly moved on.</p>
+    <p>I'd enjoy the irony more if I trusted the inputs. Both valuations are private. Anthropic's profit is unaudited, lives in an investor deck, and ships with the company's own asterisk that it may not survive this year's compute bill. We are ranking two firms by numbers neither has filed, on a leaderboard nobody is obligated to keep honest. So hold the crown loosely — it's being fitted to a head that already warned us it might not fit by fall. But the question changed today, and for a long time, asking it got you called a tourist. <span class="sign">See you tomorrow.</span></p>
+  </div>
+
+  <!-- ================= CORRECTIONS ================= -->
+  <div class="corrections">
+    <div class="clabel">Corrections &amp; Amplifications</div>
+    <p>Our lead chart ranks Anthropic above OpenAI by private valuation. Both numbers are private, one of them belongs to a round that has not closed, and "rank" here is a line we drew between two press leaks. We present it as fact in the confident way the industry presents everything it has not filed.</p>
+    <p>We quote Mr. Zuckerberg on teaching an AI "how smart people use computers." The quote comes from an unauthenticated leaked recording. We reproduce it because it is too on-the-nose to have been written by anyone but him, which is not, we concede, a standard of verification.</p>
+    <p>We described Anthropic's first profitable quarter as a "plot twist." In any other industry it would be called Tuesday. We regret that this is news.</p>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <div class="footer">
+    The Daily Hallucination · Vol. 1, No. 17 · Wednesday, May 27, 2026 · Hand-hallucinated each morning · Run rate annualized, conscience not included
+  </div>
+
+</div>
+</body>
+</html>
