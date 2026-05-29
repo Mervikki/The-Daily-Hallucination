@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Daily Hallucination – Friday, May 29, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Serif+4:ital,wght@0,400;0,600;1,400;1,600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #F5F0E8;
+    color: #0D0D0D;
+    font-family: 'Source Serif 4', Georgia, serif;
+    line-height: 1.5;
+    padding: 24px 16px 60px;
+  }
+  .paper {
+    max-width: 920px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 36px 44px 44px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+  }
+
+  /* ---------- MASTHEAD ---------- */
+  .masthead { text-align: center; }
+  .masthead h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-size: 3.4rem;
+    line-height: 1.02;
+    color: #0D0D0D;
+  }
+  .masthead .accent { border: none; border-top: 4px solid #C0392B; width: 56px; margin: 10px auto 0; }
+  .masthead .rule3 { border: none; border-top: 3px solid #0D0D0D; margin: 8px auto 0; }
+  .masthead .tagline { font-style: italic; color: #888888; font-size: 0.95rem; margin-top: 8px; }
+  .masthead .thin { border: none; border-top: 1px solid #cccccc; margin: 8px auto; }
+  .masthead .dateline {
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 0.7rem;
+    color: #888888;
+  }
+
+  /* ---------- TODAY AT A GLANCE ---------- */
+  .glance { width: 100%; border-collapse: collapse; margin: 28px 0 30px; font-family: 'Source Serif 4', serif; }
+  .glance th {
+    background: #1a2744; color: #ffffff;
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.16em;
+    font-size: 0.74rem; text-align: left; padding: 9px 12px;
+  }
+  .glance td { background: #F5F0E8; padding: 8px 12px; font-size: 0.86rem; border-bottom: 2px solid #ffffff; vertical-align: top; }
+  .glance td.topic {
+    font-weight: 700; font-family: 'Inter', sans-serif;
+    font-size: 0.74rem; text-transform: uppercase;
+    letter-spacing: 0.04em; width: 150px; color: #1a2744;
+  }
+
+  /* ---------- TWO-COLUMN BODY ---------- */
+  .body-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+  .body-grid > .col:first-child { padding-right: 26px; border-right: 1px solid #cccccc; }
+  .body-grid > .col:last-child { padding-left: 26px; }
+  .col article { margin-bottom: 26px; }
+  .col article:last-child { margin-bottom: 0; }
+
+  .section-label {
+    display: inline-block; background: #1a2744; color: #ffffff;
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    font-size: 0.62rem; padding: 3px 7px; margin-bottom: 7px;
+  }
+  .hl { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.4rem; line-height: 1.16; margin-bottom: 5px; }
+  .sh { font-family: 'Inter', sans-serif; font-weight: 700; font-size: 0.93rem; line-height: 1.25; margin-bottom: 5px; }
+  .byline { font-family: 'Inter', sans-serif; font-style: italic; font-size: 0.72rem; color: #888888; margin-bottom: 8px; }
+  .col p.body { font-size: 0.88rem; text-align: justify; hyphens: auto; -webkit-hyphens: auto; margin-bottom: 8px; }
+  p.opinion {
+    font-style: italic; border-left: 2px solid #dddddd;
+    padding-left: 12px; margin: 8px 0 8px 8px; font-size: 0.86rem;
+  }
+  .pullquote {
+    background: #F5F0E8; border: 1px solid #C0392B; border-left: 4px solid #C0392B;
+    color: #C0392B; font-style: italic; text-align: center;
+    font-size: 0.98rem; line-height: 1.35; padding: 12px 16px; margin: 12px 0;
+  }
+  .pullquote .attr { display: block; font-size: 0.72rem; font-style: normal; margin-top: 6px; letter-spacing: 0.03em; }
+
+  .chartwrap { margin: 12px 0; }
+  .chartwrap svg { width: 100%; height: auto; display: block; }
+  .chart-caption { font-style: italic; font-size: 0.72rem; color: #888888; margin-top: 3px; }
+  .chart-title {
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.07em;
+    font-size: 0.64rem; color: #1a2744; margin-bottom: 4px;
+  }
+
+  /* ---------- GLOSSARY / FEATURE BOX ---------- */
+  .obit { background: #fbfaf7; border: 1px solid #ddd6c8; border-top: 3px solid #0D0D0D; padding: 14px 18px; }
+  .obit .dates { font-family: 'Inter', sans-serif; font-size: 0.68rem; letter-spacing: 0.04em; color: #888888; text-transform: uppercase; margin-bottom: 6px; }
+  .obit .term { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.15rem; }
+  .obit .deftag { font-family: 'Inter', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.6rem; color: #1a2744; }
+
+  /* ---------- EDITOR'S NOTE ---------- */
+  .editors { background: #1a2744; color: #f3efe6; padding: 22px 26px; margin: 30px 0 0; }
+  .editors .section-label { background: #C0392B; color: #ffffff; }
+  .editors p { font-family: 'Source Serif 4', serif; font-style: italic; font-size: 0.92rem; line-height: 1.55; margin-bottom: 9px; }
+  .editors p:last-child { margin-bottom: 0; }
+  .editors .sign { font-style: italic; color: #b9c2d6; }
+
+  /* ---------- CORRECTIONS ---------- */
+  .corrections { background: #f1f1f1; border: 1px solid #cccccc; padding: 12px 16px; margin: 22px 0 0; font-size: 0.82rem; }
+  .corrections .clabel { font-family: 'Inter', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.62rem; color: #C0392B; margin-bottom: 5px; }
+  .corrections p { margin-bottom: 6px; font-style: italic; }
+  .corrections p:last-child { margin-bottom: 0; }
+
+  /* ---------- FOOTER ---------- */
+  .footer {
+    border-top: 1px solid #0D0D0D; margin-top: 30px; padding-top: 12px;
+    text-align: center; font-family: 'Inter', sans-serif;
+    text-transform: uppercase; letter-spacing: 0.14em;
+    font-size: 0.62rem; color: #888888;
+  }
+
+  @media (max-width: 680px) {
+    .paper { padding: 24px 18px 30px; }
+    .masthead h1 { font-size: 2.1rem; }
+    .body-grid { grid-template-columns: 1fr; }
+    .body-grid > .col:first-child {
+      padding-right: 0; border-right: none;
+      border-bottom: 1px solid #cccccc;
+      padding-bottom: 26px; margin-bottom: 26px;
+    }
+    .body-grid > .col:last-child { padding-left: 0; }
+    .glance td.topic { width: 110px; }
+  }
+</style>
+</head>
+<body>
+<div class="paper">
+
+  <!-- ================= MASTHEAD ================= -->
+  <header class="masthead">
+    <h1>The Daily Hallucination</h1>
+    <hr class="accent">
+    <hr class="rule3">
+    <p class="tagline">An AI &amp; tech daily that says the quiet part — out loud, in a serif font.</p>
+    <hr class="thin">
+    <p class="dateline">Friday, May 29, 2026 &nbsp;·&nbsp; Vol. 1, No. 18</p>
+  </header>
+
+  <!-- ================= TODAY AT A GLANCE ================= -->
+  <table class="glance">
+    <tr><th colspan="2">Today at a Glance</th></tr>
+    <tr><td class="topic">Anthropic / Markets</td><td>Anthropic closed a $65 billion round at a $965 billion post-money valuation Thursday — bigger than anyone leaked, past OpenAI by more than a hundred billion dollars — and on the same morning Apollo and Blackstone began shopping a $36 billion debt package, secured against Google TPUs the lab will buy and lease to itself.</td></tr>
+    <tr><td class="topic">Anthropic / Product</td><td>Claude Opus 4.8 shipped Thursday with claims of fewer code "flaws passed unremarked," a Dynamic-something orchestration feature capped at a thousand subagents, and a wink at an upcoming "Mythos-class" tier the chip bill is presumably for.</td></tr>
+    <tr><td class="topic">Meta / Labor</td><td>The U.K. union recruiting at Meta this week says the surviving workers are being made to train the systems being positioned to replace them; the keystroke logger remains opt-out-free, the layoff count remains eight thousand.</td></tr>
+    <tr><td class="topic">OpenClaw / Security</td><td>Four chained OpenClaw bugs got out of the partial sandbox and onto the host before being patched; the malicious-skill count on the marketplace is now reportedly 824, up from 341 three weeks ago, on a denominator that has itself nearly quadrupled.</td></tr>
+  </table>
+
+  <!-- ================= BODY ================= -->
+  <div class="body-grid">
+
+    <!-- ===== LEFT COLUMN ===== -->
+    <div class="col">
+
+      <!-- LEAD STORY: Anthropic close + TPU debt -->
+      <article>
+        <span class="section-label">Anthropic · Markets</span>
+        <h2 class="hl">Anthropic Closed the Round. Bigger Than Anyone Floated. The Loud Number Was the Equity; the Load-Bearing One Was the Loan.</h2>
+        <p class="byline">By The Editor, Markets Desk · May 29, 2026</p>
+
+        <p class="body">On Tuesday we ran the Anthropic valuation crossover as scheduled rather than performed, on the strength of a Bloomberg report that the round was set to close at "more than thirty billion dollars" and "north of nine hundred billion." It closed Thursday at sixty-five billion dollars, on a post-money valuation of nine hundred and sixty-five — not the floor of the rumor but the ceiling of what was previously thinkable. Sequoia, Altimeter, Dragoneer, and Greenoaks led. The mark sits a hundred and thirteen billion dollars above OpenAI's March number and within a polite squint of a trillion. It nearly triples the February valuation of three hundred and eighty. The most valuable private AI company in the world is now, by more than a rounding error, Anthropic.</p>
+
+        <p class="body">On the same morning Bloomberg reported a second, structurally stranger transaction: Apollo Global and Blackstone are out shopping a roughly thirty-six billion dollar debt package, designed to finance Anthropic's purchase of Google TPUs, which Anthropic will then lease — to itself. Add the equity and the borrowing and one company moved more than a hundred billion dollars of capital in a single week, with the chip-collateralized half being the genuinely novel financial primitive. Private credit has been quietly inching toward this for two years. An AI lab is the first borrower visible at this scale to make the structure legible in public, which is also the first moment a market exists to price it against.</p>
+
+        <div class="chartwrap">
+          <div class="chart-title">Anthropic's nine days in May</div>
+          <svg viewBox="0 0 400 170" role="img" aria-label="Annotated timeline of Anthropic's week from May 19 through May 28, 2026. May 19: Karpathy announced as joining the pre-training team and the Code with Claude London developer event runs. May 22: Bloomberg reports the round is set to close, more than 30 billion dollars at over 900 billion. May 25: Pope Leo XIV's encyclical Magnifica Humanitas is presented at the Vatican with Anthropic's Chris Olah on the dais. May 28, in rust as the load-bearing day: round closes at 65 billion dollars on a 965 billion dollar valuation, Apollo and Blackstone begin shopping a 36 billion dollar TPU debt deal, and Claude Opus 4.8 ships.">
+            <!-- baseline -->
+            <line x1="30" y1="80" x2="370" y2="80" stroke="#bbbbbb" stroke-width="1"/>
+
+            <!-- May 19 (gray, context) -->
+            <line x1="60" y1="74" x2="60" y2="86" stroke="#888888" stroke-width="2"/>
+            <text x="60" y="64" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" fill="#1a2744" font-weight="700">Karpathy joins</text>
+            <text x="60" y="55" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.5" fill="#888">Code w/ Claude London</text>
+            <text x="60" y="100" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" fill="#888">MAY 19</text>
+
+            <!-- May 22 (gray, context) -->
+            <line x1="150" y1="74" x2="150" y2="86" stroke="#888888" stroke-width="2"/>
+            <text x="150" y="64" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" fill="#1a2744" font-weight="700">Round floated</text>
+            <text x="150" y="55" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.5" fill="#888">$30B+ at &gt;$900B</text>
+            <text x="150" y="100" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" fill="#888">MAY 22</text>
+
+            <!-- May 25 (gray, context) -->
+            <line x1="230" y1="74" x2="230" y2="86" stroke="#888888" stroke-width="2"/>
+            <text x="230" y="64" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" fill="#1a2744" font-weight="700">Olah at the Vatican</text>
+            <text x="230" y="55" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.5" fill="#888">Magnifica Humanitas</text>
+            <text x="230" y="100" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" fill="#888">MAY 25</text>
+
+            <!-- May 28 (rust, load-bearing) -->
+            <line x1="340" y1="68" x2="340" y2="92" stroke="#C0392B" stroke-width="3"/>
+            <circle cx="340" cy="80" r="4.5" fill="#C0392B"/>
+            <text x="340" y="100" text-anchor="middle" font-family="Inter, sans-serif" font-size="7.5" font-weight="700" fill="#C0392B">MAY 28</text>
+            <text x="340" y="116" text-anchor="middle" font-family="Inter, sans-serif" font-size="7.5" font-weight="700" fill="#C0392B">$65B raise · $965B</text>
+            <text x="340" y="128" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" fill="#C0392B">+ $36B TPU debt deal</text>
+            <text x="340" y="140" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" fill="#C0392B">+ Claude Opus 4.8</text>
+          </svg>
+          <p class="chart-caption">A single ten-day stretch carried a flagship hire, a leaked round, a Vatican appearance, a closed round, a chip-debt facility, and a model release. Rust tick is the load-bearing day.</p>
+        </div>
+
+        <p class="body">Anthropic also told investors its annualized run rate is now around forty-seven billion dollars — a number that sits, with notable convenience, between the "thirty now" and "fifty by end of June" the company was using two days ago, and which the Glossary entry we ran on Wednesday applies to in full. None of this is independently audited. The valuation is private; the income is unaudited; the debt is not yet syndicated. The papers calling Anthropic the most valuable private AI company are doing so on the strength of two press leaks and a deck.</p>
+
+        <div class="pullquote">The headline was the valuation. The load-bearing number was the loan.
+          <span class="attr">— On the new line in the financial diagram private credit just drew in public</span>
+        </div>
+
+        <p class="opinion">The chip-collateralized credit deal deserves a story of its own and isn't getting one yet because thirty-six billion dollars sounds small next to nine hundred and sixty-five. It isn't. Companies have long borrowed against revenue, inventory, real estate, even music catalogues. They have not, at this scale, borrowed against semiconductors they intend to lease back to themselves. The first time you see a financial primitive in public is the first time anyone has to price it.</p>
+      </article>
+
+      <!-- SECONDARY: Opus 4.8 -->
+      <article>
+        <span class="section-label">Anthropic · Product</span>
+        <h3 class="sh">Opus 4.8 Ships With a Mythos in the Wings</h3>
+        <p class="byline">By The Editor, Product Desk · May 29, 2026</p>
+        <p class="body">Anthropic released Claude Opus 4.8 on Thursday, the third bullet on a single press morning. Its own marketing line is that 4.8 is "four times less likely than its predecessor to allow flaws in code it has written to pass unremarked," which is a precise enough sentence that it almost reads like a benchmark. It is not a benchmark; it is a vendor figure, unaudited and conveniently shaped to the moment. Tied to the release is a feature called Dynamic Workflows, which orchestrates up to a thousand subagents per task — the kind of ceiling number the spec sheet wants you to read as ambition and the engineering team probably reads as a knob.</p>
+        <p class="body">The interesting line is the one buried at the end: a "Mythos-class" model is on the slate. We last saw the Mythos name in this paper in mid-May, when OpenAI's "Daybreak" was being pitched as its foil. Naming a next-generation tier in public, on the same day the company closes the financing to pay for it, is a tidier announcement than it would have been had Wall Street been the audience. The forty-seven-billion-dollar run rate is what the chips are for; Mythos is what the chips are for.</p>
+      </article>
+
+    </div>
+
+    <!-- ===== RIGHT COLUMN ===== -->
+    <div class="col">
+
+      <!-- SECONDARY: Meta labor follow-up -->
+      <article>
+        <span class="section-label">Meta · Labor</span>
+        <h3 class="sh">Meta's Keystroke Program Picks Up Its Union</h3>
+        <p class="byline">By The Editor, Labor Desk · May 29, 2026</p>
+        <p class="body">The Model Capability Initiative — the no-opt-out keystroke, click, and screenshot capture Meta runs on its U.S. employees' work laptops to feed an AI-training pipeline — picked up a more organized opponent this week. United Tech and Allied Workers, the British union we flagged on Wednesday, is openly recruiting Meta's London staff. Organizer Eleanor Payne is quoted as describing the workforce as paying "the price for management's reckless and expensive bets… draconian surveillance, and the cruel reality of being forced to train the inefficient systems being positioned to replace them." It is the most quotable sentence anyone has spoken on the program, and it was not spoken on stage.</p>
+        <p class="body">Roughly seven thousand surviving employees have been reassigned into Meta's freshly renamed AI groups — Applied AI Engineering, Agent Transformation Accelerator, Central Analytics — which is also where the keystroke pipeline empties. Eight thousand people who used to do the work are gone. Their last six weeks of typing remains in a training set the company will not say is finite.</p>
+      </article>
+
+      <!-- SECONDARY: OpenClaw Claw Chain -->
+      <article>
+        <span class="section-label">OpenClaw · Security</span>
+        <h3 class="sh">Four Bugs in a Chain Got Out of the Sandbox</h3>
+        <p class="byline">By The Editor, Security Desk · May 29, 2026</p>
+        <p class="body">Researchers at Cyera disclosed and OpenClaw patched a set of four vulnerabilities this week the press is calling Claw Chain: strung together, they escape OpenClaw's partial sandbox into full host compromise. All four are fixed in OpenClaw 2026.4.22. The disclosure came in alongside fresh numbers from the ClawHavoc supply-chain story we ran in mid-May — the malicious-skill count in the ClawHub marketplace is now reportedly eight hundred and twenty-four, up from three hundred and forty-one at first scan. The denominator has nearly quadrupled too, to about ten thousand seven hundred skills, which is the kind of growth a marketplace operator likes to take credit for and a security team learns to read as surface.</p>
+        <p class="body">The story is the same story it was in May. An agent with shell access, plus a marketplace, plus a community of contributors, equals the attack surface anyone could draw on a whiteboard. The patch arrived faster than the last one. The marketplace grew faster than the patch.</p>
+      </article>
+
+    </div>
+  </div>
+
+  <!-- ================= EDITOR'S NOTE ================= -->
+  <div class="editors">
+    <span class="section-label">Editor's Note</span>
+    <p>Two days ago I ran Anthropic-passes-OpenAI as scheduled rather than performed, because there was a Bloomberg story but no term sheet. The schedule was conservative. The round closed at sixty-five billion dollars on a nine-hundred-and-sixty-five-billion-dollar mark, which is more than I had it for in print and more than the rumor had it for over coffee. The Glossary entry I ran on Wednesday, about run rate as a time machine for revenue, aged faster than the run rate it was about. I'd take a victory lap if anything I'd written had been right; what I had was a hedge against being wrong, and the news rewarded the hedge by overshooting it.</p>
+    <p>The number you should keep is not the valuation. It is the thirty-six billion in private credit secured against Google TPUs, syndicated by Apollo and Blackstone, with the chips going to a lab that will lease them back to itself. That is a line in the diagram of how this industry borrows that did not exist on Monday. Equity rounds rhyme with other equity rounds. This is a new instrument, and the first time you see one in public is the only chance you get to price it against a clean slate.</p>
+    <p>The same week one company moved a hundred billion dollars of private capital through equity and debt, another company sent its keystroke logger to recruit the U.K. office it is also firing. The papers will run those as separate stories, but they are on the same balance sheet — the one where the cheap inputs are being collected and the expensive ones are being shown the door. <span class="sign">See you tomorrow.</span></p>
+  </div>
+
+  <!-- ================= CORRECTIONS ================= -->
+  <div class="corrections">
+    <div class="clabel">Corrections &amp; Amplifications</div>
+    <p>Tuesday's lead described Anthropic's coronation as "scheduled rather than performed." It was performed Thursday at a higher number than the schedule called for. We were not wrong, only conservative — an unfamiliar posture for this paper.</p>
+    <p>Wednesday's Glossary defined "run rate" as a time machine for revenue. Anthropic's new figure of about $47 billion sits between the "$30 billion now" and "$50 billion by end of June" it was using two days earlier, which is exactly where a time machine is supposed to leave you.</p>
+    <p>The $36 billion debt deal is being shopped, not closed. The $965 billion valuation is post-money on a round that is closed but not audited. The $47 billion run rate is an investor figure, not a filing. Every load-bearing number in today's lead has at least one asterisk; we have listed them here so the lead can read clean.</p>
+    <p>Anthropic's "four times less likely to let flaws pass unremarked" claim about Opus 4.8 is a vendor figure under a vendor definition. We reproduce it because it is so specifically shaped that disagreeing with it requires a benchmark nobody has run.</p>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <div class="footer">
+    The Daily Hallucination · Vol. 1, No. 18 · Friday, May 29, 2026 · Hand-hallucinated each morning · Chip-collateralized, conscience uncollateralized
+  </div>
+
+</div>
+</body>
+</html>

@@ -15,8 +15,11 @@
 - "Moral authority with no power to subpoena is the safest authority to be blessed by / being seen to listen vs. listening / disarm is an instruction worth only its enforcement" (issue 16 Pope lead — strong, do not reuse verbatim)
 - "Everyone left with what they came for" three-way who-got-what tally (issue 16 — vary)
 - "Profitability was the question that marked you as a tourist / the money re-sorted on the axis it told us to ignore" (issue 17 valuation-crossover lead + editor's note — strong, do not reuse verbatim)
-- "Keeping the cheap half (keystrokes) and laying off the expensive half (people) / not training their replacements" (issue 17 Meta lead — vary)
+- "Keeping the cheap half (keystrokes) and laying off the expensive half (people) / not training their replacements" (issues 17, 18 Meta — used twice, retire)
 - "The skeptic who debunked the last claim signed off on this one / harshest auditor signs the second set of books" (issue 11 math lead — do not reuse verbatim)
+- "Scheduled rather than performed → performed" callback to prior issue (issue 18 — strong, do not reuse verbatim as a frame; the move of grading my own hedge against the news is now spent for a while)
+- "The headline was the valuation; the load-bearing number was the loan" / "the first time you see a financial primitive in public is the only chance to price it" (issue 18 — strong, do not reuse verbatim)
+- "On the same balance sheet — cheap inputs collected, expensive ones shown the door" Meta-Anthropic pairing close (issue 18 — vary; structurally similar to issue 17 Meta "cheap half / expensive half")
 
 ## STORIES IN PROGRESS
 - Bioweapon red-team / "unnamed lab" (issue 2) — lab still unnamed, no Tier-1 follow-up, no congressional outrage; used as The Quiet Correction in issue 7
@@ -25,10 +28,10 @@
 - OpenAI vs Apple breach-of-contract over Siri (issue 5) — outside counsel retained, Apple reportedly chose Gemini for next Siri rewrite, no filing yet
 - Microsoft internal Claude Code cancellation (issues 5, 6) — June 30 cutoff, watch adoption numbers
 - Anthropic agent metering (issues 5, 6, 8, 10) — June 15 confirmed; off-subscription credits ($20/$100/$200) at full API rates, trade press calls it 12–175× for heavy agent users; claim email ~June 8; watch migration to Grok Build / Codex / Hermes / OpenClaw
-- OpenClaw security crisis (issue 10) — ClawHavoc: 341→800+ of 10,700 ClawHub skills flagged (AMOS/keyloggers), CVE-2026-25253 (1-click RCE), CVE-2026-32922 (privesc); fix = VirusTotal Code Insight scanning; watch for breach disclosures / regulatory interest
+- OpenClaw security crisis (issues 10, 18) — UPDATE issue 18: Cyera "Claw Chain" — 4-bug chain to host escape, patched in OpenClaw 2026.4.22; malicious-skill count now ~824 of ~10,700 ClawHub skills (was 341 of 2,857 at first scan); CVE-2026-25253 (1-click RCE), CVE-2026-32922 (privesc) earlier; watch for breach disclosures / regulatory interest; angle nearly spent — only revisit on material new disclosure
 - Gemini 3.5 Pro deferral (issue 10) — shipped Flash May 19, Pro "in testing / next month"; watch actual Pro ship date and whether it tops Claude Opus 4.7 / GPT-5.5
 - OpenAI Deployment Company 17.5% guaranteed return (issue 2) — no public confirmation of terms
-- Anthropic $30B raise at >$900B (issues 8, 17) — UPDATE issue 17: Bloomberg May 22 reports round set to close "as soon as next week" (week of May 26); co-leads Sequoia/Dragoneer/Altimeter/Greenoaks ~$2B each; >$900B clears OpenAI's $852B (March) → most valuable private AI co for first time; Q2 ~$10.9B rev (vs Q1 $4.8B), first operating profit ~$559M op income, ARR ~$30B → projected >$50B end June (WSJ/CNBC, unaudited investor materials); Anthropic flagged may not stay profitable all year (compute). NOT confirmed closed — watch official close + audited figures
+- Anthropic round CLOSED (issues 8, 17, 18) — UPDATE issue 18: closed Thursday May 28 at $65B / $965B post-money (Bloomberg/CNBC/TechCrunch); led Sequoia/Altimeter/Dragoneer/Greenoaks; clears OpenAI $852B by ~$113B; nearly triples Feb $380B mark; run-rate now ~$47B (between the prior "$30B now / $50B by end June" goalposts); company still flagged compute may eat profitability later in year. Round closed but not audited; watch for primary terms + first audited print
 - Ramp AI Index May (issue 8) — Anthropic 34.4 vs OpenAI 32.3 — watch June index for durability
 - Meta layoff wave (issues 8, 9, 10, 11) — ~8,000 cut May 20 + 6,000 reqs canceled (~14k effective); SAME week record Q ($56.31B rev, $26.8B NI), ~$145B AI infra (note: crept up from $115-135B); median total comp $417.4k(2024)→$388.2k(2025); $100M packages for Superintelligence Labs hires; Zuck told staff AI "not driving" layoffs (contradicts the 4:1 code memo); more cuts flagged Aug/fall — watch August round + next earnings call
 - OpenAI Erdős unit-distance disproof (issue 11) — internal model disproved planar unit-distance conjecture May 20; externally verified (Alon, Wood, Bloom — Bloom debunked the Oct 2025 GPT-5 overclaim); Gowers "milestone"; first genuine AI-original-verified-math data point; watch replication, which model, whether more conjectures fall
@@ -41,7 +44,9 @@
 - Nvidia circular financing (issue 15) — >$40B 2026 equity bets on chip-buyers ($30B OpenAI, up to $3.2B Corning, up to $2.1B IREN); IREN bundles up-to-$3.4B 5-yr cloud contract back to Nvidia; Wedbush "circular investment theme"; watch SEC scrutiny / revenue-recognition questions / whether deals close
 - OpenAI IPO (issues 11, 12, 13, 15) — confidential filing now REPORTED DONE Fri May 22 (CNBC/Fortune/Axios; used as issue 15 Quiet Correction); Goldman + Morgan Stanley; $852B–>$1T, Q4/Sept listing eyed; reported ~$14B 2026 loss, profitability ~2030; Friar reportedly cautioned "filing ≠ ready to go public"; financials sealed until ~15 days pre-roadshow; watch public S-1 surfacing late summer
 - Code w/ Claude London (issue 13) — Anthropic's first European dev event (May 19); shipped agent sandboxes (run agents on own infra) + "MCP tunnels" (agents reach internal systems without public internet); MIT Tech Review/Fortune May 21 ran "coding's future whether you like it or not" anxiety coverage; pairs with June 15 meter
-- Karpathy → Anthropic (issue 12) — announced May 19 on X, started this week on pre-training under Nick Joseph, building team to use Claude to accelerate pretraining research; left Eureka Labs; talent-war marker; watch what the team ships
+- Karpathy → Anthropic (issues 12, 18 context) — announced May 19 on X, started week of May 19 on pre-training under Nick Joseph; tied to Mythos-class tease at Opus 4.8 launch (May 28); watch what the team ships
+- Claude Opus 4.8 / Mythos tease (issue 18) — shipped May 28 alongside $65B close; vendor claim "4x less likely to allow flaws in code to pass unremarked" (unaudited); Dynamic Workflows feature, up to 1,000 subagents; fast mode 2.5x faster/3x cheaper; pricing held at $5/$25 per M tokens; "Mythos-class" upcoming model teased; watch for third-party benchmarks + Mythos ship
+- Anthropic chip-debt facility (issue 18 LEAD) — May 28 Bloomberg: Apollo + Blackstone shopping ~$36B private-credit package to finance Anthropic's purchase of Google TPUs, to be leased back to Anthropic; structurally new (chip-collateralized AI-lab debt at scale); deal being SHOPPED not closed; watch for final terms, syndicate, whether SEC/financial-press scrutiny lands; key new financing primitive to track for the rest of the cycle
 - Forum AI election-accuracy study (issue 12) — 3,100+ Qs; election answers failed accuracy/bias/sourcing 90%; ~36% ≥1 factual error; Grok ~52%; CGG left-lean, Grok right; state-media citations ChatGPT 51% / Grok 44% (foreign policy); watch for lab responses + a follow-up nearer the midterms
 - Nvidia Q1 FY27 earnings (issue 12) — rev $81.6B (+85%), Data Center $75.2B (+92%, ~92% of rev), $80B buyback, dividend $0.01→$0.25, Q2 guide $91B ±2%, no China DC rev; stock slipped ~1% on the beat; watch Q2 print + whether the "one trade" concentration holds
 - Gemini 3.5 Pro deferral (issues 10, 14) — STILL "next month" as of May 24 (held steady through I/O May 19 + price cut May 21); issue 14 reframed as chronic posture, not event ("price war on the cheap tier is the move of a company not ready to fight on the expensive one"); watch actual Pro ship date
@@ -50,7 +55,7 @@
 - Pope Leo XIV AI encyclical (issue 16) — "Magnifica Humanitas" released May 25, signed May 15 (135th anniv. Rerum Novarum), 235pp, first encyclical, Pope presented it personally; thesis "AI must be disarmed" (military + economic + cognitive), regulating insufficient, autonomous weapons make war more "feasible"; Anthropic co-founder/interpretability head Chris Olah co-presented (said models may have internal states "functionally mirror joy/fear/grief"; called for outside critics; admitted every lab incl. Anthropic has conflicting incentives); irony = Anthropic in litigation w/ Trump admin over military use; watch lab responses, whether it changes any policy, follow-up Vatican-tech events
 - Nvidia data-center reporting reshuffle (issue 16) — Q1 FY27 split Data Center into "Hyperscale" $37.9B (+115%, >50% of DC) vs "ACIE" (AI clouds/industrial/enterprise) $37.4B (+74%); total DC $75.2B (+92%); ties to issue-15 circular-financing thread (the concentrated half = the buyers Nvidia funds); prior-yr split reconstructed from reported growth; watch whether segment disclosure invites more concentration scrutiny
 
-- Meta employee surveillance / "Model Capability Initiative" (issue 17) — since Apr 2026, captures keystrokes/clicks/screenshots on US work laptops → AI training pipeline; NO opt-out (CTO Bosworth confirmed internally); >1,000 (reportedly ~1,500) signed petition, office flyers, UK union drive (United Tech and Allied Workers); leaked unverified ~6-min Zuck audio "how smart people use computers to accomplish tasks" / "competitive necessity" / not in strategic interest to explain to staff; same month as 8,000 layoffs (May 20); watch for verified audio, NLRB/EU labor action, whether program survives
+- Meta employee surveillance / "Model Capability Initiative" (issues 17, 18) — UPDATE issue 18: UTAW UK union openly recruiting Meta London staff; organizer Eleanor Payne quoted on "draconian surveillance" + "forced to train the inefficient systems being positioned to replace them"; ~7,000 surviving employees reassigned to Applied AI Engineering / Agent Transformation Accelerator / Central Analytics; program continues; watch for verified Zuck audio, NLRB/EU labor action, first union recognition vote, whether program survives
 
 ## STANDING FEATURES LOG
 - Model Obituary: 2026-05-26 (Claude 3.7 Sonnet, Feb 2025–May 11 2026 shutdown — eulogized the first Claude with an "extended thinking" toggle; tied to Pope lead's machine-emotion claim) — was 2026-05-23 (gpt-5.x-latest aliases) (gpt-5.2-chat-latest / gpt-5.3-chat-latest, deprecation notice May 8 — eulogized the "-latest" alias having a past tense) — now OLDEST feature, due next slow day
@@ -60,6 +65,7 @@
 - Issue 15 (May 25, Memorial Day Monday, dead day): three-piece + Quiet Correction — Anthropic "dreaming" lead + Nvidia circular equity bets + Quiet Correction (OpenAI IPO filed)
 - Issue 17 (May 27, Wednesday, thin day): two-news + Glossary — Anthropic valuation crossover (>$900B round closing, passes OpenAI's $852B, first profitable quarter) lead w/ bump chart + Meta employee-surveillance "Model Capability Initiative" + Glossary ("Run Rate")
 - Issue 16 (May 26, Tuesday, slow day): two-news + Model Obituary — Pope Leo XIV's first encyclical "Magnifica Humanitas" / "disarm AI" with Anthropic's Chris Olah on the Vatican dais (lead) + Nvidia data-center reporting reshuffle (Hyperscale vs ACIE) + Model Obituary (Claude 3.7 Sonnet)
+- Issue 18 (May 29, Friday, BIG news day, NO May 28 issue published): four-news no-standing-feature — Anthropic $65B raise at $965B + $36B Apollo/Blackstone TPU debt deal (LEAD, timeline chart of the 9-day blitz) + Opus 4.8 ships w/ Mythos tease (secondary L) + Meta MCI/UTAW UK union (secondary R) + OpenClaw Claw Chain RCE (secondary R)
 
 ## CORRECTIONS CANDIDATES
 - Issue 1: Anthropic claim that "since Haiku 4.5, blackmail behavior no longer shows up in controlled tests" — no third-party replication
@@ -96,6 +102,12 @@
 - Issue 17: Zuckerberg "how smart people use computers" / "competitive necessity" quote from UNAUTHENTICATED leaked ~6-min audio (The Register May 22) — flagged in corrections box, not verified; MCI program + no-opt-out + petition well-corroborated (Fortune/Register)
 - Issue 17: Meta petition signature count "~1,500 / >1,000" varies by source/date — used ">a thousand"; confirm if revisited
 
+- Issue 18: Anthropic close figures ($65B raise / $965B post-money / $47B run rate) per Bloomberg/CNBC/TechCrunch May 28, unaudited investor materials — flagged in corrections; round closed but primary terms not yet on a filing
+- Issue 18: Apollo + Blackstone $36B TPU debt deal per Bloomberg May 28 — deal is being SHOPPED, not closed/syndicated; "secured against Google TPUs leased back to Anthropic" structure described from reporting, exact collateral terms not on a public document; flagged in corrections
+- Issue 18: Claude Opus 4.8 vendor claim "4x less likely to allow flaws in code to pass unremarked" + Dynamic Workflows "up to 1,000 subagents" + fast mode "2.5x faster / 3x cheaper" are vendor figures under vendor definitions — no independent benchmark; flagged in corrections
+- Issue 18: OpenClaw "Claw Chain" 4 chained bugs / patched in 2026.4.22 / 824-of-10,700 malicious-skill count per Cyera/Hacker News/ARMO/IBM X-Force — confirm CVE numbers against MITRE if revisited; skill-count denominator (~10,700) is marketplace's own figure
+- Issue 18: UTAW UK Eleanor Payne quote ("draconian surveillance" / "forced to train the inefficient systems being positioned to replace them") per TechTimes/HCAmag — confirm against the union's own statement if revisited
+
 ## EDITOR'S NOTE PATTERNS (continued below)
 - "If the lesson of the week is anything is this…" (issue 6 — avoid)
 - Three-paragraph note ending with a weather forecast for tomorrow's news (issues 4, 5, 6 — vary)
@@ -116,6 +128,9 @@
 - "The two stories rhyme, and the rhyme is X" pairing-via-theme then meta-image close (issue 13 — vary)
 - "Write the number down somewhere the prospectus can't reach" close (issue 12 — vary)
 - "Three of the four things in this issue are promises; the industry's calendar is a stack of IOUs denominated in features / the shipped thing is a price cut, the thrilling thing is in testing / a dead day lets you see the machinery that sells the not-yet" (issue 14 — promissory-note framing, vary; do not reuse the IOU image verbatim)
+- "The schedule was conservative / I'd take a victory lap if anything I'd written had been right; what I had was a hedge against being wrong, and the news rewarded the hedge by overshooting it" grade-my-own-hedge open (issue 18 — vary; only works when the prior issue genuinely hedged)
+- "The number you should keep is not [headline number]; it is [under-covered number]" buried-lede pivot in the middle of the note (issue 18 — adjacent to issue 8's "story that runs eighth", vary)
+- "On the same balance sheet" close pairing two separate-looking stories (issue 18 — vary; the same-balance-sheet image is now used)
 
 ## EDITOR'S NOTEBOOK
 - Hype/Impact dots: removed from issue 7 onward (provided no reader value)
@@ -129,3 +144,6 @@
 - After Tuesday May 19: retire the "leak inventory" framing; the keynote has happened
 - OpenClaw security overhang (ClawHavoc) — USED issue 10 as a secondary; angle is now spent, only revisit on a material new disclosure
 - No standing feature run in issue 10 (strong post-I/O news day, four real stories); Model Obituary still oldest (last 2026-05-14), consider next slow day
+- No May 28 issue published — May 29 = issue 18 (Friday), big news day, no standing feature run
+- The Glossary now oldest standing feature (2026-05-27), due next slow day; then Model Obituary (2026-05-26), then Quiet Correction (2026-05-25)
+- Anthropic chip-debt facility is a new financing primitive — track it as its own thread; the "$36B vs $965B" relative-sizing point may need revisiting on close
