@@ -20,6 +20,9 @@
 - "Scheduled rather than performed → performed" callback to prior issue (issue 18 — strong, do not reuse verbatim as a frame; the move of grading my own hedge against the news is now spent for a while)
 - "The headline was the valuation; the load-bearing number was the loan" / "the first time you see a financial primitive in public is the only chance to price it" (issue 18 — strong, do not reuse verbatim)
 - "On the same balance sheet — cheap inputs collected, expensive ones shown the door" Meta-Anthropic pairing close (issue 18 — vary; structurally similar to issue 17 Meta "cheap half / expensive half")
+- "The regulator is on a waitlist / power moved from the table where rules get written to the room where the weights are kept" (issue 19 Mythos lead + editor's note — strong, do not reuse verbatim)
+- "The vendor writes a return policy on its own product / works in every scenario except the one where it's needed, because default and glut are the same event" (issue 19 Broadcom-backstop — strong, do not reuse verbatim)
+- "Too dangerous to show you is also the most flattering possible marketing" Mythos secrecy-as-sales-deck frame (issue 19 — vary if revisiting Mythos)
 
 ## STORIES IN PROGRESS
 - Bioweapon red-team / "unnamed lab" (issue 2) — lab still unnamed, no Tier-1 follow-up, no congressional outrage; used as The Quiet Correction in issue 7
@@ -57,14 +60,19 @@
 
 - Meta employee surveillance / "Model Capability Initiative" (issues 17, 18) — UPDATE issue 18: UTAW UK union openly recruiting Meta London staff; organizer Eleanor Payne quoted on "draconian surveillance" + "forced to train the inefficient systems being positioned to replace them"; ~7,000 surviving employees reassigned to Applied AI Engineering / Agent Transformation Accelerator / Central Analytics; program continues; watch for verified Zuck audio, NLRB/EU labor action, first union recognition vote, whether program survives
 
+- Mythos / EU access standoff (issue 19 LEAD) — NEW thread: Mythos gated via "Glasswing"; preview access only US gov + UK AI Security Institute + ~short list of defensive partners; EU/AI Office/all other govts shut out; Anthropic told EU to get US-admin permission, US opposed widening to ~70 more orgs on cyberattack grounds (CNBC May 29); Spain said talks "stalled" May 22 (Bloomberg); EU "girds"/"intensify" May 28-29; Mythos to customers "in coming weeks"; restricted-briefing capability figures (expert-hacking, USAMO) not on a published benchmark; export-control-on-a-frontier-model now operational — track as its own thread; watch whether EU gets access, whether US relents on the 70, ship date
+- Anthropic chip-debt facility (issues 18, 19) — UPDATE issue 19: firmed up per Bloomberg — ~$6B A1 + $25B A2 senior + $4.5B B junior (sums ~$35.5B, called "$36B"); Broadcom residual-value support on ~$31B senior (covers shortfall if Anthropic defaults + used TPUs undersell); orders due week of May 28, close "as early as next week"; SPV buys Google TPUs, leases to Anthropic (data centers NY/TX/LA/IN); watch close, syndicate, whether Broadcom backstop draws scrutiny
+- Micron $1T market cap (issue 19) — crossed $1T Monday May 26 on HBM/AI-memory shortage, +800%+ one-year (CNBC); cleanest pick-and-shovel trade, also most circular; watch whether memory pricing holds / order-ahead unwinds
+
 ## STANDING FEATURES LOG
 - Model Obituary: 2026-05-26 (Claude 3.7 Sonnet, Feb 2025–May 11 2026 shutdown — eulogized the first Claude with an "extended thinking" toggle; tied to Pope lead's machine-emotion claim) — was 2026-05-23 (gpt-5.x-latest aliases) (gpt-5.2-chat-latest / gpt-5.3-chat-latest, deprecation notice May 8 — eulogized the "-latest" alias having a past tense) — now OLDEST feature, due next slow day
-- The Glossary: 2026-05-27 ("Run Rate (n.)" — official: current revenue annualized; real: a time machine for revenue, best month × 12, the future reported as already arrived; tied to Anthropic's ">$50B run rate by end of June") — was 2026-05-24 ("Unlimited (adj.)")
+- The Glossary: 2026-05-30 ("Coming Weeks (n. pl.)" — official: a near-term ~2-8 week window signaling imminence; real: an interval with no fixed endpoint that resets each time it's spoken — tied to Mythos "in coming weeks" + Gemini 3.5 Pro perpetual "next month") — was 2026-05-27 ("Run Rate (n.)" — official: current revenue annualized; real: a time machine for revenue, best month × 12, the future reported as already arrived; tied to Anthropic's ">$50B run rate by end of June") — was 2026-05-24 ("Unlimited (adj.)")
 - The Quiet Correction: 2026-05-25 ("The Friday That Actually Arrived" — revisited issue 13's hedge on OpenAI's "could file as soon as May 22" IPO; wires now report it filed May 22, vindicating the aggregator we mocked; we corrected our own "could")
 - Issue 14 (May 24, Sunday, dead day): two-piece + Glossary issue — Gemini 3.5 Pro "next month" deferral lead + Applied Digital 15-yr lease + Glossary
 - Issue 15 (May 25, Memorial Day Monday, dead day): three-piece + Quiet Correction — Anthropic "dreaming" lead + Nvidia circular equity bets + Quiet Correction (OpenAI IPO filed)
 - Issue 17 (May 27, Wednesday, thin day): two-news + Glossary — Anthropic valuation crossover (>$900B round closing, passes OpenAI's $852B, first profitable quarter) lead w/ bump chart + Meta employee-surveillance "Model Capability Initiative" + Glossary ("Run Rate")
 - Issue 16 (May 26, Tuesday, slow day): two-news + Model Obituary — Pope Leo XIV's first encyclical "Magnifica Humanitas" / "disarm AI" with Anthropic's Chris Olah on the Vatican dais (lead) + Nvidia data-center reporting reshuffle (Hyperscale vs ACIE) + Model Obituary (Claude 3.7 Sonnet)
+- Issue 19 (May 30, Saturday, slow day): three-news + Glossary — Mythos/EU access standoff (LEAD, annotated timeline of the May 5-29 standoff) + $36B chip-debt firms up w/ Broadcom backstop (secondary R, tranche bar chart) + Micron $1T (secondary R, no chart) + Glossary ("Coming Weeks"). Charts used: timeline, bar. Editor's note: "who writes the rules → who's in the room" power-relocation frame
 - Issue 18 (May 29, Friday, BIG news day, NO May 28 issue published): four-news no-standing-feature — Anthropic $65B raise at $965B + $36B Apollo/Blackstone TPU debt deal (LEAD, timeline chart of the 9-day blitz) + Opus 4.8 ships w/ Mythos tease (secondary L) + Meta MCI/UTAW UK union (secondary R) + OpenClaw Claw Chain RCE (secondary R)
 
 ## CORRECTIONS CANDIDATES
@@ -108,6 +116,11 @@
 - Issue 18: OpenClaw "Claw Chain" 4 chained bugs / patched in 2026.4.22 / 824-of-10,700 malicious-skill count per Cyera/Hacker News/ARMO/IBM X-Force — confirm CVE numbers against MITRE if revisited; skill-count denominator (~10,700) is marketplace's own figure
 - Issue 18: UTAW UK Eleanor Payne quote ("draconian surveillance" / "forced to train the inefficient systems being positioned to replace them") per TechTimes/HCAmag — confirm against the union's own statement if revisited
 
+- Issue 19: Mythos capability figures (expert-level offensive-hacking success, USAMO 97.6%) are from restricted briefings / secondary reporting, NOT a published benchmark — flagged in lead caption + opinion + corrections; confirm against any primary release
+- Issue 19: "Anthropic told EU to get US-admin permission / US opposed widening to ~70 orgs" per CNBC May 29; "Spain says stalled May 22" per Bloomberg — confirm exact posture if revisited
+- Issue 19: debt-deal tranches (~$6B A1 / $25B A2 / $4.5B B; Broadcom RVS on ~$31B senior; close "as early as next week") per Bloomberg May 28 — deal not yet closed/syndicated on a filing; flagged in corrections (tranches sum ~$35.5B, called "$36B")
+- Issue 19: Micron $1T (May 26) + "+800%+ one-year" per CNBC/research pass — confirm exact figure; milestone is 4 days old, flagged in corrections box
+
 ## EDITOR'S NOTE PATTERNS (continued below)
 - "If the lesson of the week is anything is this…" (issue 6 — avoid)
 - Three-paragraph note ending with a weather forecast for tomorrow's news (issues 4, 5, 6 — vary)
@@ -132,6 +145,9 @@
 - "The number you should keep is not [headline number]; it is [under-covered number]" buried-lede pivot in the middle of the note (issue 18 — adjacent to issue 8's "story that runs eighth", vary)
 - "On the same balance sheet" close pairing two separate-looking stories (issue 18 — vary; the same-balance-sheet image is now used)
 
+- "The fight used to be about who writes the rules; this week it became about who's allowed in the room / the power moved from the table to the room where the weights are kept" + "the interesting question is no longer what the rules say, it's who's allowed in" close (issue 19 — strong, do not reuse verbatim)
+- "The rhyme runs through the rest of the page" theme-pairing connector across 2-3 stories (issue 19 — adjacent to issue 13's "the two stories rhyme"; vary)
+
 ## EDITOR'S NOTEBOOK
 - Hype/Impact dots: removed from issue 7 onward (provided no reader value)
 - I/O keynote: held Tuesday May 19, 10am PT — past tense from issue 10 onward
@@ -147,3 +163,6 @@
 - No May 28 issue published — May 29 = issue 18 (Friday), big news day, no standing feature run
 - The Glossary now oldest standing feature (2026-05-27), due next slow day; then Model Obituary (2026-05-26), then Quiet Correction (2026-05-25)
 - Anthropic chip-debt facility is a new financing primitive — track it as its own thread; the "$36B vs $965B" relative-sizing point may need revisiting on close
+- Mythos export-control standoff is the new policy thread to watch — first operational case of frontier-model export control run on a government (the EU); track ship date + whether EU/the ~70 orgs get access
+- Glossary now most recent feature (2026-05-30); Model Obituary (2026-05-26) is OLDEST and due next slow day, then Quiet Correction (2026-05-25)
+- Gemini 3.5 Pro "next month" thread folded into the issue 19 Glossary ("Coming Weeks") — still unshipped as of May 30; watch actual Pro ship date
