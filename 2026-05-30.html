@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Daily Hallucination – Saturday, May 30, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Serif+4:ital,wght@0,400;0,600;1,400;1,600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #F5F0E8;
+    color: #0D0D0D;
+    font-family: 'Source Serif 4', Georgia, serif;
+    line-height: 1.5;
+    padding: 24px 16px 60px;
+  }
+  .paper {
+    max-width: 920px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 36px 44px 44px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+  }
+
+  /* ---------- MASTHEAD ---------- */
+  .masthead { text-align: center; }
+  .masthead h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-size: 3.4rem;
+    line-height: 1.02;
+    color: #0D0D0D;
+  }
+  .masthead .accent { border: none; border-top: 4px solid #C0392B; width: 56px; margin: 10px auto 0; }
+  .masthead .rule3 { border: none; border-top: 3px solid #0D0D0D; margin: 8px auto 0; }
+  .masthead .tagline { font-style: italic; color: #888888; font-size: 0.95rem; margin-top: 8px; }
+  .masthead .thin { border: none; border-top: 1px solid #cccccc; margin: 8px auto; }
+  .masthead .dateline {
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 0.7rem;
+    color: #888888;
+  }
+
+  /* ---------- TODAY AT A GLANCE ---------- */
+  .glance { width: 100%; border-collapse: collapse; margin: 28px 0 30px; font-family: 'Source Serif 4', serif; }
+  .glance th {
+    background: #1a2744; color: #ffffff;
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.16em;
+    font-size: 0.74rem; text-align: left; padding: 9px 12px;
+  }
+  .glance td { background: #F5F0E8; padding: 8px 12px; font-size: 0.86rem; border-bottom: 2px solid #ffffff; vertical-align: top; }
+  .glance td.topic {
+    font-weight: 700; font-family: 'Inter', sans-serif;
+    font-size: 0.74rem; text-transform: uppercase;
+    letter-spacing: 0.04em; width: 150px; color: #1a2744;
+  }
+
+  /* ---------- TWO-COLUMN BODY ---------- */
+  .body-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+  .body-grid > .col:first-child { padding-right: 26px; border-right: 1px solid #cccccc; }
+  .body-grid > .col:last-child { padding-left: 26px; }
+  .col article { margin-bottom: 26px; }
+  .col article:last-child { margin-bottom: 0; }
+
+  .section-label {
+    display: inline-block; background: #1a2744; color: #ffffff;
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    font-size: 0.62rem; padding: 3px 7px; margin-bottom: 7px;
+  }
+  .hl { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.4rem; line-height: 1.16; margin-bottom: 5px; }
+  .sh { font-family: 'Inter', sans-serif; font-weight: 700; font-size: 0.93rem; line-height: 1.25; margin-bottom: 5px; }
+  .byline { font-family: 'Inter', sans-serif; font-style: italic; font-size: 0.72rem; color: #888888; margin-bottom: 8px; }
+  .col p.body { font-size: 0.88rem; text-align: justify; hyphens: auto; -webkit-hyphens: auto; margin-bottom: 8px; }
+  p.opinion {
+    font-style: italic; border-left: 2px solid #dddddd;
+    padding-left: 12px; margin: 8px 0 8px 8px; font-size: 0.86rem;
+  }
+  .pullquote {
+    background: #F5F0E8; border: 1px solid #C0392B; border-left: 4px solid #C0392B;
+    color: #C0392B; font-style: italic; text-align: center;
+    font-size: 0.98rem; line-height: 1.35; padding: 12px 16px; margin: 12px 0;
+  }
+  .pullquote .attr { display: block; font-size: 0.72rem; font-style: normal; margin-top: 6px; letter-spacing: 0.03em; }
+
+  .chartwrap { margin: 12px 0; }
+  .chartwrap svg { width: 100%; height: auto; display: block; }
+  .chart-caption { font-style: italic; font-size: 0.72rem; color: #888888; margin-top: 3px; }
+  .chart-title {
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.07em;
+    font-size: 0.64rem; color: #1a2744; margin-bottom: 4px;
+  }
+
+  /* ---------- GLOSSARY / FEATURE BOX ---------- */
+  .obit { background: #fbfaf7; border: 1px solid #ddd6c8; border-top: 3px solid #0D0D0D; padding: 14px 18px; }
+  .obit .dates { font-family: 'Inter', sans-serif; font-size: 0.68rem; letter-spacing: 0.04em; color: #888888; text-transform: uppercase; margin-bottom: 6px; }
+  .obit .term { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.15rem; }
+  .obit .deftag { font-family: 'Inter', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.6rem; color: #1a2744; }
+  .obit p.body { font-size: 0.86rem; text-align: justify; hyphens: auto; -webkit-hyphens: auto; margin-top: 6px; }
+
+  /* ---------- EDITOR'S NOTE ---------- */
+  .editors { background: #1a2744; color: #f3efe6; padding: 22px 26px; margin: 30px 0 0; }
+  .editors .section-label { background: #C0392B; color: #ffffff; }
+  .editors p { font-family: 'Source Serif 4', serif; font-style: italic; font-size: 0.92rem; line-height: 1.55; margin-bottom: 9px; }
+  .editors p:last-child { margin-bottom: 0; }
+  .editors .sign { font-style: italic; color: #b9c2d6; }
+
+  /* ---------- CORRECTIONS ---------- */
+  .corrections { background: #f1f1f1; border: 1px solid #cccccc; padding: 12px 16px; margin: 22px 0 0; font-size: 0.82rem; }
+  .corrections .clabel { font-family: 'Inter', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.62rem; color: #C0392B; margin-bottom: 5px; }
+  .corrections p { margin-bottom: 6px; font-style: italic; }
+  .corrections p:last-child { margin-bottom: 0; }
+
+  /* ---------- FOOTER ---------- */
+  .footer {
+    border-top: 1px solid #0D0D0D; margin-top: 30px; padding-top: 12px;
+    text-align: center; font-family: 'Inter', sans-serif;
+    text-transform: uppercase; letter-spacing: 0.14em;
+    font-size: 0.62rem; color: #888888;
+  }
+
+  @media (max-width: 680px) {
+    .paper { padding: 24px 18px 30px; }
+    .masthead h1 { font-size: 2.1rem; }
+    .body-grid { grid-template-columns: 1fr; }
+    .body-grid > .col:first-child {
+      padding-right: 0; border-right: none;
+      border-bottom: 1px solid #cccccc;
+      padding-bottom: 26px; margin-bottom: 26px;
+    }
+    .body-grid > .col:last-child { padding-left: 0; }
+    .glance td.topic { width: 110px; }
+  }
+</style>
+</head>
+<body>
+<div class="paper">
+
+  <!-- ================= MASTHEAD ================= -->
+  <header class="masthead">
+    <h1>The Daily Hallucination</h1>
+    <hr class="accent">
+    <hr class="rule3">
+    <p class="tagline">An AI &amp; tech daily that says the quiet part — out loud, in a serif font.</p>
+    <hr class="thin">
+    <p class="dateline">Saturday, May 30, 2026 &nbsp;·&nbsp; Vol. 1, No. 19</p>
+  </header>
+
+  <!-- ================= TODAY AT A GLANCE ================= -->
+  <table class="glance">
+    <tr><th colspan="2">Today at a Glance</th></tr>
+    <tr><td class="topic">Anthropic / Policy</td><td>The European Union wants to inspect Mythos, Anthropic's cyberweapon-grade model — and Anthropic has told the bloc to ask Washington for permission, which Washington, so far, is declining to give.</td></tr>
+    <tr><td class="topic">Anthropic / Finance</td><td>The $36 billion chip-debt deal has a name attached to its safety net: Broadcom, which is guaranteeing the resale value of roughly $31 billion of the very chips it sells — a return policy that holds until everyone tries to return at once.</td></tr>
+    <tr><td class="topic">Markets / Hardware</td><td>Micron crossed a trillion dollars in market value on the memory shortage that the AI build-out created, up more than 800 percent in a year, which is either a hardware story or a bubble depending on the day.</td></tr>
+    <tr><td class="topic">The Glossary</td><td>"Coming weeks," honestly defined: the interval in which frontier capability is always arriving and never quite here — a unit of time that resets every time it's invoked.</td></tr>
+  </table>
+
+  <!-- ================= BODY ================= -->
+  <div class="body-grid">
+
+    <!-- ===== LEFT COLUMN ===== -->
+    <div class="col">
+
+      <!-- LEAD STORY: Mythos / EU access standoff -->
+      <article>
+        <span class="section-label">Anthropic · Policy</span>
+        <h2 class="hl">The EU Would Like to See the Cyberweapon. Anthropic Says to Take It Up With Washington.</h2>
+        <p class="byline">By The Editor, Policy Desk · May 30, 2026</p>
+
+        <p class="body">Mythos is the model Anthropic has been teasing for weeks — the "Mythos-class" tease shipped alongside Opus 4.8 on Thursday — and the part of the teaser that has governments awake at night is its security profile. Per figures circulating in restricted briefings, Mythos clears expert-level offensive-hacking tasks at a rate previously reserved for the word "impossible." Anthropic is gating it through a program called Glasswing, with preview access granted to a short list of defensive partners, the U.S. government, and the United Kingdom's AI Security Institute. The European Union, its AI Office, and every other government on the planet are not on the list.</p>
+
+        <p class="body">This week the EU said it wants to "intensify" talks with the United States about the most advanced models, Mythos among them — diplomatic language for a process that, by Spain's account on May 22, had stalled. The reason it stalled is the genuinely new thing here. When Brussels asked Anthropic for a look, CNBC reports, the company's answer was that the bloc would first have to obtain permission from the U.S. administration. Anthropic had proposed widening access to roughly seventy more companies and organizations; administration officials, citing the cyberattack potential, said no. So the European Union — the jurisdiction that wrote the planet's most ambitious AI law — is now in the position of asking a private American company for a viewing, and being told to go get a hall pass from the White House.</p>
+
+        <div class="chartwrap">
+          <div class="chart-title">The standoff over a model nobody outside the building has seen</div>
+          <svg viewBox="0 0 400 150" role="img" aria-label="An annotated timeline of the EU–Anthropic standoff over Mythos access through May 2026. May 5: the EU reaches out to Anthropic. May 11: OpenAI offers the EU access to its cyber model while Anthropic holds out, marked in rust. May 22: Spain says the talks have stalled, marked in rust. May 28: the EU girds for talks. May 29: the EU seeks to intensify talks while Anthropic says Mythos goes to customers in coming weeks, marked in rust.">
+            <!-- axis -->
+            <line x1="40" y1="82" x2="372" y2="82" stroke="#0D0D0D" stroke-width="1.5"/>
+            <!-- ticks -->
+            <line x1="52" y1="74" x2="52" y2="90" stroke="#888888" stroke-width="2"/>
+            <line x1="132" y1="72" x2="132" y2="92" stroke="#C0392B" stroke-width="2.5"/>
+            <line x1="215" y1="72" x2="215" y2="92" stroke="#C0392B" stroke-width="2.5"/>
+            <line x1="295" y1="74" x2="295" y2="90" stroke="#888888" stroke-width="2"/>
+            <line x1="360" y1="72" x2="360" y2="92" stroke="#C0392B" stroke-width="2.5"/>
+            <!-- dates -->
+            <text x="52" y="104" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" font-weight="700" fill="#888">MAY 5</text>
+            <text x="132" y="104" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" font-weight="700" fill="#C0392B">MAY 11</text>
+            <text x="215" y="104" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" font-weight="700" fill="#C0392B">MAY 22</text>
+            <text x="295" y="104" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" font-weight="700" fill="#888">MAY 28</text>
+            <text x="360" y="104" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" font-weight="700" fill="#C0392B">MAY 29</text>
+            <!-- labels above -->
+            <text x="52" y="58" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.6" fill="#555">EU reaches</text>
+            <text x="52" y="66" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.6" fill="#555">out</text>
+            <text x="215" y="58" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.6" font-weight="700" fill="#C0392B">Talks stall</text>
+            <text x="215" y="66" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.6" fill="#C0392B">(Spain)</text>
+            <text x="360" y="58" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.6" font-weight="700" fill="#C0392B">"Intensify"</text>
+            <text x="360" y="66" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.6" fill="#C0392B">+ coming wks</text>
+            <!-- labels below -->
+            <text x="132" y="122" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.6" font-weight="700" fill="#C0392B">Anthropic</text>
+            <text x="132" y="130" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.6" fill="#C0392B">holds out</text>
+            <text x="295" y="122" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.6" fill="#555">EU girds</text>
+            <text x="295" y="130" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.6" fill="#555">for talks</text>
+          </svg>
+          <p class="chart-caption">Rust ticks mark the load-bearing turns; the access list still reads U.S. plus the U.K.'s AI Security Institute. Capability figures are from restricted briefings, not a published benchmark.</p>
+        </div>
+
+        <p class="body">There is a coherent safety case for keeping a model that can autonomously breach hardened systems out of as many hands as possible, and Anthropic has spent two years insisting it is the lab that takes that case seriously. Fine. But notice the shape of the thing. Export control on a frontier model is no longer a hypothetical the policy panels war-game over coffee; it is operational, it is being run on the EU, and the throttle is held jointly by a company and one government. Mythos, meanwhile, is going to paying customers "in coming weeks" — a phrase doing a great deal of work — while a continent of regulators waits in the lobby for a screening that requires Washington's signature.</p>
+
+        <div class="pullquote">The bloc that wrote the world's strictest AI law cannot get a look at the world's most dangerous model without a permission slip from another country's executive branch.
+          <span class="attr">— On who actually holds the keys</span>
+        </div>
+
+        <p class="opinion">Worth saying plainly: every number attached to Mythos's danger lives in a briefing nobody outside the room can audit, and "too dangerous to show you" is, conveniently, also the most flattering possible marketing for a model you are about to sell. Both can be true. The capability may be real and the secrecy may also be doing double duty as a sales deck.</p>
+      </article>
+
+    </div>
+
+    <!-- ===== RIGHT COLUMN ===== -->
+    <div class="col">
+
+      <!-- SECONDARY: $36B debt / Broadcom backstop -->
+      <article>
+        <span class="section-label">Anthropic · Finance</span>
+        <h3 class="sh">The $36 Billion Chip Loan Has a Backstop, and the Backstop Is the Chipmaker</h3>
+        <p class="byline">By The Editor, Finance Desk · May 30, 2026</p>
+        <p class="body">When we wrote on Thursday that Apollo and Blackstone were shopping a roughly $36 billion debt deal to buy Anthropic its Google TPUs, the structure was still being assembled. It has now firmed up, and the load-bearing detail is who agreed to catch the falling knife. Per Bloomberg, the financing breaks into about $6 billion of senior "A1" notes, $25 billion of senior "A2" notes, and $4.5 billion of junior "B" notes, with investor orders due this week and a close expected as early as next. Broadcom — which designs the chips in question — is providing a residual-value support agreement on the roughly $31 billion of senior debt. In English: if Anthropic stops paying its lease and the used TPUs can't be resold for enough to cover the loan, Broadcom eats the difference.</p>
+
+        <div class="chartwrap">
+          <div class="chart-title">The $36B chip loan, by tranche — and who guarantees it</div>
+          <svg viewBox="0 0 400 150" role="img" aria-label="A bar chart of the three debt tranches in the Anthropic chip financing. A1 senior notes about 6 billion dollars and A2 senior notes about 25 billion dollars are shown in rust as Broadcom-backstopped; the B junior notes of about 4.5 billion dollars are shown in gray as not backstopped.">
+            <!-- gridlines at 25% intervals; bar area 117-375 = 258px = 100% = $30B -->
+            <line x1="117" y1="12" x2="117" y2="124" stroke="#dddddd" stroke-width="1"/>
+            <line x1="181.5" y1="12" x2="181.5" y2="124" stroke="#eeeeee" stroke-width="1"/>
+            <line x1="246" y1="12" x2="246" y2="124" stroke="#eeeeee" stroke-width="1"/>
+            <line x1="310.5" y1="12" x2="310.5" y2="124" stroke="#eeeeee" stroke-width="1"/>
+            <line x1="375" y1="12" x2="375" y2="124" stroke="#eeeeee" stroke-width="1"/>
+            <text x="117" y="136" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.5" fill="#bbb">$0</text>
+            <text x="246" y="136" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.5" fill="#bbb">$15B</text>
+            <text x="375" y="136" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.5" fill="#bbb">$30B</text>
+
+            <!-- A1: $6B = 20% = 51.6px -->
+            <text x="113" y="29" text-anchor="end" font-family="Inter, sans-serif" font-size="7.5" font-weight="700" fill="#1a2744">A1 senior</text>
+            <rect x="117" y="20" width="51.6" height="18" rx="2" fill="#C0392B"/>
+            <text x="174" y="33" font-family="Inter, sans-serif" font-size="8" font-weight="700" fill="#888">$6B</text>
+
+            <!-- A2: $25B = 83.3% = 215px -->
+            <text x="113" y="63" text-anchor="end" font-family="Inter, sans-serif" font-size="7.5" font-weight="700" fill="#1a2744">A2 senior</text>
+            <rect x="117" y="54" width="215" height="18" rx="2" fill="#C0392B"/>
+            <text x="326" y="67" text-anchor="end" font-family="Inter, sans-serif" font-size="8" font-weight="700" fill="#ffffff">$25B</text>
+
+            <!-- B: $4.5B = 15% = 38.7px -->
+            <text x="113" y="97" text-anchor="end" font-family="Inter, sans-serif" font-size="7.5" font-weight="700" fill="#1a2744">B junior</text>
+            <rect x="117" y="88" width="38.7" height="18" rx="2" fill="#999999"/>
+            <text x="161" y="101" font-family="Inter, sans-serif" font-size="8" font-weight="700" fill="#888">$4.5B</text>
+
+            <!-- legend -->
+            <rect x="117" y="116" width="8" height="8" fill="#C0392B"/>
+            <text x="128" y="123" font-family="Inter, sans-serif" font-size="6.6" fill="#555">Broadcom-backstopped (~$31B)</text>
+            <rect x="270" y="116" width="8" height="8" fill="#999999"/>
+            <text x="281" y="123" font-family="Inter, sans-serif" font-size="6.6" fill="#555">Not backstopped</text>
+          </svg>
+          <p class="chart-caption">Tranche sizes per Bloomberg; they sum to ~$35.5B, marketed as ~$36B. The residual-value guarantee covers the two senior tranches.</p>
+        </div>
+
+        <p class="body">Pause on what that arrangement is. Broadcom sells the chips, books the revenue, and then insures the lenders against those same chips becoming worthless on the secondary market — a vendor writing a return policy large enough to be reported as one of the biggest private-credit deals ever assembled. It works beautifully in any scenario except the one where it's needed, because a default by Anthropic and a glut of unwanted TPUs are not independent events. They are the same event, and that is the afternoon Broadcom would discover it has guaranteed the resale value of a product nobody resells.</p>
+      </article>
+
+      <!-- SECONDARY: Micron $1T -->
+      <article>
+        <span class="section-label">Markets · Hardware</span>
+        <h3 class="sh">Micron Joins the Trillion-Dollar Club on the Shortage Everyone Else Is Causing</h3>
+        <p class="byline">By The Editor, Markets Desk · May 30, 2026</p>
+        <p class="body">Micron closed above a trillion dollars in market value this week, a first, on the back of a high-bandwidth-memory shortage that the AI build-out manufactured itself: every accelerator needs the stuff, there isn't enough of it, and the company that makes it is now worth more than most national economies. The stock is up north of 800 percent over the past year, which is the kind of figure that gets called a "strong buy" on the way up and a "what were we thinking" on the way down, usually by the same desk.</p>
+        <p class="body">It is the cleanest pick-and-shovel trade in the cycle and also the most circular tell in it. The shortage is real because the demand is real; the demand is real because everyone has agreed it is. Memory is the one input nobody can finance into existence with a special-purpose vehicle, which makes Micron's trillion the least imaginary trillion in the building — and, for exactly that reason, the one most exposed if the orders ever turn out to have been ordering ahead of themselves.</p>
+      </article>
+
+      <!-- STANDING FEATURE: The Glossary -->
+      <article>
+        <span class="section-label">The Glossary</span>
+        <div class="obit">
+          <p class="term">Coming Weeks <span style="font-size:0.8rem; font-weight:400; font-style:italic;">(n. pl.)</span></p>
+          <p class="dates">One industry term, defined honestly</p>
+          <p class="body"><span class="deftag">Official:</span> A near-term timeframe, roughly two to eight weeks out, used to indicate that a product or capability is imminent. <span class="deftag">Real:</span> An interval with no fixed endpoint that silently resets each time it is spoken. Anthropic says Mythos reaches customers "in coming weeks"; Google has had Gemini 3.5 Pro arriving "next month" since before I/O. Both phrases describe the same temporal location — the near future, where frontier capability is permanently about to land and never quite touches down — and both are load-bearing precisely because they cannot expire. A date can be missed. "Coming weeks" can only be renewed, which is why it is the most honest thing the industry says and the least falsifiable.</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+
+  <!-- ================= EDITOR'S NOTE ================= -->
+  <div class="editors">
+    <span class="section-label">Editor's Note</span>
+    <p>For most of the last year, "AI policy" meant a fight over who would write the rules — Brussels versus Washington, the AI Act versus the executive order, the long table at which sovereign governments would decide what a model is allowed to do. It was a fight about authorship. It assumed, the way these fights always do, that the people writing the rules could at least see the thing they were ruling on.</p>
+    <p>This week that assumption quietly fell over. The European Union, which authored the strictest AI law on Earth, asked to look at the most dangerous model anyone has built, and the answer came back: ask the Americans, and the Americans said no. That is not a regulator regulating. That is a regulator on a waitlist. The power did not move from one capital to another; it moved from the table where rules get written to the room where weights get kept, and almost nobody sits in both.</p>
+    <p>The rhyme runs through the rest of the page. A chipmaker quietly underwrites the resale value of its own chips so the loan to buy them can clear. A memory company is worth a trillion dollars on a scarcity the buyers invented. None of it is illegal, none of it is even hidden — it's all in the wires if you read past the headline numbers. It just describes an industry that has stopped asking permission and started granting it. The interesting question is no longer what the rules say. It's who's allowed in the room. <span class="sign">See you tomorrow.</span></p>
+  </div>
+
+  <!-- ================= CORRECTIONS ================= -->
+  <div class="corrections">
+    <div class="clabel">Corrections &amp; Amplifications</div>
+    <p>Our lead reports the capabilities of a model we are not permitted to see, using numbers from briefings we are not permitted to attend, and presents the secrecy as both a safety measure and a sales tactic. We are aware that this is also a description of how the story was given to us.</p>
+    <p>The debt-deal tranches in our bar chart sum to roughly $35.5 billion. The deal is universally called "$36 billion." We have rounded toward the press release, as is tradition.</p>
+    <p>We filed Micron's trillion-dollar milestone, which occurred on Monday, in a publication that calls itself a daily. We plead the shortage of news, which, unlike the shortage of memory, no one is getting rich on.</p>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <div class="footer">
+    The Daily Hallucination · Vol. 1, No. 19 · Saturday, May 30, 2026 · Hand-hallucinated each morning · Access granted at the vendor's discretion, revoked at its convenience
+  </div>
+
+</div>
+</body>
+</html>
