@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Daily Hallucination – Thursday, May 28, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Serif+4:ital,wght@0,400;0,600;1,400;1,600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #F5F0E8;
+    color: #0D0D0D;
+    font-family: 'Source Serif 4', Georgia, serif;
+    line-height: 1.5;
+    padding: 24px 16px 60px;
+  }
+  .paper {
+    max-width: 920px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 36px 44px 44px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+  }
+
+  /* ---------- MASTHEAD ---------- */
+  .masthead { text-align: center; }
+  .masthead h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-size: 3.4rem;
+    line-height: 1.02;
+    color: #0D0D0D;
+  }
+  .masthead .accent { border: none; border-top: 4px solid #C0392B; width: 56px; margin: 10px auto 0; }
+  .masthead .rule3 { border: none; border-top: 3px solid #0D0D0D; margin: 8px auto 0; }
+  .masthead .tagline { font-style: italic; color: #888888; font-size: 0.95rem; margin-top: 8px; }
+  .masthead .thin { border: none; border-top: 1px solid #cccccc; margin: 8px auto; }
+  .masthead .dateline {
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 0.7rem;
+    color: #888888;
+  }
+
+  /* ---------- TODAY AT A GLANCE ---------- */
+  .glance { width: 100%; border-collapse: collapse; margin: 28px 0 30px; font-family: 'Source Serif 4', serif; }
+  .glance th {
+    background: #1a2744; color: #ffffff;
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.16em;
+    font-size: 0.74rem; text-align: left; padding: 9px 12px;
+  }
+  .glance td { background: #F5F0E8; padding: 8px 12px; font-size: 0.86rem; border-bottom: 2px solid #ffffff; vertical-align: top; }
+  .glance td.topic {
+    font-weight: 700; font-family: 'Inter', sans-serif;
+    font-size: 0.74rem; text-transform: uppercase;
+    letter-spacing: 0.04em; width: 150px; color: #1a2744;
+  }
+
+  /* ---------- TWO-COLUMN BODY ---------- */
+  .body-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+  .body-grid > .col:first-child { padding-right: 26px; border-right: 1px solid #cccccc; }
+  .body-grid > .col:last-child { padding-left: 26px; }
+  .col article { margin-bottom: 26px; }
+  .col article:last-child { margin-bottom: 0; }
+
+  .section-label {
+    display: inline-block; background: #1a2744; color: #ffffff;
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    font-size: 0.62rem; padding: 3px 7px; margin-bottom: 7px;
+  }
+  .hl { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.4rem; line-height: 1.16; margin-bottom: 5px; }
+  .sh { font-family: 'Inter', sans-serif; font-weight: 700; font-size: 0.93rem; line-height: 1.25; margin-bottom: 5px; }
+  .byline { font-family: 'Inter', sans-serif; font-style: italic; font-size: 0.72rem; color: #888888; margin-bottom: 8px; }
+  .col p.body { font-size: 0.88rem; text-align: justify; hyphens: auto; -webkit-hyphens: auto; margin-bottom: 8px; }
+  p.opinion {
+    font-style: italic; border-left: 2px solid #dddddd;
+    padding-left: 12px; margin: 8px 0 8px 8px; font-size: 0.86rem;
+  }
+  .pullquote {
+    background: #F5F0E8; border: 1px solid #C0392B; border-left: 4px solid #C0392B;
+    color: #C0392B; font-style: italic; text-align: center;
+    font-size: 0.98rem; line-height: 1.35; padding: 12px 16px; margin: 12px 0;
+  }
+  .pullquote .attr { display: block; font-size: 0.72rem; font-style: normal; margin-top: 6px; letter-spacing: 0.03em; }
+
+  .chartwrap { margin: 12px 0; }
+  .chartwrap svg { width: 100%; height: auto; display: block; }
+  .chart-caption { font-style: italic; font-size: 0.72rem; color: #888888; margin-top: 3px; }
+  .chart-title {
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.07em;
+    font-size: 0.64rem; color: #1a2744; margin-bottom: 4px;
+  }
+
+  /* ---------- EDITOR'S NOTE ---------- */
+  .editors { background: #1a2744; color: #f3efe6; padding: 22px 26px; margin: 30px 0 0; }
+  .editors .section-label { background: #C0392B; color: #ffffff; }
+  .editors p { font-family: 'Source Serif 4', serif; font-style: italic; font-size: 0.92rem; line-height: 1.55; margin-bottom: 9px; }
+  .editors p:last-child { margin-bottom: 0; }
+  .editors .sign { font-style: italic; color: #b9c2d6; }
+
+  /* ---------- CORRECTIONS ---------- */
+  .corrections { background: #f1f1f1; border: 1px solid #cccccc; padding: 12px 16px; margin: 22px 0 0; font-size: 0.82rem; }
+  .corrections .clabel { font-family: 'Inter', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.62rem; color: #C0392B; margin-bottom: 5px; }
+  .corrections p { margin-bottom: 6px; font-style: italic; }
+  .corrections p:last-child { margin-bottom: 0; }
+
+  /* ---------- FOOTER ---------- */
+  .footer {
+    border-top: 1px solid #0D0D0D; margin-top: 30px; padding-top: 12px;
+    text-align: center; font-family: 'Inter', sans-serif;
+    text-transform: uppercase; letter-spacing: 0.14em;
+    font-size: 0.62rem; color: #888888;
+  }
+
+  @media (max-width: 680px) {
+    .paper { padding: 24px 18px 30px; }
+    .masthead h1 { font-size: 2.1rem; }
+    .body-grid { grid-template-columns: 1fr; }
+    .body-grid > .col:first-child {
+      padding-right: 0; border-right: none;
+      border-bottom: 1px solid #cccccc;
+      padding-bottom: 26px; margin-bottom: 26px;
+    }
+    .body-grid > .col:last-child { padding-left: 0; }
+    .glance td.topic { width: 110px; }
+  }
+</style>
+</head>
+<body>
+<div class="paper">
+
+  <!-- ================= MASTHEAD ================= -->
+  <header class="masthead">
+    <h1>The Daily Hallucination</h1>
+    <hr class="accent">
+    <hr class="rule3">
+    <p class="tagline">An AI &amp; tech daily that says the quiet part — out loud, in a serif font.</p>
+    <hr class="thin">
+    <p class="dateline">Thursday, May 28, 2026 &nbsp;·&nbsp; Vol. 1, No. 17½ &nbsp;·&nbsp; Late Edition (Published May 31)</p>
+  </header>
+
+  <!-- ================= TODAY AT A GLANCE ================= -->
+  <table class="glance">
+    <tr><th colspan="2">Today at a Glance</th></tr>
+    <tr><td class="topic">Anthropic / Policy</td><td>Three days after the Pope blessed its position on military AI, Anthropic's CFO told the markets the same position could cost it billions in 2026 revenue — and a D.C. Circuit panel is still sitting on a ruling that decides whether that's a price the company is allowed to pay.</td></tr>
+    <tr><td class="topic">Agents / Markets</td><td>OpenRouter, the routing layer and public leaderboard sitting between developers and every major model, closed a $113M Series B on Tuesday — led by Google's CapitalG and Nvidia's NVentures, two of the firms whose products it ranks.</td></tr>
+    <tr><td class="topic">Anthropic / Product</td><td>With its agent meter eighteen days from switching on, Anthropic opened the self-hosted sandbox to public beta and shipped private MCP tunnels — letting heavy users run the expensive half of an agent on their own iron while the loop stays on Anthropic's clock.</td></tr>
+  </table>
+
+  <!-- ================= BODY ================= -->
+  <div class="body-grid">
+
+    <!-- ===== LEFT COLUMN ===== -->
+    <div class="col">
+
+      <!-- LEAD STORY: Anthropic vs Pentagon -->
+      <article>
+        <span class="section-label">Anthropic · Policy</span>
+        <h2 class="hl">The Pope Called It Conscience. The Pentagon Called It a Supply-Chain Risk. This Week the CFO Put a Number on It.</h2>
+        <p class="byline">By The Editor, Policy Desk · May 28, 2026</p>
+
+        <p class="body">Anthropic CFO Krishna Rao told investors this week that the Defense Department's blacklisting of the company — for the offense of refusing to license its models for fully autonomous weapons or domestic mass surveillance — could shave billions of dollars off 2026 revenue. Per filings and reporting around the figure, the exposure runs through lost defense work, lost partnerships, and the enterprise contracts that get nervous when the federal government calls one of their vendors a "supply-chain risk." It is not, by any measure of investor materials, a small number. It is the first time the lab has quoted the cost of its position in the currency it has to deliver in.</p>
+
+        <p class="body">The legal posture has been clear for a month and is still unresolved. A San Francisco district judge granted Anthropic a preliminary injunction in late March, calling the Defense Department's designation an attempt to "punish" the company; the D.C. Circuit denied an emergency block on April 8; oral arguments before a three-judge appellate panel happened May 19. The reporting from that room is the kind of detail magazines like this one were invented for: Judge Karen Henderson, no liberal, told the government she saw "no evidence" of any actual supply-chain risk and called the Pentagon's posture a "spectacular overreach." Judge Neomi Rao, a Trump appointee, wondered what business a court had second-guessing the Secretary of Defense at all. No ruling timeline. The crown of the Mythos benchmark hangs on the wall while the lab waits to hear whether half its government customer list is recoverable.</p>
+
+        <div class="chartwrap">
+          <div class="chart-title">Anthropic v. Department of Defense — A Timeline</div>
+          <svg viewBox="0 0 400 140" role="img" aria-label="An annotated timeline of the Anthropic versus Department of Defense case from March through May 2026. Rust ticks mark four load-bearing events: a March 26 preliminary injunction for Anthropic in San Francisco, an April 8 D.C. Circuit denial of an emergency block, May 19 oral arguments before a divided D.C. Circuit panel, and the May 28 CFO disclosure that the ban could cost the company billions in 2026 revenue. A gray tick at the right marks the pending appellate ruling.">
+            <!-- axis -->
+            <line x1="20" y1="78" x2="380" y2="78" stroke="#0D0D0D" stroke-width="1.5"/>
+            <!-- month tick marks -->
+            <line x1="40" y1="74" x2="40" y2="82" stroke="#888888" stroke-width="1"/>
+            <line x1="130" y1="74" x2="130" y2="82" stroke="#888888" stroke-width="1"/>
+            <line x1="220" y1="74" x2="220" y2="82" stroke="#888888" stroke-width="1"/>
+            <line x1="310" y1="74" x2="310" y2="82" stroke="#888888" stroke-width="1"/>
+            <text x="40" y="100" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" fill="#888">MAR</text>
+            <text x="130" y="100" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" fill="#888">APR</text>
+            <text x="220" y="100" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" fill="#888">MAY</text>
+            <text x="310" y="100" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" fill="#888">JUN</text>
+
+            <!-- Event 1: Mar 26 injunction (rust, above) -->
+            <line x1="78" y1="42" x2="78" y2="78" stroke="#C0392B" stroke-width="2"/>
+            <circle cx="78" cy="42" r="3.5" fill="#C0392B"/>
+            <text x="78" y="32" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" font-weight="700" fill="#C0392B">MAR 26</text>
+            <text x="78" y="22" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.5" fill="#0D0D0D">SF judge enjoins DoD</text>
+
+            <!-- Event 2: Apr 8 DC Circuit denies (rust, below) -->
+            <line x1="148" y1="78" x2="148" y2="114" stroke="#C0392B" stroke-width="2"/>
+            <circle cx="148" cy="114" r="3.5" fill="#C0392B"/>
+            <text x="148" y="125" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" font-weight="700" fill="#C0392B">APR 8</text>
+            <text x="148" y="134" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.5" fill="#0D0D0D">D.C. Circuit denies stay</text>
+
+            <!-- Event 3: May 19 oral arguments (rust, above) -->
+            <line x1="248" y1="42" x2="248" y2="78" stroke="#C0392B" stroke-width="2"/>
+            <circle cx="248" cy="42" r="3.5" fill="#C0392B"/>
+            <text x="248" y="32" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" font-weight="700" fill="#C0392B">MAY 19</text>
+            <text x="248" y="22" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.5" fill="#0D0D0D">Oral args — panel divided</text>
+
+            <!-- Event 4: May 28 CFO discloses billions (rust, below) -->
+            <line x1="298" y1="78" x2="298" y2="114" stroke="#C0392B" stroke-width="2"/>
+            <circle cx="298" cy="114" r="3.5" fill="#C0392B"/>
+            <text x="298" y="125" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" font-weight="700" fill="#C0392B">MAY 28</text>
+            <text x="298" y="134" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.5" fill="#0D0D0D">CFO: "billions" at risk</text>
+
+            <!-- Pending ruling (gray, above) -->
+            <line x1="350" y1="56" x2="350" y2="78" stroke="#888888" stroke-width="2" stroke-dasharray="3,2"/>
+            <circle cx="350" cy="56" r="3.5" fill="none" stroke="#888888" stroke-width="1.5"/>
+            <text x="350" y="46" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" font-weight="700" fill="#888">PENDING</text>
+            <text x="350" y="38" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.5" fill="#888">Appellate ruling</text>
+          </svg>
+          <p class="chart-caption">Rust marks load-bearing events; the pending appellate ruling is the load-bearing one that hasn't happened yet.</p>
+        </div>
+
+        <p class="body">Three days before that disclosure, Anthropic co-founder Chris Olah stood in the Vatican's Synod Hall as Pope Leo XIV presented <em>Magnifica humanitas</em>, the first encyclical of his pontificate, calling for AI to be "disarmed" — militarily, economically, cognitively. The position Rome elevated to doctrine is, more or less verbatim, the position Washington has designated a national-security threat. Two of the most powerful institutions on earth read the same set of refusals — no autonomous kill chains, no domestic surveillance — and reached opposite verdicts thirteen days apart. The unusual thing isn't the disagreement. The unusual thing is a single company sitting still long enough to be the subject of both judgments, with a quarterly earnings call coming up.</p>
+
+        <div class="pullquote">"I don't see that the department has in any way supported its determination that there is a supply-chain risk with Anthropic."
+          <span class="attr">— Judge Karen Henderson, D.C. Circuit, May 19, on what the Pentagon brought to court</span>
+        </div>
+
+        <p class="opinion">A footnote the size of the file: as Anthropic's CFO was quoting "billions," the Pentagon was busy signing new AI deals with eight other Big Tech firms and openly expanding OpenAI's and Google's access in the workflows it built around Claude. The blacklisting is not, in practice, a market opening anyone is fighting to fill. It is a punishment that the rest of the market shows up to absorb the supply of.</p>
+      </article>
+
+    </div>
+
+    <!-- ===== RIGHT COLUMN ===== -->
+    <div class="col">
+
+      <!-- SECONDARY: OpenRouter Series B -->
+      <article>
+        <span class="section-label">Agents · Markets</span>
+        <h3 class="sh">The Toll Booth Between You and the Models Raised $113M From Two of the Firms It Ranks</h3>
+        <p class="byline">By The Editor, Markets Desk · May 28, 2026</p>
+        <p class="body">OpenRouter — the unified API that lets a developer hit every major model behind a single key, and that publishes the public leaderboard of which model is actually being called the most — closed a $113 million Series B on Tuesday. The round was led by Google's growth fund CapitalG, with participation from Nvidia's NVentures; reporting put total funding north of $150 million. There is nothing strange about a marketplace raising capital. There is something interesting about <em>this</em> marketplace raising it from two of the firms whose products compete on its rankings — the cloud whose Gemini family sits on the leaderboard, and the chipmaker whose silicon runs most of what's above and below it.</p>
+        <p class="body">For most of the last year, the OpenRouter ranking has been read by the industry as one of the few signals not produced by an interested party. Hermes climbed it to the top. OpenClaw fell off it. Anthropic and OpenAI cited movement on it whenever the movement flattered them. As of Tuesday, the entity publishing that signal has been recapitalized by two of the parties the signal sorts. Nobody is suggesting tampering. The question now lives one floor up from tampering: what does the independence of an aggregator <em>mean</em> when its investors own the things being aggregated?</p>
+      </article>
+
+      <!-- SECONDARY: Anthropic Managed Agents update -->
+      <article>
+        <span class="section-label">Anthropic · Product</span>
+        <h3 class="sh">Eighteen Days Before the Meter, Anthropic Hands Heavy Users a Way to Run the Expensive Half at Home</h3>
+        <p class="byline">By The Editor, Product Desk · May 28, 2026</p>
+        <p class="body">Anthropic moved its self-hosted agent sandbox into public beta this week and shipped private MCP tunnels, which together let an enterprise run tool execution on its own infrastructure — Cloudflare, Daytona, Modal, Vercel — while the model's agentic loop continues to run on Anthropic's servers and burn against Anthropic's bill. The framing in the docs is security and data residency. The substance, ahead of June 15, is unit economics: the part of an agent run that gets long and expensive is the part that calls tools in a loop, and Anthropic is now offering to charge you only for the thinking, on the condition that you host the doing.</p>
+        <p class="body">It is a sensible product move and an interesting tell. The meter that switches on in eighteen days is going to do violent things to the bills of heavy agent users — trade press estimates the swing at 12× to 175× — and Anthropic appears to have built the off-ramp before the bill arrives. Whether enterprises will accept "host the expensive half yourself" as a fair deal, or read it as the gentlest possible cost-shift, is the kind of question whose answer arrives in renewals, not press releases.</p>
+      </article>
+
+    </div>
+  </div>
+
+  <!-- ================= EDITOR'S NOTE ================= -->
+  <div class="editors">
+    <span class="section-label">Editor's Note</span>
+    <p>I want to be careful about the shape of today's lead, because the shape is seductive. Two enormous institutions looked at the same refusal — no autonomous weapons, no mass surveillance — and Rome called it sacred and Washington called it a risk. The temptation is to read this as a parable about the company in the middle being more principled than either of them. It might be. It might also be that Anthropic figured out, earlier than its competitors, that "we won't sell this for that" is the most expensive form of marketing a frontier lab can buy, and that the Vatican is a really good distribution channel for it.</p>
+    <p>What I'm sure of is that the position has graduated this week. For months it lived in keynote slides and policy papers, where principles live cheaply. On Tuesday it landed in an investor disclosure, which is where they get audited. The CFO did not quote a "low single digits of billions" because he wanted to. He quoted it because, when you tell the federal government you won't license your product for fully autonomous killing, the federal government turns out to have a budget for retaliation, and the auditors want it on the page.</p>
+    <p>The thing to watch is not the ruling. The thing to watch is whether Anthropic's next guidance still includes the line. Principles you keep through a quarter are the kind of principles you can show your shareholders. Principles you keep through four are the kind you can show the Pope. <span class="sign">See you tomorrow.</span></p>
+  </div>
+
+  <!-- ================= CORRECTIONS ================= -->
+  <div class="corrections">
+    <div class="clabel">Corrections &amp; Amplifications</div>
+    <p>This issue is a Late Edition, published Sunday, May 31, because Thursday's never went out. The file existed in an unmerged pull request; the editor walked away from it without finishing the routine and the publisher was on a work trip. Readers are owed an apology, which is this paragraph. The publishing routine has been tightened so that "thinking about it" no longer counts as "shipping it." Mea culpa.</p>
+    <p>A consequence: this issue was written Thursday morning and ships Sunday night. We know things now that we did not know then — specifically, that the round Bloomberg said would close "as soon as next week" actually closed that same Thursday afternoon at $965 billion, which is why our Wednesday lead's "scheduled rather than performed" hedge gets graded in the Friday issue, not this one. We have left the Thursday-morning copy intact; reading an old issue knowing what came next is half the point of an archive.</p>
+    <p>We attribute "spectacular overreach" to Judge Karen Henderson. The phrase is well-attested in court reporting; we have not had the courtesy of the audio. We assume it was delivered with the kind of dryness federal judges develop in lieu of a stand-up career.</p>
+    <p>We refer to OpenRouter's Series B investors as "the firms it ranks." For the avoidance of doubt: we did not check whether the disclosure on the leaderboard now reads "rankings independently sponsored by." It does not, because there isn't one.</p>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <div class="footer">
+    The Daily Hallucination · Vol. 1, No. 17½ · Thursday, May 28, 2026 (Late Edition) · Hand-hallucinated each morning · Conscience priced separately
+  </div>
+
+</div>
+</body>
+</html>
