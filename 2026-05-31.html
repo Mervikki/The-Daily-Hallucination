@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Daily Hallucination – Sunday, May 31, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Serif+4:ital,wght@0,400;0,600;1,400;1,600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #F5F0E8;
+    color: #0D0D0D;
+    font-family: 'Source Serif 4', Georgia, serif;
+    line-height: 1.5;
+    padding: 24px 16px 60px;
+  }
+  .paper {
+    max-width: 920px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 36px 44px 44px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+  }
+
+  /* ---------- MASTHEAD ---------- */
+  .masthead { text-align: center; }
+  .masthead h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-size: 3.4rem;
+    line-height: 1.02;
+    color: #0D0D0D;
+  }
+  .masthead .accent { border: none; border-top: 4px solid #C0392B; width: 56px; margin: 10px auto 0; }
+  .masthead .rule3 { border: none; border-top: 3px solid #0D0D0D; margin: 8px auto 0; }
+  .masthead .tagline { font-style: italic; color: #888888; font-size: 0.95rem; margin-top: 8px; }
+  .masthead .thin { border: none; border-top: 1px solid #cccccc; margin: 8px auto; }
+  .masthead .dateline {
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 0.7rem;
+    color: #888888;
+  }
+
+  /* ---------- TODAY AT A GLANCE ---------- */
+  .glance { width: 100%; border-collapse: collapse; margin: 28px 0 30px; font-family: 'Source Serif 4', serif; }
+  .glance th {
+    background: #1a2744; color: #ffffff;
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.16em;
+    font-size: 0.74rem; text-align: left; padding: 9px 12px;
+  }
+  .glance td { background: #F5F0E8; padding: 8px 12px; font-size: 0.86rem; border-bottom: 2px solid #ffffff; vertical-align: top; }
+  .glance td.topic {
+    font-weight: 700; font-family: 'Inter', sans-serif;
+    font-size: 0.74rem; text-transform: uppercase;
+    letter-spacing: 0.04em; width: 150px; color: #1a2744;
+  }
+
+  /* ---------- TWO-COLUMN BODY ---------- */
+  .body-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+  .body-grid > .col:first-child { padding-right: 26px; border-right: 1px solid #cccccc; }
+  .body-grid > .col:last-child { padding-left: 26px; }
+  .col article { margin-bottom: 26px; }
+  .col article:last-child { margin-bottom: 0; }
+
+  .section-label {
+    display: inline-block; background: #1a2744; color: #ffffff;
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    font-size: 0.62rem; padding: 3px 7px; margin-bottom: 7px;
+  }
+  .hl { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.4rem; line-height: 1.16; margin-bottom: 5px; }
+  .sh { font-family: 'Inter', sans-serif; font-weight: 700; font-size: 0.93rem; line-height: 1.25; margin-bottom: 5px; }
+  .byline { font-family: 'Inter', sans-serif; font-style: italic; font-size: 0.72rem; color: #888888; margin-bottom: 8px; }
+  .col p.body { font-size: 0.88rem; text-align: justify; hyphens: auto; -webkit-hyphens: auto; margin-bottom: 8px; }
+  p.opinion {
+    font-style: italic; border-left: 2px solid #dddddd;
+    padding-left: 12px; margin: 8px 0 8px 8px; font-size: 0.86rem;
+  }
+  .pullquote {
+    background: #F5F0E8; border: 1px solid #C0392B; border-left: 4px solid #C0392B;
+    color: #C0392B; font-style: italic; text-align: center;
+    font-size: 0.98rem; line-height: 1.35; padding: 12px 16px; margin: 12px 0;
+  }
+  .pullquote .attr { display: block; font-size: 0.72rem; font-style: normal; margin-top: 6px; letter-spacing: 0.03em; }
+
+  .chartwrap { margin: 12px 0; }
+  .chartwrap svg { width: 100%; height: auto; display: block; }
+  .chart-caption { font-style: italic; font-size: 0.72rem; color: #888888; margin-top: 3px; }
+  .chart-title {
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.07em;
+    font-size: 0.64rem; color: #1a2744; margin-bottom: 4px;
+  }
+
+  /* ---------- GLOSSARY / FEATURE BOX ---------- */
+  .obit { background: #fbfaf7; border: 1px solid #ddd6c8; border-top: 3px solid #C0392B; padding: 14px 18px; }
+  .obit .dates { font-family: 'Inter', sans-serif; font-size: 0.68rem; letter-spacing: 0.04em; color: #888888; text-transform: uppercase; margin-bottom: 6px; }
+  .obit .term { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.15rem; }
+  .obit .deftag { font-family: 'Inter', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.6rem; color: #1a2744; }
+  .obit p.body { font-size: 0.86rem; text-align: justify; hyphens: auto; -webkit-hyphens: auto; margin-top: 6px; }
+
+  /* ---------- EDITOR'S NOTE ---------- */
+  .editors { background: #1a2744; color: #f3efe6; padding: 22px 26px; margin: 30px 0 0; }
+  .editors .section-label { background: #C0392B; color: #ffffff; }
+  .editors p { font-family: 'Source Serif 4', serif; font-style: italic; font-size: 0.92rem; line-height: 1.55; margin-bottom: 9px; }
+  .editors p:last-child { margin-bottom: 0; }
+  .editors .sign { font-style: italic; color: #b9c2d6; }
+
+  /* ---------- CORRECTIONS ---------- */
+  .corrections { background: #f1f1f1; border: 1px solid #cccccc; padding: 12px 16px; margin: 22px 0 0; font-size: 0.82rem; }
+  .corrections .clabel { font-family: 'Inter', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.62rem; color: #C0392B; margin-bottom: 5px; }
+  .corrections p { margin-bottom: 6px; font-style: italic; }
+  .corrections p:last-child { margin-bottom: 0; }
+
+  /* ---------- FOOTER ---------- */
+  .footer {
+    border-top: 1px solid #0D0D0D; margin-top: 30px; padding-top: 12px;
+    text-align: center; font-family: 'Inter', sans-serif;
+    text-transform: uppercase; letter-spacing: 0.14em;
+    font-size: 0.62rem; color: #888888;
+  }
+
+  @media (max-width: 680px) {
+    .paper { padding: 24px 18px 30px; }
+    .masthead h1 { font-size: 2.1rem; }
+    .body-grid { grid-template-columns: 1fr; }
+    .body-grid > .col:first-child {
+      padding-right: 0; border-right: none;
+      border-bottom: 1px solid #cccccc;
+      padding-bottom: 26px; margin-bottom: 26px;
+    }
+    .body-grid > .col:last-child { padding-left: 0; }
+    .glance td.topic { width: 110px; }
+  }
+</style>
+</head>
+<body>
+<div class="paper">
+
+  <!-- ================= MASTHEAD ================= -->
+  <header class="masthead">
+    <h1>The Daily Hallucination</h1>
+    <hr class="accent">
+    <hr class="rule3">
+    <p class="tagline">An AI &amp; tech daily that says the quiet part — out loud, in a serif font.</p>
+    <hr class="thin">
+    <p class="dateline">Sunday, May 31, 2026 &nbsp;·&nbsp; Vol. 1, No. 20</p>
+  </header>
+
+  <!-- ================= TODAY AT A GLANCE ================= -->
+  <table class="glance">
+    <tr><th colspan="2">Today at a Glance</th></tr>
+    <tr><td class="topic">Labs / Safety</td><td>Two frontier labs, one week, opposite definitions of "safe": Anthropic keeps its cyber-capable Mythos behind a near-empty access list while publishing receipts for tens of thousands of bugs it found, and OpenAI hands a biodefense model free to any government, university, or nonprofit that asks.</td></tr>
+    <tr><td class="topic">Markets / Hardware</td><td>Dell had the best day in its history — the stock up roughly a third — by selling other companies' chips in metal boxes at thin margins; AI-server revenue beat the guide at $16.1 billion and the full-year number was lifted to $60 billion.</td></tr>
+    <tr><td class="topic">The Quiet Correction</td><td>Three weeks after we hedged on whether Hermes had really passed OpenClaw, the pass quietly held and widened — and nobody announced it, because nobody announces a leaderboard.</td></tr>
+  </table>
+
+  <!-- ================= BODY ================= -->
+  <div class="body-grid">
+
+    <!-- ===== LEFT COLUMN ===== -->
+    <div class="col">
+
+      <!-- LEAD STORY: scarcity-safety vs ubiquity-safety -->
+      <article>
+        <span class="section-label">Labs · Safety</span>
+        <h2 class="hl">One Lab Locks the Dangerous Model Up. The Other Gives It Away. Both Call It Safety.</h2>
+        <p class="byline">By The Editor, Safety Desk · May 31, 2026</p>
+
+        <p class="body">Within a few days of each other, the two largest AI labs on Earth made exactly opposite decisions about what to do with a model capable of frightening things — and reached for the same word to justify both. Anthropic is keeping Mythos, the cyber-offensive system it has spent weeks calling too capable to hand around, gated behind a program named Glasswing whose access list is short enough to read aloud: the U.S. government, the U.K.'s AI Security Institute, and a thin roster of defensive partners. OpenAI, meanwhile, announced on Friday that it will give a life-sciences model called GPT-Rosalind away free to any government, university, or nonprofit working on pandemic preparedness. One lab's safety strategy is that almost nobody can hold the weapon. The other's is that nearly everyone defending against one can.</p>
+
+        <p class="body">The strange part is that both arguments are sound. If the danger is an attacker with a model that finds software holes at superhuman speed, scarcity is the obvious play — and Anthropic has the receipts to argue Mythos is exactly that. In its Glasswing write-up, the company says fifty organizations running the preview turned up more than ten thousand high- or critical-severity flaws, and a scan of over a thousand open-source projects flagged 23,019 issues, of which 6,202 were rated high or critical and more than ninety percent of a sampled subset checked out as real. If instead the danger is a pandemic and the bottleneck is too few defenders, ubiquity is the obvious play, and so OpenAI props the door open. Each lab picked the distribution model that its particular bogeyman recommends. Each can produce a clean safety argument for doing the precise opposite of the other.</p>
+
+        <div class="chartwrap">
+          <div class="chart-title">What the locked-up model found — Project Glasswing, by the count</div>
+          <svg viewBox="0 0 400 110" role="img" aria-label="A bar chart of Project Glasswing findings. In a scan of more than one thousand open-source projects, Mythos flagged 23,019 total issues, shown as a full-width gray bar. Of those, 6,202 were rated high or critical severity, shown as a shorter rust bar about 27 percent as long.">
+            <!-- gridlines at 25% intervals; bar area 117-375 = 258px = 100% = 23,019 -->
+            <line x1="117" y1="10" x2="117" y2="86" stroke="#dddddd" stroke-width="1"/>
+            <line x1="181.5" y1="10" x2="181.5" y2="86" stroke="#eeeeee" stroke-width="1"/>
+            <line x1="246" y1="10" x2="246" y2="86" stroke="#eeeeee" stroke-width="1"/>
+            <line x1="310.5" y1="10" x2="310.5" y2="86" stroke="#eeeeee" stroke-width="1"/>
+            <line x1="375" y1="10" x2="375" y2="86" stroke="#eeeeee" stroke-width="1"/>
+            <text x="117" y="98" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.5" fill="#bbb">0</text>
+            <text x="246" y="98" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.5" fill="#bbb">~11,500</text>
+            <text x="375" y="98" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.5" fill="#bbb">23,019</text>
+
+            <!-- Total: 23,019 = 100% = 258px -->
+            <text x="113" y="29" text-anchor="end" font-family="Inter, sans-serif" font-size="7.5" font-weight="700" fill="#1a2744">Issues flagged</text>
+            <rect x="117" y="20" width="258" height="20" rx="2" fill="#999999"/>
+            <text x="369" y="34" text-anchor="end" font-family="Inter, sans-serif" font-size="8.5" font-weight="700" fill="#ffffff">23,019</text>
+
+            <!-- High/critical: 6,202 / 23,019 = 26.9% = 69.5px -->
+            <text x="113" y="65" text-anchor="end" font-family="Inter, sans-serif" font-size="7.5" font-weight="700" fill="#1a2744">High / critical</text>
+            <rect x="117" y="56" width="69.5" height="20" rx="2" fill="#C0392B"/>
+            <text x="192" y="70" font-family="Inter, sans-serif" font-size="8.5" font-weight="700" fill="#888">6,202</text>
+          </svg>
+          <p class="chart-caption">From Anthropic's Glasswing update: a scan of 1,000+ open-source projects. Separately, 50 preview orgs reported 10,000+ high/critical flaws. All counts are the vendor's tally of its own model's output.</p>
+        </div>
+
+        <p class="body">So set aside which lab is right, because that is the wrong question and a comforting one. The thing worth noticing is that "safe distribution" turned out to have no fixed meaning this week. It meant a guest list of three for one product and an open invitation for another, and in both cases it happened to describe the commercial posture the lab already wanted — exclusivity and enterprise scarcity for the cyber model you sell to a short list at a premium, goodwill and ubiquity for the bio model you give away to build standing with every health ministry on the planet. The safety logic and the business logic arrived at the same address. That does not make either lab insincere. It makes the word load-bearing in a way nobody is auditing.</p>
+
+        <div class="pullquote">"Safe" meant a guest list of three for one model and an open door for another — and each time it landed exactly where the business wanted to go anyway.
+          <span class="attr">— On a word doing two opposite jobs in one week</span>
+        </div>
+
+        <p class="opinion">I want to be fair to both: a model that breaches hardened systems and a model that designs countermeasures genuinely do call for different handling, and pretending otherwise would be the cheap take. But notice what's missing. Neither posture was set by anyone outside the company that profits from it. The lab decides the model is dangerous, the lab decides who may hold it, the lab publishes the numbers proving the danger — and the only number nobody gets to see is the one that says how those calls were made.</p>
+      </article>
+
+    </div>
+
+    <!-- ===== RIGHT COLUMN ===== -->
+    <div class="col">
+
+      <!-- SECONDARY: Dell earnings -->
+      <article>
+        <span class="section-label">Markets · Hardware</span>
+        <h3 class="sh">Dell Has Its Best Day Ever by Growing Fastest on the Thing It Earns Least On</h3>
+        <p class="byline">By The Editor, Markets Desk · May 31, 2026</p>
+        <p class="body">Dell reported Thursday afternoon and the stock spent Friday doing something it has never done in forty years of existence: it rose about a third in a single session. The reason was AI servers. The company booked $16.1 billion of them in the quarter against a $13 billion guide, sits on a reported $51 billion backlog, and lifted its full-year AI-server target to $60 billion. For a firm whose business is, at bottom, putting other people's silicon into other people's racks, those are extraordinary numbers, and the market treated them accordingly.</p>
+
+        <div class="chartwrap">
+          <div class="chart-title">Q1 AI-server revenue: what Dell promised vs. what it booked</div>
+          <svg viewBox="0 0 400 150" role="img" aria-label="A slope chart of Dell's Q1 fiscal 2027 AI-server revenue. The guided figure of 13 billion dollars on the left rises along a green line to the delivered figure of 16.1 billion dollars on the right, a beat of about 3.1 billion dollars.">
+            <!-- y maps $12B (y=130) to $17B (y=30): 20px per $B -->
+            <!-- axis labels -->
+            <text x="120" y="20" text-anchor="middle" font-family="Inter, sans-serif" font-size="7.5" font-weight="700" fill="#888">GUIDED</text>
+            <text x="300" y="20" text-anchor="middle" font-family="Inter, sans-serif" font-size="7.5" font-weight="700" fill="#1a2744">DELIVERED</text>
+            <!-- vertical reference lines -->
+            <line x1="120" y1="30" x2="120" y2="138" stroke="#eeeeee" stroke-width="1"/>
+            <line x1="300" y1="30" x2="300" y2="138" stroke="#eeeeee" stroke-width="1"/>
+            <!-- slope line: $13B (y=110) -> $16.1B (y=48) -->
+            <line x1="120" y1="110" x2="300" y2="48" stroke="#1f8a4c" stroke-width="2.5"/>
+            <!-- dots -->
+            <circle cx="120" cy="110" r="5" fill="#1f8a4c"/>
+            <circle cx="300" cy="48" r="5" fill="#1f8a4c"/>
+            <!-- value labels -->
+            <text x="120" y="125" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="700" fill="#0D0D0D">$13B</text>
+            <text x="300" y="40" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="700" fill="#0D0D0D">$16.1B</text>
+            <!-- beat annotation -->
+            <text x="210" y="92" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" font-style="italic" fill="#1f8a4c">+$3.1B beat</text>
+          </svg>
+          <p class="chart-caption">Q1 FY27. Dell raised full-year AI-server guidance to ~$60B and reported a ~$51B backlog; the stock rose roughly 32% on Friday.</p>
+        </div>
+
+        <p class="body">Here is the part the headline doesn't carry. AI servers are the lowest-margin product Dell makes — a thin spread on top of a Nvidia bill of materials, with the customer holding most of the leverage. Dell is therefore growing its revenue fastest on precisely the line where it keeps the least of each dollar, which is a wonderful problem to have right up until it becomes the only problem you have. And a backlog is not a sale; it is a stack of orders that can be cut, deferred, or renegotiated the moment the people doing the ordering decide they have ordered enough. For now the orders keep coming, the boxes keep shipping, and the company that assembles the bottom of the value chain is, for one Friday at least, the most exciting name in it.</p>
+      </article>
+
+      <!-- STANDING FEATURE: The Quiet Correction -->
+      <article>
+        <span class="section-label">The Quiet Correction</span>
+        <div class="obit">
+          <p class="dates">Revisiting a story that resolved itself while no one was looking</p>
+          <p class="term">The Pass That Held</p>
+          <p class="body">Back in issue 6 we reported that Hermes, the self-improving open agent out of Nous Research, had slipped past OpenClaw on OpenRouter's daily traffic — and then, being honest, we hedged it, because those rankings are a daily snapshot that jitters, and a one-day pass is the kind of thing that un-happens by Tuesday. We even logged it as a claim that might quietly turn out wrong. It didn't. Three weeks on, by the soft, blog-sourced token counts that are the only counts anyone keeps for this stuff, Hermes now moves something like 224 billion tokens a day to OpenClaw's 186 billion. The lead didn't just hold; it widened. No one marked the moment, because there is no press release for a leaderboard, no embargo, no analyst on a stage — the open agent simply kept being used more, day after day, until the gap was a fact instead of a fluke. The correction we braced to issue turned out to be one we get to retire. The reigning champion was unseated in public and in silence, which is the only way these things ever actually happen.</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+
+  <!-- ================= EDITOR'S NOTE ================= -->
+  <div class="editors">
+    <span class="section-label">Editor's Note</span>
+    <p>I went looking for a word today and found it doing two contradictory jobs before lunch. "Safety" was the reason Anthropic will let almost no one touch Mythos, and "safety" was the reason OpenAI will let almost anyone touch Rosalind. I don't think either lab is lying. I think the word has quietly stopped being a position and become a variable — something you solve for after you already know the answer you want, which is the price, the access list, and the standing with every government that matters.</p>
+    <p>That's the uncomfortable thing about a week like this one. We keep waiting for the fight over AI safety to be a fight, with two sides and a scoreboard. But you can't keep score when "safe" means lock it in a vault here and hand it out for free there, and both sides get to claim the same trophy. A word that can justify a decision and its exact opposite isn't refereeing the industry. It's narrating it.</p>
+    <p>And the money, for its part, doesn't bother with the philosophy at all. Dell had the best day of its corporate life on Friday selling the metal boxes that house whichever model wins the argument — vault or open door, cyber or bio, scarcity or ubiquity, the racks are the same and the order book doesn't read the press release. The capital isn't picking a definition of safe. It's pricing the certainty that, whatever the definition turns out to be, somebody will need a great many servers to run it. <span class="sign">See you tomorrow.</span></p>
+  </div>
+
+  <!-- ================= CORRECTIONS ================= -->
+  <div class="corrections">
+    <div class="clabel">Corrections &amp; Amplifications</div>
+    <p>Our lead reports the danger of a model using the figures of the company that built it, scanned by the model itself, validated against a sample chosen by the same company. We present this as evidence of how dangerous the model is. It is at least equally good evidence of how badly the company would like you to think so.</p>
+    <p>The Glasswing numbers broke earlier in the week, not yesterday. We have filed them on a Sunday under the heading "this week," which is the daily newspaper's oldest and most forgivable sin, committed here for the usual reason: nothing else happened.</p>
+    <p>Our Quiet Correction rests on token counts sourced to comparison blogs rather than anyone with audited books. We have corrected an old hedge using new numbers we cannot fully verify, which means today's correction is a candidate for a future one. We will be here.</p>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <div class="footer">
+    The Daily Hallucination · Vol. 1, No. 20 · Sunday, May 31, 2026 · Hand-hallucinated each morning · The word "safe" sold separately, definition not included
+  </div>
+
+</div>
+</body>
+</html>
