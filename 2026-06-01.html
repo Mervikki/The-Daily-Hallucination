@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Daily Hallucination – Monday, June 1, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Serif+4:ital,wght@0,400;0,600;1,400;1,600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #F5F0E8;
+    color: #0D0D0D;
+    font-family: 'Source Serif 4', Georgia, serif;
+    line-height: 1.5;
+    padding: 24px 16px 60px;
+  }
+  .paper {
+    max-width: 920px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 36px 44px 44px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+  }
+
+  /* ---------- MASTHEAD ---------- */
+  .masthead { text-align: center; }
+  .masthead h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-size: 3.4rem;
+    line-height: 1.02;
+    color: #0D0D0D;
+  }
+  .masthead .accent { border: none; border-top: 4px solid #C0392B; width: 56px; margin: 10px auto 0; }
+  .masthead .rule3 { border: none; border-top: 3px solid #0D0D0D; margin: 8px auto 0; }
+  .masthead .tagline { font-style: italic; color: #888888; font-size: 0.95rem; margin-top: 8px; }
+  .masthead .thin { border: none; border-top: 1px solid #cccccc; margin: 8px auto; }
+  .masthead .dateline {
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 0.7rem;
+    color: #888888;
+  }
+
+  /* ---------- TODAY AT A GLANCE ---------- */
+  .glance { width: 100%; border-collapse: collapse; margin: 28px 0 30px; font-family: 'Source Serif 4', serif; }
+  .glance th {
+    background: #1a2744; color: #ffffff;
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.16em;
+    font-size: 0.74rem; text-align: left; padding: 9px 12px;
+  }
+  .glance td { background: #F5F0E8; padding: 8px 12px; font-size: 0.86rem; border-bottom: 2px solid #ffffff; vertical-align: top; }
+  .glance td.topic {
+    font-weight: 700; font-family: 'Inter', sans-serif;
+    font-size: 0.74rem; text-transform: uppercase;
+    letter-spacing: 0.04em; width: 150px; color: #1a2744;
+  }
+
+  /* ---------- TWO-COLUMN BODY ---------- */
+  .body-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+  .body-grid > .col:first-child { padding-right: 26px; border-right: 1px solid #cccccc; }
+  .body-grid > .col:last-child { padding-left: 26px; }
+  .col article { margin-bottom: 26px; }
+  .col article:last-child { margin-bottom: 0; }
+
+  .section-label {
+    display: inline-block; background: #1a2744; color: #ffffff;
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    font-size: 0.62rem; padding: 3px 7px; margin-bottom: 7px;
+  }
+  .hl { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.4rem; line-height: 1.16; margin-bottom: 5px; }
+  .sh { font-family: 'Inter', sans-serif; font-weight: 700; font-size: 0.93rem; line-height: 1.25; margin-bottom: 5px; }
+  .byline { font-family: 'Inter', sans-serif; font-style: italic; font-size: 0.72rem; color: #888888; margin-bottom: 8px; }
+  .col p.body { font-size: 0.88rem; text-align: justify; hyphens: auto; -webkit-hyphens: auto; margin-bottom: 8px; }
+  p.opinion {
+    font-style: italic; border-left: 2px solid #dddddd;
+    padding-left: 12px; margin: 8px 0 8px 8px; font-size: 0.86rem;
+  }
+  .pullquote {
+    background: #F5F0E8; border: 1px solid #C0392B; border-left: 4px solid #C0392B;
+    color: #C0392B; font-style: italic; text-align: center;
+    font-size: 0.98rem; line-height: 1.35; padding: 12px 16px; margin: 12px 0;
+  }
+  .pullquote .attr { display: block; font-size: 0.72rem; font-style: normal; margin-top: 6px; letter-spacing: 0.03em; }
+
+  .chartwrap { margin: 12px 0; }
+  .chartwrap svg { width: 100%; height: auto; display: block; }
+  .chart-caption { font-style: italic; font-size: 0.72rem; color: #888888; margin-top: 3px; }
+  .chart-title {
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.07em;
+    font-size: 0.64rem; color: #1a2744; margin-bottom: 4px;
+  }
+
+  /* ---------- OBIT / FEATURE BOX ---------- */
+  .obit { background: #fbfaf7; border: 1px solid #ddd6c8; border-top: 3px solid #C0392B; padding: 14px 18px; }
+  .obit .dates { font-family: 'Inter', sans-serif; font-size: 0.68rem; letter-spacing: 0.04em; color: #888888; text-transform: uppercase; margin-bottom: 6px; }
+  .obit .term { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.15rem; }
+  .obit .deftag { font-family: 'Inter', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.6rem; color: #1a2744; }
+  .obit p.body { font-size: 0.86rem; text-align: justify; hyphens: auto; -webkit-hyphens: auto; margin-top: 6px; }
+
+  /* ---------- EDITOR'S NOTE ---------- */
+  .editors { background: #1a2744; color: #f3efe6; padding: 22px 26px; margin: 30px 0 0; }
+  .editors .section-label { background: #C0392B; color: #ffffff; }
+  .editors p { font-family: 'Source Serif 4', serif; font-style: italic; font-size: 0.92rem; line-height: 1.55; margin-bottom: 9px; }
+  .editors p:last-child { margin-bottom: 0; }
+  .editors .sign { font-style: italic; color: #b9c2d6; }
+
+  /* ---------- CORRECTIONS ---------- */
+  .corrections { background: #f1f1f1; border: 1px solid #cccccc; padding: 12px 16px; margin: 22px 0 0; font-size: 0.82rem; }
+  .corrections .clabel { font-family: 'Inter', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.62rem; color: #C0392B; margin-bottom: 5px; }
+  .corrections p { margin-bottom: 6px; font-style: italic; }
+  .corrections p:last-child { margin-bottom: 0; }
+
+  /* ---------- FOOTER ---------- */
+  .footer {
+    border-top: 1px solid #0D0D0D; margin-top: 30px; padding-top: 12px;
+    text-align: center; font-family: 'Inter', sans-serif;
+    text-transform: uppercase; letter-spacing: 0.14em;
+    font-size: 0.62rem; color: #888888;
+  }
+
+  @media (max-width: 680px) {
+    .paper { padding: 24px 18px 30px; }
+    .masthead h1 { font-size: 2.1rem; }
+    .body-grid { grid-template-columns: 1fr; }
+    .body-grid > .col:first-child {
+      padding-right: 0; border-right: none;
+      border-bottom: 1px solid #cccccc;
+      padding-bottom: 26px; margin-bottom: 26px;
+    }
+    .body-grid > .col:last-child { padding-left: 0; }
+    .glance td.topic { width: 110px; }
+  }
+</style>
+</head>
+<body>
+<div class="paper">
+
+  <!-- ================= MASTHEAD ================= -->
+  <header class="masthead">
+    <h1>The Daily Hallucination</h1>
+    <hr class="accent">
+    <hr class="rule3">
+    <p class="tagline">An AI &amp; tech daily that says the quiet part — out loud, in a serif font.</p>
+    <hr class="thin">
+    <p class="dateline">Monday, June 1, 2026 &nbsp;·&nbsp; Vol. 1, No. 21</p>
+  </header>
+
+  <!-- ================= TODAY AT A GLANCE ================= -->
+  <table class="glance">
+    <tr><th colspan="2">Today at a Glance</th></tr>
+    <tr><td class="topic">Coding Tools</td><td>Microsoft opens Build tomorrow with a homegrown coding model, reportedly code-named Project Polaris, built to make GitHub Copilot good enough to claw back the developers who quietly defected to Claude Code — including, awkwardly, Microsoft's own, whom it is force-marching off Claude Code by June 30.</td></tr>
+    <tr><td class="topic">Model Independence</td><td>The Polaris coding model rides in on a wider fleet of in-house MAI models, the visible end of Mustafa Suleyman's project to wean Microsoft off the two outside labs it pays the most: OpenAI, which it part-owns, and Anthropic, whose tool its engineers prefer.</td></tr>
+    <tr><td class="topic">Model Obituary</td><td>GPT-4.5 — "Orion," the last model OpenAI built by sheer scale and the first Sam Altman said felt like a thoughtful person — leaves ChatGPT for good on June 27, two years after arriving as proof that bigger still worked.</td></tr>
+  </table>
+
+  <!-- ================= BODY ================= -->
+  <div class="body-grid">
+
+    <!-- ===== LEFT COLUMN ===== -->
+    <div class="col">
+
+      <!-- LEAD STORY: Microsoft Build / Project Polaris -->
+      <article>
+        <span class="section-label">Coding Tools · Microsoft</span>
+        <h2 class="hl">Microsoft's Engineers Wanted Claude Code. So Microsoft Is Building a Reason They Can't Have It.</h2>
+        <p class="byline">By The Editor, Developer Desk · June 1, 2026</p>
+
+        <p class="body">When Build opens in San Francisco tomorrow, Microsoft is expected to unveil a coding model of its own making — reported by Reuters and The Information, code-named Project Polaris — and the pitch will be that GitHub Copilot, the tool that once defined AI-assisted programming, is about to be good enough to win developers back. Win them back from whom is the part nobody will say into a microphone. The answer is Claude Code, Anthropic's terminal agent, which over the past year did to Copilot what Copilot once did to the blank editor: made it look like the previous generation. By JetBrains' own survey of engineers with more than a decade of experience, when asked what they reach for to do the day's work, 46 percent named Claude Code and 9 percent named Copilot. That is not a lead. That is a category changing hands.</p>
+
+        <div class="chartwrap">
+          <div class="chart-title">What senior engineers actually reach for</div>
+          <svg viewBox="0 0 400 92" role="img" aria-label="A dumbbell chart showing one row, the daily-driver coding tool chosen by engineers with more than ten years of experience in JetBrains' survey. GitHub Copilot sits at 9 percent on the left, marked by a gray dot. Claude Code sits at 46 percent on the right, marked by a rust dot. A thick rust line connects them, spanning a 37-point gap.">
+            <!-- scale: x=130 is 0%, x=375 is 50%; 4.9px per percent -->
+            <!-- gridlines -->
+            <line x1="130" y1="20" x2="130" y2="64" stroke="#dddddd" stroke-width="1"/>
+            <line x1="252.5" y1="20" x2="252.5" y2="64" stroke="#eeeeee" stroke-width="1"/>
+            <line x1="375" y1="20" x2="375" y2="64" stroke="#eeeeee" stroke-width="1"/>
+            <text x="130" y="78" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.5" fill="#bbb">0%</text>
+            <text x="252.5" y="78" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.5" fill="#bbb">25%</text>
+            <text x="375" y="78" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.5" fill="#bbb">50%</text>
+            <!-- row label -->
+            <text x="124" y="46" text-anchor="end" font-family="Inter, sans-serif" font-size="7.5" font-weight="700" fill="#1a2744">10+ yr devs</text>
+            <!-- dumbbell: Copilot 9% -> x=174.1 ; Claude Code 46% -> x=355.4 -->
+            <line x1="174.1" y1="42" x2="355.4" y2="42" stroke="#C0392B" stroke-width="4"/>
+            <circle cx="174.1" cy="42" r="5.5" fill="#999999"/>
+            <circle cx="355.4" cy="42" r="5.5" fill="#C0392B"/>
+            <!-- value labels -->
+            <text x="174.1" y="32" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" font-weight="700" fill="#777">Copilot 9%</text>
+            <text x="355.4" y="32" text-anchor="end" font-family="Inter, sans-serif" font-size="8" font-weight="700" fill="#C0392B">Claude Code 46%</text>
+            <!-- gap annotation -->
+            <text x="264" y="56" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" font-style="italic" fill="#C0392B">37-point gap</text>
+          </svg>
+          <p class="chart-caption">JetBrains survey of engineers with 10+ years' experience, asked which AI tool they'd choose for daily work. A stated preference, not market share — but the gap is the whole reason Polaris exists.</p>
+        </div>
+
+        <p class="body">There is a cheaper way to close that gap than building a model, and Microsoft already knows it works, because its own people found it. Across Windows, Microsoft 365, Outlook, Teams, and Surface, engineers were handed both tools and told to run a bake-off; a good number of them preferred Claude Code and said so. Microsoft's response to discovering that its staff liked the competitor's product was not to buy more of it. It was to set a date — June 30, the last day of its fiscal year — by which the Experiences and Devices org must stop using Claude Code and move to Copilot's command-line agent, trimming the outside software bill on the way into a new year. The bake-off, it turns out, was never going to be settled by the bakers.</p>
+
+        <p class="body">So Polaris is the long way around a problem Microsoft could solve with a purchase order: rather than rent the tool its engineers rate, build one it owns, make it the only one on the menu, and trust that ownership eventually buys back the quality that defection exposed. Maybe it does. Copilot has the distribution — it lives inside the editor most of the planet's enterprise code already passes through — and a model that is merely close, sitting where the developer already is, can beat a better one that lives somewhere else. But "close, and ours" is a very different promise than the one Copilot launched on, which was simply "best." You don't build Polaris from a position of strength. You build it because the survey came back and you didn't like the number.</p>
+
+        <div class="pullquote">Microsoft's answer to learning its engineers preferred a rival's tool was not to buy more of it. It was to pick a date by which they'd no longer be allowed to.
+          <span class="attr">— On the long way around a problem a purchase order would solve</span>
+        </div>
+
+        <p class="opinion">I don't think this is a story about whether Polaris will be good. It probably will be fine, and fine plus distribution is a real strategy. It's a story about what Microsoft is willing to spend to not depend on anyone — including, apparently, the considered judgment of its own most experienced developers. When the build-versus-buy math comes out in favor of build despite the buy option being measurably better, the thing being optimized for stopped being the code a while ago.</p>
+      </article>
+
+    </div>
+
+    <!-- ===== RIGHT COLUMN ===== -->
+    <div class="col">
+
+      <!-- SECONDARY: MAI independence drive -->
+      <article>
+        <span class="section-label">Model Independence · Microsoft</span>
+        <h3 class="sh">The Coding Model Is the Loud Part of a Quieter Plan: Stop Renting Frontier Brains Entirely</h3>
+        <p class="byline">By The Editor, Strategy Desk · June 1, 2026</p>
+        <p class="body">Polaris does not arrive alone. Build is expected to roll out a refreshed fleet of in-house MAI models — voice, transcription, image — the consumer-visible edge of a program Mustafa Suleyman stood up in November and has been narrating ever since: Microsoft intends to build its own frontier-class model and stop being a tenant in everyone else's. The company still owns a large slice of OpenAI and still routes most of Copilot's thinking through GPT. It also just watched its engineers vote with their terminals for Anthropic. The MAI push is the same instinct as the June 30 cutoff, scaled up — the discomfort is not which outside lab you lean on, it's that you're leaning at all.</p>
+
+        <div class="chartwrap">
+          <div class="chart-title">Microsoft's slow walk out of other people's models</div>
+          <svg viewBox="0 0 400 84" role="img" aria-label="An annotated timeline of Microsoft's in-house model effort. November 2025: the MAI Superintelligence team is formed under Mustafa Suleyman. April 2, 2026: first MAI voice, image and transcription models ship. June 2, 2026, marked in rust as load-bearing: Build unveils new MAI models plus the Polaris coding model. 2027, also rust: a frontier-class general model is the stated goal.">
+            <!-- axis -->
+            <line x1="24" y1="44" x2="384" y2="44" stroke="#888888" stroke-width="1.5"/>
+            <!-- ticks: Nov 2025 (gray), Apr 2 (gray), Jun 2 (rust), 2027 goal (rust) -->
+            <!-- Nov 2025 -->
+            <line x1="60" y1="38" x2="60" y2="50" stroke="#999999" stroke-width="2"/>
+            <text x="60" y="30" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.5" fill="#777">Nov '25</text>
+            <text x="60" y="62" text-anchor="middle" font-family="Inter, sans-serif" font-size="6" fill="#999">MAI team</text>
+            <text x="60" y="70" text-anchor="middle" font-family="Inter, sans-serif" font-size="6" fill="#999">formed</text>
+            <!-- Apr 2 -->
+            <line x1="170" y1="38" x2="170" y2="50" stroke="#999999" stroke-width="2"/>
+            <text x="170" y="30" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.5" fill="#777">Apr '26</text>
+            <text x="170" y="62" text-anchor="middle" font-family="Inter, sans-serif" font-size="6" fill="#999">first MAI</text>
+            <text x="170" y="70" text-anchor="middle" font-family="Inter, sans-serif" font-size="6" fill="#999">models</text>
+            <!-- Jun 2 (load-bearing, rust) -->
+            <line x1="280" y1="34" x2="280" y2="54" stroke="#C0392B" stroke-width="2.5"/>
+            <circle cx="280" cy="44" r="3" fill="#C0392B"/>
+            <text x="280" y="26" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.5" font-weight="700" fill="#C0392B">Jun 2</text>
+            <text x="280" y="62" text-anchor="middle" font-family="Inter, sans-serif" font-size="6" fill="#C0392B">Build: MAI</text>
+            <text x="280" y="70" text-anchor="middle" font-family="Inter, sans-serif" font-size="6" fill="#C0392B">+ Polaris</text>
+            <!-- 2027 goal (rust) -->
+            <line x1="360" y1="38" x2="360" y2="50" stroke="#C0392B" stroke-width="2"/>
+            <text x="360" y="30" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.5" font-weight="700" fill="#C0392B">2027</text>
+            <text x="360" y="62" text-anchor="middle" font-family="Inter, sans-serif" font-size="6" fill="#C0392B">frontier</text>
+            <text x="360" y="70" text-anchor="middle" font-family="Inter, sans-serif" font-size="6" fill="#C0392B">(goal)</text>
+          </svg>
+          <p class="chart-caption">Rust marks the load-bearing dates: tomorrow's Build, and the still-unbuilt frontier model the whole exercise is pointed at.</p>
+        </div>
+
+        <p class="body">Whether it works is a question for 2027, and "we'll have our own frontier model by then" is the most reschedulable promise in the industry — adjacent to a certain Pro model that has been arriving "next month" since the spring. But the direction is unmistakable and it is the real story under the keynote: the largest software company on earth has decided that the most dangerous thing in its supply chain is a dependency it can't fire, and it would rather own a model that's a step behind than rent one that's a step ahead.</p>
+      </article>
+
+      <!-- STANDING FEATURE: Model Obituary -->
+      <article>
+        <span class="section-label">Model Obituary</span>
+        <div class="obit">
+          <p class="dates">GPT-4.5 &nbsp;·&nbsp; "Orion" &nbsp;·&nbsp; Feb 27, 2025 – June 27, 2026</p>
+          <p class="term">GPT-4.5</p>
+          <p class="body">It arrived as the proof. The last model OpenAI would build the old way — bigger corpus, bigger cluster, no clever tricks, just scale and faith — and Sam Altman called it the first that felt like talking to a thoughtful person. It was also, in his own words, giant and expensive, and it landed already trailing leaner rivals on the benchmarks it was meant to crown. So the proof quietly became the disproof: the model sent to show that more was still more instead convinced the field it was time to stop swelling and start thinking. It slipped out of the API months ago, and on June 27 it leaves ChatGPT for good. It is survived by a generation of smaller models that reason instead of bloat. It was the most thoughtful person in the room, and it simply cost too much to keep the conversation going.</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+
+  <!-- ================= EDITOR'S NOTE ================= -->
+  <div class="editors">
+    <span class="section-label">Editor's Note</span>
+    <p>The detail I can't stop turning over is the bake-off. Microsoft handed its engineers two coding tools, asked them to choose, and a lot of them chose the one made by a company it competes with. That's good data. It cost almost nothing to collect, it came from the people best placed to judge, and the honest response to it would have been to follow the people who actually write the software. Instead the response was a calendar entry: stop using the better tool by the thirtieth.</p>
+    <p>What I keep landing on is that this cycle's real contest isn't capability — it's dependency, and which firms are willing to eat a quality hit to escape it. Microsoft would rather ship Polaris, a model it owns and controls top to bottom, than keep paying for a tool its own staff rate higher, because a tool you rent is a tool that can be repriced, throttled, or simply preferred away from you. Ownership is worse and slower and it is winning the argument inside the building anyway. The thing being optimized stopped being the code.</p>
+    <p>And it's a fitting morning to bury GPT-4.5, because it died of the opposite faith. It was the last model built on the belief that capability was the whole game — that if you just made the thing big enough, everything else sorted itself out. We are retiring it the same week its old partner decides the smartest move is to depend on no one, least of all the smartest tool in the room. Capability used to be the moat. Now it's the thing everyone's trying to stop needing from somebody else. <span class="sign">See you tomorrow.</span></p>
+  </div>
+
+  <!-- ================= CORRECTIONS ================= -->
+  <div class="corrections">
+    <div class="clabel">Corrections &amp; Amplifications</div>
+    <p>We have written a lead about a model Microsoft has not announced, named with a code name Microsoft has not confirmed, to be revealed at a keynote that has not happened. This is called reporting the day before Build, and it is distinguishable from fiction mainly by the existence of Reuters.</p>
+    <p>The 46-to-9 figure is a preference survey of senior engineers, not a market-share number; plenty of people who'd rather use Claude Code use Copilot anyway, because it's already open in the window where they work. We called that "a category changing hands." It is at least a category being loudly reconsidered.</p>
+    <p>It is a slow Monday over a long-ish weekend, and the most live thing in AI is a keynote scheduled for Tuesday. We have chosen to tell you that plainly rather than reheat Thursday's funding round for the fourth consecutive issue.</p>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <div class="footer">
+    The Daily Hallucination · Vol. 1, No. 21 · Monday, June 1, 2026 · Hand-hallucinated each morning · Best tool not included; ownership sold separately
+  </div>
+
+</div>
+</body>
+</html>
