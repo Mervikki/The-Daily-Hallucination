@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Daily Hallucination – Tuesday, June 2, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Serif+4:ital,wght@0,400;0,600;1,400;1,600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #F5F0E8;
+    color: #0D0D0D;
+    font-family: 'Source Serif 4', Georgia, serif;
+    line-height: 1.5;
+    padding: 24px 16px 60px;
+  }
+  .paper {
+    max-width: 920px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 36px 44px 44px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+  }
+
+  /* ---------- MASTHEAD ---------- */
+  .masthead { text-align: center; }
+  .masthead h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-size: 3.4rem;
+    line-height: 1.02;
+    color: #0D0D0D;
+  }
+  .masthead .accent { border: none; border-top: 4px solid #C0392B; width: 56px; margin: 10px auto 0; }
+  .masthead .rule3 { border: none; border-top: 3px solid #0D0D0D; margin: 8px auto 0; }
+  .masthead .tagline { font-style: italic; color: #888888; font-size: 0.95rem; margin-top: 8px; }
+  .masthead .thin { border: none; border-top: 1px solid #cccccc; margin: 8px auto; }
+  .masthead .dateline {
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 0.7rem;
+    color: #888888;
+  }
+
+  /* ---------- TODAY AT A GLANCE ---------- */
+  .glance { width: 100%; border-collapse: collapse; margin: 28px 0 30px; font-family: 'Source Serif 4', serif; }
+  .glance th {
+    background: #1a2744; color: #ffffff;
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.16em;
+    font-size: 0.74rem; text-align: left; padding: 9px 12px;
+  }
+  .glance td { background: #F5F0E8; padding: 8px 12px; font-size: 0.86rem; border-bottom: 2px solid #ffffff; vertical-align: top; }
+  .glance td.topic {
+    font-weight: 700; font-family: 'Inter', sans-serif;
+    font-size: 0.74rem; text-transform: uppercase;
+    letter-spacing: 0.04em; width: 150px; color: #1a2744;
+  }
+
+  /* ---------- TWO-COLUMN BODY ---------- */
+  .body-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+  .body-grid > .col:first-child { padding-right: 26px; border-right: 1px solid #cccccc; }
+  .body-grid > .col:last-child { padding-left: 26px; }
+  .col article { margin-bottom: 26px; }
+  .col article:last-child { margin-bottom: 0; }
+
+  .section-label {
+    display: inline-block; background: #1a2744; color: #ffffff;
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    font-size: 0.62rem; padding: 3px 7px; margin-bottom: 7px;
+  }
+  .hl { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.4rem; line-height: 1.16; margin-bottom: 5px; }
+  .sh { font-family: 'Inter', sans-serif; font-weight: 700; font-size: 0.93rem; line-height: 1.25; margin-bottom: 5px; }
+  .byline { font-family: 'Inter', sans-serif; font-style: italic; font-size: 0.72rem; color: #888888; margin-bottom: 8px; }
+  .col p.body { font-size: 0.88rem; text-align: justify; hyphens: auto; -webkit-hyphens: auto; margin-bottom: 8px; }
+  p.opinion {
+    font-style: italic; border-left: 2px solid #dddddd;
+    padding-left: 12px; margin: 8px 0 8px 8px; font-size: 0.86rem;
+  }
+  .pullquote {
+    background: #F5F0E8; border: 1px solid #C0392B; border-left: 4px solid #C0392B;
+    color: #C0392B; font-style: italic; text-align: center;
+    font-size: 0.98rem; line-height: 1.35; padding: 12px 16px; margin: 12px 0;
+  }
+  .pullquote .attr { display: block; font-size: 0.72rem; font-style: normal; margin-top: 6px; letter-spacing: 0.03em; }
+
+  .chartwrap { margin: 12px 0; }
+  .chartwrap svg { width: 100%; height: auto; display: block; }
+  .chart-caption { font-style: italic; font-size: 0.72rem; color: #888888; margin-top: 3px; }
+  .chart-title {
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.07em;
+    font-size: 0.64rem; color: #1a2744; margin-bottom: 4px;
+  }
+
+  /* ---------- OBIT / FEATURE BOX ---------- */
+  .obit { background: #fbfaf7; border: 1px solid #ddd6c8; border-top: 3px solid #C0392B; padding: 14px 18px; }
+  .obit .dates { font-family: 'Inter', sans-serif; font-size: 0.68rem; letter-spacing: 0.04em; color: #888888; text-transform: uppercase; margin-bottom: 6px; }
+  .obit .term { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.15rem; }
+  .obit .deftag { font-family: 'Inter', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.6rem; color: #1a2744; }
+  .obit p.body { font-size: 0.86rem; text-align: justify; hyphens: auto; -webkit-hyphens: auto; margin-top: 6px; }
+
+  /* ---------- EDITOR'S NOTE ---------- */
+  .editors { background: #1a2744; color: #f3efe6; padding: 22px 26px; margin: 30px 0 0; }
+  .editors .section-label { background: #C0392B; color: #ffffff; }
+  .editors p { font-family: 'Source Serif 4', serif; font-style: italic; font-size: 0.92rem; line-height: 1.55; margin-bottom: 9px; }
+  .editors p:last-child { margin-bottom: 0; }
+  .editors .sign { font-style: italic; color: #b9c2d6; }
+
+  /* ---------- CORRECTIONS ---------- */
+  .corrections { background: #f1f1f1; border: 1px solid #cccccc; padding: 12px 16px; margin: 22px 0 0; font-size: 0.82rem; }
+  .corrections .clabel { font-family: 'Inter', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.62rem; color: #C0392B; margin-bottom: 5px; }
+  .corrections p { margin-bottom: 6px; font-style: italic; }
+  .corrections p:last-child { margin-bottom: 0; }
+
+  /* ---------- FOOTER ---------- */
+  .footer {
+    border-top: 1px solid #0D0D0D; margin-top: 30px; padding-top: 12px;
+    text-align: center; font-family: 'Inter', sans-serif;
+    text-transform: uppercase; letter-spacing: 0.14em;
+    font-size: 0.62rem; color: #888888;
+  }
+
+  @media (max-width: 680px) {
+    .paper { padding: 24px 18px 30px; }
+    .masthead h1 { font-size: 2.1rem; }
+    .body-grid { grid-template-columns: 1fr; }
+    .body-grid > .col:first-child {
+      padding-right: 0; border-right: none;
+      border-bottom: 1px solid #cccccc;
+      padding-bottom: 26px; margin-bottom: 26px;
+    }
+    .body-grid > .col:last-child { padding-left: 0; }
+    .glance td.topic { width: 110px; }
+  }
+</style>
+</head>
+<body>
+<div class="paper">
+
+  <!-- ================= MASTHEAD ================= -->
+  <header class="masthead">
+    <h1>The Daily Hallucination</h1>
+    <hr class="accent">
+    <hr class="rule3">
+    <p class="tagline">An AI &amp; tech daily that says the quiet part — out loud, in a serif font.</p>
+    <hr class="thin">
+    <p class="dateline">Tuesday, June 2, 2026 &nbsp;·&nbsp; Vol. 1, No. 22</p>
+  </header>
+
+  <!-- ================= TODAY AT A GLANCE ================= -->
+  <table class="glance">
+    <tr><th colspan="2">Today at a Glance</th></tr>
+    <tr><td class="topic">Microsoft Build</td><td>The day-one keynote in San Francisco was still in progress at our deadline — which did not stop three websites from publishing its full, detailed "recap," including a coding model's name, benchmarks, and ship date that no one who was in the room has confirmed.</td></tr>
+    <tr><td class="topic">Frontier Safety</td><td>The month-long standoff over who gets to inspect Anthropic's locked-down Mythos broke over the weekend: the EU's cybersecurity agency, ENISA, became the first European institution granted access — after the bloc reportedly had to ask Washington for permission to look.</td></tr>
+    <tr><td class="topic">Models</td><td>The independent numbers on Claude Opus 4.8 are finally in, and for once they mostly back the vendor's slide — with one benchmark quietly going the other way that Anthropic's launch post did not dwell on.</td></tr>
+  </table>
+
+  <!-- ================= BODY ================= -->
+  <div class="body-grid">
+
+    <!-- ===== LEFT COLUMN ===== -->
+    <div class="col">
+
+      <!-- LEAD STORY: Microsoft Build / the hallucinated recap -->
+      <article>
+        <span class="section-label">Microsoft Build · Coding Tools</span>
+        <h2 class="hl">We Said We'd Tell You What Shipped. The Recaps Were Up Before the Keynote Ended — and Mostly Made Up.</h2>
+        <p class="byline">By The Editor, Developer Desk · June 2, 2026</p>
+
+        <p class="body">Yesterday we told you what the leaks said Microsoft would unveil at Build: a homegrown coding model, reportedly aimed at clawing back the developers who defected to Claude Code, riding in on a refreshed fleet of in-house MAI models. We promised today would be the payoff — the part where we grade that pre-event copy against what actually got announced. So here is the honest grade. Satya Nadella's day-one keynote began at 9:30 Pacific this morning. As we close this issue, the only outlets carrying a full recap of it are AI-written content farms, and they were live before the keynote could plausibly have ended. The reputable press — Reuters, The Verge, TechCrunch, the company's own blog — was still running "how to watch."</p>
+
+        <p class="body">What the farms have already "confirmed" is impressive in its specificity. The coding model has a name, Project Polaris. It beats GPT-4 Turbo on HumanEval and MBPP. It reaches general availability in August with a three-month fallback. It is strong in Rust and Haskell. It was built to displace Claude Code. Every one of those claims traces to the same handful of low-trust sites, repeated nearly verbatim, and not one of them appears in the single piece of credible pre-event reporting that exists — The Information's note, syndicated by Reuters, that Microsoft would "release a new coding model" as a Copilot comeback. The Information did not give it a name. It did not give it a benchmark. The benchmark, the name, and the ship date were supplied later, by software, about a product whose announcement was still being read aloud on a stage in Fort Mason.</p>
+
+        <div class="chartwrap">
+          <div class="chart-title">Claims about Microsoft's coding model, by who's behind them</div>
+          <svg viewBox="0 0 400 104" role="img" aria-label="A pictogram. One filled rust square represents the single claim confirmed by a tier-one outlet: that a coding model is coming, per The Information. Six hollow gray squares represent claims sourced only to AI content farms and not confirmed by anyone in the room: the name Project Polaris, the HumanEval and MBPP benchmark wins, the August general-availability date, the GPT-4 fallback window, the Rust and Haskell strengths, and the claim it was built to kill Claude Code.">
+            <!-- legend row -->
+            <text x="0" y="12" font-family="Inter, sans-serif" font-size="7.5" font-weight="700" fill="#1a2744">CONFIRMED BY A NEWSROOM</text>
+            <rect x="0" y="20" width="22" height="22" rx="2" fill="#C0392B"/>
+            <text x="30" y="35" font-family="Source Serif 4, serif" font-size="8.5" fill="#0D0D0D">"A coding model is coming." — The Information</text>
+            <!-- divider -->
+            <line x1="0" y1="54" x2="400" y2="54" stroke="#e3ddd0" stroke-width="1"/>
+            <!-- hallucinated row -->
+            <text x="0" y="70" font-family="Inter, sans-serif" font-size="7.5" font-weight="700" fill="#888888">SUPPLIED BY CONTENT FARMS</text>
+            <rect x="0" y="78" width="22" height="22" rx="2" fill="#ffffff" stroke="#bbbbbb" stroke-width="1.3"/>
+            <rect x="30" y="78" width="22" height="22" rx="2" fill="#ffffff" stroke="#bbbbbb" stroke-width="1.3"/>
+            <rect x="60" y="78" width="22" height="22" rx="2" fill="#ffffff" stroke="#bbbbbb" stroke-width="1.3"/>
+            <rect x="90" y="78" width="22" height="22" rx="2" fill="#ffffff" stroke="#bbbbbb" stroke-width="1.3"/>
+            <rect x="120" y="78" width="22" height="22" rx="2" fill="#ffffff" stroke="#bbbbbb" stroke-width="1.3"/>
+            <rect x="150" y="78" width="22" height="22" rx="2" fill="#ffffff" stroke="#bbbbbb" stroke-width="1.3"/>
+            <text x="185" y="93" font-family="Source Serif 4, serif" font-size="8" font-style="italic" fill="#888888">name · benchmarks · ship date · fallback · languages · target</text>
+          </svg>
+          <p class="chart-caption">Each square is one claim. The filled one is the only one anybody stood behind on the record; the six hollow ones are what got written about a keynote nobody had finished watching.</p>
+        </div>
+
+        <p class="body">We can tell you a few things that are genuinely true and have nothing to do with the keynote's contents. The event is agent-themed, as everyone telegraphed. There is no Windows 12; Microsoft said so out loud. MAI-Image-2.5 shipped late last month and debuted third on the Arena image leaderboard, behind OpenAI and Google — a real result, scored by someone other than Microsoft. And GitHub Copilot quietly moved to usage-based, token-metered billing on June 1, which is the kind of change that matters more to a developer's invoice than any model name and got a fraction of the attention. Beyond that, ask us tomorrow, when the people who were in the room have written it down.</p>
+
+        <div class="pullquote">Six specifications, one product, zero of them confirmed by anyone who was in the room — because the room was still talking.
+          <span class="attr">— On the recap that beat the keynote to publication</span>
+        </div>
+
+        <p class="opinion">I want to be precise about what bothers me here, because it is not that the farms will turn out wrong. Some of it may land; "a coding model is coming" is a safe bet and Polaris may well be its real name by the time you read this. What bothers me is the manufacture of detail to fill a gap that honesty would leave empty. The verified version of an event takes a few hours to assemble because someone has to watch the whole thing and check it. A fabricated version takes minutes, because nobody has to. On a long enough timeline the fast one wins the search results. We chose to be the slow, half-empty version today, and I'd rather run that than the full, invented one.</p>
+      </article>
+
+    </div>
+
+    <!-- ===== RIGHT COLUMN ===== -->
+    <div class="col">
+
+      <!-- SECONDARY-LEAD: Mythos / ENISA access -->
+      <article>
+        <span class="section-label">Frontier Safety · Anthropic</span>
+        <h3 class="sh">The EU Got to Look at Mythos. It Had to Ask Washington for the Key.</h3>
+        <p class="byline">By The Editor, Policy Desk · June 2, 2026</p>
+
+        <p class="body">The standoff we led with on May 30 — over who is allowed to inspect Mythos, the Anthropic model gated so tightly that the EU, every government but a short Anglophone list, and roughly seventy organizations Washington vetoed had all been shut out — broke over the weekend. Per CNBC and several security outlets reporting Monday, Anthropic granted ENISA, the EU's cybersecurity agency, access to Mythos through its Project Glasswing program, making it the first European institution allowed to examine the model. The decision was communicated to the European Commission, the reporting says, over the weekend.</p>
+
+        <p class="body">Read the structure of that sentence, because the structure is the story. A European agency obtained permission to inspect a model — a model Anthropic markets as having autonomously found, by its own count, thousands of zero-day vulnerabilities in every major operating system and browser — and to do so the bloc reportedly had to route the request through the United States administration, which had spent the prior weeks arguing against widening the list. The gate did not come down. One person was let through a door that the gatekeeper still controls, and the key was held in Washington the whole time.</p>
+
+        <div class="pullquote">A European regulator got to inspect a frontier model by asking the country that didn't want the list to grow. The gate is still a gate.
+          <span class="attr">— On who actually opened the door</span>
+        </div>
+
+        <p class="opinion">This resolves the open question from issue 19 in the narrowest possible way, which is itself the finding. We asked whether the EU would get access; it did — for one agency, at the discretion of a private company, mediated by a foreign government's export posture. That is not the regulatory order reasserting itself. That is the regulatory order being granted a guest pass. The interesting number is no longer whether the EU is in. It is sixty-nine: the organizations still outside, and the fact that the count is somebody's policy choice rather than a queue.</p>
+      </article>
+
+      <!-- SECONDARY: Opus 4.8 third-party benchmarks -->
+      <article>
+        <span class="section-label">Models · Benchmarks</span>
+        <h3 class="sh">The Independent Opus 4.8 Numbers Are In, and They Mostly Hold — With One Asterisk</h3>
+        <p class="byline">By The Editor, Models Desk · June 2, 2026</p>
+
+        <p class="body">When Anthropic shipped Claude Opus 4.8 on May 28, we flagged the launch figures as what they were: vendor numbers under vendor definitions, no outside check. The outside checks have now arrived, and they are unusually kind. Browserbase put it at 84 percent on the Online-Mind2Web web-agent task, calling it a meaningful jump over both Opus 4.7 and GPT-5.5. Harvey said it was the first model to clear 10 percent on its legal-agent benchmark at the strict all-pass standard. Databricks reported it ran 61 percent cheaper per token than 4.7 in production. Three customers, three different axes, all pointed the same way.</p>
+
+        <div class="chartwrap">
+          <div class="chart-title">SWE-bench Pro — Anthropic's own scoreboard</div>
+          <svg viewBox="0 0 400 168" role="img" aria-label="A bar chart of SWE-bench Pro scores as reported by Anthropic. Claude Opus 4.8 leads at 69.2 percent, shown in rust. Claude Opus 4.7 at 64.3 percent and GPT-5.5 at 58.6 percent and Gemini 3.1 Pro at 54.2 percent follow, in gray. All figures are Anthropic's.">
+            <!-- gridlines at 0,25,50,75,100% : x=117,181.5,246,310.5,375 -->
+            <line x1="117" y1="20" x2="117" y2="140" stroke="#cccccc" stroke-width="1"/>
+            <line x1="181.5" y1="20" x2="181.5" y2="140" stroke="#eeeeee" stroke-width="1"/>
+            <line x1="246" y1="20" x2="246" y2="140" stroke="#eeeeee" stroke-width="1"/>
+            <line x1="310.5" y1="20" x2="310.5" y2="140" stroke="#eeeeee" stroke-width="1"/>
+            <line x1="375" y1="20" x2="375" y2="140" stroke="#eeeeee" stroke-width="1"/>
+            <text x="117" y="152" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.5" fill="#bbb">0%</text>
+            <text x="246" y="152" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.5" fill="#bbb">50%</text>
+            <text x="375" y="152" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.5" fill="#bbb">100%</text>
+            <!-- bars: 258px = 100%, start x=117 -->
+            <!-- Opus 4.8 69.2% -> w=178.5 -->
+            <text x="112" y="38" text-anchor="end" font-family="Inter, sans-serif" font-size="7.5" font-weight="700" fill="#1a2744">Opus 4.8</text>
+            <rect x="117" y="29" width="178.5" height="18" rx="3" fill="#C0392B"/>
+            <text x="289" y="42" text-anchor="end" font-family="Inter, sans-serif" font-size="8" font-weight="700" fill="#ffffff">69.2%</text>
+            <!-- Opus 4.7 64.3% -> w=165.9 -->
+            <text x="112" y="66" text-anchor="end" font-family="Inter, sans-serif" font-size="7.5" font-weight="700" fill="#1a2744">Opus 4.7</text>
+            <rect x="117" y="57" width="165.9" height="18" rx="3" fill="#999999"/>
+            <text x="276" y="70" text-anchor="end" font-family="Inter, sans-serif" font-size="8" font-weight="700" fill="#ffffff">64.3%</text>
+            <!-- GPT-5.5 58.6% -> w=151.2 -->
+            <text x="112" y="94" text-anchor="end" font-family="Inter, sans-serif" font-size="7.5" font-weight="700" fill="#1a2744">GPT-5.5</text>
+            <rect x="117" y="85" width="151.2" height="18" rx="3" fill="#999999"/>
+            <text x="262" y="98" text-anchor="end" font-family="Inter, sans-serif" font-size="8" font-weight="700" fill="#ffffff">58.6%</text>
+            <!-- Gemini 3.1 Pro 54.2% -> w=139.8 -->
+            <text x="112" y="122" text-anchor="end" font-family="Inter, sans-serif" font-size="7.5" font-weight="700" fill="#1a2744">Gemini 3.1 Pro</text>
+            <rect x="117" y="113" width="139.8" height="18" rx="3" fill="#999999"/>
+            <text x="250" y="126" text-anchor="end" font-family="Inter, sans-serif" font-size="8" font-weight="700" fill="#ffffff">54.2%</text>
+          </svg>
+          <p class="chart-caption">All four figures are Anthropic's own reporting; the genuinely independent reads (Browserbase, Harvey, Databricks) sit in the prose, and they broadly agree.</p>
+        </div>
+
+        <p class="body">The asterisk: the same launch reportedly carried a regression on Terminal-Bench, where 4.8 scored worse than its predecessor — a detail that did not get top billing on the announcement slide and that the cheerful third-party reads do not cover. None of this is a scandal. It is the normal shape of a real model launch, where the gains are real, the losses are real, and the company chooses which to put in the headline. We are noting both because the launch post only had room for one.</p>
+      </article>
+
+    </div>
+  </div>
+
+  <!-- ================= EDITOR'S NOTE ================= -->
+  <section class="editors">
+    <span class="section-label">Editor's Note</span>
+    <p>The scarce thing today was not models or money or compute. It was the verified version of events — and you can see exactly where its absence gets filled in.</p>
+    <p>Microsoft held a keynote and, before the people in the room could write down what they saw, the gap between the event and its record filled with invention: a model with a name it may not have, benchmarks nobody ran, a ship date nobody set. Not malice — just the physics of the thing. Checking takes hours and fabricating takes minutes, so on any clock that rewards being first, the unchecked version arrives first. We are named, with some embarrassment, for precisely this.</p>
+    <p>Two columns over, the same scarcity wears a suit. Anthropic owns a model it says can find zero-days in everything, which means it owns the only ground truth about how dangerous the model is — and this weekend it decided, with Washington holding the key, which single European agency would be allowed to check. In both stories the same question sits underneath: when the verified account of something is hard to get, somebody gets to supply the version that fills the silence. Today that was a content farm and a frontier lab, and only one of them had to ask permission.</p>
+    <p class="sign">I'll have the real Build recap tomorrow, written by then. See you tomorrow.</p>
+  </section>
+
+  <!-- ================= CORRECTIONS ================= -->
+  <div class="corrections">
+    <p class="clabel">Corrections &amp; Clarifications</p>
+    <p>This issue spends a lead column scolding websites for confidently recapping a keynote that had not finished. This issue was also assembled before that keynote finished. The distinction we are clinging to is that we told you we couldn't see the end, and they pretended they had.</p>
+    <p>"Project Polaris," its HumanEval/MBPP wins, its August GA, its GPT-4 fallback, and its Rust/Haskell talents are content-farm claims with no tier-one source; only The Information's "a coding model is coming" is on firmer ground. We may have to eat some of this tomorrow, in either direction.</p>
+    <p>The ENISA/Mythos access, the "had to ask Washington" framing, and Mythos's "thousands of zero-days" are per Monday's reporting (CNBC and security trade press) and the vendor's own tally; exact quotes were not confirmed against primary sources. Opus 4.8's SWE-bench Pro figures are Anthropic's; Browserbase, Harvey, and Databricks are the independent reads. The Terminal-Bench regression is per secondary reporting.</p>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <div class="footer">
+    The Daily Hallucination · Vol. 1, No. 22 · Tuesday, June 2, 2026 · Written by hand, checked by hand, published before the recap farms finished theirs
+  </div>
+
+</div>
+</body>
+</html>
