@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Daily Hallucination – Wednesday, June 3, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Serif+4:ital,wght@0,400;0,600;1,400;1,600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #F5F0E8;
+    color: #0D0D0D;
+    font-family: 'Source Serif 4', Georgia, serif;
+    line-height: 1.5;
+    padding: 24px 16px 60px;
+  }
+  .paper {
+    max-width: 920px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 36px 44px 44px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+  }
+
+  /* ---------- MASTHEAD ---------- */
+  .masthead { text-align: center; }
+  .masthead h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-size: 3.4rem;
+    line-height: 1.02;
+    color: #0D0D0D;
+  }
+  .masthead .accent { border: none; border-top: 4px solid #C0392B; width: 56px; margin: 10px auto 0; }
+  .masthead .rule3 { border: none; border-top: 3px solid #0D0D0D; margin: 8px auto 0; }
+  .masthead .tagline { font-style: italic; color: #888888; font-size: 0.95rem; margin-top: 8px; }
+  .masthead .thin { border: none; border-top: 1px solid #cccccc; margin: 8px auto; }
+  .masthead .dateline {
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 0.7rem;
+    color: #888888;
+  }
+
+  /* ---------- TODAY AT A GLANCE ---------- */
+  .glance { width: 100%; border-collapse: collapse; margin: 28px 0 30px; font-family: 'Source Serif 4', serif; }
+  .glance th {
+    background: #1a2744; color: #ffffff;
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.16em;
+    font-size: 0.74rem; text-align: left; padding: 9px 12px;
+  }
+  .glance td { background: #F5F0E8; padding: 8px 12px; font-size: 0.86rem; border-bottom: 2px solid #ffffff; vertical-align: top; }
+  .glance td.topic {
+    font-weight: 700; font-family: 'Inter', sans-serif;
+    font-size: 0.74rem; text-transform: uppercase;
+    letter-spacing: 0.04em; width: 150px; color: #1a2744;
+  }
+
+  /* ---------- TWO-COLUMN BODY ---------- */
+  .body-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+  .body-grid > .col:first-child { padding-right: 26px; border-right: 1px solid #cccccc; }
+  .body-grid > .col:last-child { padding-left: 26px; }
+  .col article { margin-bottom: 26px; }
+  .col article:last-child { margin-bottom: 0; }
+
+  .section-label {
+    display: inline-block; background: #1a2744; color: #ffffff;
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    font-size: 0.62rem; padding: 3px 7px; margin-bottom: 7px;
+  }
+  .hl { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.4rem; line-height: 1.16; margin-bottom: 5px; }
+  .sh { font-family: 'Inter', sans-serif; font-weight: 700; font-size: 0.93rem; line-height: 1.25; margin-bottom: 5px; }
+  .byline { font-family: 'Inter', sans-serif; font-style: italic; font-size: 0.72rem; color: #888888; margin-bottom: 8px; }
+  .col p.body { font-size: 0.88rem; text-align: justify; hyphens: auto; -webkit-hyphens: auto; margin-bottom: 8px; }
+  p.opinion {
+    font-style: italic; border-left: 2px solid #dddddd;
+    padding-left: 12px; margin: 8px 0 8px 8px; font-size: 0.86rem;
+  }
+  .pullquote {
+    background: #F5F0E8; border: 1px solid #C0392B; border-left: 4px solid #C0392B;
+    color: #C0392B; font-style: italic; text-align: center;
+    font-size: 0.98rem; line-height: 1.35; padding: 12px 16px; margin: 12px 0;
+  }
+  .pullquote .attr { display: block; font-size: 0.72rem; font-style: normal; margin-top: 6px; letter-spacing: 0.03em; }
+
+  .chartwrap { margin: 12px 0; }
+  .chartwrap svg { width: 100%; height: auto; display: block; }
+  .chart-caption { font-style: italic; font-size: 0.72rem; color: #888888; margin-top: 3px; }
+  .chart-title {
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.07em;
+    font-size: 0.64rem; color: #1a2744; margin-bottom: 4px;
+  }
+
+  /* ---------- OBIT / FEATURE BOX ---------- */
+  .obit { background: #fbfaf7; border: 1px solid #ddd6c8; border-top: 3px solid #C0392B; padding: 14px 18px; }
+  .obit .dates { font-family: 'Inter', sans-serif; font-size: 0.68rem; letter-spacing: 0.04em; color: #888888; text-transform: uppercase; margin-bottom: 6px; }
+  .obit .term { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.15rem; }
+  .obit .deftag { font-family: 'Inter', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.6rem; color: #1a2744; }
+  .obit p.body { font-size: 0.86rem; text-align: justify; hyphens: auto; -webkit-hyphens: auto; margin-top: 6px; }
+
+  /* ---------- EDITOR'S NOTE ---------- */
+  .editors { background: #1a2744; color: #f3efe6; padding: 22px 26px; margin: 30px 0 0; }
+  .editors .section-label { background: #C0392B; color: #ffffff; }
+  .editors p { font-family: 'Source Serif 4', serif; font-style: italic; font-size: 0.92rem; line-height: 1.55; margin-bottom: 9px; }
+  .editors p:last-child { margin-bottom: 0; }
+  .editors .sign { font-style: italic; color: #b9c2d6; }
+
+  /* ---------- CORRECTIONS ---------- */
+  .corrections { background: #f1f1f1; border: 1px solid #cccccc; padding: 12px 16px; margin: 22px 0 0; font-size: 0.82rem; }
+  .corrections .clabel { font-family: 'Inter', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.62rem; color: #C0392B; margin-bottom: 5px; }
+  .corrections p { margin-bottom: 6px; font-style: italic; }
+  .corrections p:last-child { margin-bottom: 0; }
+
+  /* ---------- FOOTER ---------- */
+  .footer {
+    border-top: 1px solid #0D0D0D; margin-top: 30px; padding-top: 12px;
+    text-align: center; font-family: 'Inter', sans-serif;
+    text-transform: uppercase; letter-spacing: 0.14em;
+    font-size: 0.62rem; color: #888888;
+  }
+
+  @media (max-width: 680px) {
+    .paper { padding: 24px 18px 30px; }
+    .masthead h1 { font-size: 2.1rem; }
+    .body-grid { grid-template-columns: 1fr; }
+    .body-grid > .col:first-child {
+      padding-right: 0; border-right: none;
+      border-bottom: 1px solid #cccccc;
+      padding-bottom: 26px; margin-bottom: 26px;
+    }
+    .body-grid > .col:last-child { padding-left: 0; }
+    .glance td.topic { width: 110px; }
+  }
+</style>
+</head>
+<body>
+<div class="paper">
+
+  <!-- ================= MASTHEAD ================= -->
+  <header class="masthead">
+    <h1>The Daily Hallucination</h1>
+    <hr class="accent">
+    <hr class="rule3">
+    <p class="tagline">An AI &amp; tech daily that says the quiet part — out loud, in a serif font.</p>
+    <hr class="thin">
+    <p class="dateline">Wednesday, June 3, 2026 &nbsp;·&nbsp; Vol. 1, No. 23</p>
+  </header>
+
+  <!-- ================= TODAY AT A GLANCE ================= -->
+  <table class="glance">
+    <tr><th colspan="2">Today at a Glance</th></tr>
+    <tr><td class="topic">Microsoft Build</td><td>The keynote we couldn't see the end of yesterday now has a real recap — and "Project Polaris," the model the content farms named, benchmarked, and dated, does not exist. The real one is called MAI-Code-1-Flash, it shipped today, and it was built to beat Claude's cheapest model, not its best.</td></tr>
+    <tr><td class="topic">Developer Costs</td><td>While everyone argued about model names, GitHub Copilot switched to metered billing on June 1 — and developers started posting June invoices of $180, then $750, then $3,000. That is the number from this week that will actually change behavior.</td></tr>
+    <tr><td class="topic">Liability</td><td>Florida filed the first state lawsuit against OpenAI over user harm — and, unusually, named Sam Altman personally as a defendant. It joins more than twenty pending suits, several tied to deaths.</td></tr>
+    <tr><td class="topic">Reliability</td><td>Two days after confidentially filing to go public as the most valuable AI startup on earth, Anthropic watched Claude fall over worldwide. The official cause was "capacity constraints." The unofficial one, per secondary reporting, was a sub-agent that would not stop spawning sub-agents.</td></tr>
+  </table>
+
+  <!-- ================= BODY ================= -->
+  <div class="body-grid">
+
+    <!-- ===== LEFT COLUMN ===== -->
+    <div class="col">
+
+      <!-- LEAD STORY: Build recap / the Polaris autopsy -->
+      <article>
+        <span class="section-label">Microsoft Build · Coding Tools</span>
+        <h2 class="hl">"Project Polaris" Was a Hallucination. The Model Microsoft Actually Shipped Is Smaller, Cheaper, and Named MAI-Code-1-Flash.</h2>
+        <p class="byline">By The Editor, Developer Desk · June 3, 2026</p>
+
+        <p class="body">Yesterday we ran the half-empty version of Build because the only full version on offer was written by content farms before Satya Nadella had finished talking. We flagged six specifics those sites had "confirmed" — the name Project Polaris, wins over GPT-4 Turbo on HumanEval and MBPP, an August general-availability date with a three-month GPT-4 fallback, particular strength in Rust and Haskell, and the framing that the thing was built to kill Claude Code — and said we might have to eat some of it today. The real recap is now in from CNBC, GeekWire, Neowin, and Microsoft's own blog. We do not have to eat it. We get to bury it.</p>
+
+        <p class="body">There is no Project Polaris. Microsoft's homegrown coding model is real, it shipped today, and it is called MAI-Code-1-Flash — one of seven in-house MAI models unveiled, led by a reasoning model, MAI-Thinking-1. The name "Polaris" appears in exactly zero tier-one or official sources; it lives only in the same aggregators that invented the benchmarks attached to it. There is no HumanEval claim, no MBPP claim, no GPT-4 Turbo comparison, no Rust or Haskell boast, and no August date — MAI-Code-1-Flash is rolling out now, inside the GitHub Copilot model picker, on the free and paid tiers. Every fabricated detail traveled with the fabricated name, and all of it has now collapsed together.</p>
+
+        <div class="chartwrap">
+          <div class="chart-title">SWE-Bench Pro — the fight Microsoft actually picked</div>
+          <svg viewBox="0 0 400 116" role="img" aria-label="A bar chart of SWE-Bench Pro scores as reported by Microsoft. MAI-Code-1-Flash scores 51.2 percent, shown in rust. Claude Haiku 4.5 — Anthropic's small, cheap model — scores 35.2 percent, shown in gray. The content farms had claimed the Microsoft model beat GPT-4 Turbo and was built to kill Claude Code; the comparison Microsoft's own slide drew was against Claude's cheapest model, and it won by sixteen points.">
+            <!-- gridlines at 0,25,50,75,100% : x=117,181.5,246,310.5,375 -->
+            <line x1="117" y1="16" x2="117" y2="86" stroke="#cccccc" stroke-width="1"/>
+            <line x1="181.5" y1="16" x2="181.5" y2="86" stroke="#eeeeee" stroke-width="1"/>
+            <line x1="246" y1="16" x2="246" y2="86" stroke="#eeeeee" stroke-width="1"/>
+            <line x1="310.5" y1="16" x2="310.5" y2="86" stroke="#eeeeee" stroke-width="1"/>
+            <line x1="375" y1="16" x2="375" y2="86" stroke="#eeeeee" stroke-width="1"/>
+            <text x="117" y="98" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.5" fill="#bbb">0%</text>
+            <text x="246" y="98" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.5" fill="#bbb">50%</text>
+            <text x="375" y="98" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.5" fill="#bbb">100%</text>
+            <!-- bars: 258px = 100%, start x=117 -->
+            <!-- MAI-Code-1-Flash 51.2% -> w=132.1 -->
+            <text x="112" y="35" text-anchor="end" font-family="Inter, sans-serif" font-size="7.5" font-weight="700" fill="#1a2744">MAI-Code-1-Flash</text>
+            <rect x="117" y="26" width="132.1" height="18" rx="3" fill="#C0392B"/>
+            <text x="243" y="39" text-anchor="end" font-family="Inter, sans-serif" font-size="8" font-weight="700" fill="#ffffff">51.2%</text>
+            <!-- Claude Haiku 4.5 35.2% -> w=90.8 -->
+            <text x="112" y="65" text-anchor="end" font-family="Inter, sans-serif" font-size="7.5" font-weight="700" fill="#1a2744">Claude Haiku 4.5</text>
+            <rect x="117" y="56" width="90.8" height="18" rx="3" fill="#999999"/>
+            <text x="214" y="69" text-anchor="start" font-family="Inter, sans-serif" font-size="8" font-weight="700" fill="#888888">35.2%</text>
+          </svg>
+          <p class="chart-caption">Both figures are Microsoft's own. Note the opponent: not GPT-4 Turbo, not Claude Code, but Claude Haiku 4.5 — the small, cheap model. The fiction picked a frontier fight; the product picked a budget one.</p>
+        </div>
+
+        <p class="body">That choice of opponent is the whole story. The invented Polaris was a Claude-killer, a frontier weapon with named benchmark scalps. The actual MAI-Code-1-Flash is a five-billion-parameter, inference-efficient model whose published comparison is against Anthropic's cheapest tier, and whose real pitch — Microsoft's words, via its AI chief Mustafa Suleyman — is cost: comparable output for a fraction of the tokens. The MAI-Thinking-1 reasoning model does aim higher, with Microsoft claiming it matches Claude Opus 4.6 on the same SWE-Bench Pro and beats Sonnet in blind human preference, but it landed in private preview, not general release. The shipping coding model is the modest one, and it is sold on price.</p>
+
+        <div class="pullquote">The fiction built a frontier Claude-killer. The fact built a cheaper coder and benchmarked it against the discount model — and won by sixteen points, which is a real result and a much smaller one.
+          <span class="attr">— On the gap between the recap and the release</span>
+        </div>
+
+        <p class="opinion">The satisfying part of grading yesterday's hedge is not that we were careful. It's the direction the fabrication leaned. The farms didn't invent a model that was worse than reality, or weirder, or differently shaped — they invented one that was grander. A bolder name, a higher target, a sharper kill. Hallucinations about product launches don't drift randomly; they drift toward the press release the company wishes it could write. The machine that filled the silence filled it with marketing, because marketing is the most abundant training data we have about how a launch is supposed to sound. The real launch is quieter, cheaper, and aimed a tier down. It usually is.</p>
+      </article>
+
+      <!-- SECONDARY: Copilot usage-based billing -->
+      <article>
+        <span class="section-label">Developer Costs · GitHub</span>
+        <h3 class="sh">Microsoft Gave the Model a Name. The Bill Got a Number, and the Number Was $180.</h3>
+        <p class="byline">By The Editor, Developer Desk · June 3, 2026</p>
+
+        <p class="body">Lost in two days of arguing about what to call Microsoft's coding model: on June 1, GitHub Copilot quietly switched all plans to usage-based, token-metered billing. Base prices held — Pro stays $10 a month, Pro+ $39 — but the old "premium request" counter was replaced by metered AI Credits charged on input, output, and cached tokens at per-model API rates. Code completions stay free; chat, agent mode, and the agentic features everyone was just told to adopt do not.</p>
+
+        <p class="body">The receipts arrived faster than the keynote recap. Visual Studio Magazine documented a developer "facing a $180 bill for June" on day one; Reddit threads claimed jumps from $29 to $750 and $50 to $3,000 as agent workflows ran up token meters in the background. TechCrunch had already, on May 30, summarized developer sentiment with the headline quote "what a joke." A new model gets a launch event; a new pricing model gets a viral invoice. Only one of them changes how anyone actually works tomorrow.</p>
+
+        <p class="opinion">This is the number that pairs with the lead, and it pairs against it. Microsoft spent the keynote selling MAI-Code-1-Flash on cost-efficiency — fewer tokens, cheaper output. Two days earlier it had moved Copilot to a meter that charges by the token. Cheaper-per-token and you-now-pay-per-token are not a coincidence sitting next to each other. They are the same strategy from both ends: make the unit cheap, then start counting the units.</p>
+      </article>
+
+    </div>
+
+    <!-- ===== RIGHT COLUMN ===== -->
+    <div class="col">
+
+      <!-- SECONDARY-LEAD: Florida v. OpenAI + Altman -->
+      <article>
+        <span class="section-label">Liability · OpenAI</span>
+        <h3 class="sh">Florida Sued OpenAI. Then It Did the Unusual Thing and Sued Sam Altman by Name.</h3>
+        <p class="byline">By The Editor, Legal Desk · June 3, 2026</p>
+
+        <p class="body">On June 1, Florida Attorney General James Uthmeier filed what is being called the first state lawsuit against OpenAI over user harm — an 83-page complaint alleging product liability, negligence, deceptive trade practices, and public nuisance, claiming the company shipped ChatGPT despite internal safety warnings and marketed it as safe for children. The detail that separates it from the roughly twenty private suits already pending is the caption: it names Sam Altman, personally, as a defendant alongside the corporation.</p>
+
+        <p class="body">Naming a founder individually is a deliberate choice. It is harder to win and easier to settle around, and corporations exist in part so the people who run them don't appear on the front of the filing. A state attorney general putting the CEO's name there anyway is making an argument about where the decisions were made — that the warnings were seen at a level a name is attached to. The surrounding docket gives it weight: the pending cases include families tied to the Adam Raine teen-suicide matter and to two separate shootings. This is the safety bill arriving as a legal liability, itemized, with a defendant who has a face.</p>
+
+        <div class="pullquote">A corporation is the thing you put between the people who run it and the front page of the lawsuit. Florida just reached past it and wrote down the name.
+          <span class="attr">— On who gets sued when the suit is meant to land</span>
+        </div>
+
+        <p class="opinion">Set this beside the company's other June: OpenAI spent late May launching Rosalind, a biodefense program it gives away to governments and universities as proof of its societal good faith. Both things are true in the same week. One arm publishes the case that the technology saves lives; the other is being made to answer, in court, for the case that it has cost them. The interesting question is which document a jury reads first — the press release or the complaint — and only one of them was written by people who had to sign their names.</p>
+      </article>
+
+      <!-- SECONDARY: Claude outage / subagent irony -->
+      <article>
+        <span class="section-label">Reliability · Anthropic</span>
+        <h3 class="sh">Anthropic Filed to Go Public on Monday. On Tuesday, Claude Spawned Itself Into the Ground.</h3>
+        <p class="byline">By The Editor, Anthropic Desk · June 3, 2026</p>
+
+        <p class="body">The week began well. On June 1, Anthropic confidentially filed for an IPO, days after closing the round that made it, on paper, the most valuable AI startup in the world at a $965 billion valuation — past OpenAI. On June 2, Claude went down. Globally: the apps, the Console, the API, and Claude Code all dark for hours, DownDetector spiking before dawn Eastern. Anthropic's official line was "unexpected capacity constraints." Secondary reporting offered a more specific and more awkward theory — a Claude Code sub-agent bug that spawned sub-agents exponentially until something gave.</p>
+
+        <div class="chartwrap">
+          <div class="chart-title">The shape of a runaway, as described by secondary reports</div>
+          <svg viewBox="0 0 400 112" role="img" aria-label="A small line chart shaped like an exponential hockey stick. The number of sub-agents starts at one and stays nearly flat, then doubles repeatedly — two, four, eight, sixteen, thirty-two — and shoots up steeply toward a runaway state at the top right. The line is rust, marking it as alarming.">
+            <line x1="34" y1="96" x2="380" y2="96" stroke="#cccccc" stroke-width="1"/>
+            <polyline points="40,92 95,90 150,86 205,77 260,61 315,37 366,21" fill="none" stroke="#C0392B" stroke-width="2"/>
+            <circle cx="40" cy="92" r="2.6" fill="#C0392B"/>
+            <circle cx="95" cy="90" r="2.6" fill="#C0392B"/>
+            <circle cx="150" cy="86" r="2.6" fill="#C0392B"/>
+            <circle cx="205" cy="77" r="2.6" fill="#C0392B"/>
+            <circle cx="260" cy="61" r="2.6" fill="#C0392B"/>
+            <circle cx="315" cy="37" r="2.6" fill="#C0392B"/>
+            <circle cx="366" cy="21" r="3.4" fill="#C0392B"/>
+            <text x="40" y="108" text-anchor="start" font-family="Inter, sans-serif" font-size="7" fill="#888888">1 sub-agent</text>
+            <text x="366" y="16" text-anchor="end" font-family="Inter, sans-serif" font-size="7.5" font-weight="700" fill="#C0392B">runaway</text>
+          </svg>
+          <p class="chart-caption">Illustrative, not measured: the doubling-until-collapse pattern that secondary outlets describe. Anthropic's own word was "capacity." Both can be true; capacity is what runs out when something keeps doubling.</p>
+        </div>
+
+        <p class="body">We flag the root cause as unconfirmed, because Anthropic hasn't endorsed it. But the irony does not require it to be true to land, only to be plausible — and it is exquisitely plausible. Claude Opus 4.8 shipped on May 28 with "up to 1,000 sub-agents" printed on the feature list as a headline capability. The product that lets one agent summon a thousand helpers is precisely the product that, with one bad stopping condition, lets one agent summon a thousand helpers. The feature and the failure mode are the same sentence read in two tones of voice.</p>
+      </article>
+
+    </div>
+  </div>
+
+  <!-- ================= EDITOR'S NOTE ================= -->
+  <section class="editors">
+    <span class="section-label">Editor's Note</span>
+    <p>Yesterday the record was missing and the silence filled with invention. Today the record showed up — and in every story on this page, the verified version turned out to be smaller, or worse, than the one that had been standing in for it.</p>
+    <p>Microsoft's coding model wasn't a frontier Claude-killer named Polaris; it was a cheap coder named MAI-Code-1-Flash, benchmarked against a discount model. Anthropic wasn't a flawless trillion-dollar machine; it was a company that filed to go public on Monday and couldn't keep its own product online on Tuesday, possibly undone by the very feature it had just bragged about. OpenAI wasn't only the firm handing biodefense models to governments; it was also a named defendant, its CEO on the caption of an 83-page complaint. None of these is a scandal. Each is just the actual thing, arriving a day late and a size smaller than the version we were handed while we waited.</p>
+    <p>If there's a discipline in this job, it's resisting the day-one draft in both directions — not the inflated one the farms write, and not the deflated one I'd enjoy writing. The model is real and it works. The lawsuit is serious and unproven. The outage is embarrassing and probably boring underneath. The corrective to a hallucinated launch isn't a cynical one; it's a checked one, which is slower and less fun and the only version that survives contact with tomorrow.</p>
+    <p class="sign">The recaps are in, the names are right, and nobody had to make anything up. See you tomorrow.</p>
+  </section>
+
+  <!-- ================= CORRECTIONS ================= -->
+  <div class="corrections">
+    <p class="clabel">Corrections &amp; Clarifications</p>
+    <p>For two consecutive issues we have covered a keynote about a coding model. The single most consequential number to emerge from the surrounding week was not on any benchmark slide. It was a developer's $180 Copilot invoice. We regret giving the model names more column inches than the bill, and will try to remember which one the readers actually pay.</p>
+    <p>MAI-Code-1-Flash's SWE-Bench Pro figures (51.2% vs Claude Haiku 4.5's 35.2%) and the seven-model count are Microsoft's own, via CNBC, GeekWire, Neowin, and the company blog; our research could not load the primary pages directly, so exact wording is per tier-one summaries. The model's architecture (claimed mixture-of-experts, Maia accelerators) is content-farm sourced and not asserted here; Microsoft's page says only "five billion parameters, inference-efficient."</p>
+    <p>The Claude outage root cause — a runaway sub-agent spawn — is secondary reporting; Anthropic's stated cause was "capacity constraints." The chart's curve is illustrative, not measured. The Florida complaint's allegations are allegations. And the $36 billion Apollo–Blackstone TPU debt deal we have been tracking still has not confirmed a close as of this morning, price talk notwithstanding; we are not calling it done until it prints.</p>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <div class="footer">
+    The Daily Hallucination · Vol. 1, No. 23 · Wednesday, June 3, 2026 · The recap arrived, the name was wrong, and we waited for it anyway
+  </div>
+
+</div>
+</body>
+</html>
