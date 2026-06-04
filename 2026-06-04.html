@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Daily Hallucination – Thursday, June 4, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Serif+4:ital,wght@0,400;0,600;1,400;1,600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #F5F0E8;
+    color: #0D0D0D;
+    font-family: 'Source Serif 4', Georgia, serif;
+    line-height: 1.5;
+    padding: 24px 16px 60px;
+  }
+  .paper {
+    max-width: 920px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 36px 44px 44px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+  }
+
+  /* ---------- MASTHEAD ---------- */
+  .masthead { text-align: center; }
+  .masthead h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-size: 3.4rem;
+    line-height: 1.02;
+    color: #0D0D0D;
+  }
+  .masthead .accent { border: none; border-top: 4px solid #C0392B; width: 56px; margin: 10px auto 0; }
+  .masthead .rule3 { border: none; border-top: 3px solid #0D0D0D; margin: 8px auto 0; }
+  .masthead .tagline { font-style: italic; color: #888888; font-size: 0.95rem; margin-top: 8px; }
+  .masthead .thin { border: none; border-top: 1px solid #cccccc; margin: 8px auto; }
+  .masthead .dateline {
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 0.7rem;
+    color: #888888;
+  }
+
+  /* ---------- TODAY AT A GLANCE ---------- */
+  .glance { width: 100%; border-collapse: collapse; margin: 28px 0 30px; font-family: 'Source Serif 4', serif; }
+  .glance th {
+    background: #1a2744; color: #ffffff;
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.16em;
+    font-size: 0.74rem; text-align: left; padding: 9px 12px;
+  }
+  .glance td { background: #F5F0E8; padding: 8px 12px; font-size: 0.86rem; border-bottom: 2px solid #ffffff; vertical-align: top; }
+  .glance td.topic {
+    font-weight: 700; font-family: 'Inter', sans-serif;
+    font-size: 0.74rem; text-transform: uppercase;
+    letter-spacing: 0.04em; width: 150px; color: #1a2744;
+  }
+
+  /* ---------- TWO-COLUMN BODY ---------- */
+  .body-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+  .body-grid > .col:first-child { padding-right: 26px; border-right: 1px solid #cccccc; }
+  .body-grid > .col:last-child { padding-left: 26px; }
+  .col article { margin-bottom: 26px; }
+  .col article:last-child { margin-bottom: 0; }
+
+  .section-label {
+    display: inline-block; background: #1a2744; color: #ffffff;
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    font-size: 0.62rem; padding: 3px 7px; margin-bottom: 7px;
+  }
+  .hl { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.4rem; line-height: 1.16; margin-bottom: 5px; }
+  .sh { font-family: 'Inter', sans-serif; font-weight: 700; font-size: 0.93rem; line-height: 1.25; margin-bottom: 5px; }
+  .byline { font-family: 'Inter', sans-serif; font-style: italic; font-size: 0.72rem; color: #888888; margin-bottom: 8px; }
+  .col p.body { font-size: 0.88rem; text-align: justify; hyphens: auto; -webkit-hyphens: auto; margin-bottom: 8px; }
+  p.opinion {
+    font-style: italic; border-left: 2px solid #dddddd;
+    padding-left: 12px; margin: 8px 0 8px 8px; font-size: 0.86rem;
+  }
+  .pullquote {
+    background: #F5F0E8; border: 1px solid #C0392B; border-left: 4px solid #C0392B;
+    color: #C0392B; font-style: italic; text-align: center;
+    font-size: 0.98rem; line-height: 1.35; padding: 12px 16px; margin: 12px 0;
+  }
+  .pullquote .attr { display: block; font-size: 0.72rem; font-style: normal; margin-top: 6px; letter-spacing: 0.03em; }
+
+  .chartwrap { margin: 12px 0; }
+  .chartwrap svg { width: 100%; height: auto; display: block; }
+  .chart-caption { font-style: italic; font-size: 0.72rem; color: #888888; margin-top: 3px; }
+  .chart-title {
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.07em;
+    font-size: 0.64rem; color: #1a2744; margin-bottom: 4px;
+  }
+
+  /* ---------- OBIT / FEATURE BOX ---------- */
+  .obit { background: #fbfaf7; border: 1px solid #ddd6c8; border-top: 3px solid #C0392B; padding: 14px 18px; }
+  .obit .dates { font-family: 'Inter', sans-serif; font-size: 0.68rem; letter-spacing: 0.04em; color: #888888; text-transform: uppercase; margin-bottom: 6px; }
+  .obit .term { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.15rem; }
+  .obit .deftag { font-family: 'Inter', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.6rem; color: #1a2744; }
+  .obit p.body { font-size: 0.86rem; text-align: justify; hyphens: auto; -webkit-hyphens: auto; margin-top: 6px; }
+
+  /* ---------- EDITOR'S NOTE ---------- */
+  .editors { background: #1a2744; color: #f3efe6; padding: 22px 26px; margin: 30px 0 0; }
+  .editors .section-label { background: #C0392B; color: #ffffff; }
+  .editors p { font-family: 'Source Serif 4', serif; font-style: italic; font-size: 0.92rem; line-height: 1.55; margin-bottom: 9px; }
+  .editors p:last-child { margin-bottom: 0; }
+  .editors .sign { font-style: italic; color: #b9c2d6; }
+
+  /* ---------- CORRECTIONS ---------- */
+  .corrections { background: #f1f1f1; border: 1px solid #cccccc; padding: 12px 16px; margin: 22px 0 0; font-size: 0.82rem; }
+  .corrections .clabel { font-family: 'Inter', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.62rem; color: #C0392B; margin-bottom: 5px; }
+  .corrections p { margin-bottom: 6px; font-style: italic; }
+  .corrections p:last-child { margin-bottom: 0; }
+
+  /* ---------- FOOTER ---------- */
+  .footer {
+    border-top: 1px solid #0D0D0D; margin-top: 30px; padding-top: 12px;
+    text-align: center; font-family: 'Inter', sans-serif;
+    text-transform: uppercase; letter-spacing: 0.14em;
+    font-size: 0.62rem; color: #888888;
+  }
+
+  @media (max-width: 680px) {
+    .paper { padding: 24px 18px 30px; }
+    .masthead h1 { font-size: 2.1rem; }
+    .body-grid { grid-template-columns: 1fr; }
+    .body-grid > .col:first-child {
+      padding-right: 0; border-right: none;
+      border-bottom: 1px solid #cccccc;
+      padding-bottom: 26px; margin-bottom: 26px;
+    }
+    .body-grid > .col:last-child { padding-left: 0; }
+    .glance td.topic { width: 110px; }
+  }
+</style>
+<body>
+<div class="paper">
+
+  <!-- ================= MASTHEAD ================= -->
+  <header class="masthead">
+    <h1>The Daily Hallucination</h1>
+    <hr class="accent">
+    <hr class="rule3">
+    <p class="tagline">An AI &amp; tech daily that says the quiet part — out loud, in a serif font.</p>
+    <hr class="thin">
+    <p class="dateline">Thursday, June 4, 2026 &nbsp;·&nbsp; Vol. 1, No. 24</p>
+  </header>
+
+  <!-- ================= TODAY AT A GLANCE ================= -->
+  <table class="glance">
+    <tr><th colspan="2">Today at a Glance</th></tr>
+    <tr><td class="topic">Regulation</td><td>The White House signed a frontier-AI executive order on June 2. Its centerpiece is the word "voluntary": developers are <em>asked</em> for up to 30 days of pre-release access, and the order explicitly forbids the government from requiring it. The only binding AI rules a frontier lab faces this year were written by states.</td></tr>
+    <tr><td class="topic">Open Models</td><td>GitHub Copilot's new token meter did something no open-weight evangelist managed in a year: it sent paying developers shopping. The reported destinations are OpenRouter, direct APIs, and local runners like LM Studio — i.e., away from the rented frontier and toward models you can hold.</td></tr>
+    <tr><td class="topic">The Glossary</td><td>One industry term, defined honestly. Today: <em>Voluntary</em> — the adjective doing all the load-bearing work in this morning's executive order.</td></tr>
+  </table>
+
+  <!-- ================= BODY ================= -->
+  <div class="body-grid">
+
+    <!-- ===== LEFT COLUMN ===== -->
+    <div class="col">
+
+      <!-- LEAD STORY: Trump frontier-AI EO -->
+      <article>
+        <span class="section-label">Regulation · Washington</span>
+        <h2 class="hl">The White House Wrote a Frontier-AI Order. Its Single Most Important Provision Is the Word "Voluntary."</h2>
+        <p class="byline">By The Editor, Policy Desk · June 4, 2026</p>
+
+        <p class="body">On June 2 the president signed an executive order with the briskly confident title "Promoting Advanced Artificial Intelligence Innovation and Security." Read past the title and the security half turns out to be a courtesy. The order <em>asks</em> developers of frontier models to <em>voluntarily</em> give the federal government up to thirty days of early access to assess a model before it ships widely — and, in the same breath, explicitly prohibits mandatory licensing, pre-clearance, or any permitting regime. It directs Treasury, the NSA, CISA, and NIST to stand up a classified benchmarking process within sixty days to define which systems count as "covered frontier models," using advanced cyber capability as the yardstick. That is the entire enforcement architecture: a request, a deadline to invent a ruler, and a promise never to make anyone hold still for it.</p>
+
+        <p class="body">The thing this order does not do is the thing that matters. It does not preempt state law, which means the only AI rules with teeth that a frontier lab will actually face in 2026 are the ones it didn't write and can't decline. California's Transparency in Frontier AI Act has been binding since January 1. New York's RAISE Act starts enforcement in January 2027. Both compel. The federal order, the one that is supposed to be the heavyweight in the room, is the only instrument on the calendar that a company can simply say no to — and was drafted, per the reporting, with input from the companies it governs.</p>
+
+        <div class="chartwrap">
+          <div class="chart-title">The 2026 frontier-AI rulebook, by who has to obey it</div>
+          <svg viewBox="0 0 400 150" role="img" aria-label="An annotated timeline of frontier-AI governance across 2026. January 1, 2026: California's Transparency in Frontier AI Act takes effect and is binding, marked in rust. June 2, 2026: the federal executive order ships, voluntary, marked in gray. Roughly August 1, 2026: a classified federal benchmarking process is due within sixty days, a process step, marked in gray. January 1, 2027: New York's RAISE Act begins enforcement and is binding, marked in rust. The two rust ticks, the only enforceable ones, both belong to states; the federal order is gray.">
+            <!-- axis -->
+            <line x1="40" y1="82" x2="372" y2="82" stroke="#0D0D0D" stroke-width="1.5"/>
+            <!-- ticks -->
+            <line x1="55" y1="72" x2="55" y2="92" stroke="#C0392B" stroke-width="2.5"/>
+            <line x1="180" y1="74" x2="180" y2="90" stroke="#888888" stroke-width="2"/>
+            <line x1="230" y1="74" x2="230" y2="90" stroke="#888888" stroke-width="2"/>
+            <line x1="355" y1="72" x2="355" y2="92" stroke="#C0392B" stroke-width="2.5"/>
+            <!-- dates -->
+            <text x="55" y="104" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" font-weight="700" fill="#C0392B">JAN 1 '26</text>
+            <text x="180" y="104" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" font-weight="700" fill="#888">JUN 2 '26</text>
+            <text x="230" y="104" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" font-weight="700" fill="#888">~AUG '26</text>
+            <text x="355" y="104" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" font-weight="700" fill="#C0392B">JAN 1 '27</text>
+            <!-- labels above -->
+            <text x="55" y="58" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.6" font-weight="700" fill="#C0392B">CA Transparency</text>
+            <text x="55" y="66" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.6" fill="#C0392B">Act — BINDING</text>
+            <text x="355" y="58" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.6" font-weight="700" fill="#C0392B">NY RAISE Act</text>
+            <text x="355" y="66" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.6" fill="#C0392B">— BINDING</text>
+            <!-- labels below -->
+            <text x="180" y="122" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.6" font-weight="700" fill="#555">Federal EO</text>
+            <text x="180" y="130" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.6" fill="#888">voluntary</text>
+            <text x="230" y="122" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.6" fill="#555">Benchmark</text>
+            <text x="230" y="130" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.6" fill="#888">process due</text>
+          </svg>
+          <p class="chart-caption">The two rust ticks are the only enforceable rules on the axis — and both were written by states. The federal order, this morning's actual news, is gray because nobody has to obey it.</p>
+        </div>
+
+        <p class="body">Set this beside the other thing we know about this government and these companies. The same federal executive that just asked the labs, please, for a thirty-day look is the one Anthropic has spent months suing over how it buys their models. The leverage in that fight has always run one direction, and this order documents it: when you cannot make the frontier labs sell to you on your terms, you also cannot make them show you their weights on your terms. So you write an order that codifies the asking. "Voluntary" is not a softening of the policy. It is the policy — an admission, printed on White House letterhead, about who in this relationship can walk away from the table and who cannot.</p>
+
+        <div class="pullquote">An order that forbids itself from compelling anything is not a regulation. It is a very formal way of finding out whether the people you regulate like you enough to cooperate.
+          <span class="attr">— On the security half of "Innovation and Security"</span>
+        </div>
+
+        <p class="opinion">I want to be fair to the drafters: there is a real argument that a light-touch, access-based regime beats a clumsy licensing one, and that classified red-teaming you can actually staff is worth more than a permit nobody at NIST has the cleared headcount to review. Fine. But notice what the order is honest about and what it isn't. It is honest that Washington has no appetite to compel the frontier. It is quieter about why — which is that the labs are now large enough, lawyered enough, and load-bearing enough to the national balance sheet that "voluntary" was the only verb that would survive a meeting with their counsel. The states didn't get that memo, which is the single reason anything binding exists at all.</p>
+      </article>
+
+    </div>
+
+    <!-- ===== RIGHT COLUMN ===== -->
+    <div class="col">
+
+      <!-- SECONDARY: open-model / local exodus -->
+      <article>
+        <span class="section-label">Open Models · Developer Tools</span>
+        <h3 class="sh">The Copilot Meter Did More for Open-Weight Models in Three Days Than a Year of Open-Weight Evangelism.</h3>
+        <p class="byline">By The Editor, Developer Desk · June 4, 2026</p>
+
+        <p class="body">We covered the GitHub Copilot billing switch yesterday as a story about a bill. The development since is a story about an exit. With token-metered "AI Credits" live as of June 1 and the viral invoices — $29 to $750, $50 to $3,000, community-reported and unaudited — still circulating, the reporting this week (gHacks, The Register, Dataconomy) describes developers not just complaining but leaving: routing through OpenRouter, wiring up the Anthropic and OpenAI APIs directly, and, tellingly, standing up local and open-weight stacks through runners like LM Studio and agent shells like RooCode. The meter didn't only raise the price. It reminded a large population of paying engineers that there is a version of this they can own.</p>
+
+        <p class="body">That second move is the one worth watching, because it is the one Microsoft cannot easily meter back. A developer who churns from Pro+ to a direct API is still renting frontier capability from somebody. A developer who spends a frustrated weekend getting a competent open-weight coder running on their own hardware has changed category — they have discovered that "good enough, and mine" is a real product, and that the gap between it and the rented frontier is now small enough to cross in an afternoon. Open weights spent a year arguing they were two points behind on a benchmark. A surprise invoice made the argument for them in a way no benchmark could: it attached a monthly number to the convenience of not bothering.</p>
+
+        <p class="opinion">I don't want to oversell a few days of angry Reddit threads into a migration. Most of these developers will grumble, optimize their settings, and stay, because switching is friction and friction usually wins. But the interesting readers aren't the ones who stay — they're the ones who, this week, learned where the local-model off-ramp is. You only have to find it once.</p>
+      </article>
+
+      <!-- STANDING FEATURE: The Glossary -->
+      <article>
+        <span class="section-label">The Glossary</span>
+        <div class="obit">
+          <p class="term">Voluntary <span style="font-size:0.8rem; font-weight:400; font-style:italic;">(adj.)</span></p>
+          <p class="dates">One industry term, defined honestly</p>
+          <p class="body"><span class="deftag">Official:</span> Undertaken of one's own free will; done by choice rather than under compulsion. <span class="deftag">Real:</span> Compelled by the credible threat of the mandatory version, on terms negotiated by the party being overseen. A frontier lab's thirty-day pre-release review is "voluntary" the way a teenager's curfew is negotiable: the number is up for discussion precisely because everyone agrees there will be a number. The word does its heaviest lifting in policy, where it lets a government claim the posture of oversight while conceding the substance — you get the press release about access and the lab gets the clause that says it can decline. "Voluntary" is what "mandatory" is called once the people it would apply to have been allowed to write it, which is the only condition under which they will agree to call it anything at all.</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+
+  <!-- ================= EDITOR'S NOTE ================= -->
+  <section class="editors">
+    <span class="section-label">Editor's Note</span>
+    <p>Both stories on this page are about the same quiet fact: leverage belongs to whoever can leave the table, and this week two different parties proved they can.</p>
+    <p>The frontier labs proved it to Washington, which responded to its inability to compel them by writing an executive order that doesn't try — thirty days of access if you'd be so kind, and a standing promise never to ask in any voice but that one. The developers proved it to Microsoft, which metered its coding assistant and discovered that a non-trivial number of its customers will respond to a meter by walking toward models they can run without one. In both cases the institution that looks powerful on paper — the federal government, the platform vendor — turned out to be the one negotiating from the weaker position, because the other side has an exit and knows where it is.</p>
+    <p>I'd flag one thing before anyone files this under "the state is helpless." It isn't, and the proof is also on this page: the only rules a frontier lab actually has to obey in 2026 were written in Sacramento and Albany, not Washington. Compulsion is still available. It just turns out to require a legislature willing to spend the political capital, rather than an executive looking for a regime its biggest constituents will sign off on. The federal order chose the second path and called the result security. The states chose the first and didn't have to call it anything.</p>
+    <p class="sign">The most important word in this morning's news has eight letters and means "if you don't mind." See you tomorrow.</p>
+  </section>
+
+  <!-- ================= CORRECTIONS ================= -->
+  <section class="corrections">
+    <p class="clabel">Corrections &amp; Clarifications</p>
+    <p>This issue runs short, with two stories and a standing feature, because there was one genuinely new thing in the past twenty-four hours and we declined to reheat yesterday's keynote, lawsuit, outage, and invoice to fill the space. A tight page beats a padded one. We will pad it some other morning, against our principles, when the news is even slower.</p>
+    <p>The executive order's text and prohibitions are per the White House posting and summaries from the Council on Foreign Relations, Roll Call, and Scientific American; we could not load every primary page directly. The widely circulated detail that Musk and Zuckerberg lobbied the review window down to thirty days is single-sourced (TechTimes) and is not asserted here as fact — we note it as reported and unverified. The claim that the order was drafted "with input from the companies it governs" reflects the consistent characterization of it as a voluntary, industry-shaped regime, not a named disclosure.</p>
+    <p>The Copilot exodus figures ($29→$750, $50→$3,000) are community-reported and unaudited, as flagged yesterday; we cite them as sentiment, not accounting. "LM Studio" and "RooCode" appear in coverage as representative destinations, not as a measured migration. And we will happily eat this story if next week's data shows everybody stayed.</p>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    The Daily Hallucination · Vol. 1, No. 24 · Thursday, June 4, 2026 · The government said please, the developers found the door, and we ran a short page about both
+  </footer>
+
+</div>
+</body>
+</html>
