@@ -43,3 +43,7 @@ First archival pass: after issue 23 (June 3, 2026).
 - Issue 9: "Gemini third on its own capability slide" — RESOLVED in issue 10 corrections: no such slide ran; underlying split-leadership read maintained, the artifact prediction was wrong (we corrected it).
 - Issue 13: OpenAI confidential IPO "could file as soon as May 22" — RESOLVED issue 15: wires reported it did file May 22; used as issue 15 Quiet Correction; we corrected our own "could." (Contents still sealed until public S-1.)
 - Issue 13: "at least one outlet ran present-tense 'OpenAI Files Confidential IPO'" — observed aiweekly.co aggregator headline May 20-22 while wires hedged. RESOLVED issue 15: wires caught up, aggregator's tense became accurate.
+
+## Pruned after issue 26 (June 6) — cold, no update in 7+ issues
+- Meta surveillance / "Model Capability Initiative" (issues 17, 18) — keystroke/screenshot logging to train computer-use agents, no opt-out (EU exempt); UTAW UK union recruiting London staff; ~7,000 reassigned to new AI teams; cold since issue 18. Watch: verified Zuck audio, labor action, union vote
+- Pope Leo XIV AI encyclical (issue 16) — "Magnifica Humanitas" May 25, thesis "AI must be disarmed"; Anthropic's Chris Olah co-presented; irony = Anthropic v. Trump admin; cold since issue 16. The Anthropic-v-DoD thread (still live in memory.md) carries the policy-irony forward

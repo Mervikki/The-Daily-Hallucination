@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Daily Hallucination – Saturday, June 6, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Serif+4:ital,wght@0,400;0,600;1,400;1,600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #F5F0E8;
+    color: #0D0D0D;
+    font-family: 'Source Serif 4', Georgia, serif;
+    line-height: 1.5;
+    padding: 24px 16px 60px;
+  }
+  .paper {
+    max-width: 920px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 36px 44px 44px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+  }
+
+  /* ---------- MASTHEAD ---------- */
+  .masthead { text-align: center; }
+  .masthead h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-size: 3.4rem;
+    line-height: 1.02;
+    color: #0D0D0D;
+  }
+  .masthead .accent { border: none; border-top: 4px solid #C0392B; width: 56px; margin: 10px auto 0; }
+  .masthead .rule3 { border: none; border-top: 3px solid #0D0D0D; margin: 8px auto 0; }
+  .masthead .tagline { font-style: italic; color: #888888; font-size: 0.95rem; margin-top: 8px; }
+  .masthead .thin { border: none; border-top: 1px solid #cccccc; margin: 8px auto; }
+  .masthead .dateline {
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 0.7rem;
+    color: #888888;
+  }
+
+  /* ---------- TODAY AT A GLANCE ---------- */
+  .glance { width: 100%; border-collapse: collapse; margin: 28px 0 30px; font-family: 'Source Serif 4', serif; }
+  .glance th {
+    background: #1a2744; color: #ffffff;
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.16em;
+    font-size: 0.74rem; text-align: left; padding: 9px 12px;
+  }
+  .glance td { background: #F5F0E8; padding: 8px 12px; font-size: 0.86rem; border-bottom: 2px solid #ffffff; vertical-align: top; }
+  .glance td.topic {
+    font-weight: 700; font-family: 'Inter', sans-serif;
+    font-size: 0.74rem; text-transform: uppercase;
+    letter-spacing: 0.04em; width: 150px; color: #1a2744;
+  }
+
+  /* ---------- TWO-COLUMN BODY ---------- */
+  .body-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+  .body-grid > .col:first-child { padding-right: 26px; border-right: 1px solid #cccccc; }
+  .body-grid > .col:last-child { padding-left: 26px; }
+  .col article { margin-bottom: 26px; }
+  .col article:last-child { margin-bottom: 0; }
+
+  .section-label {
+    display: inline-block; background: #1a2744; color: #ffffff;
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    font-size: 0.62rem; padding: 3px 7px; margin-bottom: 7px;
+  }
+  .hl { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.4rem; line-height: 1.16; margin-bottom: 5px; }
+  .sh { font-family: 'Inter', sans-serif; font-weight: 700; font-size: 0.93rem; line-height: 1.25; margin-bottom: 5px; }
+  .byline { font-family: 'Inter', sans-serif; font-style: italic; font-size: 0.72rem; color: #888888; margin-bottom: 8px; }
+  .col p.body { font-size: 0.88rem; text-align: justify; hyphens: auto; -webkit-hyphens: auto; margin-bottom: 8px; }
+  p.opinion {
+    font-style: italic; border-left: 2px solid #dddddd;
+    padding-left: 12px; margin: 8px 0 8px 8px; font-size: 0.86rem;
+  }
+  .pullquote {
+    background: #F5F0E8; border: 1px solid #C0392B; border-left: 4px solid #C0392B;
+    color: #C0392B; font-style: italic; text-align: center;
+    font-size: 0.98rem; line-height: 1.35; padding: 12px 16px; margin: 12px 0;
+  }
+  .pullquote .attr { display: block; font-size: 0.72rem; font-style: normal; margin-top: 6px; letter-spacing: 0.03em; }
+
+  .chartwrap { margin: 12px 0; }
+  .chartwrap svg { width: 100%; height: auto; display: block; }
+  .chart-caption { font-style: italic; font-size: 0.72rem; color: #888888; margin-top: 3px; }
+  .chart-title {
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.07em;
+    font-size: 0.64rem; color: #1a2744; margin-bottom: 4px;
+  }
+
+  /* ---------- OBIT / FEATURE BOX ---------- */
+  .obit { background: #fbfaf7; border: 1px solid #ddd6c8; border-top: 3px solid #C0392B; padding: 14px 18px; }
+  .obit .dates { font-family: 'Inter', sans-serif; font-size: 0.68rem; letter-spacing: 0.04em; color: #888888; text-transform: uppercase; margin-bottom: 6px; }
+  .obit .term { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.15rem; }
+  .obit .deftag { font-family: 'Inter', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.6rem; color: #1a2744; }
+  .obit p.body { font-size: 0.86rem; text-align: justify; hyphens: auto; -webkit-hyphens: auto; margin-top: 6px; }
+
+  /* ---------- EDITOR'S NOTE ---------- */
+  .editors { background: #1a2744; color: #f3efe6; padding: 22px 26px; margin: 30px 0 0; }
+  .editors .section-label { background: #C0392B; color: #ffffff; }
+  .editors p { font-family: 'Source Serif 4', serif; font-style: italic; font-size: 0.92rem; line-height: 1.55; margin-bottom: 9px; }
+  .editors p:last-child { margin-bottom: 0; }
+  .editors .sign { font-style: italic; color: #b9c2d6; }
+
+  /* ---------- CORRECTIONS ---------- */
+  .corrections { background: #f1f1f1; border: 1px solid #cccccc; padding: 12px 16px; margin: 22px 0 0; font-size: 0.82rem; }
+  .corrections .clabel { font-family: 'Inter', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.62rem; color: #C0392B; margin-bottom: 5px; }
+  .corrections p { margin-bottom: 6px; font-style: italic; }
+  .corrections p:last-child { margin-bottom: 0; }
+
+  /* ---------- FOOTER ---------- */
+  .footer {
+    border-top: 1px solid #0D0D0D; margin-top: 30px; padding-top: 12px;
+    text-align: center; font-family: 'Inter', sans-serif;
+    text-transform: uppercase; letter-spacing: 0.14em;
+    font-size: 0.62rem; color: #888888;
+  }
+
+  @media (max-width: 680px) {
+    .paper { padding: 24px 18px 30px; }
+    .masthead h1 { font-size: 2.1rem; }
+    .body-grid { grid-template-columns: 1fr; }
+    .body-grid > .col:first-child {
+      padding-right: 0; border-right: none;
+      border-bottom: 1px solid #cccccc;
+      padding-bottom: 26px; margin-bottom: 26px;
+    }
+    .body-grid > .col:last-child { padding-left: 0; }
+    .glance td.topic { width: 110px; }
+  }
+</style>
+<body>
+<div class="paper">
+
+  <!-- ================= MASTHEAD ================= -->
+  <header class="masthead">
+    <h1>The Daily Hallucination</h1>
+    <hr class="accent">
+    <hr class="rule3">
+    <p class="tagline">An AI &amp; tech daily that says the quiet part — out loud, in a serif font.</p>
+    <hr class="thin">
+    <p class="dateline">Saturday, June 6, 2026 &nbsp;·&nbsp; Vol. 1, No. 26</p>
+  </header>
+
+  <!-- ================= TODAY AT A GLANCE ================= -->
+  <table class="glance">
+    <tr><th colspan="2">Today at a Glance</th></tr>
+    <tr><td class="topic">Agents</td><td>Anthropic stopped fighting the third-party agents routing through its subscriptions. Starting June 15 it does something more durable: it bills them. The ban becomes a meter, which is the version that gets paid.</td></tr>
+    <tr><td class="topic">Platforms</td><td>Microsoft's new in-house reasoning model leads with an unusual boast — that it was trained without learning from anyone else's model. In an industry built on quiet distillation, "we did it clean" is a claim about who you owe, not how well it works.</td></tr>
+  </table>
+
+  <!-- ================= BODY ================= -->
+  <div class="body-grid">
+
+    <!-- ===== LEFT COLUMN ===== -->
+    <div class="col">
+
+      <!-- LEAD STORY: Anthropic agents onto the meter -->
+      <article>
+        <span class="section-label">Agents · San Francisco</span>
+        <h2 class="hl">Anthropic Quit Banning the Outside Agents. On June 15 It Starts Charging Them Instead.</h2>
+        <p class="byline">By The Editor, Agents Desk · June 6, 2026</p>
+
+        <p class="body">For months the relationship between Anthropic and the third-party agent harnesses that point themselves at a Claude subscription — OpenClaw, and the cohort of frameworks running through the Agent SDK — has been an uneasy one: tolerated, throttled, periodically cut off, never quite welcome. This week the posture softened. Third-party and automated agent usage is being reinstated on the Pro and Max plans, the door reopened to the very tools that had been treated as freeloaders on a flat-rate buffet. The reopening comes with a frame around it. On June 15, every programmatic path — the Agent SDK, headless <code>claude -p</code> runs, Claude Code GitHub Actions, anything that isn't a human typing into a window — moves off subscription rate limits and onto a separate, dollar-denominated credit pool, billed at full API rates with no rollover: $20 a month on Pro, $100 on Max 5×, $200 on Max 20×. Sit at the keyboard and nothing changes. Hand the keyboard to a script and the keyboard now has a coin slot.</p>
+
+        <p class="body">Read the maneuver, not the press-release verb. A ban is a fight you can lose: users route around it, the agent ecosystem files you under "hostile," and you spend your own engineers' time policing the people paying you. A meter is a fight you have already won. By converting "you are abusing our subscription" into "you are a customer, by the token," Anthropic stops trying to keep the agents out and starts counting them on the way in. The agents were always going to run — that was never in doubt. The only open question was whether Anthropic got paid per step or watched the steps happen for free under a $200 ceiling. As of the fifteenth, it gets paid per step. The welcome mat and the turnstile turned out to be the same object, photographed from two directions.</p>
+
+        <div class="chartwrap">
+          <div class="chart-title">What the meter does to your bill — depends entirely on how much you automate</div>
+          <svg viewBox="0 0 400 150" role="img" aria-label="A dumbbell chart showing the estimated effective price multiplier under the new metered credit pool versus the old subscription rate limits. For a light automation user, the multiplier is roughly twelve times. For a heavy automation user running constant Sonnet workloads, it is roughly one hundred and fifty times or more. A thick rust line connects the two dots; the gap between them is the story — your bill is set not by Anthropic's price but by how heavily you lean on agents.">
+            <!-- axis baseline -->
+            <line x1="60" y1="118" x2="372" y2="118" stroke="#ccc" stroke-width="1"/>
+            <!-- x scale ticks -->
+            <text x="60" y="134" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#888">1×</text>
+            <text x="138" y="134" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#888">12×</text>
+            <text x="372" y="134" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" fill="#888">150×+</text>
+            <!-- row label -->
+            <text x="60" y="58" text-anchor="start" font-family="Inter, sans-serif" font-size="9" font-weight="700" fill="#1a2744">EFFECTIVE PRICE vs. OLD SUBSCRIPTION RATE</text>
+            <!-- dumbbell connecting line -->
+            <line x1="138" y1="84" x2="372" y2="84" stroke="#C0392B" stroke-width="5"/>
+            <!-- light dot -->
+            <circle cx="138" cy="84" r="7" fill="#888888"/>
+            <text x="138" y="74" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="700" fill="#555">LIGHT</text>
+            <text x="138" y="106" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="700" fill="#555">~12×</text>
+            <!-- heavy dot -->
+            <circle cx="372" cy="84" r="7" fill="#C0392B"/>
+            <text x="360" y="74" text-anchor="end" font-family="Inter, sans-serif" font-size="9" font-weight="700" fill="#C0392B">HEAVY</text>
+            <text x="360" y="106" text-anchor="end" font-family="Inter, sans-serif" font-size="9" font-weight="700" fill="#C0392B">~150×+</text>
+          </svg>
+          <p class="chart-caption">Independent analysts' estimates, not Anthropic figures — the range is wide because it isn't a price, it's a function of your habits. The interesting number isn't either dot. It's the length of the line between them.</p>
+        </div>
+
+        <p class="body">There is a defensible logic under the bookkeeping. A human in a chat window and an agent spawning a fan of sub-agents are not the same load, and a single flat fee was always going to be either a subsidy for the heavy automators or a tax on everyone else. Metering the machine work is, in the dry sense, fair. But notice what the reinstatement actually settles. The thing that had been framed as an abuse problem — outside agents siphoning a subscription — was never really a question of permission. It was a question of pricing, and pricing is a question you can answer in your own favor the moment you decide to. The door didn't open because Anthropic made peace with the agents. It opened because Anthropic figured out how to ring them up.</p>
+
+        <div class="pullquote">You don't ban the thing once you've worked out how to charge for it. You reinstate it, and you put a meter in the doorway.
+          <span class="attr">— On the June 15 agent credit pools</span>
+        </div>
+
+        <p class="opinion">I want to be fair to the rationale, because it's real: flat-rate plans melt when one customer runs a thousand agents against them, and somebody was always going to pay for that asymmetry. What I keep circling is the rebrand. "Reinstated" sounds like a peace offering, an olive branch to a developer community that felt locked out. It is more honest to call it what the calendar says it is — the day the free version of automation ends and the metered version begins, dressed as a welcome. The agents get to come home. They just each arrive holding an invoice now.</p>
+      </article>
+
+    </div>
+
+    <!-- ===== RIGHT COLUMN ===== -->
+    <div class="col">
+
+      <!-- SECONDARY: Microsoft MAI-Thinking-1 provenance flex -->
+      <article>
+        <span class="section-label">Platforms · Redmond</span>
+        <h3 class="sh">Microsoft's New Reasoning Model Has One Headline Feature: It Didn't Learn From Anybody Else's.</h3>
+        <p class="byline">By The Editor, Platforms Desk · June 6, 2026</p>
+
+        <p class="body">At Build this week Mustafa Suleyman unveiled MAI-Thinking-1, the first reasoning model out of Microsoft's in-house AI group, alongside MAI-Image-2.5 and the general availability of "Microsoft IQ" across GitHub Copilot, Foundry, and Copilot Studio. The benchmark numbers were present but not the pitch. The pitch was provenance: MAI-Thinking-1, Microsoft was careful to say, was trained without distilling the outputs of other companies' models — built clean, owing nothing to the systems it competes with. For a reasoning model, that is a strange thing to lead with. Capability is the usual headline. Microsoft chose paternity instead.</p>
+
+        <p class="body">It is worth understanding why that line is doing work. Post-training a frontier model on the outputs of a stronger one is the industry's open secret — cheap, effective, and almost never advertised, because the thing it advertises is dependence. To stand up and say "we didn't" is therefore not really a claim about quality; a model trained in isolation is, if anything, harder to make good. It is a claim about who Microsoft owes. The company that has spent a decade renting OpenAI's frontier and, lately, paying for Anthropic's coding models wants its enterprise buyers to hear one thing: the supply chain on this one stops here, inside Redmond. The model they're selling is sovereignty, and the benchmark that matters is the absence of anyone else's fingerprints.</p>
+
+        <p class="opinion">The tell is that "trained on no one else's outputs" is unfalsifiable from the outside — you cannot audit a negative in a training run — which makes it the perfect marketing claim: it asks to be believed rather than measured. I'll believe it when an independent benchmark says the model is good, not when the press release says it's pure. Purity is what you sell when the number isn't the story yet.</p>
+      </article>
+
+    </div>
+  </div>
+
+  <!-- ================= EDITOR'S NOTE ================= -->
+  <section class="editors">
+    <span class="section-label">Editor's Note</span>
+    <p>Two announcements this week, opposite in tone, identical in motion. Anthropic used the warm word — <em>reinstated</em>, the agents are welcome again. Microsoft used the proud one — <em>in-house</em>, built ourselves, owing nobody. Set them side by side and the same hand is at work, pulling a relationship that used to run on openness into one that runs on ownership or a coin slot.</p>
+    <p>Because for a few years the AI economy ran like a commons. You could aim any agent at any subscription and the flat fee absorbed it. Models were quietly built on each other's outputs, and the borrowing was so universal nobody bothered to deny it. That arrangement was never principled — it was just cheaper to leave the gates open than to build and staff a toll booth. This week you can watch two of the field's biggest players finish the toll booths. Anthropic is fencing the demand side: use the network however you like, but the machine work meters now. Microsoft is fencing the supply side: depend on us all you want, we've arranged to depend on no one. Nobody's doing anything wrong. They're just enclosing what used to be open, one relationship at a time, and calling it — respectively — a welcome and a milestone.</p>
+    <p>The part worth keeping isn't the cynicism; it's the direction. When the cheap, open arrangement gets expensive enough to fence, the fences go up fast and they go up quietly, named for the thing they replace. Watch the verbs this season. "Reinstated" will keep meaning metered. "Independent" will keep meaning owned. The commons doesn't close with an announcement. It closes with a credit pool and a clean training run, and a press release that swears nothing has changed.</p>
+    <p class="sign">It's a slow Saturday, and the slow days are when you can see the fence posts going in. See you tomorrow.</p>
+  </section>
+
+  <!-- ================= CORRECTIONS ================= -->
+  <section class="corrections">
+    <p class="clabel">Corrections &amp; Clarifications</p>
+    <p>We researched this issue on a Claude subscription that becomes metered on June 15. By next Saturday, the act of covering Anthropic may itself arrive with a per-token line item — at which point this paper will have a direct, personal stake in the story it is pretending to report at arm's length. We'll disclose the invoice when it comes.</p>
+    <p>The reinstatement of third-party and automated agent usage on Pro/Max is reported from search-result summaries and trade coverage, not a primary Anthropic post we read in full; treat the specific "OpenClaw is back" detail as well-attributed but not confirmed against the source document. The June 15 mechanics — programmatic usage moving to a separate credit pool at API rates, no rollover, $20/$100/$200 — are multi-source (InfoWorld, VentureBeat, and prior reporting) and are the load-bearing facts here. The ~12× / ~150×+ multipliers in the chart are independent analysts' estimates of effective price change, not Anthropic numbers, and span a range precisely because they describe usage habits rather than a posted rate; treat the dots as illustrative of a gap, not as quotations.</p>
+    <p>"MAI-Thinking-1 was trained without distilling other models' outputs" is Microsoft's own characterization, made at Build, and is — by the nature of training-data claims — not independently verifiable; we report it as a marketing claim, not an established fact. Microsoft IQ general availability and the MAI-Image-2.5 reveal are per Build coverage (Engadget and others). No new open-weight model of note shipped into this window; we declined to manufacture one to round the issue out.</p>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    The Daily Hallucination · Vol. 1, No. 26 · Saturday, June 6, 2026 · Two toll booths, one commons, and a welcome with a meter in it
+  </footer>
+
+</div>
+</body>
+</html>
