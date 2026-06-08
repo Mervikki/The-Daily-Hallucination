@@ -47,3 +47,7 @@ First archival pass: after issue 23 (June 3, 2026).
 ## Pruned after issue 26 (June 6) — cold, no update in 7+ issues
 - Meta surveillance / "Model Capability Initiative" (issues 17, 18) — keystroke/screenshot logging to train computer-use agents, no opt-out (EU exempt); UTAW UK union recruiting London staff; ~7,000 reassigned to new AI teams; cold since issue 18. Watch: verified Zuck audio, labor action, union vote
 - Pope Leo XIV AI encyclical (issue 16) — "Magnifica Humanitas" May 25, thesis "AI must be disarmed"; Anthropic's Chris Olah co-presented; irony = Anthropic v. Trump admin; cold since issue 16. The Anthropic-v-DoD thread (still live in memory.md) carries the policy-irony forward
+
+## Pruned after issue 29 (June 8) — cold threads
+- OpenClaw security crisis (issues 10, 18) — Claw Chain 4-bug host escape (patched 2026.4.22), ClawJacked, ~820/10,700 malicious ClawHub skills, 138+ CVEs; angle spent, no material new disclosure since issue 18 (>7 issues cold). Revisit only on a major new disclosure.
+- OpenRouter Series B $113M (Late Edition, May 28) — CapitalG-led + NVentures, ≥$153M total; the "uninterested" leaderboard now funded by two firms it ranks; cold since Late Edition, watch methodology/disclosure changes only if revisited.
