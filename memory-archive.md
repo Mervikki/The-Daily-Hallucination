@@ -51,3 +51,10 @@ First archival pass: after issue 23 (June 3, 2026).
 ## Pruned after issue 29 (June 8) — cold threads
 - OpenClaw security crisis (issues 10, 18) — Claw Chain 4-bug host escape (patched 2026.4.22), ClawJacked, ~820/10,700 malicious ClawHub skills, 138+ CVEs; angle spent, no material new disclosure since issue 18 (>7 issues cold). Revisit only on a major new disclosure.
 - OpenRouter Series B $113M (Late Edition, May 28) — CapitalG-led + NVentures, ≥$153M total; the "uninterested" leaderboard now funded by two firms it ranks; cold since Late Edition, watch methodology/disclosure changes only if revisited.
+
+## Pruned after issue 32 (cold ≥7 issues / spent)
+- OpenAI Rosalind Biodefense (issues 20, June 3) — free GPT-Rosalind for govs/academia/nonprofits May 29; June 3 model update + worldwide research preview (JHU APL, CEPI; WH briefed); ubiquity-safety vs Mythos scarcity-safety
+- Nvidia / AI-infra circular financing (issues 15,16,23) — >$40B 2026 equity bets on chip-buyers + DC reporting reshuffle (Hyperscale vs ACIE); June 2 Arm AI-PC chip; SEC/rev-rec scrutiny
+- Anthropic Managed Agents (Late Edition) — self-hosted sandbox public beta + MCP tunnels; charge for thinking host the doing; pairs w/ June 15 meter
+- Trump frontier-AI EO "Promoting Advanced AI Innovation and Security" (issue 24, June 2) — VOLUNTARY ≤30-day fed access, no mandatory licensing; classified benchmark ~Aug; no state preemption (CA Transparency Act Jan'26 / NY RAISE Jan'27 binding); Musk/Zuckerberg-lobbied-to-30-days single-source TechTimes
+- Open-weight/local exodus from metered Copilot (issue 24) — devs routing to OpenRouter/LM Studio/RooCode after June 1 meter; numbers community-reported/unaudited
