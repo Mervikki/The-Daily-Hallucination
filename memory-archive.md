@@ -58,3 +58,7 @@ First archival pass: after issue 23 (June 3, 2026).
 - Anthropic Managed Agents (Late Edition) — self-hosted sandbox public beta + MCP tunnels; charge for thinking host the doing; pairs w/ June 15 meter
 - Trump frontier-AI EO "Promoting Advanced AI Innovation and Security" (issue 24, June 2) — VOLUNTARY ≤30-day fed access, no mandatory licensing; classified benchmark ~Aug; no state preemption (CA Transparency Act Jan'26 / NY RAISE Jan'27 binding); Musk/Zuckerberg-lobbied-to-30-days single-source TechTimes
 - Open-weight/local exodus from metered Copilot (issue 24) — devs routing to OpenRouter/LM Studio/RooCode after June 1 meter; numbers community-reported/unaudited
+
+## Pruned after issue 34 (June 13) — cold STORIES IN PROGRESS
+- Microsoft MAI-Thinking-1 (issue 26) — first MAI reasoning model unveiled at Build; headline claim = trained WITHOUT distilling other models' outputs (provenance-as-sovereignty); MAI-Image-2.5 + Microsoft IQ GA; "no other-model outputs" unfalsifiable/Microsoft's own claim; watch independent benchmarks vs Opus/GPT. (Cold 8 issues.)
+- Florida v. OpenAI + Altman personally (issue 23) — June 1 first state suit, 83pp (product liability/negligence/public nuisance), names Altman personally; joins 20+ private suits; watch personal-defendant survival, other states, discovery on "internal warnings." (Cold 11 issues.)
