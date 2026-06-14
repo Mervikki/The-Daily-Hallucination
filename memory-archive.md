@@ -62,3 +62,7 @@ First archival pass: after issue 23 (June 3, 2026).
 ## Pruned after issue 34 (June 13) — cold STORIES IN PROGRESS
 - Microsoft MAI-Thinking-1 (issue 26) — first MAI reasoning model unveiled at Build; headline claim = trained WITHOUT distilling other models' outputs (provenance-as-sovereignty); MAI-Image-2.5 + Microsoft IQ GA; "no other-model outputs" unfalsifiable/Microsoft's own claim; watch independent benchmarks vs Opus/GPT. (Cold 8 issues.)
 - Florida v. OpenAI + Altman personally (issue 23) — June 1 first state suit, 83pp (product liability/negligence/public nuisance), names Altman personally; joins 20+ private suits; watch personal-defendant survival, other states, discovery on "internal warnings." (Cold 11 issues.)
+
+## Pruned from memory.md after issue 35 (standing-features-log, oldest per-issue entries)
+- Issue 14 (May 24, Sunday, dead day): two-piece + Glossary issue — Gemini 3.5 Pro "next month" deferral lead + Applied Digital 15-yr lease + Glossary
+- Issue 15 (May 25, Memorial Day Monday, dead day): three-piece + Quiet Correction — Anthropic "dreaming" lead + Nvidia circular equity bets + Quiet Correction (OpenAI IPO filed)
