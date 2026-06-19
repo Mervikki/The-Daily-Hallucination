@@ -84,3 +84,6 @@ First archival pass: after issue 23 (June 3, 2026).
 
 ### Spent EDITOR'S NOTEBOOK threads (May/I-O/Build-era)
 - Hype/Impact dots removed issue 7 onward; I/O keynote May 19 10am PT; Code w/ Claude London livestreamed May 19; Hermes-on-NVIDIA-blog = first frontier-vendor-endorses-open-agent; Meta layoff wave May 20 (Gale memo); Ramp AI Index monthly; ClawHavoc/OpenClaw security overhang spent (issue 10); Anthropic chip-debt-as-financing-primitive (closed $35B June 5); Mythos EU export standoff (superseded by Fable 5 GA + US export order); capability-vs-dependency strategy thread (Microsoft MAI/Polaris).
+
+- GitHub Copilot usage-based billing (issue 23, cold since 23 — pruned from memory.md issue 40): live June 1, token-metered AI Credits, base prices held; backlash over $180/$750/$3,000 invoices; paired w/ MAI-Code cost pitch + Anthropic meter. No follow-up landed.
+- ChatGPT "dreaming" memory + Lockdown Mode + ads (issue 28 LEAD, cold since 28 — pruned issue 40): memory auto-revises stored facts over time, review page, 2x capacity Plus/Pro; Lockdown Mode throttles web reach vs prompt-injection; UK Free/Go ads. All per release-note aggregators not primary. No "dreaming-was-wrong-about-me" incident surfaced.
