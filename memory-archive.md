@@ -95,3 +95,9 @@ First archival pass: after issue 23 (June 3, 2026).
 ## Export saga (issues 35–49) granular chronicle — archived after issue 50 (saga winding down)
 - Issue 48 (day 15): June-26 congressional deadline (Liccardo/Lieu/Obernolte/Franklin) for Commerce to put order's legal basis in writing passed, no public reply. Models dark globally. Only route back = biometric ID via Persona (eff July 8). EAR §744.22 challenge unanswered. Classified-systems rationale (AP June 23, found-not-exploited vs Warner "broke into").
 - Issue 49 (day 16) FIRST RESTORATION: Commerce cleared MYTHOS 5 for 100+ vetted US orgs (critical-infra/Glasswing cohort, Cisco + JPMorgan cited) per Lutnick→Tom Brown letter, "appropriate safeguards … certain trusted partners." Fable 5 stayed dark. Tier-1 multi-source snippets (CNBC/TechCrunch/NBC/Fortune), letter not public. Ban converted to ALLOWLIST. Ran BAR (Mythos 100+/GPT-5.6 ~20/public 0). Full day-by-day issue 35→47 chronicle lives in those issue HTMLs + the issue-75-era memory mega-entry.
+
+## Issue 20 corrections candidates (pruned from memory.md after issue 52 — 32 issues old, none became load-bearing)
+- Issue 20: Glasswing figures (10,000+ high/critical across 50 orgs; 23,019 flagged / 6,202 high-critical in 1,000+ OSS scan; >90% of 1,752 sample true-positive) per Anthropic's own Glasswing update + secondary (Hacker News/Engadget/CSO) — vendor's tally of its own model's output.
+- Issue 20: OpenAI Rosalind "free for governments/academia/nonprofits" launch May 29 per Axios exclusive/OpenAI.
+- Issue 20: Dell figures ($16.1B AI-server rev vs $13B guide / $24.4B orders / $51.3B backlog / $60B FY27 guide / ~32% stock pop) per CNBC/Bloomberg/Blocks&Files May 28-29.
+- Issue 20: Hermes ~224B vs OpenClaw ~186B tokens/day (Quiet Correction) per comparison blogs (HackerNoon/DEV) ONLY — no tier-1 source, not audited.
