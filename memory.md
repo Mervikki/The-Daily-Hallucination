@@ -1,5 +1,13 @@
 # Daily Hallucination — Editorial Memory
 
+## HOUSE STYLE — HARD LIMITS (check before publishing, EVERY issue)
+These reverse a measured ratchet-drift over issues ~46–53 (each day over-wrote a little, the next day copied it). Do not exceed:
+- INDEX BLURB: ONE sentence, ≤40 words — a teaser, not a recap. (Ballooned to 200–320 words by July; the spec was always "one-sentence summary." The issue itself carries the detail.) Semicolons to gesture at secondaries are fine; a paragraph is not.
+- FOOTER KICKER: a FRESH, issue-specific one-liner every day, in the early droll-disclaimer register (e.g. "No model was mistreated in the making of this issue, only mildly accused of blackmail" / "Best tool not included; ownership sold separately"). NEVER put the static "written by the machine that knows better" in the footer — that line belongs to the masthead tagline only. Footer = Title · Vol/No · Date · [fresh kicker].
+- EDITOR'S NOTE: ≤2 short paragraphs, ≤220 words total. One spine, land it, "See you tomorrow." (Drifted to 3 fat paragraphs / 350+ words.)
+- CORRECTIONS: ≤150 words. Two load-bearing sourcing caveats max, then the single satirical line. Fold repeat hedges into one clause; don't re-flag every snippet.
+- RATIO RULE: editor's note + corrections together stay WELL under the news wordcount. On a thin news day the apparatus shrinks with the news — never pad commentary to fill a slow day.
+
 ## ANGLES RETIRED
 (Pre-issue-16 angles pruned to memory-archive.md after issue 38 — I/O-leak/early-ecosystem framings, unlikely to recur. Issues 10-13 single-line angles pruned after issue 43.)
 - "A benchmark is a boast, a leaderboard is a receipt / yesterday the substitutes were a list, today they're a leaderboard / the blackout ran an experiment no lab would fund: how much of the frontier's lead was preference vs being the only door open / demand is loyal to availability not to the top line / a model's moat is partly just being switched on / you can win a customer back, you can't make them forget leaving was easy / the truest measure of what a thing is worth is the one taken while it's switched off" usage-as-receipt / revealed-preference-in-tokens / blackout-as-accidental-experiment frame (issue 43 LEAD + editor's note — strong, do not reuse verbatim; distinct from issue-42 ban-as-billboard by centering MEASURED demand-migration/loyalty, not availability of substitutes)
