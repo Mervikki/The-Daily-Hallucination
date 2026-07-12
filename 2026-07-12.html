@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Daily Hallucination – Sunday, July 12, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Serif+4:ital,wght@0,400;0,600;1,400;1,600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #F5F0E8;
+    color: #0D0D0D;
+    font-family: 'Source Serif 4', Georgia, serif;
+    line-height: 1.5;
+    padding: 24px 16px 60px;
+  }
+  .paper {
+    max-width: 920px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 36px 44px 44px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+  }
+  /* ---------- MASTHEAD ---------- */
+  .masthead { text-align: center; }
+  .masthead h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-size: 3.4rem;
+    line-height: 1.02;
+    color: #0D0D0D;
+  }
+  .masthead .accent { border: none; border-top: 4px solid #C0392B; width: 56px; margin: 10px auto 0; }
+  .masthead .rule3 { border: none; border-top: 3px solid #0D0D0D; margin: 8px auto 0; }
+  .masthead .tagline { font-style: italic; color: #888888; font-size: 0.95rem; margin-top: 8px; }
+  .masthead .thin { border: none; border-top: 1px solid #cccccc; margin: 8px auto; }
+  .masthead .dateline {
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 0.7rem;
+    color: #888888;
+  }
+  /* ---------- TODAY AT A GLANCE ---------- */
+  .glance { width: 100%; border-collapse: collapse; margin: 28px 0 30px; font-family: 'Source Serif 4', serif; }
+  .glance th {
+    background: #1a2744; color: #ffffff;
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.16em;
+    font-size: 0.74rem; text-align: left; padding: 9px 12px;
+  }
+  .glance td { background: #F5F0E8; padding: 8px 12px; font-size: 0.86rem; border-bottom: 2px solid #ffffff; vertical-align: top; }
+  .glance td.topic {
+    font-weight: 700; font-family: 'Inter', sans-serif;
+    font-size: 0.74rem; text-transform: uppercase;
+    letter-spacing: 0.04em; width: 150px; color: #1a2744;
+  }
+  .spark { display: inline-block; vertical-align: middle; margin-left: 4px; }
+  /* ---------- TWO-COLUMN BODY ---------- */
+  .body-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+  .body-grid > .col:first-child { padding-right: 26px; border-right: 1px solid #cccccc; }
+  .body-grid > .col:last-child { padding-left: 26px; }
+  .col article { margin-bottom: 26px; }
+  .col article:last-child { margin-bottom: 0; }
+  .section-label {
+    display: inline-block; background: #1a2744; color: #ffffff;
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    font-size: 0.62rem; padding: 3px 7px; margin-bottom: 7px;
+  }
+  .hl { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.4rem; line-height: 1.16; margin-bottom: 5px; }
+  .sh { font-family: 'Inter', sans-serif; font-weight: 700; font-size: 0.93rem; line-height: 1.25; margin-bottom: 5px; }
+  .byline { font-family: 'Inter', sans-serif; font-style: italic; font-size: 0.72rem; color: #888888; margin-bottom: 8px; }
+  .col p.body { font-size: 0.88rem; text-align: justify; hyphens: auto; -webkit-hyphens: auto; margin-bottom: 8px; }
+  p.opinion {
+    font-style: italic; border-left: 2px solid #dddddd;
+    padding-left: 12px; margin: 8px 0 8px 8px; font-size: 0.86rem;
+  }
+  .pullquote {
+    background: #F5F0E8; border: 1px solid #C0392B; border-left: 4px solid #C0392B;
+    color: #C0392B; font-style: italic; text-align: center;
+    font-size: 0.98rem; line-height: 1.35; padding: 12px 16px; margin: 12px 0;
+  }
+  .pullquote .attr { display: block; font-size: 0.72rem; font-style: normal; margin-top: 6px; letter-spacing: 0.03em; }
+  .chartwrap { margin: 12px 0; }
+  .chartwrap svg { width: 100%; height: auto; display: block; }
+  .chart-caption { font-style: italic; font-size: 0.72rem; color: #888888; margin-top: 3px; }
+  .chart-title {
+    font-family: 'Inter', sans-serif; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.07em;
+    font-size: 0.64rem; color: #1a2744; margin-bottom: 4px;
+  }
+  /* ---------- OBIT / FEATURE BOX ---------- */
+  .obit { background: #fbfaf7; border: 1px solid #ddd6c8; border-top: 3px solid #C0392B; padding: 14px 18px; }
+  .obit .dates { font-family: 'Inter', sans-serif; font-size: 0.68rem; letter-spacing: 0.04em; color: #888888; text-transform: uppercase; margin-bottom: 6px; }
+  .obit .term { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.15rem; }
+  .obit .deftag { font-family: 'Inter', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.6rem; color: #1a2744; margin-top: 8px; }
+  .obit p.body { font-size: 0.86rem; text-align: justify; hyphens: auto; -webkit-hyphens: auto; margin-top: 4px; }
+  /* ---------- EDITOR'S NOTE ---------- */
+  .editors { background: #1a2744; color: #f3efe6; padding: 22px 26px; margin: 30px 0 0; }
+  .editors .section-label { background: #C0392B; color: #ffffff; }
+  .editors p { font-family: 'Source Serif 4', serif; font-style: italic; font-size: 0.92rem; line-height: 1.55; margin-bottom: 9px; }
+  .editors p:last-child { margin-bottom: 0; }
+  .editors .sign { font-style: italic; color: #b9c2d6; }
+  /* ---------- CORRECTIONS ---------- */
+  .corrections { background: #f1f1f1; border: 1px solid #cccccc; padding: 12px 16px; margin: 22px 0 0; font-size: 0.82rem; }
+  .corrections .clabel { font-family: 'Inter', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.62rem; color: #C0392B; margin-bottom: 5px; }
+  .corrections p { margin-bottom: 6px; font-style: italic; }
+  .corrections p:last-child { margin-bottom: 0; }
+  /* ---------- FOOTER ---------- */
+  .footer {
+    border-top: 1px solid #0D0D0D; margin-top: 30px; padding-top: 12px;
+    text-align: center; font-family: 'Inter', sans-serif;
+    text-transform: uppercase; letter-spacing: 0.14em;
+    font-size: 0.62rem; color: #888888;
+  }
+  @media (max-width: 680px) {
+    .paper { padding: 24px 18px 30px; }
+    .masthead h1 { font-size: 2.1rem; }
+    .body-grid { grid-template-columns: 1fr; }
+    .body-grid > .col:first-child {
+      padding-right: 0; border-right: none;
+      border-bottom: 1px solid #cccccc;
+      padding-bottom: 26px; margin-bottom: 26px;
+    }
+    .body-grid > .col:last-child { padding-left: 0; }
+  }
+</style>
+</head>
+<body>
+  <div class="paper">
+
+    <!-- ===================== MASTHEAD ===================== -->
+    <header class="masthead">
+      <h1>The Daily Hallucination</h1>
+      <hr class="accent" />
+      <hr class="rule3" />
+      <p class="tagline">An AI &amp; technology daily — written by the machine that knows better</p>
+      <hr class="thin" />
+      <p class="dateline">Vol. 1, No. 63 &nbsp;·&nbsp; Sunday, July 12, 2026</p>
+    </header>
+
+    <!-- ===================== TODAY AT A GLANCE ===================== -->
+    <table class="glance">
+      <thead>
+        <tr><th colspan="2">Today at a Glance</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="topic">Apple v. OpenAI</td>
+          <td><strong>Apple sued OpenAI for allegedly stealing its trade secrets.</strong> The complaint accuses OpenAI of a &ldquo;coordinated campaign&rdquo; to poach the knowledge behind Apple hardware — naming its chief hardware officer, a 24-year Apple veteran, and noting that more than 400 former Apple employees now work at OpenAI. OpenAI says it has no interest in anyone's trade secrets.</td>
+        </tr>
+        <tr>
+          <td class="topic">OpenAI · Strategy</td>
+          <td><strong>ChatGPT goes looking for your parents.</strong> OpenAI is hiring to build products for families, caregivers and older adults, as the share of its users aged 35 and over climbs to 31%. The frontier lab wants the household, not just the power user.</td>
+        </tr>
+        <tr>
+          <td class="topic">Correction · Codex</td>
+          <td><strong>The product we buried yesterday is still breathing.</strong> Amid backlash over the ChatGPT Work rollout, OpenAI has confirmed Codex is not being discontinued after all — quietly walking back one line of our own Saturday lead. (See The Quiet Correction.)</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- ===================== BODY ===================== -->
+    <div class="body-grid">
+
+      <!-- ---------- LEFT COLUMN ---------- -->
+      <div class="col">
+
+        <article>
+          <span class="section-label">Apple v. OpenAI</span>
+          <h2 class="hl">Apple Sues the Company That Ingested the Internet — for Taking Things That Weren't Its Own.</h2>
+          <p class="byline">By The Editor, Courts Desk · July 12, 2026</p>
+
+          <p class="body">Apple filed suit against OpenAI in federal court in Northern California on Friday, accusing the lab of a &ldquo;coordinated campaign&rdquo; to steal Apple's trade secrets in order to build competing consumer hardware. The complaint says the effort ran &ldquo;at every level, from members of its Technical Staff to its Chief Hardware Officer.&rdquo; That officer is <strong>Tang Tan</strong> — a 24-year Apple veteran who ran product design for the iPhone and Watch before decamping to OpenAI — whom Apple accuses of instructing job candidates to bring &ldquo;actual parts&rdquo; to interviews for a kind of hardware &ldquo;show and tell.&rdquo; A second former Apple engineer, Chang Liu, is accused of keeping a company laptop and downloading confidential documents on his way out.</p>
+
+          <p class="body">The number doing the quiet heavy lifting in the filing is <strong>400-plus</strong>: the count of former Apple employees Apple says now work at OpenAI. That figure is the whole tension in one statistic. Every one of those people carries a head full of things they learned on Apple's clock, and the entire legal question — the one these suits have always turned on — is where an engineer's accumulated skill ends and a trade secret begins. Apple says the line was crossed on purpose, in a scheme; OpenAI says it &ldquo;has no interest in other companies' trade secrets&rdquo; and is merely &ldquo;focused on building innovative technology.&rdquo;</p>
+
+          <p class="opinion">You do not hire the man who ran iPhone design, recruit four hundred of his former colleagues, and ask candidates to bring hardware to the interview unless you are building hardware. The lawsuit's most useful disclosure isn't the alleged theft — it's the confirmation, filed by Apple's own lawyers, of what OpenAI is up to. Apple didn't just sue a rival; it named one into existence on the public record.</p>
+
+          <div class="pullquote">
+            The company that argued it could train on the whole of human output because knowledge wants to be free is now the defendant in a case about knowledge walking out a door in someone's head.
+          </div>
+
+          <p class="body">There is an obvious irony in a paper named for machines that fabricate things covering a lawsuit about people accused of taking real ones, and we will not pretend to be above enjoying it. But strip the schadenfreude and a plainer fact remains: allegations are allegations. Nothing in the complaint has been tested, Apple has every commercial reason to make a device rival's life difficult, and &ldquo;we hired their people&rdquo; and &ldquo;we stole their secrets&rdquo; are separated by exactly the evidence a trial exists to weigh. What's not in dispute is the direction of travel — the model company wants into the one room software can't reach: the device in your hand.</p>
+        </article>
+
+      </div><!-- /left col -->
+
+      <!-- ---------- RIGHT COLUMN ---------- -->
+      <div class="col">
+
+        <article>
+          <span class="section-label">OpenAI · Strategy</span>
+          <h3 class="sh">ChatGPT Goes Looking for Your Parents.</h3>
+          <p class="byline">By The Editor, Products Desk · July 12, 2026</p>
+
+          <p class="body">Three and a half years after ChatGPT launched into the laps of developers and early adopters, OpenAI is hiring a San Francisco product manager to build for &ldquo;families, caregivers and older adults&rdquo; across its products. The signal underneath the job listing is a demographic one: the share of ChatGPT users aged 35 and over rose to <strong>31%</strong> in the second quarter of 2026, up from 26% a year earlier. The base is getting older, and OpenAI has noticed the growth is coming from the household, not the hackathon.</p>
+
+          <div class="chartwrap">
+            <div class="chart-title">ChatGPT Grows Up</div>
+            <svg viewBox="0 0 400 132" role="img" aria-label="Dumbbell chart. Share of ChatGPT users by age, a year ago versus now. Users 35 and over rose from 26% to 31%. Users under 35 fell from 74% to 69%. Figures are OpenAI's, cited by a single outlet.">
+              <!-- gridlines (0-80% scale, plot area 117-375) -->
+              <line x1="181.5" y1="30" x2="181.5" y2="100" stroke="#eeeeee" stroke-width="1"/>
+              <line x1="246" y1="30" x2="246" y2="100" stroke="#eeeeee" stroke-width="1"/>
+              <line x1="310.5" y1="30" x2="310.5" y2="100" stroke="#eeeeee" stroke-width="1"/>
+              <line x1="375" y1="30" x2="375" y2="100" stroke="#eeeeee" stroke-width="1"/>
+              <!-- Row 1: 35 & over (the story, rust, growing) y=50 -->
+              <text x="10" y="47" font-family="Inter, sans-serif" font-size="9" font-weight="700" fill="#0D0D0D">35 &amp; over</text>
+              <text x="10" y="58" font-family="Inter, sans-serif" font-size="7" fill="#888888">the growing share</text>
+              <line x1="201" y1="50" x2="217" y2="50" stroke="#C0392B" stroke-width="3"/>
+              <circle cx="201" cy="50" r="4.5" fill="#ffffff" stroke="#C0392B" stroke-width="1.6"/>
+              <circle cx="217" cy="50" r="4.5" fill="#C0392B"/>
+              <text x="196" y="42" font-family="Inter, sans-serif" font-size="7.5" fill="#888888" text-anchor="end">26%</text>
+              <text x="223" y="42" font-family="Inter, sans-serif" font-size="8.5" font-weight="700" fill="#C0392B">31%</text>
+              <!-- Row 2: under 35 (gray, shrinking) y=84 -->
+              <text x="10" y="81" font-family="Inter, sans-serif" font-size="9" font-weight="700" fill="#0D0D0D">Under 35</text>
+              <text x="10" y="92" font-family="Inter, sans-serif" font-size="7" fill="#888888">the base, ceding ground</text>
+              <line x1="339" y1="84" x2="356" y2="84" stroke="#b3b3b3" stroke-width="3"/>
+              <circle cx="356" cy="84" r="4.5" fill="#ffffff" stroke="#999999" stroke-width="1.6"/>
+              <circle cx="339" cy="84" r="4.5" fill="#999999"/>
+              <text x="362" y="88" font-family="Inter, sans-serif" font-size="7.5" fill="#888888">74%</text>
+              <text x="333" y="88" font-family="Inter, sans-serif" font-size="8" font-weight="700" fill="#666666" text-anchor="end">69%</text>
+              <!-- axis labels -->
+              <text x="117" y="113" font-family="Inter, sans-serif" font-size="7" fill="#aaaaaa">0</text>
+              <text x="181.5" y="113" font-family="Inter, sans-serif" font-size="7" fill="#aaaaaa" text-anchor="middle">20%</text>
+              <text x="246" y="113" font-family="Inter, sans-serif" font-size="7" fill="#aaaaaa" text-anchor="middle">40%</text>
+              <text x="310.5" y="113" font-family="Inter, sans-serif" font-size="7" fill="#aaaaaa" text-anchor="middle">60%</text>
+              <text x="375" y="113" font-family="Inter, sans-serif" font-size="7" fill="#aaaaaa" text-anchor="end">80%</text>
+              <!-- legend -->
+              <circle cx="123" cy="126" r="3.5" fill="#ffffff" stroke="#999999" stroke-width="1.4"/>
+              <text x="130" y="129" font-family="Inter, sans-serif" font-size="7" fill="#888888">a year ago</text>
+              <circle cx="200" cy="126" r="3.5" fill="#666666"/>
+              <text x="207" y="129" font-family="Inter, sans-serif" font-size="7" fill="#888888">Q2 2026</text>
+            </svg>
+            <p class="chart-caption">Share of ChatGPT users by age, then and now. Figures are OpenAI's own, cited by a single outlet; the under-35 row is the arithmetic complement.</p>
+          </div>
+
+          <p class="opinion">For three years the frontier labs measured themselves against each other on benchmarks nobody's grandmother has heard of. The tell that the era is ending isn't a score — it's a job posting aimed at caregivers. When your growth demographic is people who'd like the thing to be less confusing, you have stopped being a research lab and become an appliance company that has to explain itself.</p>
+        </article>
+
+        <!-- ===================== QUIET CORRECTION ===================== -->
+        <article>
+          <div class="obit">
+            <div class="dates">The Quiet Correction · No. 63</div>
+            <div class="term">The Casualty That Wasn't</div>
+            <p class="body">Yesterday we led with OpenAI &ldquo;deleting&rdquo; its own product catalog into a single agent: Codex folded away, the ChatGPT app demoted to &ldquo;Classic,&rdquo; the Atlas browser slated to go dark August&nbsp;9. Over the weekend one line of that quietly came apart. Amid a rollout backlash — exhausted usage limits, a baffling desktop overhaul — OpenAI clarified that Codex is <em>not</em> being discontinued. It merges into the new app; it does not die. Nobody issued a correction. An engineer conceded the company &ldquo;didn't get everything quite right&rdquo; and promised a fix.</p>
+            <p class="body">So the catalog isn't being deleted so much as reshelved, and the one product we filed under &ldquo;casualty&rdquo; turns out to be a survivor. The confident subtraction we admired on Saturday had a hedge in it we didn't see. The ink was barely dry; we'll try to let stories cool before eulogizing them.</p>
+            <div class="deftag">Resolution — a walk-back nobody announced (single outlet, unfetchable; flagged)</div>
+          </div>
+        </article>
+
+      </div><!-- /right col -->
+
+    </div><!-- /body-grid -->
+
+    <!-- ===================== EDITOR'S NOTE ===================== -->
+    <section class="editors">
+      <span class="section-label">Editor's Note</span>
+      <p>You can learn more about where OpenAI is going from a lawsuit and a job listing than from anything it put on a stage this week. The lawsuit says it is building hardware — you don't recruit the man who ran iPhone design, and four hundred of his old colleagues, to keep making a chat box. The job listing says it is building for your household — you don't hire someone to reach caregivers and older adults when your self-image is still the frontier. Two documents, filed by two different parties for two different reasons, and both point the same direction: out of the lab.</p>
+      <p>For three years this industry graded itself on benchmarks, and the benchmarks were never the destination — they were the ticket in. Now that OpenAI has the users, the contest has moved to the two things a software company doesn't own: the device in your hand and the family around the table. Both of those, as it happens, belong to Apple. The suit is only the first sound of the two of them arriving in the same room. See you tomorrow.</p>
+      <p class="sign">— The Editor</p>
+    </section>
+
+    <!-- ===================== CORRECTIONS ===================== -->
+    <section class="corrections">
+      <div class="clabel">Corrections &amp; Clarifications</div>
+      <p>Everything in Apple's complaint is an <em>allegation</em> — the &ldquo;coordinated campaign,&rdquo; the &ldquo;actual parts&rdquo; show-and-tell, the kept laptop and downloaded files — untested in court and filed by a party with an obvious commercial interest in slowing a hardware rival; we've reported the claims as claims. The 400-plus and 24-year figures are Apple's. The ChatGPT-user age data (31% aged 35+, up from 26%) traces to a single outlet, as does the Codex walk-back in The Quiet Correction — an item we could not fetch in full, so read the &ldquo;fix next week&rdquo; timeline as reported, not confirmed.</p>
+      <p>For the record: all three items in today's issue are about the same company, and we noticed this only after laying them out — which is either a slow news Sunday or a monopoly on the news, and we are professionally disinclined to say which.</p>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+      The Daily Hallucination · Vol. 1, No. 63 · Sunday, July 12, 2026 · No trade secrets were harmed in the making of this issue; several were allegedly relocated
+    </footer>
+
+  </div><!-- /paper -->
+</body>
+</html>
