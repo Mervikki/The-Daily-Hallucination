@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--
   THE WEEKLY HALLUCINATION — SPECIAL ISSUE TEMPLATE (two pages)
-  Use ONLY when editorial/prompt.md's "Special issues" test is met.
+  Use ONLY on event weeks (an event in editorial/events.md fell in the coverage window) or on a publisher request.
   Copy to weekly/YYYY-MM-DD.html and replace every {{PLACEHOLDER}}.
   Page 1 is only about the event. Page 2 is the regular weekly issue (same components as templates/issue.html).
   Delete these template comments and any unused blocks from the copy. Styling lives in assets/issue.css.
@@ -19,7 +19,7 @@
 <body>
 
 <!-- ======================================================================
-     PAGE 1 — THE EVENT (nothing else on this page)
+     PAGE 1 — THE EVENT, e.g. OpenAI DevDay / Code with Claude (nothing else on this page)
      ====================================================================== -->
 <div class="paper special" id="page-1">
 
@@ -35,10 +35,24 @@
   </header>
 
   <h2 class="hl-special">{{BANNER HEADLINE}}</h2>
-  <p class="standfirst">{{ONE- OR TWO-SENTENCE DECK: WHAT HAPPENED AND WHY IT MATTERS}}</p>
-  <p class="byline center">By The Editor, Special Correspondent &middot; {{MONTH}} {{DATE}}, {{YEAR}}</p>
+  <p class="standfirst">{{ONE- OR TWO-SENTENCE DECK: WHAT THE EVENT ADDED UP TO}}</p>
+  <p class="byline center">By The Editor, Special Correspondent &middot; {{EVENT}}, {{CITY}} &middot; {{MONTH}} {{DATE}}, {{YEAR}}</p>
 
-  <!-- Optional full-width chart — usually the annotated timeline of the event (templates/charts.html). -->
+  <!-- Every announcement, one row each. Availability: Today / Preview / Waitlist / "Later" (quote the vague date). -->
+  <table class="glance">
+    <thead>
+      <tr><th colspan="3">The Keynote at a Glance</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="topic">{{ANNOUNCEMENT}}</td>
+        <td>{{WHAT IT IS, ONE SENTENCE}}</td>
+        <td class="topic">{{AVAILABILITY}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Optional full-width chart — e.g. keynote timeline, pre-event leak chronology, or promised vs shipped (templates/charts.html). -->
   <div class="chartwrap special-wide">
     <p class="chart-title">{{CHART TITLE}}</p>
     <!-- chart skeleton here -->
@@ -63,18 +77,10 @@
       </article>
     </div>
 
-    <!-- RIGHT: the facts, then 2–3 angles on the SAME event, then what is still unknown -->
+    <!-- RIGHT: 2–3 angles on the SAME event, then what was expected but not announced -->
     <div class="col">
-      <div class="fact-box">
-        <p class="fact-label">What happened</p>
-        <ul>
-          <li>{{SOURCED FACT}}</li>
-          <li>{{SOURCED FACT}}</li>
-        </ul>
-      </div>
-
       <article>
-        <span class="section-label">{{ANGLE: REACTION / THE NUMBERS / WHO LOSES}}</span>
+        <span class="section-label">{{ANGLE: DEVELOPERS &amp; PRICING / DEMO VS PRODUCT / THE RIVAL / WHO LOSES}}</span>
         <h3 class="sh">{{SUBHEAD}}</h3>
         <p class="byline">By The Editor, {{DESK}} Desk &middot; {{MONTH}} {{DATE}}, {{YEAR}}</p>
         <p class="body">{{BODY}}</p>
@@ -82,9 +88,9 @@
       </article>
 
       <div class="fact-box unknowns">
-        <p class="fact-label">What we don't know yet</p>
+        <p class="fact-label">What wasn't announced</p>
         <ul>
-          <li>{{OPEN QUESTION}}</li>
+          <li>{{PRE-EVENT RUMOUR OR EXPECTATION THAT DID NOT SHIP, WITH WHO EXPECTED IT}}</li>
         </ul>
       </div>
     </div>
