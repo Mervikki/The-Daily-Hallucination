@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!--
+  THE WEEKLY HALLUCINATION — SPECIAL ISSUE TEMPLATE (two pages)
+  Use ONLY when editorial/prompt.md's "Special issues" test is met.
+  Copy to weekly/YYYY-MM-DD.html and replace every {{PLACEHOLDER}}.
+  Page 1 is only about the event. Page 2 is the regular weekly issue (same components as templates/issue.html).
+  Delete these template comments and any unused blocks from the copy. Styling lives in assets/issue.css.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Weekly Hallucination &ndash; Special Issue: {{EVENT}} &ndash; {{DAY}}, {{MONTH}} {{DATE}}, {{YEAR}}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Serif+4:ital,wght@0,400;0,600;1,400;1,600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/issue.css">
+</head>
+<body>
+
+<!-- ======================================================================
+     PAGE 1 — THE EVENT (nothing else on this page)
+     ====================================================================== -->
+<div class="paper special" id="page-1">
+
+  <header class="masthead">
+    <span class="special-flag">Special Issue &middot; {{EVENT SHORT NAME}}</span>
+    <h1>The Weekly Hallucination</h1>
+    <hr class="accent">
+    <hr class="rule3">
+    <p class="tagline">An AI &amp; tech weekly &mdash; written by a machine with no bias whatsoever</p>
+    <hr class="thin">
+    <p class="dateline">Vol. 2, No. {{N}} &middot; Special Issue &middot; {{DAY}}, {{MONTH}} {{DATE}}, {{YEAR}}</p>
+    <p class="page-nav">Page 1: {{EVENT SHORT NAME}} &middot; <a href="#page-2">Page 2: The rest of the week &rarr;</a></p>
+  </header>
+
+  <h2 class="hl-special">{{BANNER HEADLINE}}</h2>
+  <p class="standfirst">{{ONE- OR TWO-SENTENCE DECK: WHAT HAPPENED AND WHY IT MATTERS}}</p>
+  <p class="byline center">By The Editor, Special Correspondent &middot; {{MONTH}} {{DATE}}, {{YEAR}}</p>
+
+  <!-- Optional full-width chart — usually the annotated timeline of the event (templates/charts.html). -->
+  <div class="chartwrap special-wide">
+    <p class="chart-title">{{CHART TITLE}}</p>
+    <!-- chart skeleton here -->
+    <p class="chart-caption">{{ONE-LINE ITALIC CAPTION}}</p>
+  </div>
+
+  <div class="body-grid">
+
+    <!-- LEFT: the main story — 4–6 body paragraphs, opinion paragraph(s), one pull quote -->
+    <div class="col">
+      <article>
+        <span class="section-label">{{DESK}} &middot; The Event</span>
+        <p class="body">{{BODY}}</p>
+        <p class="body">{{BODY}}</p>
+        <p class="body">{{BODY}}</p>
+        <div class="pullquote">
+          {{MOST QUOTABLE LINE}}
+          <span class="attr">&mdash; {{ATTRIBUTION, WITH A DRY GLOSS}}</span>
+        </div>
+        <p class="body">{{BODY}}</p>
+        <p class="opinion">{{EDITORIAL TAKE}}</p>
+      </article>
+    </div>
+
+    <!-- RIGHT: the facts, then 2–3 angles on the SAME event, then what is still unknown -->
+    <div class="col">
+      <div class="fact-box">
+        <p class="fact-label">What happened</p>
+        <ul>
+          <li>{{SOURCED FACT}}</li>
+          <li>{{SOURCED FACT}}</li>
+        </ul>
+      </div>
+
+      <article>
+        <span class="section-label">{{ANGLE: REACTION / THE NUMBERS / WHO LOSES}}</span>
+        <h3 class="sh">{{SUBHEAD}}</h3>
+        <p class="byline">By The Editor, {{DESK}} Desk &middot; {{MONTH}} {{DATE}}, {{YEAR}}</p>
+        <p class="body">{{BODY}}</p>
+        <!-- a second chart may go here if it is a DIFFERENT chart type from the one above -->
+      </article>
+
+      <div class="fact-box unknowns">
+        <p class="fact-label">What we don't know yet</p>
+        <ul>
+          <li>{{OPEN QUESTION}}</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <p class="continued"><a href="#page-2">The rest of the week continues on page 2 &rarr;</a></p>
+</div>
+
+<!-- ======================================================================
+     PAGE 2 — THE REGULAR WEEKLY ISSUE (shorter than usual: 3–5 stories)
+     ====================================================================== -->
+<div class="paper" id="page-2">
+
+  <header class="running-head">
+    <span class="rh-title">The Weekly Hallucination</span>
+    <span>Page 2 &middot; The rest of the week</span>
+    <span>{{DAY}}, {{MONTH}} {{DATE}}, {{YEAR}}</span>
+  </header>
+
+  <table class="glance">
+    <thead>
+      <tr><th colspan="2">This Week at a Glance</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="topic">Special &middot; <a href="#page-1">Page 1</a></td>
+        <td>{{ONE SENTENCE ON THE EVENT}}</td>
+      </tr>
+      <tr>
+        <td class="topic">{{DESK}} &middot; {{SUBJECT}}</td>
+        <td>{{ONE SENTENCE}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="body-grid">
+    <div class="col">
+      <!-- lead / secondary stories, exactly as in templates/issue.html -->
+    </div>
+    <div class="col">
+      <!-- lead / secondary stories, exactly as in templates/issue.html -->
+    </div>
+  </div>
+
+  <section class="editors">
+    <span class="section-label">Editor's Note</span>
+    <p>{{FIRST-PERSON, OPINIONATED}}</p>
+    <p>{{LAND IT}}</p>
+    <p class="sign">See you next Monday. &mdash; The Editor</p>
+  </section>
+
+  <section class="corrections">
+    <p class="clabel">Corrections &amp; Clarifications</p>
+    <p>{{SOURCING CAVEATS, IF ANY}}</p>
+    <p>{{ONE SATIRICAL LINE}}</p>
+  </section>
+
+  <footer class="footer">
+    The Weekly Hallucination &middot; Vol. 2, No. {{N}} &middot; Special Issue &middot; {{DAY}}, {{MONTH}} {{DATE}}, {{YEAR}} &middot;
+    {{FRESH ISSUE-SPECIFIC KICKER}}
+  </footer>
+
+</div>
+</body>
+</html>
