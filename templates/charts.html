@@ -1,0 +1,109 @@
+<!--
+  THE WEEKLY HALLUCINATION — CHART SKELETONS
+  Reference only (never published on its own). Copy ONE skeleton into a .chartwrap in the issue,
+  between the .chart-title and the .chart-caption, then replace the sample data.
+  Colours: rust #C0392B (alarming / load-bearing), gray #999999 or #d6d2ca (neutral),
+  orange #E67E22 (mid), green #2E8B57 (good), navy #1a2744, label gray #888888.
+  Text: font-family="Inter, sans-serif", 6.8–8.5 size. Always give the <svg> role="img" and an aria-label.
+  Rotate forms: never the same chart type twice in one issue.
+-->
+
+<!-- ============ BAR (fallback) — direct comparison across 3+ items ============
+     Label area x 0–116, bar area x 117–375 (258px = 100%). Grid at 25% intervals.
+     Value label inside (white) if bar > 50%, outside (gray) if shorter. -->
+<svg viewBox="0 0 400 110" role="img" aria-label="{{DESCRIPTION}}">
+  <g stroke="#e5e5e5" stroke-width="1">
+    <line x1="117" y1="4" x2="117" y2="96"/><line x1="181.5" y1="4" x2="181.5" y2="96"/>
+    <line x1="246" y1="4" x2="246" y2="96"/><line x1="310.5" y1="4" x2="310.5" y2="96"/>
+    <line x1="375" y1="4" x2="375" y2="96"/>
+  </g>
+  <text x="110" y="21" text-anchor="end" font-family="Inter, sans-serif" font-size="8" font-weight="700" fill="#0D0D0D">ITEM A</text>
+  <rect x="117" y="10" width="232" height="16" rx="3" fill="#C0392B"/>
+  <text x="343" y="21" text-anchor="end" font-family="Inter, sans-serif" font-size="8" font-weight="700" fill="#ffffff">90%</text>
+  <text x="110" y="49" text-anchor="end" font-family="Inter, sans-serif" font-size="8" font-weight="700" fill="#0D0D0D">ITEM B</text>
+  <rect x="117" y="38" width="155" height="16" rx="3" fill="#E67E22"/>
+  <text x="266" y="49" text-anchor="end" font-family="Inter, sans-serif" font-size="8" font-weight="700" fill="#ffffff">60%</text>
+  <text x="110" y="77" text-anchor="end" font-family="Inter, sans-serif" font-size="8" font-weight="700" fill="#0D0D0D">ITEM C</text>
+  <rect x="117" y="66" width="52" height="16" rx="3" fill="#999999"/>
+  <text x="175" y="77" font-family="Inter, sans-serif" font-size="8" font-weight="700" fill="#888888">20%</text>
+  <text x="117" y="106" font-family="Inter, sans-serif" font-size="6.8" fill="#888888">0</text>
+  <text x="375" y="106" text-anchor="end" font-family="Inter, sans-serif" font-size="6.8" fill="#888888">100%</text>
+</svg>
+
+<!-- ============ SLOPE — before / after ============
+     Left axis = before, right axis = after. Label both endpoints; put the argument in the sub-labels. -->
+<svg viewBox="0 0 400 140" role="img" aria-label="{{DESCRIPTION}}">
+  <line x1="120" y1="10" x2="120" y2="116" stroke="#cccccc"/>
+  <line x1="300" y1="10" x2="300" y2="116" stroke="#cccccc"/>
+  <line x1="120" y1="20" x2="300" y2="90" stroke="#C0392B" stroke-width="2.5"/>
+  <circle cx="120" cy="20" r="4" fill="#C0392B"/><circle cx="300" cy="90" r="4" fill="#C0392B"/>
+  <text x="112" y="18" text-anchor="end" font-family="Inter, sans-serif" font-size="8.5" font-weight="700" fill="#C0392B">$20</text>
+  <text x="112" y="27" text-anchor="end" font-family="Inter, sans-serif" font-size="6.8" fill="#C0392B">{{SERIES}}</text>
+  <text x="308" y="88" font-family="Inter, sans-serif" font-size="8.5" font-weight="700" fill="#C0392B">$10</text>
+  <text x="308" y="97" font-family="Inter, sans-serif" font-size="6.8" fill="#C0392B">&minus;50%</text>
+  <text x="120" y="130" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.8" font-weight="700" fill="#888888">BEFORE</text>
+  <text x="300" y="130" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.8" font-weight="700" fill="#888888">AFTER</text>
+</svg>
+
+<!-- ============ DUMBBELL — the gap between two states ============
+     One row per item; hollow dot = state 1, solid = state 2 (say which in the caption). -->
+<svg viewBox="0 0 400 96" role="img" aria-label="{{DESCRIPTION}}">
+  <line x1="117" y1="84" x2="375" y2="84" stroke="#cccccc"/>
+  <text x="110" y="23" text-anchor="end" font-family="Inter, sans-serif" font-size="8" font-weight="700" fill="#0D0D0D">ITEM A</text>
+  <line x1="150" y1="20" x2="340" y2="20" stroke="#C0392B" stroke-width="4"/>
+  <circle cx="150" cy="20" r="5" fill="#ffffff" stroke="#C0392B" stroke-width="2"/><circle cx="340" cy="20" r="5" fill="#C0392B"/>
+  <text x="110" y="55" text-anchor="end" font-family="Inter, sans-serif" font-size="8" font-weight="700" fill="#0D0D0D">ITEM B</text>
+  <line x1="200" y1="52" x2="250" y2="52" stroke="#999999" stroke-width="4"/>
+  <circle cx="200" cy="52" r="5" fill="#ffffff" stroke="#999999" stroke-width="2"/><circle cx="250" cy="52" r="5" fill="#999999"/>
+  <text x="117" y="93" font-family="Inter, sans-serif" font-size="6.8" fill="#888888">{{MIN}}</text>
+  <text x="375" y="93" text-anchor="end" font-family="Inter, sans-serif" font-size="6.8" fill="#888888">{{MAX}}</text>
+</svg>
+
+<!-- ============ ANNOTATED TIMELINE — "the week in X" ============
+     Rust ticks for load-bearing events, gray for context. Alternate labels above/below. -->
+<svg viewBox="0 0 400 110" role="img" aria-label="{{DESCRIPTION}}">
+  <line x1="20" y1="55" x2="380" y2="55" stroke="#0D0D0D"/>
+  <line x1="40" y1="47" x2="40" y2="63" stroke="#999999" stroke-width="2"/>
+  <text x="40" y="40" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" font-weight="700" fill="#888888">MON</text>
+  <text x="40" y="31" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.8" fill="#888888">{{CONTEXT EVENT}}</text>
+  <line x1="200" y1="45" x2="200" y2="65" stroke="#C0392B" stroke-width="3"/>
+  <text x="200" y="78" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" font-weight="700" fill="#C0392B">THU</text>
+  <text x="200" y="88" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.8" fill="#C0392B">{{LOAD-BEARING EVENT}}</text>
+  <line x1="360" y1="47" x2="360" y2="63" stroke="#999999" stroke-width="2"/>
+  <text x="360" y="40" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" font-weight="700" fill="#888888">SUN</text>
+</svg>
+
+<!-- ============ BUMP / RANK — rank changes over time ============
+     y = rank (1 at top), x = time. One line per entity; label at both ends. -->
+<svg viewBox="0 0 400 120" role="img" aria-label="{{DESCRIPTION}}">
+  <g font-family="Inter, sans-serif" font-size="6.8" fill="#888888" text-anchor="middle">
+    <text x="90" y="112">WEEK 1</text><text x="200" y="112">WEEK 2</text><text x="310" y="112">WEEK 3</text>
+  </g>
+  <g font-family="Inter, sans-serif" font-size="7" font-weight="700" fill="#888888" text-anchor="end">
+    <text x="60" y="23">#1</text><text x="60" y="53">#2</text><text x="60" y="83">#3</text>
+  </g>
+  <polyline points="90,20 200,50 310,80" fill="none" stroke="#999999" stroke-width="2.5"/>
+  <polyline points="90,80 200,20 310,20" fill="none" stroke="#C0392B" stroke-width="2.5"/>
+  <polyline points="90,50 200,80 310,50" fill="none" stroke="#1a2744" stroke-width="2.5"/>
+  <g font-family="Inter, sans-serif" font-size="7" font-weight="700">
+    <text x="318" y="23" fill="#C0392B">{{ENTITY}}</text>
+    <text x="318" y="53" fill="#1a2744">{{ENTITY}}</text>
+    <text x="318" y="83" fill="#888888">{{ENTITY}}</text>
+  </g>
+</svg>
+
+<!-- ============ PICTOGRAM / UNIT — when the count is the joke ============
+     Large populations: use a <pattern> tile, never N separate rects. Rename the pattern id per issue. -->
+<svg viewBox="0 0 400 120" role="img" aria-label="{{DESCRIPTION}}">
+  <defs>
+    <pattern id="unit-{{ID}}" width="7" height="7" patternUnits="userSpaceOnUse">
+      <rect width="5" height="5" fill="#d6d2ca"/>
+    </pattern>
+  </defs>
+  <rect x="67" y="10" width="266" height="84" fill="url(#unit-{{ID}})"/>
+  <rect x="221" y="52" width="5" height="5" fill="#C0392B"/>
+  <rect x="67" y="104" width="5" height="5" fill="#C0392B"/>
+  <text x="76" y="109" font-family="Inter, sans-serif" font-size="7.5" font-weight="700" fill="#C0392B">{{THE ONE}}</text>
+  <rect x="215" y="104" width="5" height="5" fill="#d6d2ca"/>
+  <text x="224" y="109" font-family="Inter, sans-serif" font-size="7.5" font-weight="700" fill="#888888">{{THE REST}}</text>
+</svg>

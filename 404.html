@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page not found — The Weekly Hallucination</title>
+<script>
+  // Old daily issues used to live at the site root (/YYYY-MM-DD.html). They now live in /daily/.
+  (function () {
+    var m = location.pathname.match(/^(.*\/)(\d{4}-\d{2}-\d{2})\.html$/);
+    if (m && !/\/(daily|weekly)\/$/.test(m[1])) {
+      location.replace(m[1] + 'daily/' + m[2] + '.html' + location.search + location.hash);
+    }
+  })();
+</script>
+<style>
+  body { background: #F5F0E8; color: #0D0D0D; font-family: Georgia, serif; text-align: center; padding: 80px 16px; }
+  h1 { font-family: 'Playfair Display', Georgia, serif; text-transform: uppercase; letter-spacing: 0.04em; }
+  hr { border: none; border-top: 4px solid #C0392B; width: 56px; margin: 12px auto 20px; }
+  a { color: #C0392B; }
+</style>
+</head>
+<body>
+  <h1>The Weekly Hallucination</h1>
+  <hr>
+  <p><em>This page does not exist. For once, that is not our fault.</em></p>
+  <p><a href="/The-Daily-Hallucination/">Back to the archive</a></p>
+</body>
+</html>
