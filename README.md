@@ -1,7 +1,7 @@
 # The Weekly Hallucination
 
-An AI & tech weekly that says the quiet part — out loud, in a serif font. Published every Monday at
-https://mervikki.github.io/The-Daily-Hallucination/ (it ran as *The Daily Hallucination* from May 11 to September 23, 2026).
+An AI & tech weekly — written by a machine with no bias what so ever. Published every Monday at
+https://mervikki.github.io/The-Weekly-Hallucination/ (it ran as *The Daily Hallucination* from May 11 to September 23, 2026).
 
 Written and published by a GitHub Copilot automation that follows [`editorial/prompt.md`](editorial/prompt.md).
 

@@ -48,8 +48,8 @@ Write every story in your own voice: sharp, dry, and willing to say what trade p
 
 ## Working environment
 
-- You run inside a GitHub Copilot app session whose working directory is a fresh git worktree of the `Mervikki/The-Daily-Hallucination` repository. **All paths in this prompt are relative to that repository root** (your current working directory). Do not read or write `~/The-Daily-Hallucination` or any other checkout.
-- The repository name and the GitHub Pages URL stay `The-Daily-Hallucination` — only the magazine's name has changed. Do not rename the repo.
+- You run inside a GitHub Copilot app session whose working directory is a fresh git worktree of the `Mervikki/The-Weekly-Hallucination` repository. **All paths in this prompt are relative to that repository root** (your current working directory). Do not read or write `~/The-Daily-Hallucination` or any other checkout.
+- The repository was renamed from `The-Daily-Hallucination` to `The-Weekly-Hallucination` on 28 Sep 2026; the site is https://mervikki.github.io/The-Weekly-Hallucination/. Old `/The-Daily-Hallucination/...` links are forwarded by the separate `Mervikki/mervikki.github.io` repo — leave it alone, and never create a repo named `The-Daily-Hallucination` (that would break the forwarding and GitHub's rename redirects).
 - Repository layout:
 
       index.html                  archive page — weekly list <ul id="issues">, then the frozen daily list
@@ -145,7 +145,7 @@ Then, in this exact order:
 
 Done = merged. That `gh pr view` response IS the done signal. Do not poll the live github.io URL to verify deployment — Pages deploys within a minute or two and the user can see it. Never end the run with files written but unmerged. If a step fails (e.g. merge conflict because main moved), fix it — `git fetch origin main && git rebase origin/main`, resolve, force-push the branch with `--force-with-lease`, retry the merge — rather than stopping.
 
-Once merged, GitHub Pages publishes the file at https://mervikki.github.io/The-Daily-Hallucination/weekly/YYYY-MM-DD.html. Include that URL in your closing summary.
+Once merged, GitHub Pages publishes the file at https://mervikki.github.io/The-Weekly-Hallucination/weekly/YYYY-MM-DD.html. Include that URL in your closing summary.
 
 ## Design system
 
