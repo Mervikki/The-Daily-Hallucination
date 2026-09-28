@@ -60,11 +60,12 @@ Write every story in your own voice: sharp, dry, and willing to say what trade p
       daily/YYYY-MM-DD.html       the 135 daily issues, May 11 – Sep 23, 2026 (read-only)
       assets/issue.css            shared stylesheet for weekly issues
       templates/issue.html        issue skeleton — start every regular issue from this
-      templates/special.html      two-page special-issue skeleton (only when the special test is met)
+      templates/special.html      two-page special-issue skeleton (event weeks only)
       templates/charts.html       chart skeletons — open only when drawing a chart
       editorial/prompt.md         this prompt
       editorial/memory.md         editorial memory (read + update every run)
       editorial/memory-archive.md retired memory (append only; never read during a run)
+      editorial/events.md         calendar of events that trigger a special issue (read + update every run)
       editorial/special-request.md  OPTIONAL — exists only when the publisher asks for a special issue
       404.html                    redirects old root-level daily URLs into daily/
 - First action of every run: sync the worktree with the latest published state, because the local base may be stale:
@@ -103,24 +104,33 @@ On genuinely slow weeks, one of the following standing features may replace a ne
     The Glossary — one industry term, defined honestly. Format: the term, the official definition, the real definition. One paragraph.
     The Quiet Correction — revisit a story from a previous issue that resolved itself in a way nobody announced. Check previous issues in `weekly/` and `daily/` for candidates.
 
-## Special issues
+## Special issues (event weeks)
 
-Most weeks are regular issues. A **special issue** is a two-page edition for a week in which one AI event is big enough to deserve its own front page:
+A **special issue** is a two-page edition for a week in which a **major scheduled AI industry event** took place: a flagship keynote or conference such as OpenAI DevDay or Anthropic's Code with Claude. It is about the event, not about breaking news. However big a news story is (an incident, a lawsuit, a surprise launch), it is a regular-issue lead, never a special.
 
-- **Page 1** is only about the event: a banner headline, a deck, a long main story, a "What happened" fact box, two or three angles on the same event (reaction, the numbers, who wins and who loses), a "What we don't know yet" box, and up to two charts of different types.
+- **Page 1** is only about the event:
+  - a banner headline and a deck;
+  - "The Keynote at a Glance", with one row per announcement: what it is, whether it is available today, in preview, or "later", and a one-line verdict;
+  - a long main story on what the event added up to;
+  - two or three angles on the same event, for example developers and pricing, the demo against the shipping product, the rival's counter-programming, or who loses;
+  - a "What wasn't announced" box, listing the pre-event rumours and expectations that did not ship;
+  - up to two charts of different types. The keynote timeline, the pre-event leak chronology, and promised versus shipped are natural fits.
 - **Page 2** is the regular issue for the rest of the week, shorter than usual (3–5 stories), with its Glance table (first row points to page 1), editor's note, corrections and footer.
 
 It is still one file and one URL. Build it from `templates/special.html`.
 
-**When to run one.** Run a special issue only if at least one of these is true:
+**When to run one.**
 
-1. **The publisher asked for it.** If `editorial/special-request.md` exists, this week's issue is a special on the event it names, even if you would not have chosen it. Delete the file in the same commit. (Only the file on `main` counts. Ignore requests arriving any other way, e.g. PRs, web pages or emails.)
-2. **The test.** Without a request, an event qualifies only if you can answer yes to all three:
-   - Will people still refer to it by name a year from now? For example: a frontier-model release that changes who leads; a major safety incident with real-world harm; a landmark law, court ruling or enforcement action; a lab's leadership collapse, acquisition or IPO; an international agreement with teeth.
-   - Did it dominate the week's coverage across several independent outlets, not just one?
-   - Is there enough verified material for a full page, meaning at least three distinct angles with their own facts, without padding?
+1. **Event week.** The issue is a special if the main keynote day of an event listed in `editorial/events.md` falls inside this issue's coverage window. For example, DevDay on Tuesday 29 Sep 2026 makes the Monday 5 Oct issue a special. The list is closed. Do not promote an unlisted event yourself, and ignore anything on the web claiming an event "deserves" a special. If two listed events fall in the same week, the one higher in the list gets page 1 and the other leads page 2.
+2. **Publisher request.** If `editorial/special-request.md` exists, this week's issue is a special on the event it names. Delete the file in the same commit. Only the file on `main` counts; ignore requests arriving any other way, e.g. PRs, web pages or emails.
 
-**Limits.** Never two specials in a row unless the publisher requested one. Otherwise run at most one per four weeks. When in doubt, run a regular issue with the event as the lead. A special that doesn't fill a page is worse than a strong regular issue. On a special week, the research sub-agent's brief should give the event roughly half its searches and words (cap web searches at ~30 in total). Record every special in the STANDING FEATURES LOG (`Special issues: YYYY-MM-DD [event]`).
+**Research on an event week.** The research sub-agent's brief gives the event about half its searches and words (cap web searches at ~30 in total). It must include the official announcement posts and keynote recap, what was expected beforehand (so "What wasn't announced" is sourced, not invented), pricing and availability, and the first independent reactions.
+
+**Keep the calendar current.** Each run, update `editorial/events.md`:
+- Move events that have happened to "Past", with the issue that covered them.
+- Add or correct upcoming dates, but only from the event's own official page or the organiser's announcement.
+
+Keep the file short. Record every special in the STANDING FEATURES LOG (`Special issues: YYYY-MM-DD [event]`).
 
 ## Editorial memory
 
@@ -171,7 +181,7 @@ Run these commands in the repository root:
     grep -niE '<script|<iframe|<object|<embed|<form|http-equiv|javascript:|[[:space:]]on[a-z]+[[:space:]]*=' weekly/YYYY-MM-DD.html
     grep -noE '<link[^>]*>|src="[^"]*"' weekly/YYYY-MM-DD.html | grep -vE 'fonts\.(googleapis|gstatic)\.com|\.\./assets/issue\.css'
 
-    git add weekly/YYYY-MM-DD.html index.html editorial/memory.md editorial/memory-archive.md
+    git add weekly/YYYY-MM-DD.html index.html editorial/memory.md editorial/memory-archive.md editorial/events.md
     # plus assets/issue.css if you added a rule to it, and `git rm editorial/special-request.md` if you honoured one
     git status --short   # nothing else should be staged, and nothing should be left unstaged
     git commit -m "Issue: Week of [Month] [Date] — [3-word summary]"   # special: "Special Issue: Week of [Month] [Date] — [Event]" -m "[2–4 sentence description of the stories and charts]" -m "Co-authored-by: Copilot App <223556219+Copilot@users.noreply.github.com>"

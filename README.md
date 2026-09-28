@@ -17,15 +17,15 @@ Written and published by a GitHub Copilot automation that follows [`editorial/pr
 | `editorial/memory-archive.md` | Retired memory entries (not read during a run) |
 | `404.html` | Redirects old root-level daily URLs to `daily/` |
 
-## Requesting a special issue
+## Special issues
 
-A special issue is a two-page edition: page 1 is only about one big AI event, page 2 is the rest of the week.
-The editor decides on its own when an event qualifies (see `editorial/prompt.md` → *Special issues*). To force one,
-commit `editorial/special-request.md` to `main` before the Monday run, e.g.:
+On weeks with a major AI event, such as OpenAI DevDay or Anthropic's Code with Claude, the issue is a two-page special. Page 1 covers only the event and page 2 covers the rest of the week. The events that trigger one are listed in [`editorial/events.md`](editorial/events.md). Add or remove events there.
+
+To force a special for something that is not on the list, commit `editorial/special-request.md` to `main` before the Monday run, e.g.:
 
 ```markdown
-Event: OpenAI releases GPT-7
-Why: first model to pass X; I want the full front page on it.
+Event: Apple "Intelligence" event, 14 Oct
+Why: I want the full front page on it.
 ```
 
 The next run publishes the special and deletes the file.
